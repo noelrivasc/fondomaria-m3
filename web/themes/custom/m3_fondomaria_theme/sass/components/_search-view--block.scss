@@ -1,0 +1,102 @@
+////////////////////////////////////////
+//  Styles for the search view block  //
+////////////////////////////////////////
+
+.search-view--block {
+  height: 100%;
+  position: relative;
+
+  .view__exposed {
+    @extend .container-fluid;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $m3-gray-300;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+
+    .views-exposed-form {
+      @extend .row;
+      align-items: flex-end;
+    }
+
+    .form-item-search-api-fulltext {
+      @extend .col-lg-8, .col-md-7;
+    }
+
+    .form-actions {
+      @extend .col-lg-4, .col-md-5;
+
+      .form-submit {
+        @extend .m3-standard-button;
+      }
+    }
+  }
+
+  .view__content {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding-top: 140px;
+    padding-bottom: 70px;
+    max-width: unset;
+
+    .view__content-inner {
+      height: 100%;
+      overflow: auto;
+
+      .node--teaser {
+        overflow: hidden;
+      }
+    }
+  }
+
+  footer {
+    @extend .bg-light;
+    width: 100%;
+    border-top: 2px solid $m3-gray-300;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    padding-bottom: 0;
+
+    .advanced-search-link {
+      @extend .m3-cta-button;
+      width: 100%;
+    }
+  }
+}
+
+.modal--views-blocksearch-block {
+  padding-left: 0;
+  padding-right: 0;
+
+  .block--views-blocksearch-block {
+    height: 100%;
+
+    .block__content {
+      height: 100%;
+
+      & > div {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .search-view--block {
+    .view__exposed {
+      .form-actions {
+        .form-submit {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .view__content {
+      padding-top: 190px;
+    }
+  }
+}

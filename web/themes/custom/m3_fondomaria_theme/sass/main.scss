@@ -1,0 +1,74 @@
+/////////////////////////////////
+//  Main Template Header File  //
+/////////////////////////////////
+
+// path to assets
+$m3_assets_dir: "/themes/custom/m3_fondomaria_theme/assets";
+
+// Variables
+@import "variables/parameters";
+@import "variables/text-sizes";
+@import "variables/color";
+@import "variables/spacers";
+
+// Libraries and third party base template imports
+@import "bootstrap/scss/bootstrap";
+$fa-font-path: "#{$m3_assets_dir}/vendor/fontawesome/webfonts" !default;
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
+
+// Dev defined mixins
+@import "mixins/position";
+@import "mixins/icon";
+@import "mixins/animations";
+
+// Global styles
+@import "global/modal-styles";
+@import "global/text-styles";
+@import "global/list-styles";
+@import "global/image-styles";
+@import "global/form-styles";
+@import "global/box-styles";
+@import "global/button-styles";
+@import "global/pager-styles";
+@import "global/visual-styles";
+@import "global/card-styles";
+@import "global/infographic-styles";
+@import "global/carousel-styles";
+@import "global/main-styles";
+@import "global/view-styles";
+@import "global/drupal-ui-styles";
+@import "global/content";
+@import "global/content-items-and-layouts";
+
+// Components
+@import "components/navigation-menu";
+@import "components/social-networks-menu";
+@import "components/language-switcher";
+@import "components/back-to-top-button";
+@import "components/login";
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+@import "components/teaser";
+@import "components/page";
+@import "components/blog-post";
+@import "components/blog-view";
+@import "components/search-view--page";
+@import "components/search-view--block";
+@import "components/taxonomy-term--page";
+@import "components/resource";
+@import "components/resource-collection";
+@import "components/resources-view";
+@import "components/profile";
+@import "components/list-view";
+@import "components/ckeditor";
+@import "components/contact-us";
+@import "components/homepage";
+@import "components/403";
+@import "components/404";
+
+// themed
+@import "themed/base-footer";

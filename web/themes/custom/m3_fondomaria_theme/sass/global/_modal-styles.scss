@@ -1,0 +1,74 @@
+//////////////////////////////////////
+//  Modal and modals region styles  //
+//////////////////////////////////////
+
+.modals {
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+  @include centerThis();
+  position:fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, .25);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.modals.is-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  display: none;
+  @extend .m3-rounded-border;
+  max-width: 60%;
+  max-height: 80%;
+  padding-top: 60px;
+  @include centerThis();
+
+  .button-close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    color: $m3-gray-500;
+    overflow: hidden;
+    padding-left: 40px;
+    @include iconize('fa-times-circle', 40px);
+
+    &:before {
+      @include centerThis();
+    }
+  }
+}
+
+.modal.is-displayed {
+  display: block;
+}
+
+@include media-breakpoint-down(sm) {
+  .modal {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    border-radius: initial !important;
+  }
+  
+  .toolbar-vertical {
+    .modal {
+      padding-top: 32px;
+
+      .button-close {
+        top: 42px;
+      }
+    }
+  }
+}
+
+

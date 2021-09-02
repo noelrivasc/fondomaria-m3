@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -rf ${DDEV_APPROOT}/.git
+git init
+ddev clone-theme

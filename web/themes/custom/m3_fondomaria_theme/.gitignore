@@ -1,0 +1,14 @@
+# Ignore installed libraries with node / yarn
+node_modules
+
+# Ignore compiled sass cache
+.sass-cache
+
+# Ignore license information for node/yarn packages
+.npmrc
+
+# Ignore vendor
+assets/vendor
+
+# Ignore css build
+assets/css

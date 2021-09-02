@@ -1,0 +1,19 @@
+//////////////////////////////////
+//  Styles for user login page  //
+//////////////////////////////////
+
+.user-login-form {
+  max-width: 500px;
+  margin: 72px auto;
+  margin-bottom: 128px;
+
+  .form-item {
+    .description {
+      padding: 10px 20px;
+    }
+  }
+
+  .form-item__label {
+    @extend .m3-featured-sm;
+  }
+}

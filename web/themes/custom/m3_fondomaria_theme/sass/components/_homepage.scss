@@ -1,0 +1,35 @@
+///////////////////////////
+//  Styles for homepage  //
+///////////////////////////
+
+// Global overrides
+.is-frontpage {}
+
+// Homepage styles
+.homepage {
+    @extend .container;
+    padding-top: $spacer-md;
+    padding-left: 100px;
+}
+  
+.homepage__header,
+.homepage__body {
+    padding-right: 350px;
+}
+
+.homepage__title {
+    @extend .m3-title-lg;
+    font-size: 5rem;
+    line-height: 1.25;
+}
+
+.homepage__subtitle {
+    @extend .m3-featured-xs;
+    margin-top: $spacer-md;
+    margin-bottom: $spacer-md;
+}
+
+.homepage__footer {
+    margin-top: $spacer-xl;
+    margin-bottom: $spacer-xxl;
+}

@@ -1,0 +1,435 @@
+//////////////////////////
+//  Global text styles  //
+//////////////////////////
+
+.m3-root-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    // font-size: $t-root; // Removed fixed size to allow accesibility base font configuration
+    color: theme-color('dark');
+    line-height: $m3-line-height;
+}
+
+
+// Titles
+
+.m3-title {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.m3-title-lg {
+    @extend .m3-title;
+    font-size: $t-08;
+}
+
+.m3-title-md {
+    @extend .m3-title;
+    font-size: $t-07;
+}
+
+.m3-title-sm {
+    @extend .m3-title;
+    font-size: $t-06;
+}
+
+.m3-title-xs {
+    @extend .m3-title;
+    font-size: $t-05;
+}
+
+@include media-breakpoint-down(sm) {
+    .m3-title-lg {
+        font-size: $t-tablet-08;   
+    }
+    
+    .m3-title-md {
+        font-size: $t-tablet-07;
+    }
+    
+    .m3-title-sm {
+        font-size: $t-tablet-06;
+    }
+    
+    .m3-title-xs {
+        font-size: $t-tablet-05;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .m3-title-lg {
+        font-size: $t-mobile-08;   
+    }
+    
+    .m3-title-md {
+        font-size: $t-mobile-07;
+    }
+    
+    .m3-title-sm {
+        font-size: $t-mobile-06;
+    }
+    
+    .m3-title-xs {
+        font-size: $t-mobile-05;
+    }
+}
+
+
+// Subtitles
+
+.m3-subtitle {
+    font-weight: 700;
+}
+
+.m3-subtitle-lg {
+    @extend .m3-subtitle;
+    font-size: $t-06;
+}
+
+.m3-subtitle-md {
+    @extend .m3-subtitle;
+    font-size: $t-05;
+}
+
+.m3-subtitle-sm {
+    @extend .m3-subtitle;
+    font-size: $t-04;
+}
+
+.m3-subtitle-xs {
+    @extend .m3-subtitle;
+    font-size: $t-03;
+}
+
+@include media-breakpoint-down(sm) {
+    .m3-subtitle-lg {
+        font-size: $t-tablet-06;
+    }
+    
+    .m3-subtitle-md {
+        font-size: $t-tablet-05;
+    }
+    
+    .m3-subtitle-sm {
+        font-size: $t-tablet-04;
+    }
+    
+    .m3-subtitle-xs {
+        font-size: $t-tablet-03;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .m3-subtitle-lg {
+        font-size: $t-mobile-06;
+    }
+    
+    .m3-subtitle-md {
+        font-size: $t-mobile-05;
+    }
+    
+    .m3-subtitle-sm {
+        font-size: $t-mobile-04;
+    }
+    
+    .m3-subtitle-xs {
+        font-size: $t-mobile-03;
+    }
+}
+
+
+// Featured
+
+.m3-featured {
+    font-weight: 400;
+}
+
+.m3-featured-lg {
+    @extend .m3-featured;
+    font-size: $t-07;
+
+    * {
+        font-size: $t-07;
+    }
+}
+
+.m3-featured-md {
+    @extend .m3-featured;
+    font-size: $t-06;
+
+    * {
+        font-size: $t-06;
+    }
+}
+
+.m3-featured-sm {
+    @extend .m3-featured;
+    font-size: $t-05;
+
+    * {
+        font-size: $t-05;
+    }
+}
+
+.m3-featured-xs {
+    @extend .m3-featured;
+    font-size: $t-04;
+
+    * {
+        font-size: $t-04;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .m3-featured-lg {
+        font-size: $t-tablet-07;
+    
+        * {
+            font-size: $t-tablet-07;
+        }
+    }
+    
+    .m3-featured-md {
+        font-size: $t-tablet-06;
+    
+        * {
+            font-size: $t-tablet-06;
+        }
+    }
+    
+    .m3-featured-sm {
+        font-size: $t-tablet-05;
+    
+        * {
+            font-size: $t-tablet-05;
+        }
+    }
+
+    .m3-featured-xs {
+        font-size: $t-tablet-04;
+    
+        * {
+            font-size: $t-tablet-04;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .m3-featured-lg {
+        font-size: $t-mobile-07;
+    
+        * {
+            font-size: $t-mobile-07;
+        }
+    }
+    
+    .m3-featured-md {
+        font-size: $t-mobile-06;
+    
+        * {
+            font-size: $t-mobile-06;
+        }
+    }
+    
+    .m3-featured-sm {
+        font-size: $t-mobile-05;
+    
+        * {
+            font-size: $t-mobile-05;
+        }
+    }
+
+    .m3-featured-xs {
+        font-size: $t-mobile-04;
+    
+        * {
+            font-size: $t-mobile-04;
+        }
+    }
+}
+
+
+// Links
+
+.m3-link {
+    color: theme-color('secondary');
+    font-weight: 400;
+}
+
+.m3-link-lg {
+    @extend .m3-link;
+    font-size: $t-04;
+}
+
+.m3-link-md {
+    @extend .m3-link;
+    font-size: $t-03;
+}
+
+.m3-link-sm {
+    @extend .m3-link;
+    font-size: $t-02;
+}
+
+.m3-link-xs {
+    @extend .m3-link;
+    font-size: $t-01;
+}
+
+@include media-breakpoint-down(sm) {
+    .m3-link-lg {
+        font-size: $t-tablet-04;
+    }
+    
+    .m3-link-md {
+        font-size: $t-tablet-03;
+    }
+    
+    .m3-link-sm {
+        font-size: $t-tablet-02;
+    }
+    
+    .m3-link-xs {
+        font-size: $t-tablet-01;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .m3-link-lg {
+        font-size: $t-mobile-04;
+    }
+    
+    .m3-link-md {
+        font-size: $t-mobile-03;
+    }
+    
+    .m3-link-sm {
+        font-size: $t-mobile-02;
+    }
+    
+    .m3-link-xs {
+        font-size: $t-mobile-01;
+    }
+}
+
+
+// Body
+.m3-body {
+    font-weight: 400;
+}
+
+.m3-body-lg {
+    @extend .m3-body;
+    font-size: $t-04;
+}
+
+.m3-body-md {
+    @extend .m3-body;
+    font-size: $t-03;
+}
+
+.m3-body-sm {
+    @extend .m3-body;
+    font-size: $t-02;
+}
+
+.m3-body-xs {
+    @extend .m3-body;
+    font-size: $t-01;
+}
+
+@include media-breakpoint-down(sm) {
+    .m3-body-lg {
+        font-size: $t-tablet-04;
+    }
+    
+    .m3-body-md {
+        font-size: $t-tablet-03;
+    }
+    
+    .m3-body-sm {
+        font-size: $t-tablet-02;
+    }
+    
+    .m3-body-xs {
+        font-size: $t-tablet-01;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .m3-body-lg {
+        font-size: $t-mobile-04;
+    }
+    
+    .m3-body-md {
+        font-size: $t-mobile-03;
+    }
+    
+    .m3-body-sm {
+        font-size: $t-mobile-02;
+    }
+    
+    .m3-body-xs {
+        font-size: $t-mobile-01;
+    }
+}
+
+
+// Miscellaneous
+.m3-label {
+    font-weight: 400;
+    font-size: $t-02;
+}
+
+.m3-tag {
+    font-weight: 400;
+    font-size: $t-01;
+    letter-spacing: 0.04em;
+}
+
+.m3-hero {
+    font-weight: 700;
+    font-size: $t-09;
+}
+
+.m3-quote {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: $t-06;
+}
+
+@include media-breakpoint-down(sm) {
+    .m3-label {
+        font-size: $t-tablet-02;
+    }
+
+    .m3-tag {
+        font-size: $t-tablet-01;
+    }
+
+    .m3-hero {
+        font-size: $t-tablet-09;
+    }
+
+    .m3-quote {
+        font-size: $t-tablet-06;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .m3-label {
+        font-size: $t-mobile-02;
+    }
+
+    .m3-tag {
+        font-size: $t-mobile-01;
+    }
+
+    .m3-hero {
+        font-size: $t-mobile-09;
+    }
+
+    .m3-quote {
+        font-size: $t-mobile-06;
+    }
+}

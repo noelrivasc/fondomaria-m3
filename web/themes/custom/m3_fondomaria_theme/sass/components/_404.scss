@@ -1,0 +1,68 @@
+///////////////////////
+//  404 page styles  //
+///////////////////////
+
+.page-404 {
+  @extend .container;
+  background: url("#{$m3_assets_dir}/img/404-bg.svg") no-repeat top right;
+  background-size: 350px;
+  padding-top: $spacer-md;
+  padding-left: 100px;
+}
+
+.page-404__header,
+.page-404__body {
+  padding-right: 350px;
+}
+
+.page-404__title {
+  @extend .m3-title-lg;
+  font-size: 5rem;
+  line-height: 1.25;
+}
+
+.page-404__subtitle {
+  @extend .m3-featured-xs;
+  margin-top: $spacer-md;
+  margin-bottom: $spacer-md;
+}
+
+.page-404__footer {
+  margin-top: $spacer-xl;
+  margin-bottom: $spacer-xxl;
+}
+
+#Page-404-search {
+  .form__container {
+    padding: 0;
+  }
+
+  form {
+    @extend .row;
+    align-items: flex-end;
+  }
+
+  .fields-container {
+    @extend .col-md-8;
+  }
+
+  .actions-container {
+    @extend .col-md-4;
+  }
+
+  .form-item-keywords {
+    .input__container {
+      @include preppendIcon('fa-search', 18px);
+      padding-right: 0;
+
+      input {
+        padding-right: 30px;
+      }
+
+      &:before {
+        z-index: 2;
+        right: 12px;
+      }
+    }
+  }
+}

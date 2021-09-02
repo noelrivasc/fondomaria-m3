@@ -1,0 +1,47 @@
+//////////////////////////
+//  List style classes  //
+//////////////////////////
+
+.m3-formatted-lists {
+    ul, ol {
+        @extend .m3-body-md;
+    
+        li {
+            margin: 1em 0;
+        }
+    
+        a {
+            @extend .text-primary;
+        }
+    }
+
+    ul.featured-list {
+        @extend .m3-featured-sm;
+        padding: 0;
+        // margin-top: 60px;
+        // margin-bottom: 60px;
+
+        li {
+            @include appendIcon('fa-chevron-circle-right', $t-06);
+            color: $m3-gray-500 !important;
+            list-style-type: none;
+            margin: 1em 0 !important;
+        }
+
+        a {
+            color: $m3-gray-500 !important;
+        }
+    }
+}
+
+// @include media-breakpoint-down(sm) {
+//     .m3-formatted-lists {
+//         ul.featured-list {
+//             li {
+//                 padding-left: 50px;
+//                 background-size: 30px;
+//                 background-position-y: 12px;
+//             }
+//         }
+//     }
+// }

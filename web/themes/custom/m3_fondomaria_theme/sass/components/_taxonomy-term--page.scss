@@ -1,0 +1,17 @@
+//////////////////////////////////////
+//  Styles for the page full nodes  //
+//////////////////////////////////////
+
+.page--taxonomy-term {
+  @extend .m3-view;
+
+  .block--system-main-block {
+    padding-bottom: $spacer-lg;
+
+    .block__content {
+      .feed-icon {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+////////////////////////////////////
+//  Styles for back to topbutton  //
+////////////////////////////////////
+
+.back-to-top-button {
+    position: fixed;
+    top: 30vh;
+    right: 30px;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.back-to-top-button.is-available {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.back-to-top-button__button {
+    display: flex;
+    height: 1.4em;
+    width: 1.4em;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: 1em;
+    font-size: $t-08;
+    background-color: $m3-gray-100;
+    text-decoration: none !important;
+}

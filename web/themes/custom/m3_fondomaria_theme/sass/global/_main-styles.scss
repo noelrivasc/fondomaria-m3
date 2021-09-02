@@ -1,0 +1,259 @@
+/////////////////////
+//  Global styles  //
+/////////////////////
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @extend .m3-root-text;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+  @extend .m3-title;
+}
+
+.m3-iframes {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+// .m3-lecture-safe {
+//   max-width: 35em;
+//   margin-left: auto;
+//   margin-right: auto;
+// } 
+
+.m3-text-styled {
+  // Add classes for text contents (Lists, links, paragraphs, etc).
+  @extend .m3-formatted-images, .m3-formatted-lists;
+
+  hr {
+    display: block;
+    margin: 0;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    width: 60%;
+    min-width: 200px;
+    max-width: 600px;
+    height: 5px;
+    background-color: $m3-gray-500;
+    border: 0;
+  }
+
+  a {
+    @extend .m3-link;
+  }
+  
+  a.cta-button {
+    @extend .m3-cta-button;
+  }
+
+  a.standard-button {
+    @extend .m3-standard-button;
+  }
+
+  a.featured-link {
+    @extend .m3-ghost-button;
+  }
+
+  a.featured-link-icon {
+    @extend .m3-title-sm;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      display: block;
+      background: url("#{$m3_assets_dir}/ui/chevron_single_blue.svg") no-repeat center center;
+      @include centerThis(right);
+      right: -30px;
+    }
+  }
+
+  p {
+    @extend .m3-body-md, .m3-lecture-safe !optional;
+  }
+
+  p.featured {
+    @extend .m3-featured-sm, .m3-lecture-safe !optional;
+  }
+
+  p.block-shadow {
+    display: inline-block;
+    @extend .m3-block-shadow;
+  }
+
+  h2.heading-1 {
+    @extend .m3-subtitle-lg, .m3-lecture-safe !optional;
+    margin-bottom: 1em;
+  }
+
+  h3.heading-2 {
+    @extend .m3-subtitle-md, .m3-lecture-safe !optional;
+    margin-bottom: 1em;
+  }
+
+  h4.heading-3 {
+    @extend .m3-subtitle-sm, .m3-lecture-safe !optional;
+    margin-bottom: 1em;
+  }
+
+  h5.heading-4 {
+    @extend .m3-subtitle-xs, .m3-lecture-safe !optional;
+    margin-bottom: 1em;
+  }
+
+  blockquote {
+    @extend .m3-quote, .m3-lecture-safe !optional;
+    margin-bottom: 40px;
+    padding: 0 12%;
+    text-align: center;
+    line-height: 1.2;
+    position: relative;
+    
+    p {
+      @extend .m3-quote;
+    }
+
+    &:after {
+      content: '\f10d';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      display: block;
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      position: absolute;
+      left: 5%;
+      top: 0;
+    }
+
+    &:before {
+      content: '\f10e';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      display: block;
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      position: absolute;
+      right: 5%;
+      top: 0;
+    }
+  }
+
+  .quote-attribution-name {
+    @extend .m3-featured-md;
+    max-width: unset;
+    padding-left: 65%;
+    margin-bottom: 0;
+    color: $m3-gray-500;
+  }
+
+  .quote-attribution-position {
+    max-width: unset;
+    padding-left: 65%;
+    margin-bottom: 0;
+    color: $m3-gray-500;
+    font-weight: 500px;
+    text-transform: uppercase;
+  }
+
+  .quote-block {
+    @extend .m3-indented-column;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background: $m3-gray-100;
+  }
+
+  .featured-image-wrapper {
+    @extend .m3-block-shade-1-half;
+    text-align: center;
+    padding-bottom: 30px;
+
+    img {
+      border-top: 20px solid $m3-gray-500;
+      max-width: 1110px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .featured-image-wrapper {
+    img {
+      max-width: 90% !important;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .m3-text-styled {
+    hr {
+      margin-top: 2.5em;
+    }
+
+    .featured-image-wrapper {
+      img {
+        max-width: 75%;
+      }
+    }
+
+    .quote-attribution-name,
+    .quote-attribution-position {
+      padding-left: 55%;
+    }
+
+    blockquote {
+      &:before,
+      &:after {
+        width: 30px;
+        height: 30px;
+      }
+
+      &:before {
+        right: 0;
+      }
+
+      &:after {
+        left: 0;
+      }
+    }
+
+    .quote-block {
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .m3-text-styled {
+    h3.subtitle {
+      margin-top: 1.5em;
+    }
+
+    hr {
+      display: none;
+    }
+
+    .quote-attribution-name,
+    .quote-attribution-position {
+      padding-left: 35%;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .m3-text-styled {
+    .featured-image-wrapper {
+      img {
+        border-top-width: 10px;
+        max-width: 90%;
+      }
+    }
+  }
+}

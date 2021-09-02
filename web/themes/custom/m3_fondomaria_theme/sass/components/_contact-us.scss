@@ -1,0 +1,48 @@
+//////////////////////////////////////
+//  Styles for the contact us form  //
+//////////////////////////////////////
+
+.contact-us {
+    @extend .container;
+}
+
+.contact-us__title {
+    padding: 0 30px;
+    margin: 60px 0;
+}
+
+.contact-us__title-h {
+    @extend .m3-title-lg;
+    margin: 0;
+}
+
+.contact-us__intro {
+    @extend .m3-text-styled;
+    padding: 0 30px;
+}
+
+.contact-us__intro-brief {
+    margin-bottom: 30px;
+}
+
+.contact-us__intro-body {
+    margin-bottom: 60px;
+}
+
+.contact-us__form {
+    @extend .m3-rounded-border;
+    margin-bottom: 60px;
+
+    .fields-container {
+        @extend .row;
+
+        .form-item {
+            @extend .col-12;
+        }
+
+        .form-item-name,
+        .form-item-email {
+            @extend .col-md-6;
+        }
+    }
+}

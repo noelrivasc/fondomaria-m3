@@ -1,0 +1,21 @@
+//////////////////////////////
+//  Position useful Mixins  //
+//////////////////////////////
+
+@mixin centerThis($pasteTo:"") {
+    position: absolute;
+    @if $pasteTo != "bottom" {
+      top: 0;
+    }
+    @if $pasteTo != "top" {
+      bottom: 0;
+    }
+    @if $pasteTo != "left" {
+      right: 0;
+    }
+    @if $pasteTo != "right" {
+      left: 0;
+    }
+    margin: auto;
+  }
+  

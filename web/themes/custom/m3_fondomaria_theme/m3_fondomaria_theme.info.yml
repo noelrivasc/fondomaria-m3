@@ -1,0 +1,38 @@
+name: Theme for fondomaria project
+type: theme
+description: 'Drupal theme for fondomaria project, extended from M-III recipe custom theme'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: m3_base_theme
+
+regions:
+  brand: Brand banner
+  taskbar: Taskbar
+  navigation: Navigation
+  system: System
+  content: Content
+  ctas: Calls to action
+  index: Index in footer
+  signature: Signature
+  modals: Modals
+
+ckeditor_stylesheets:
+  - assets/css/font-families.css
+  - assets/css/main.css
+
+libraries:
+  - m3_fondomaria_theme/global-styling
+
+libraries-override:
+  core/drupal.dialog.off_canvas:
+    css:
+      base:
+        /core/themes/stable/css/core/dialog/off-canvas.reset.css: false
+      component:
+        /core/themes/stable/css/core/dialog/off-canvas.form.css: false
+  m3_base_theme/slick-carousel:
+    css:
+      component:
+        assets/vendor/slick/slick.css: assets/vendor/slick/slick.css
+    js:
+      assets/vendor/slick/slick.min.js: assets/vendor/slick/slick.min.js

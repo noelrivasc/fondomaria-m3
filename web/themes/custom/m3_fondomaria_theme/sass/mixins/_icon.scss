@@ -1,0 +1,46 @@
+//////////////////////////////////////
+//  Font-Awesome Icon style Mixins  //
+//////////////////////////////////////
+
+@mixin iconize($iconClass: "", $iconSize: 30px, $iconStyle: "fas") {
+  @extend .#{$iconStyle}, .#{$iconClass};
+  display: block;
+  width: $iconSize;
+  height: $iconSize;
+  text-align: center;
+
+  &:before {
+    font-size: $iconSize;
+    line-height: $iconSize;
+  }
+}
+
+
+@mixin appendIcon($iconClass:"", $iconSize: 30px, $iconStyle:"fas") {
+  @extend .#{$iconClass};
+  padding-left: $iconSize * 1.5;
+  position: relative;
+
+  &:before {
+    @extend .#{$iconStyle};
+    height: $iconSize;
+    @include centerThis(left);
+    font-size: $iconSize;
+    line-height: $iconSize;
+  }
+}
+
+
+@mixin preppendIcon($iconClass:"", $iconSize: 30px, $iconStyle:"fas") {
+  @extend .#{$iconClass};
+  padding-right: $iconSize * 1.5;
+  position: relative;
+
+  &:before {
+    @extend .#{$iconStyle};
+    height: $iconSize;
+    @include centerThis(right);
+    font-size: $iconSize;
+    line-height: $iconSize;
+  }
+}

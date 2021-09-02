@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ddev composer install
+ddev initialize-new
+ddev drush site-install --site-name=${DDEV_PROJECT} --account-name=admin --account-mail=web-admin@matrushka.com.mx --site-mail=web-admin@matrushka.com.mx --yes
+ddev drush theme:enable m3_${DDEV_PROJECT}_theme
+ddev drush config-set system.theme default m3_${DDEV_PROJECT}_theme --yes

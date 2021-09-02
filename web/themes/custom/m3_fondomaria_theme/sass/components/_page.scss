@@ -1,0 +1,110 @@
+//////////////////////////////////////
+//  Styles for the page full nodes  //
+//////////////////////////////////////
+
+.node--page--full,
+.node--page--content {
+    .content__header {
+        @extend .container-fluid;
+        background-color: $m3-gray-100;
+        padding-top: $spacer-lg;
+        padding-bottom: $spacer-lg;
+    }
+
+    .content__title {
+        @extend .container;
+        margin-bottom: $spacer-md;
+    }
+
+    .content__title-h {
+        @extend .m3-title-lg;
+        margin: 0;
+    }
+
+    .content__intro {
+        @extend .container;
+    }
+
+    .content__intro-row {
+        @extend .row;
+        flex-direction: column-reverse;
+    }
+
+    .content__brief {
+        @extend .col-md-6, .m3-featured-xs;
+        margin-bottom: $spacer-md;
+    }
+
+    .content__featured-image {
+        @extend .col-md-6;
+        margin-bottom: $spacer-md;
+        max-width: unset;
+
+        img {
+            @extend .img-fluid;
+        }
+    }
+
+    .content__content-table {
+        @extend .container;
+
+        .content-table__label {
+            @extend .m3-body-sm;
+        }
+
+        .content-table__table {
+            ul {
+                @extend .nav;
+            }
+
+            li {
+                @extend .nav-item;
+            }
+
+            a {
+                @extend .nav-link, .m3-body-md;
+                padding-left: 0;
+            }
+        }
+    }
+
+    .content__content {
+        margin-top: $spacer-xxl;
+    }
+
+    .content__footer {
+        margin-top: $spacer-xxl;
+    }
+
+    .content__related {
+        @extend .container;
+    }
+
+    .field-related-pages {
+        @extend .row;
+    }
+
+    .field-related-pages__item {
+        @extend .col-lg-6;
+        padding-bottom: $spacer-lg;
+
+        .node--card {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+// Responsive styles
+
+@include media-breakpoint-down(md) {
+    .node--page--full,
+    .node--page--content {
+        .content__footer {
+            &:before {
+                height: 75%;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+diff --git a/core/modules/layout_builder/src/Element/LayoutBuilder.php b/core/modules/layout_builder/src/Element/LayoutBuilder.php
+index 0814604bbc..ac5c45ef2b 100644
+--- a/core/modules/layout_builder/src/Element/LayoutBuilder.php
++++ b/core/modules/layout_builder/src/Element/LayoutBuilder.php
+@@ -344,10 +344,17 @@ protected function buildAdministrativeSection(SectionStorageInterface $section_s
+         'role' => 'group',
+         'aria-label' => $section_label,
+       ],
+-      'remove' => [
++      // The section label is added to sections without a "Configure section"
++      // link, and is only visible when the move block dialog is open.
++      'section_label' => [
++        '#markup' => $this->t('<span class="layout-builder__section-label">@section</span>', ['@section' => $section_label]),
++        '#access' => $layout instanceof PluginFormInterface,
++      ],
++      'configure' => [
+         '#type' => 'link',
+-        '#title' => $this->t('Remove @section', ['@section' => $section_label]),
+-        '#url' => Url::fromRoute('layout_builder.remove_section', [
++        '#title' => $this->t('Configure @section', ['@section' => $section_label]),
++        '#access' => $layout instanceof PluginFormInterface,
++        '#url' => Url::fromRoute('layout_builder.configure_section', [
+           'section_storage_type' => $storage_type,
+           'section_storage' => $storage_id,
+           'delta' => $delta,
+@@ -356,23 +363,16 @@ protected function buildAdministrativeSection(SectionStorageInterface $section_s
+           'class' => [
+             'use-ajax',
+             'layout-builder__link',
+-            'layout-builder__link--remove',
++            'layout-builder__link--configure',
+           ],
+           'data-dialog-type' => 'dialog',
+           'data-dialog-renderer' => 'off_canvas',
+         ],
+       ],
+-      // The section label is added to sections without a "Configure section"
+-      // link, and is only visible when the move block dialog is open.
+-      'section_label' => [
+-        '#markup' => $this->t('<span class="layout-builder__section-label" aria-hidden="true">@section</span>', ['@section' => $section_label]),
+-        '#access' => !$layout instanceof PluginFormInterface,
+-      ],
+-      'configure' => [
++      'remove' => [
+         '#type' => 'link',
+-        '#title' => $this->t('Configure @section', ['@section' => $section_label]),
+-        '#access' => $layout instanceof PluginFormInterface,
+-        '#url' => Url::fromRoute('layout_builder.configure_section', [
++        '#title' => $this->t('Remove @section', ['@section' => $section_label]),
++        '#url' => Url::fromRoute('layout_builder.remove_section', [
+           'section_storage_type' => $storage_type,
+           'section_storage' => $storage_id,
+           'delta' => $delta,
+@@ -381,7 +381,7 @@ protected function buildAdministrativeSection(SectionStorageInterface $section_s
+           'class' => [
+             'use-ajax',
+             'layout-builder__link',
+-            'layout-builder__link--configure',
++            'layout-builder__link--remove',
+           ],
+           'data-dialog-type' => 'dialog',
+           'data-dialog-renderer' => 'off_canvas',

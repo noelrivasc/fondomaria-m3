@@ -1,0 +1,44 @@
+///////////////////////////////////////////
+//  Styles for the Blog post full nodes  //
+///////////////////////////////////////////
+
+.node--resource--full {
+  .content__header {
+    @extend .container, .m3-indented-column;
+  }
+
+  .content__title {
+    margin-top: $spacer-md;
+    margin-bottom: $spacer-md;
+  }
+
+  .content__title-h {
+    @extend .m3-title-lg;
+  }
+
+  .content__brief {
+    @extend .container, .m3-featured-sm, .m3-indented-column;
+    margin-bottom: $spacer-md;
+  }
+  
+  .content__files {
+    @extend .container, .m3-indented-column;
+    margin-bottom: $spacer-xxl;
+
+    .field-resource-files {
+
+      .field-resource-files__item {
+        margin-bottom: $spacer-sm;
+
+        a {
+          @extend .m3-link-lg;
+          @include appendIcon('fa-file-download', 25px);
+        }
+
+        .file--mime-application-zip a {
+          @include appendIcon('fa-file-archive', 25px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/////////////////////////////////
+//  Styles for the main block  //
+/////////////////////////////////
+
+.system__wrapper {
+    @extend .container;
+}
+
+.main {
+    padding-top: $header-offset;
+}

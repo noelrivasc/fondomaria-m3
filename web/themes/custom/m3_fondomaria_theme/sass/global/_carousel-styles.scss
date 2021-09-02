@@ -1,0 +1,95 @@
+//////////////////////////////
+//  Global carousel styles  //
+//////////////////////////////
+
+.carousel {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 35px;
+    opacity: 1;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 42px;
+    height: 100%;
+  }
+
+  .carousel-control-prev-icon {
+    @include iconize("fa-chevron-right", 42px);
+  }
+
+  .carousel-control-next-icon {
+    @include iconize("fa-chevron-left", 42px);
+  }
+}
+
+.slick-carousel,
+.slick-carousel__controls {
+  padding: 0 6%;
+
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    color: transparent;
+    border: none;
+    background-color: transparent;
+    
+    &:before {
+      color: $m3-gray-400;
+      display: block;
+      width: 42px;
+      height: 42px;
+      @include centerThis();
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+    @include iconize("fa-chevron-left", 42px);
+    height: 100%;
+  }
+
+  .slick-next {
+    right: 0;
+    @include iconize("fa-chevron-right", 42px);
+    height: 100%;
+  }
+
+  .slick-dots {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    & > li {
+      padding-right: $spacer-xs;
+
+      &:last-child {
+        padding-right: unset;
+      }
+    }
+
+    button {
+      display: block;
+      width: $spacer-sm;
+      height: $spacer-sm;
+      padding: 0;
+      border: 1px solid $m3-gray-500;
+      border-radius: $spacer-sm / 2;
+      background-color: $m3-light;
+      overflow: hidden;
+      text-indent: $spacer-sm;
+      transition: background-color 0.2s;
+    }
+
+    .slick-active button {
+      background-color: $m3-gray-600;
+    }
+  }
+}

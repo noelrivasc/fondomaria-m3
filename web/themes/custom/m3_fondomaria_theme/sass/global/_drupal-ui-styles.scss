@@ -1,0 +1,52 @@
+//////////////////////////////
+//  Drupal system messages  //
+//////////////////////////////
+
+.status-message {
+  @extend .alert;
+  margin-top: $spacer-md;
+  margin-bottom: $spacer-md;
+}
+
+.status-message--error {
+  @extend .alert-danger;
+}
+
+.status-message--warning {
+  @extend .alert-warning;
+}
+
+.status-message--status {
+  @extend .alert-success;
+}
+
+// .status-message__body {
+//   @extend .alert__body;
+// }
+
+
+//////////////////////////////
+//  Local tasks bar styles  //
+//////////////////////////////
+
+.block--local-tasks-block {
+  @extend .container;
+  margin-bottom: 40px;
+
+  ul {
+    @extend .nav, .nav-tabs;
+    margin-top: 20px;
+
+    li {
+      @extend .nav-item;
+
+      a {
+        @extend .nav-link;
+      }
+    }
+
+    .is-active {
+      @extend .active;
+    }
+  }
+}

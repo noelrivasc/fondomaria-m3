@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - m3_custom_blocks
+  theme:
+    - m3_fondomaria_theme
+id: m3_fondomaria_theme_backtotop
+theme: m3_fondomaria_theme
+region: index
+weight: 2
+provider: null
+plugin: back_to_top_block
+settings:
+  id: back_to_top_block
+  label: 'Back to Top'
+  provider: m3_custom_blocks
+  label_display: '0'
+visibility: {  }

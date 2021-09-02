@@ -1,0 +1,244 @@
+//////////////////////////
+//  Global card styles  //
+//////////////////////////
+
+// Drupal card columns extended behavior
+.card-columns {
+    @include media-breakpoint-down(md) {
+        column-count: 2;
+    }
+
+    @include media-breakpoint-down(xs) {
+        column-count: 1;
+    }
+}
+
+
+// Common M3 card styles
+
+.card-link {
+    display: block;
+    text-decoration: none !important;
+    width: 100%;
+}
+
+
+// Section card
+
+.section-card {
+    @extend .m3-rounded;
+    max-width: 600px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-card:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(theme-color('dark'), 0.5);
+}
+
+.section-card__inner {
+    padding: 0 70px;
+    text-align: center;
+    z-index: 2;
+}
+
+.section-card__header {
+    margin-bottom: 30px;
+}
+
+.section-card__title {
+    @extend .m3-title-sm;
+    margin: 0;
+    padding: 0;
+    color: theme-color('light');
+
+    * {
+        color: theme-color('light');
+    }
+}
+
+// .section-card__body {}
+
+.section-card__tagline {
+    @extend .m3-featured-sm;
+    color: theme-color('light');
+    font-weight: lighter;
+}
+
+
+// Content card elements
+
+.content-card__link {
+    text-decoration: none !important;
+}
+
+.content-card {
+    @extend .m3-rounded;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    background-color: $m3-gray-200;
+    margin: $spacer-sm auto;
+}
+
+.content-card__picture {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-card__content {
+    color: theme-color("dark");
+    padding: $spacer-md $spacer-sm;
+    border-top: 1px dotted $m3-gray-900;
+}
+
+.content-card__title {
+    @extend .m3-title-xs;
+    margin: 0;
+    padding: 0;
+
+    .icon {
+        display: none;
+    }
+}
+
+.content-card__description {
+    @extend .m3-featured-xs;
+    margin-top: $spacer-sm;
+
+    & > span:not(:last-child):after {
+        content: ' | '
+    }
+}
+
+.content-card__brief {
+    @extend .m3-body-sm;
+    margin-top: $spacer-sm;
+}
+
+
+// Content card modes
+
+.content-card--featured {
+    max-width: 1200px;
+
+    .content-card__inner {
+        @extend .row;
+        margin: 0;
+    }
+
+    .content-card__picture {
+        @extend .col-5;
+        height: auto;
+    }
+
+    .content-card__content {
+        @extend .col-7;
+        border-top: none;
+        border-left: 1px dotted $m3-gray-900;
+        padding-top: $spacer-lg;
+        padding-bottom: $spacer-lg;
+    }
+}
+
+.content-card--brief {}
+
+.content-card--simple {
+    .content-card__brief {
+        display: none;
+    }
+}
+
+.content-card--minimal {
+    @extend .content-card--simple;
+
+    &:not(.content-card--featured) {
+        .content-card__picture {
+            height: 200px;
+        }
+    }
+
+    .content-card__description {
+        display: none;
+    }
+}
+
+.content-card--tag {
+    @extend .content-card--minimal;
+
+    &:not(.content-card--featured) {
+        .content-card__picture {
+            height: 100px;
+        }
+    }
+
+    .content-card__content {
+        padding: $spacer-sm $spacer-md;
+    }
+
+    .content-card__title {
+        @extend .m3-body-md, .text-primary;
+        position: relative;
+
+        .icon {
+            @include iconize("fa-chevron-right", 20px);
+            @include centerThis('right');
+        }
+    }
+}
+
+
+// Collection card
+
+.collection-card {
+    @extend .content-card;
+}
+
+.collection-card__counter {
+    @extend .bg-secondary, .m3-featured-xs, .text-light;
+    position: relative;
+    padding: $spacer-sm $spacer-md;
+
+    .icon {
+        @include iconize("fa-chevron-right", 30px);
+        @include centerThis('right');
+        right: $spacer-sm;
+    }
+}
+
+.collection-card__header {
+    @extend .content-card__content;
+    padding: $spacer-sm $spacer-md;
+    border-top: 0;
+    border-bottom: 1px dotted $m3-gray-900;
+}
+
+.collection-card__title {
+    @extend .content-card__title;
+}
+
+.collection-card__description {
+    @extend .content-card__description;
+}
+
+.collection-card--minimal {
+    .collection-card__description {
+        display: none;
+    }
+}

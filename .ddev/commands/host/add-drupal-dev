@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ddev composer require drupal/devel drupal/devel_generate
+ddev drush cr
+ddev drush en devel devel_generate

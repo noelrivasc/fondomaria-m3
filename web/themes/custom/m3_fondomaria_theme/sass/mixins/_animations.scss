@@ -1,0 +1,190 @@
+////////////////////////
+//  Animation Mixins  //
+////////////////////////
+
+// Keyframe: The animation to execute
+// Duration: The time-length of the animation
+
+@mixin animate($keyframe, $duration) {
+  -webkit-animation-name: $keyframe; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: $duration; /* Chrome, Safari, Opera */
+  animation-name: $keyframe;
+  animation-duration: $duration;
+}
+
+// Count: Number of executions, or Infinite; default 1
+// Posible Directions
+// normal | reverse | alternate | alternate-reverse | initial | inherit
+
+@mixin animateCicle($count, $direction) {
+  -webkit-animation-iteration-count: $count;
+  -webkit-animation-direction: $direction;
+  animation-iteration-count: $count;
+  animation-direction: $direction;
+}
+
+// keyframe generator
+@mixin newKeyframe($keyframeName) {
+  @keyframes #{$keyframeName} {
+    @content;
+  }
+  @-webkit-keyframes #{$keyframeName} {
+    @content;
+  }
+}
+
+
+///////////////////////////
+//  Animation Keyframes  //
+///////////////////////////
+
+// VIBE (Shakes from left to right; Needs to be reversed and repeated to simulate vibration)
+@include newKeyframe(vibe) {
+  0% { transform: translate( 0px, 0); }
+  50% { transform: translate( -6px, 0); }
+  100% { transform: translate( 6px, 0); }
+}
+
+// JUMP (Shrinks and jumps)
+@include newKeyframe(jump) {
+  0% { transform: translate( 0, 0px) scale(1); }
+  10% { transform: translate( 0, 0px) scale(0.95); }
+  15% { transform: translate( 0, 0px) scale(1.05); }
+  17.5% { transform: translate( 0, -10px) scale(1.025); }
+  20% { transform: translate( 0, -10px) scale(1); }
+  22.5% { transform: translate( 0, 0px) scale(1); }
+  27.5% { transform: translate( 0, -2px) scale(1); }
+  30% { transform: translate( 0, 0px) scale(1); }
+  100% { transform: translate( 0, 0) scale(1); }
+}
+
+// JUMP STRAIGHT (Just jumps vertically)
+@include newKeyframe(jump-straight) {
+  0% { transform: translate( 0, 0px); }
+  10% { transform: translate( 0, 0px); }
+  15% { transform: translate( 0, 0px); }
+  17.5% { transform: translate( 0, -10px); }
+  20% { transform: translate( 0, -10px); }
+  22.5% { transform: translate( 0, 0px); }
+  27.5% { transform: translate( 0, -2px); }
+  30% { transform: translate( 0, 0px); }
+  100% { transform: translate( 0, 0); }
+}
+
+
+////////////////////////////////////////
+//  Animation Classes (Ready to Go!)  //
+////////////////////////////////////////
+
+.do-vibe {
+  @include animate(vibe, 0.3s);
+  @include animateCicle(2, alternate);
+}
+
+.do-jump {
+  @include animate(jump, 3s);
+  @include animateCicle(infinite, normal);
+}
+
+.do-jump-once {
+  @include animate(jump, 3s);
+  @include animateCicle(1, normal);
+}
+
+.do-jump-straight {
+  @include animate(jump-straight, 5s);
+  @include animateCicle(infinite, normal);
+}
+
+
+// Old Keyframes. Review Needed. Not compiled
+
+// // BLINK (Linear)
+// @keyframes blink {
+//   from {transform: scale(0);}
+//   to {transform: scale(1);}
+// }
+// @-webkit-keyframes blink {
+//   from {transform: scale(0);}
+//   to {transform: scale(1);}
+// }
+
+// // BLINK POP (Blink with a pop up efect)
+// @keyframes blinkPop {
+//   0% {transform: scale(0);}
+//   80% {transform: scale(1.2);}
+//   100% {transform: scale(1);}
+// }
+// @-webkit-keyframes blinkPop {
+//   0% {transform: scale(0);}
+//   80% {transform: scale(1.2);}
+//   100% {transform: scale(1);}
+// }
+
+// // JUMP POP (Jump with a slight pop up efect)
+// @keyframes jumpPop {
+//   0% {margin-bottom: 0%;}
+//   60% {transform: scale(1.1); margin-bottom: 1%;}
+//   100% {transform: scale(1); margin-bottom: 0%;}
+// }
+// @-webkit-keyframes jumpPop {
+//   0% {margin-bottom: 0%;}
+//   60% {transform: scale(1.1); margin-bottom: 1%;}
+//   100% {transform: scale(1); margin-bottom: 0%;}
+// }
+
+// // FADE IN (Fade in... ovbiously)
+// @keyframes fadeIn {
+//   0% {opacity: 0;}
+//   100% {opacity: 1;}
+// }
+// @-webkit-keyframes fadeIn {
+//   0% {opacity: 0;}
+//   100% {opacity: 1;}
+// }
+
+// // FADE OUT (Fade out... ovbiously)
+// @keyframes fadeOut {
+//   0% {opacity: 1;}
+//   100% {opacity: 0;}
+// }
+// @-webkit-keyframes fadeOut {
+//   0% {opacity: 1;}
+//   100% {opacity: 0;}
+// }
+
+// // FADE INOUT (Fade in and out)
+// @keyframes fadeInOut {
+//   0% {opacity: 0;}
+//   50% {opacity: 1;}
+//   100% {opacity: 0;}
+// }
+// @-webkit-keyframes fadeInOut {
+//   0% {opacity: 0;}
+//   50% {opacity: 1;}
+//   100% {opacity: 0;}
+// }
+
+// // SLIDE RIGHT (Slide 15px to right and remain 40% of given time there)
+// @keyframes slideRight {
+//   0% {margin-right: 0px;}
+//   60% {margin-right: -15px;}
+//   100% {margin-right: -15px;}
+// }
+// @-webkit-keyframes slideRight {
+//   0% {margin-right: 0px;}
+//   60% {margin-right: -15px;}
+//   100% {margin-right: -15px;}
+// }
+
+// // SLIDE LEFT (Slide 15px to left and remain 40% of given time there)
+// @keyframes slideLeft {
+//   0% {margin-left: 0px;}
+//   60% {margin-left: -15px;}
+//   100% {margin-left: -15px;}
+// }
+// @-webkit-keyframes slideLeft {
+//   0% {margin-left: 0px;}
+//   60% {margin-left: -15px;}
+//   100% {margin-left: -15px;}
+// }

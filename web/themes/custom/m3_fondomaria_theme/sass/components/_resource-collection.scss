@@ -1,0 +1,42 @@
+//////////////////////////////////////////////////////
+//  Styles for the resources-collection full nodes  //
+//////////////////////////////////////////////////////
+
+.node--resource_collection--full {
+  .content__header {
+    @extend .container, .m3-indented-column;
+  }
+
+  .content__title {
+    margin-top: $spacer-md;
+    margin-bottom: $spacer-md;
+  }
+
+  .content__title-h {
+    @extend .m3-title-lg;
+  }
+
+  .content__brief {
+    @extend .container, .m3-featured-sm, .m3-indented-column;
+    margin-bottom: $spacer-md;
+  }
+  
+  .content__content {
+    @extend .container, .m3-indented-column;
+    margin-bottom: $spacer-md;
+  }
+
+  .content__resources {
+    @extend .container;
+
+    .field-resources {
+      @extend .row;
+      justify-content: center;
+    }
+
+    .field-resources__item {
+      @extend .col-lg-4, .col-md-6;
+      margin-bottom: $spacer-md;
+    }
+  }
+}

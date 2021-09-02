@@ -1,0 +1,20 @@
+/////////////////////////
+//  Global box styles  //
+/////////////////////////
+
+.m3-content-row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.m3-rounded {
+    border-radius: $m3-roundness;
+}
+
+.m3-rounded-border {
+    @extend .m3-rounded;
+    background-color: theme-color('light');
+    border: 1px solid theme-color('secondary');
+    padding: $spacer-md;
+}

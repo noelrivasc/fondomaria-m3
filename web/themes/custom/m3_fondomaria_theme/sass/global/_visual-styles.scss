@@ -1,0 +1,125 @@
+////////////////////////////
+//  Global visual styles  //
+////////////////////////////
+
+// Indented
+
+.m3-indented-column {
+    padding: 0 $m3-layout-identation;
+}
+
+.m3-indented-left {
+    padding-left: $m3-layout-identation * 2;
+}
+
+.m3-indented-right {
+    padding-right: $m3-layout-identation * 2;
+}
+
+.m3-restricted-column {
+    width: 100%;
+    max-width: 700px;
+}
+
+.m3-indented-column__row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@include media-breakpoint-down(md) {
+    .m3-indented-left,
+    .m3-indented-right {
+        padding: 0;
+    }
+}
+
+
+// Shade
+
+.m3-block-shade {
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        background-color: $m3-gray-200;
+    }
+}
+
+.m3-block-shade-3-quarters {
+    @extend .m3-block-shade;
+
+    &:before {
+        height: 75%;
+    }
+}
+
+.m3-block-shade-2-thirds {
+    @extend .m3-block-shade;
+
+    &:before {
+        height: 66.66%;
+    }
+}
+
+.m3-block-shade-1-half {
+    @extend .m3-block-shade;
+
+    &:before {
+        height: 50%;
+    }
+}
+
+.m3-block-shade-3-sevenths {
+    @extend .m3-block-shade;
+
+    &:before {
+        height: 42.86%;
+    }
+}
+
+// shadow
+
+.m3-block-shadow {
+    position: relative;
+    margin-bottom: 80px;
+
+    &:before {
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        margin: 0 30px;
+        background-color: $m3-gray-200;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .m3-block-shadow {
+        margin-top: 40px;
+    }
+}
+
+
+// Understrike
+.m3-add-understrike {
+    &:after {
+        content: '';
+        width: 100%;
+        height: 12px;
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        background-color: $m3-light;
+        background-repeat: repeat-x;
+        background-size: auto 12px;
+    }
+}

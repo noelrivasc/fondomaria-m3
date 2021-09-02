@@ -1,0 +1,36 @@
+/////////////////////////////////////
+//  Styles for generic list views  //
+/////////////////////////////////////
+
+.views-element-container {}
+
+.view__exposed {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.form__container {
+  @extend .container;
+}
+
+.view__content {
+  @extend .container;
+}
+
+.views-row {
+  @extend .m3-restricted-column;
+  margin: 30px auto;
+}
+
+.item-list {
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  li {
+    @extend .m3-restricted-column;
+  }
+}

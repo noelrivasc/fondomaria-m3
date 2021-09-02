@@ -1,0 +1,37 @@
+////////////////////////////////////////
+//  Styles for teaser rendered nodes  //
+////////////////////////////////////////
+
+.node--teaser {
+  padding-top: $spacer-md;
+  border-bottom: 1px solid $m3-gray-300;
+
+  .content__header {}
+
+  .content__title {
+    margin-right: 5%;
+    margin-bottom: $spacer-xs;
+
+    a {
+      @extend .text-dark;
+    }
+  }
+
+  .content__title-h {
+    @extend .m3-title-sm, .m3-lecture-safe !optional;
+    margin: 0;
+  }
+
+  .content__description {
+    @extend .m3-featured-xs, .m3-lecture-safe !optional;
+  }
+
+  .content__body {
+    @extend .m3-lecture-safe !optional;
+    margin-bottom: $spacer-md;
+  }
+
+  .content__collection-counter {
+    margin-top: $spacer-xs;
+  }
+}

@@ -1,0 +1,99 @@
+////////////////////////////
+//  Global button styles  //
+////////////////////////////
+
+// Button effect
+.btn-fx {
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.btn-fx:active:hover {
+    transform: scale(0.95);
+}
+
+
+// Bootstrap overrides
+.btn {
+    @extend .m3-rounded, .btn-fx;
+    font-size: $t-03;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.btn-lg {
+    font-size: $t-04;
+}
+
+
+// Button styles
+.m3-cta-button {
+    @extend .btn;
+    background-color: theme-color('primary');
+    color: theme-color('light');
+
+    &:hover {
+        color: theme-color('light');
+    }
+}
+
+.m3-standard-button {
+    @extend .btn;
+    border: 2px solid theme-color('secondary');
+    color: theme-color('secondary');
+    background-color: theme-color('light');
+
+    &:hover {
+        color: theme-color('secondary');
+    }
+}
+
+.m3-ghost-button {
+    @extend .btn, .btn-link;
+    color: $m3-gray-600;
+}
+
+.m3-tag-button {
+    @extend .m3-tag;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    padding: 6px 15px;
+    border: none;
+    background-color: $m3-gray-200;
+    color: $m3-gray-900 !important;
+    
+}
+
+.m3-circle-button {
+    @extend .btn;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid theme-color('secondary');
+    background-color: theme-color('light');
+    color: theme-color('secondary');
+
+    .icon {
+        @include centerThis();
+        width: 100%;
+    }
+}
+
+.m3-language-button {
+    @extend .btn;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px; 
+    font-weight: 500;
+
+    .icon {
+        @include iconize('fa-language');
+        width: 100%;
+    }
+}

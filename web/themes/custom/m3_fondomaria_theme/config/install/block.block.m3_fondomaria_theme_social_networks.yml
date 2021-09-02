@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - m3_content_defaults
+  theme:
+    - m3_fondomaria_theme
+id: m3_fondomaria_theme_social_networks
+theme: m3_fondomaria_theme
+region: taskbar
+weight: 2
+provider: null
+plugin: 'system_menu_block:social-networks'
+settings:
+  id: 'system_menu_block:social-networks'
+  label: 'Social networks'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

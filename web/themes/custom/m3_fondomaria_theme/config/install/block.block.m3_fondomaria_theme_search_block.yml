@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - views
+    - m3_search_tools
+  theme:
+    - m3_fondomaria_theme
+id: m3_fondomaria_theme_search_block
+theme: m3_fondomaria_theme
+region: modals
+weight: 0
+provider: null
+plugin: 'views_block:search-block'
+settings:
+  id: 'views_block:search-block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

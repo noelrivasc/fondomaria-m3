@@ -1,0 +1,3 @@
+#!/bin/bash
+
+make -C /var/www/html/web/profiles/contrib/matrushka-standard-cms/themes/custom/m3_custom_theme build

@@ -1,0 +1,30 @@
+/////////////////////////////////////
+//  Styles for the resources view  //
+/////////////////////////////////////
+
+.page--resources {
+  @extend .m3-view;
+
+  .content__wrapper {
+    .view__exposed {
+      padding-top: 40px;
+      background-color: $m3-gray-100;
+
+      .form-item-search-api-fulltext {
+        @extend .col-sm-12;
+      }
+
+      .form-item-sort-order {
+        display: none;
+      } 
+    
+      .form-actions {
+        @extend .col-xl-4, .col-12;
+      }
+
+      .advanced-search-link {
+        @extend .col-12;
+      }
+    }
+  }
+}

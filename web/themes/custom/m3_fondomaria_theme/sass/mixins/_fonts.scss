@@ -1,0 +1,104 @@
+/////////////////////////////
+//  Font Mixins and Assets //
+/////////////////////////////
+
+// Font Family Generator
+
+@mixin fontFace($family, $path, $name, $weight, $style){
+    @font-face {
+      font-family: $family;
+      // src: url('#{$path}#{$name}.eot');
+      src: // url('#{$path}#{$name}.eot?#iefix') format('embedded-opentype'),
+           // url('#{$path}#{$name}.ttf') format('truetype'),
+           // url('#{$path}#{$name}.woff') format('woff'),
+           url('#{$path}#{$name}.woff2') format('woff2');
+      font-weight: $weight;
+      font-style: $style;
+    }
+  }
+  
+  
+  // Font Style Wrappers
+  
+  @mixin fontLight() {
+    font-weight: lighter;
+    font-weight: 300;
+  }
+  
+  @mixin fontLightItalic() {
+    font-weight: lighter;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @mixin fontRegular() {
+    font-weight: normal;
+    font-weight: 400;
+  }
+  
+  @mixin fontItalic() {
+    font-weight: normal;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @mixin fontSemiBold() {
+    font-weight: bold;
+    font-weight: 600;
+  }
+  
+  @mixin fontSemiBoldItalic() {
+    font-weight: bold;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @mixin fontBold() {
+    font-weight: bold;
+    font-weight: 700;
+  }
+  
+  @mixin fontBoldItalic() {
+    font-weight: bold;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @mixin fontExtraBold() {
+    font-weight: bold;
+    font-weight: 800;
+  }
+  
+  @mixin fontExtraBoldItalic() {
+    font-weight: bold;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  
+  // Font Style Selector
+  
+  @mixin fontStyle($type) {
+    @if $type == "regular" {
+      @include fontRegular();
+    } @else if $type == "italic" {
+      @include fontItalic();
+    } @else if $type == "light" {
+      @include fontLight();
+    } @else if $type == "light-italic" {
+      @include fontLightItalic();
+    } @else if $type == "semi-bold" {
+      @include fontSemiBold();
+    } @else if $type == "semi-bold-italic" {
+      @include fontSemiBoldItalic();
+    } @else if $type == "bold" {
+      @include fontBold();
+    } @else if $type == "bold-italic" {
+      @include fontBoldItalic();
+    } @else if $type == "extra-bold" {
+      @include fontExtraBold();
+    } @else if $type == "extra-bold-italic" {
+      @include fontExtraBoldItalic();
+    }
+  }
+  

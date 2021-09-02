@@ -1,0 +1,72 @@
+///////////////////////////////
+//  Common styles for views  //
+///////////////////////////////
+
+.m3-view {
+  .block--page-title-block {
+    position: relative;
+    background-color: $m3-gray-100;
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-md;
+    color: theme-color("primary");
+
+    .block__content {
+      @extend .container;
+      padding: 0;
+    }
+
+    h1 {
+      @extend .m3-title-lg;
+      margin: 0;
+    }
+  }
+
+  .content__wrapper {
+    .view__exposed {
+      background-color: $m3-gray-100;
+      padding-top: $spacer-md;
+      padding-bottom: $spacer-xl;
+      position: relative;
+  
+      .views-exposed-form {
+        @extend .row;
+        align-items: flex-end;
+      }
+
+      .form-item {
+        @extend .col;
+      }
+    }
+
+    .view__content {
+      padding-top: $spacer-md;
+      padding-bottom: $spacer-xl;
+    }
+
+    .view__content-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: $spacer-md;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .m3-view {
+    .block--page-title-block {
+      padding-left: $spacer-sm;
+      padding-right: $spacer-sm;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .m3-view {
+    .content__wrapper {
+      .view__exposed {
+        padding-left: $spacer-sm;
+        padding-right: $spacer-sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+///////////////////////////////////////////
+//  Styles for the social networks menu  //
+///////////////////////////////////////////
+
+.block--system-menu-blocksocial-networks {
+    ul {
+        @extend .nav;
+    }
+
+    li {
+        @extend .nav-item;
+    }
+
+    li:not(:last-child) {
+        margin-right: $spacer-sm;
+    }
+
+    a {
+        @extend .nav-link;
+        @include iconize('fa-link', 24px);
+        width: 30px;
+        padding-right: 0 !important;
+        padding-left: 30px !important;
+        overflow: hidden;
+        position: relative;
+
+        &:before {
+            @include centerThis();
+        }
+    }
+
+    .facebook {
+        @include iconize('fa-facebook-square', 24px, 'fab');
+    }
+
+    .twitter {
+        @include iconize('fa-twitter', 24px, 'fab');
+    }
+
+    .instagram {
+        @include iconize('fa-instagram', 24px, 'fab');
+    }
+
+    .youtube {
+        @include iconize('fa-youtube', 24px, 'fab');
+    }
+}

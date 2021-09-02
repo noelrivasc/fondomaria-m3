@@ -1,0 +1,151 @@
+/////////////////////////
+//  Styles for header  //
+/////////////////////////
+
+.header__wrapper {
+    @extend .container-fluid;
+    background-color: theme-color("light");
+    padding: 0;
+    position: fixed;
+    z-index: 20;
+    border-bottom: 1px dashed theme-color("secondary");
+}
+
+.header {
+    @extend .container, .navbar, .navbar-expand-lg, .navbar-light;
+    padding: 30px 0;
+}
+
+
+// Brand wrapper
+
+.brand__wrapper {
+    @extend .navbar-brand;
+    padding: 0;
+    transition: transform 0.2s;
+}
+
+// .brand {}
+// .site-branding {}
+
+.site-branding__link {
+    display: flex;
+}
+
+.site-branding__logo {
+    width: 160px;
+}
+
+// Navbar elements
+
+.navbar__wrapper,
+.navbar__toggler {
+    opacity: 1;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+// Content table
+.navigation__content-title {
+    position: absolute;
+    left: 200px;
+    top: $spacer-md;
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: transform 0.2s, opacity 0.2s;
+
+    h1 {
+        @extend .m3-subtitle-lg;
+    }
+}
+
+.navigation__content-table {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    .content-table__table {
+        transform: translateY(120%);
+        opacity: 0;
+        transition: transform 0.2s, opacity 0.2s;
+        background: $m3-gray-100;
+
+        ul {
+            @extend .nav;
+        }
+
+        li {
+            @extend .nav-item;
+        }
+
+        a {
+            @extend .nav-link, .m3-link-sm;
+            color: $m3-gray-500 !important;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        a:hover {
+            color: $m3-gray-900 !important;
+        }
+
+        a:after {
+            content: '';
+            display: block;
+            width: 80%;
+            height: 3px;
+            background-color: $m3-gray-500;
+            opacity: 0;
+            transition: opacity 0.2s;
+            @include centerThis(top);
+        }
+
+        a.is-active:after {
+            opacity: 1;
+        }
+    }
+}
+
+// Brochure shrink state
+
+.header__wrapper.is-shrinked {
+    .brand__wrapper {
+        transform: translateY(-10px) scale(0.9);
+    }
+
+    .navbar__wrapper,
+    .navbar__toggler {
+        transform: translateY(-120%);
+        opacity: 0;
+    }
+
+    .navigation__content-title {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    .navigation__content-table {
+        .content-table__table {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+}
+
+// responsive
+@include media-breakpoint-down(sm) {
+    .header {
+        padding: 25px 15px;
+    }
+
+    .navigation__content-title {
+        top: $spacer-sm + $spacer-xxs;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .header {
+        padding: 30px 20px;
+    }
+}

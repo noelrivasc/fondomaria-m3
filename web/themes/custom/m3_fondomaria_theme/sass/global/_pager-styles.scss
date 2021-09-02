@@ -1,0 +1,185 @@
+////////////////////////////
+//  Global pager styles  //
+////////////////////////////
+
+.pager {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .pager__items {
+    @extend .pagination, .justify-content-center;
+  }
+
+  .pager__item {
+    @extend .page-item;
+    
+    .pager__link,
+    .pager__label {
+      @extend .page-link, .m3-body-md;
+      margin: 0;
+      border: 1px solid $m3-gray-500;
+      border-left: none;
+      border-right: none;
+      padding: 10px 20px !important;
+      color: theme-color('secondary');
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+
+    .is-disabled {
+      color: $m3-gray-200;
+
+      &:hover {
+        color: $m3-gray-200;
+        background-color: inherit;
+      }
+    }
+
+    &:hover {
+      .pager__link,
+      .pager__label {
+        border: 1px solid $m3-gray-500;
+        border-left: none;
+        border-right: none;
+      }
+    }
+
+    &:first-child {
+      .pager__link,
+      .pager__label {
+        border-left: 1px solid $m3-gray-500;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+    }
+
+    &:last-child {
+      .pager__link,
+      .pager__label {
+        border-right: 1px solid $m3-gray-500;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+      }
+    }
+
+    &.is-active {
+      @extend .active;
+    
+      .pager__link,
+      .pager__label {
+        background-color: $m3-gray-100;
+        color: $m3-gray-800;
+        border: 1px solid $m3-gray-500;
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
+
+  .pager__item--first {
+    .icon {
+      @include iconize("fa-angle-double-left", $t-03);
+      display: inline;
+    }
+  }
+
+  .pager__item--previous {
+    .icon {
+      @include iconize("fa-angle-left", $t-03);
+      display: inline;
+    }
+  }
+  
+  .pager__item--first,
+  .pager__item--previous {
+    .pager__link,
+    .pager__label {
+      border-right: 1px solid $m3-gray-500;
+    }
+
+    &:hover {
+      .pager__link,
+      .pager__label {
+        border-right: 1px solid $m3-gray-500;
+      }
+    }
+  }
+  
+  .pager__item--next {
+    .icon {
+      @include iconize("fa-angle-right", $t-03);
+      display: inline;
+    }
+  }
+
+  .pager__item--last {
+    .icon {
+      @include iconize("fa-angle-double-right", $t-03);
+      display: inline;
+    }
+  }
+
+  .pager__item--next,
+  .pager__item--last {
+    .pager__link,
+    .pager__label {
+      border-left: 1px solid $m3-gray-500;
+    }
+
+    &:hover {
+      .pager__link,
+      .pager__label {
+        border-left: 1px solid $m3-gray-500;
+      }
+    }
+  }
+}
+
+.pager--dark {
+  .pager__item--first,
+  .pager__item--last {
+    .pager__link,
+    .pager__label {
+      color: theme-color('light');
+      background: $m3-gray-500;
+    }
+
+    &:hover {
+      .pager__link,
+      .pager__label {
+        color: theme-color('light');
+        background: $m3-gray-500;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pager {
+    .pager__item {      
+      .pager__link,
+      .pager__label {
+        font-size: $t-02;
+        padding: 5px 10px !important;
+      }
+    }
+
+    .pager__item--first,
+    .pager__item--previous,
+    .pager__item--next,
+    .pager__item--last {
+      .icon {
+        width: $t-02;
+        height: $t-02;
+
+        &:before {
+          font-size: $t-02;
+          line-height: $t-02;
+        }
+      }
+    }
+  }
+}

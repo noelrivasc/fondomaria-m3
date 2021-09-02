@@ -1,0 +1,18 @@
+////////////////////////////////////////////////
+//  Main template: Font families definitions  //
+////////////////////////////////////////////////
+
+@import 'mixins/fonts';
+
+$fontPath: '../fonts/';
+
+// Include here your font families definitions using the following example
+
+@include fontFace('Lato', $fontPath, 'Lato-Light', 300, normal);
+@include fontFace('Lato', $fontPath, 'Lato-LightItalic', 300, italic);
+@include fontFace('Lato', $fontPath, 'Lato-Regular', 400, normal);
+@include fontFace('Lato', $fontPath, 'Lato-Italic', 400, italic);
+@include fontFace('Lato', $fontPath, 'Lato-Bold', 700, normal);
+@include fontFace('Lato', $fontPath, 'Lato-BoldItalic', 700, italic);
+
+@include fontFace('Playfair Display', $fontPath, 'PlayfairDisplay-Regular', 400, normal);
