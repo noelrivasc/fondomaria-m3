@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41147204ee358e94897c25aa7af4bd39",
+    "content-hash": "8ca2d250a523156d4448e2babe8eca43",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4722,11 +4722,11 @@
         },
         {
             "name": "matrushka/matrushka-standard-cms",
-            "version": "v4.2.2",
+            "version": "v4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://josueMartin@bitbucket.org/matrushka/matrushka-standard-cms-m-iii.git",
-                "reference": "369d5a28c2b3db6bbdabe983f464126ec1060577"
+                "reference": "39a3a8931eb6884fe77fcf9ce6358f85e7089087"
             },
             "require": {
                 "ckeditor/div": "4.10.1",
@@ -4768,7 +4768,7 @@
                 }
             ],
             "description": "Matrushka standard cms installation profile for Drupal",
-            "time": "2021-09-02T21:17:32+00:00"
+            "time": "2021-09-03T20:53:14+00:00"
         },
         {
             "name": "nikic/php-parser",
