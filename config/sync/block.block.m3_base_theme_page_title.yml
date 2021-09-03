@@ -1,0 +1,27 @@
+uuid: 27e2b852-cad2-4826-a05a-045c99f6d1e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_base_theme
+_core:
+  default_config_hash: eMwzI59YLc_-PYxG8s1QhMzkz6rFIveuKj_gCbW4x8k
+id: m3_base_theme_page_title
+theme: m3_base_theme
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/resources\r\n/taxonomy/term/*"
+    negate: false
+    context_mapping: {  }

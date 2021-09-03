@@ -1,0 +1,22 @@
+uuid: 75f9cbdc-8f47-4ef6-b5cd-e80d4529523d
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: Kp8MuSLojHBhRFCLe21PxBSDxsYd9Z1qmsUUva-_ut8
+id: m3_fondomaria_theme_languageswitcher
+theme: m3_fondomaria_theme
+region: navigation
+weight: -7
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

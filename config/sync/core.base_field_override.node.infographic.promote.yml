@@ -1,0 +1,24 @@
+uuid: d40f7f44-cec7-490a-a4f3-6f9fc4b051db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.infographic
+_core:
+  default_config_hash: Aj3IV5PJ_5D_4EBf-8wQqVXlm2qJE8vmVaEW5cWoQ5k
+id: node.infographic.promote
+field_name: promote
+entity_type: node
+bundle: infographic
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

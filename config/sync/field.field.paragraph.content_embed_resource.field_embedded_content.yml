@@ -1,0 +1,31 @@
+uuid: 46d76c98-38db-4a30-9e80-0ceb3db354c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embedded_content
+    - node.type.resource
+    - paragraphs.paragraphs_type.content_embed_resource
+_core:
+  default_config_hash: KIXjLjf3p9vhV3_alTZnVllHD_FfjgF4_QJYdWoxShk
+id: paragraph.content_embed_resource.field_embedded_content
+field_name: field_embedded_content
+entity_type: paragraph
+bundle: content_embed_resource
+label: Resource
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      resource: resource
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: blog_post
+field_type: entity_reference

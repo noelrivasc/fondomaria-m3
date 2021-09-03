@@ -1,0 +1,12 @@
+uuid: a313a2dc-dd99-4208-bc61-f442c88f0952
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bKprbu2GDjc-Sqv-1rE476tzFQAa2ECBmqwssMHx8os
+id: freeform_formatted_text
+label: 'Freeform Formatted Text'
+icon_uuid: null
+icon_default: null
+description: 'Full formatted text that can be embedded in a freeform template.'
+behavior_plugins: {  }

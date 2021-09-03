@@ -1,0 +1,27 @@
+uuid: fdb5868e-8f83-4f37-a5dc-71bd3bbbed8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - m3_custom_theme
+_core:
+  default_config_hash: t1_wpXWrEcB6i3ACLFCgUSAMcYDoiyMTw6Ofr0RwqAQ
+id: m3_custom_theme_account_menu
+theme: m3_custom_theme
+region: taskbar
+weight: 1
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

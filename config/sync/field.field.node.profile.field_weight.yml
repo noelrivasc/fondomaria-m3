@@ -1,0 +1,27 @@
+uuid: e4fa8fe4-1d5c-4779-9b5c-f668a75c2b97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.profile
+_core:
+  default_config_hash: qxz7yb1DWDho5_VsUUIUugK5uV26zGRdsZLuxeFiAdI
+id: node.profile.field_weight
+field_name: field_weight
+entity_type: node
+bundle: profile
+label: Weight
+description: 'Defines the display order for profile items con custom lists. An item with a larger number will be displayed after any with a lower one.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

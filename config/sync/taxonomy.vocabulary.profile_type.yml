@@ -1,0 +1,10 @@
+uuid: 2fce4671-226b-4d42-ac8b-77decb70acae
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wKxo8OI88djrl3V2zbonehwRDBp7tcH78LxX0Js2ZzY
+name: 'Profile type'
+vid: profile_type
+description: 'Classification tags for profiles'
+weight: 0

@@ -1,0 +1,23 @@
+uuid: 1ca0727e-e9ac-4b2b-b562-61dc81cafbed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_element_x_coordinate
+    - paragraphs.paragraphs_type.infographic_element
+_core:
+  default_config_hash: kXgW-nJGu-nNxwoXzZOQHbvOvLnP8b7iyMSIA5o-SVY
+id: paragraph.infographic_element.field_element_x_coordinate
+field_name: field_element_x_coordinate
+entity_type: paragraph
+bundle: infographic_element
+label: 'X position'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 50%
+default_value_callback: ''
+settings: {  }
+field_type: string

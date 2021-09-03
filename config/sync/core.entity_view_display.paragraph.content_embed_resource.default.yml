@@ -1,0 +1,35 @@
+uuid: f120d7e3-f4d4-49bd-8055-e4b01c7fc800
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_resource.field_embedded_content
+    - field.field.paragraph.content_embed_resource.field_view_mode
+    - paragraphs.paragraphs_type.content_embed_resource
+  module:
+    - options
+_core:
+  default_config_hash: fqT2RCXgKCFoDOfcBYJrkfEoilvlABA6TKMtorgf3aI
+id: paragraph.content_embed_resource.default
+targetEntityType: paragraph
+bundle: content_embed_resource
+mode: default
+content:
+  field_embedded_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_view_mode:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  search_api_excerpt: true

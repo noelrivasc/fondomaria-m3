@@ -1,0 +1,31 @@
+uuid: b3dd59ec-39d6-4b60-bd6f-9eb6ee9e9628
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embedded_content
+    - node.type.blog_post
+    - paragraphs.paragraphs_type.content_embed_blog_post
+_core:
+  default_config_hash: 9qrw0XAt7ksGZ6UiMq8Oq9oRS48SfePekxgAPS0kwKE
+id: paragraph.content_embed_blog_post.field_embedded_content
+field_name: field_embedded_content
+entity_type: paragraph
+bundle: content_embed_blog_post
+label: 'Blog post'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blog_post: blog_post
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

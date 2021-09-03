@@ -1,0 +1,20 @@
+uuid: d9cedac4-1dbd-475b-a2bc-0b54e7ccaab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.resource_collection
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: FVmT9K6-z2JEoSttqO0jVUCWFJxiaSFB14YpdGeEnLg
+id: node.resource_collection
+target_entity_type_id: node
+target_bundle: resource_collection
+default_langcode: site_default
+language_alterable: true

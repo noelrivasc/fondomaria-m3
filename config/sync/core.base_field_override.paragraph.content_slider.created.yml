@@ -1,0 +1,20 @@
+uuid: 77ed8481-aa02-49d2-b724-ede3d9bda8e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_slider
+_core:
+  default_config_hash: XbDM2oi_Hfq2eigJpw4MgugrTU38CsruxnqQOp9qmcI
+id: paragraph.content_slider.created
+field_name: created
+entity_type: paragraph
+bundle: content_slider
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

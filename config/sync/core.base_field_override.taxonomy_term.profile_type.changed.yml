@@ -1,0 +1,20 @@
+uuid: c88fb68e-3514-4f8d-b642-591fa287606b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.profile_type
+_core:
+  default_config_hash: afi0hTiB8_-IAgV7mGIkcxeOQ3AaodETfwmlFIhZwyo
+id: taxonomy_term.profile_type.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: profile_type
+label: Changed
+description: 'The date on which the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

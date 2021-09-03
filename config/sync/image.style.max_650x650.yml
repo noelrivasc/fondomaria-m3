@@ -1,0 +1,20 @@
+uuid: 6f9be3ac-6cf2-4d74-8b1c-72eed969b04f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: lZ-QAkOeNv76gQ4G1BkvvJI_81_XRaW6-UFQ-HY8ZMc
+name: max_650x650
+label: 'Medium (Max 650 x 650)'
+effects:
+  949c201a-77f5-48f6-ba00-be91eb1aad47:
+    uuid: 949c201a-77f5-48f6-ba00-be91eb1aad47
+    id: image_scale
+    weight: 1
+    data:
+      width: 650
+      height: 650
+      upscale: false

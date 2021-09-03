@@ -1,0 +1,22 @@
+uuid: c3844753-9a9d-4c04-ab76-46d8594f779f
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: e91JAIFhO8MzJAcEkmlAgKjSurfNNnJTksvDLMbDpCg
+id: content_layout
+label: 'Layout Row'
+icon_uuid: null
+icon_default: null
+description: 'Provides a customizable row for Layout build.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      m3_one_column: 'One column content'
+      m3_two_column_a: 'Two columns content (a)'
+      m3_two_column_b: 'Two columns content (b)'
+      m3_two_column_c: 'Two columns content (c)'
+      m3_three_column: 'Three columns content'

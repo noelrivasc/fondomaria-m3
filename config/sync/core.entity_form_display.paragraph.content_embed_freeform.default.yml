@@ -1,0 +1,27 @@
+uuid: c24d2302-f7b4-4c35-bfd2-2c3070669e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_freeform.field_embedded_freeform
+    - paragraphs.paragraphs_type.content_embed_freeform
+_core:
+  default_config_hash: KLd8ZgL73Jj4FCZS7rODUxGv9XiB2mcNmRwM0VxESyg
+id: paragraph.content_embed_freeform.default
+targetEntityType: paragraph
+bundle: content_embed_freeform
+mode: default
+content:
+  field_embedded_freeform:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

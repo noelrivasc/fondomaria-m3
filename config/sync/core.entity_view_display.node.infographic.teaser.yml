@@ -1,0 +1,42 @@
+uuid: a8d9987a-d1bf-4490-bda5-0ed21a852c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.infographic.field_infographic_background
+    - field.field.node.infographic.field_infographic_description
+    - field.field.node.infographic.field_infographic_elements
+    - field.field.node.infographic.field_infographic_overlay
+    - node.type.infographic
+  module:
+    - user
+_core:
+  default_config_hash: yPaKIOaqI3iKhHhPYvpeYL9WT_1w0Mg0AMnBuKuq2Qg
+id: node.infographic.teaser
+targetEntityType: node
+bundle: infographic
+mode: teaser
+content:
+  field_infographic_description:
+    type: basic_string
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_infographic_background: true
+  field_infographic_elements: true
+  field_infographic_overlay: true
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: 39549d1b-c9b4-445a-bf91-add79d040336
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_freeform_code
+    - paragraphs.paragraphs_type.freeform_formatted_text
+_core:
+  default_config_hash: M9i2AYjSwpeX-vT03zY1OVn2F28xsC4lQBasIyqcjuk
+id: paragraph.freeform_formatted_text.field_freeform_code
+field_name: field_freeform_code
+entity_type: paragraph
+bundle: freeform_formatted_text
+label: Code
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

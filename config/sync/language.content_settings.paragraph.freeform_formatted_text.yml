@@ -1,0 +1,20 @@
+uuid: 7f81db41-41b5-43e1-b22b-02ccf35c8d7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.freeform_formatted_text
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: Qcr6pHwF-J0lM2wrLLT0xqA6eef1pMDoCrYpglM0sks
+id: paragraph.freeform_formatted_text
+target_entity_type_id: paragraph
+target_bundle: freeform_formatted_text
+default_langcode: site_default
+language_alterable: true

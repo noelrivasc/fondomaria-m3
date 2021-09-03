@@ -1,0 +1,24 @@
+uuid: 7d0b8f3b-1930-4b2b-8ab6-8eb04b9806e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.freeform_plain_text
+_core:
+  default_config_hash: BksIzcANaQVAaZP7Sa8F6rdsF9fmtzOgX-puZKifYUM
+id: paragraph.freeform_plain_text.status
+field_name: status
+entity_type: paragraph
+bundle: freeform_plain_text
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Enabled
+  off_label: Disabled
+field_type: boolean

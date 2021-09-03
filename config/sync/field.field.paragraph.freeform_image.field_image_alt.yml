@@ -1,0 +1,21 @@
+uuid: 8c01f154-91f4-4d64-843c-d080d8e44277
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_alt
+    - paragraphs.paragraphs_type.freeform_image
+_core:
+  default_config_hash: 3zkV2SD6wD2Uq7Ssl12bqB93XZCFuZlgABd1jdEEazM
+id: paragraph.freeform_image.field_image_alt
+field_name: field_image_alt
+entity_type: paragraph
+bundle: freeform_image
+label: 'Image Alt'
+description: 'Write or translate the alt value for the image. Won''t be displayed. Leave it blank for decorative images.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

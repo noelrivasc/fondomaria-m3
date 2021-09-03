@@ -1,0 +1,21 @@
+uuid: f40c2cd8-dc8b-4626-b39f-387afaa95152
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+_core:
+  default_config_hash: qdGDR18x88e-x8UhIHoM4n2cSatcl5I-vz79zKFjQFw
+id: paragraph.field_freeform_link
+field_name: field_freeform_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

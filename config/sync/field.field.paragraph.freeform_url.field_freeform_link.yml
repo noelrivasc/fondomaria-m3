@@ -1,0 +1,25 @@
+uuid: a0248c60-f8a2-4c51-85b8-d770694e25e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_freeform_link
+    - paragraphs.paragraphs_type.freeform_url
+  module:
+    - link
+_core:
+  default_config_hash: qCeAb7T7KayEpaWd4qWc8gMfBW2cQK2_TGbeCJFu2Jg
+id: paragraph.freeform_url.field_freeform_link
+field_name: field_freeform_link
+entity_type: paragraph
+bundle: freeform_url
+label: 'Freeform link'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

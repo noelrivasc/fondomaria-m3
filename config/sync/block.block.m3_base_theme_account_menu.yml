@@ -1,0 +1,27 @@
+uuid: fc8dc36f-2eff-4231-b7a2-63bf3fc27d95
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - m3_base_theme
+_core:
+  default_config_hash: ZkVJP9KKMrZZBLppU4FhmhMZuyGpjK8szSJ81nPMgSA
+id: m3_base_theme_account_menu
+theme: m3_base_theme
+region: taskbar
+weight: 1
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

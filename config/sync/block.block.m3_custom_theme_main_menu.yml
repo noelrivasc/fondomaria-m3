@@ -1,0 +1,27 @@
+uuid: b02ab3e0-4b51-480d-933f-3a38f55ce1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - m3_custom_theme
+_core:
+  default_config_hash: OKNiqt3q7ygEtnvaL34mk6Nbz6L0_i0LLCQxiB7HOxE
+id: m3_custom_theme_main_menu
+theme: m3_custom_theme
+region: navigation
+weight: -9
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

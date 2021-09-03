@@ -1,0 +1,20 @@
+uuid: 87c51113-e9a2-478b-8044-5c6c3e8cd36a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: TWo1QU7Z5SVdvhJbSu1-7moeEDIthjaQEeR8Z_dUlNc
+name: Freeform
+type: freeform
+description: 'Use <em>freeform</em> to create custom content nodes that can be embedded into pages or blocks.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

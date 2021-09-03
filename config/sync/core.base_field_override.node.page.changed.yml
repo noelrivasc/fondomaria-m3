@@ -1,0 +1,20 @@
+uuid: 32c06988-e9c9-4ebf-982c-79c2026c2d1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+_core:
+  default_config_hash: 3BanbpNry673rfCqQRxx8UA3P4XWXy7GBUrOIZe1afg
+id: node.page.changed
+field_name: changed
+entity_type: node
+bundle: page
+label: Changed
+description: 'The date on which the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

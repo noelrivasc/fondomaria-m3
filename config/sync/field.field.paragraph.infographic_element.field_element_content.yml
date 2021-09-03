@@ -1,0 +1,23 @@
+uuid: ab4f4352-a89d-46b9-9f4c-6e8a5007e8c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_element_content
+    - paragraphs.paragraphs_type.infographic_element
+  module:
+    - text
+_core:
+  default_config_hash: zAP9dvli5GKvU01-IbRV4YBShP0S476ZH6C16SaCbbg
+id: paragraph.infographic_element.field_element_content
+field_name: field_element_content
+entity_type: paragraph
+bundle: infographic_element
+label: Content
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

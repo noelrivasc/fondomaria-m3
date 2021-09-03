@@ -1,0 +1,24 @@
+uuid: c78abcd7-a8eb-4e45-bd27-71fdea9a5856
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.topics
+_core:
+  default_config_hash: p84qfJjigfehjtvTpbKD5o9ALRqOI2vn2Mkk7HY8AZs
+id: taxonomy_term.topics.status
+field_name: status
+entity_type: taxonomy_term
+bundle: topics
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Enabled
+  off_label: Disabled
+field_type: boolean

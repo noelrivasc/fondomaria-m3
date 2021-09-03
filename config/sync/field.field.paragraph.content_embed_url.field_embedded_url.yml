@@ -1,0 +1,25 @@
+uuid: fb0ebb7b-d19b-42ff-9445-3ca9b9cbed6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embedded_url
+    - paragraphs.paragraphs_type.content_embed_url
+  module:
+    - link
+_core:
+  default_config_hash: KcLz0Gg8KcyyAeAw2GoCHWdVZp4qIU73pMKBTPPYGY8
+id: paragraph.content_embed_url.field_embedded_url
+field_name: field_embedded_url
+entity_type: paragraph
+bundle: content_embed_url
+label: 'Embedded url'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

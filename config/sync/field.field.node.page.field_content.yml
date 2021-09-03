@@ -1,0 +1,106 @@
+uuid: a6657b81-4e27-4ca9-a89b-73d928ca8d3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.page
+    - paragraphs.paragraphs_type.content_embed_blog_post
+    - paragraphs.paragraphs_type.content_embed_collection
+    - paragraphs.paragraphs_type.content_embed_freeform
+    - paragraphs.paragraphs_type.content_embed_image
+    - paragraphs.paragraphs_type.content_embed_infographic
+    - paragraphs.paragraphs_type.content_embed_resource
+    - paragraphs.paragraphs_type.content_embed_video
+    - paragraphs.paragraphs_type.content_heading
+    - paragraphs.paragraphs_type.content_item
+    - paragraphs.paragraphs_type.content_layout
+    - paragraphs.paragraphs_type.content_logo_carrousel
+    - paragraphs.paragraphs_type.content_slider
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 6qtpp2bKJqEb5tBkv7IAn8Y0LcLRkIo0A4FiSQdVhEk
+id: node.page.field_content
+field_name: field_content
+entity_type: node
+bundle: page
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_layout: content_layout
+      content_heading: content_heading
+      content_item: content_item
+      content_embed_blog_post: content_embed_blog_post
+      content_embed_resource: content_embed_resource
+      content_embed_collection: content_embed_collection
+      content_embed_image: content_embed_image
+      content_embed_video: content_embed_video
+      content_slider: content_slider
+      content_logo_carrousel: content_logo_carrousel
+      content_embed_infographic: content_embed_infographic
+      content_embed_freeform: content_embed_freeform
+    target_bundles_drag_drop:
+      content_embed_blog_post:
+        enabled: true
+        weight: -34
+      content_embed_collection:
+        enabled: true
+        weight: -32
+      content_embed_freeform:
+        enabled: true
+        weight: -26
+      content_embed_image:
+        enabled: true
+        weight: -31
+      content_embed_infographic:
+        enabled: true
+        weight: -27
+      content_embed_resource:
+        enabled: true
+        weight: -33
+      content_embed_url:
+        weight: -25
+        enabled: false
+      content_embed_video:
+        enabled: true
+        weight: -30
+      content_heading:
+        enabled: true
+        weight: -36
+      content_item:
+        enabled: true
+        weight: -35
+      content_layout:
+        enabled: true
+        weight: -37
+      content_logo_carrousel:
+        enabled: true
+        weight: -28
+      content_slider:
+        enabled: true
+        weight: -29
+      freeform_formatted_text:
+        weight: -24
+        enabled: false
+      freeform_image:
+        weight: -23
+        enabled: false
+      freeform_plain_text:
+        weight: -22
+        enabled: false
+      freeform_url:
+        weight: -21
+        enabled: false
+      infographic_element:
+        weight: -20
+        enabled: false
+field_type: entity_reference_revisions

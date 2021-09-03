@@ -1,0 +1,22 @@
+uuid: 2660b60b-1bb1-4bfa-bf72-bcbd8c313985
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_admin_theme
+_core:
+  default_config_hash: ZSG8UFvM9KwM1_6lZ9jK9tRVILxlFWELgRNEbBQBoBQ
+id: m3_admin_theme_content
+theme: m3_admin_theme
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

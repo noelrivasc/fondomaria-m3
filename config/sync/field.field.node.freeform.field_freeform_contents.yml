@@ -1,0 +1,95 @@
+uuid: 0c00dd63-1d49-4494-a832-65b58d04099a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_freeform_contents
+    - node.type.freeform
+    - paragraphs.paragraphs_type.freeform_content_canvas
+    - paragraphs.paragraphs_type.freeform_formatted_text
+    - paragraphs.paragraphs_type.freeform_image
+    - paragraphs.paragraphs_type.freeform_plain_text
+    - paragraphs.paragraphs_type.freeform_url
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: LaDIkpF_8lP-LdrgN4EzBiauZXzRs5P29l-ToHXxPSU
+id: node.freeform.field_freeform_contents
+field_name: field_freeform_contents
+entity_type: node
+bundle: freeform
+label: Contents
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      freeform_formatted_text: freeform_formatted_text
+      freeform_image: freeform_image
+      freeform_plain_text: freeform_plain_text
+      freeform_url: freeform_url
+      freeform_content_canvas: freeform_content_canvas
+    target_bundles_drag_drop:
+      content_embed_blog_post:
+        weight: -34
+        enabled: false
+      content_embed_collection:
+        weight: -33
+        enabled: false
+      content_embed_freeform:
+        weight: -32
+        enabled: false
+      content_embed_image:
+        weight: -31
+        enabled: false
+      content_embed_infographic:
+        weight: -30
+        enabled: false
+      content_embed_resource:
+        weight: -29
+        enabled: false
+      content_embed_url:
+        weight: -28
+        enabled: false
+      content_embed_video:
+        weight: -27
+        enabled: false
+      content_heading:
+        weight: -26
+        enabled: false
+      content_item:
+        weight: -25
+        enabled: false
+      content_layout:
+        weight: -24
+        enabled: false
+      content_logo_carrousel:
+        weight: -23
+        enabled: false
+      content_slider:
+        weight: -22
+        enabled: false
+      freeform_content_canvas:
+        enabled: true
+        weight: -35
+      freeform_formatted_text:
+        enabled: true
+        weight: -39
+      freeform_image:
+        enabled: true
+        weight: -38
+      freeform_plain_text:
+        enabled: true
+        weight: -37
+      freeform_url:
+        enabled: true
+        weight: -36
+      infographic_element:
+        weight: -21
+        enabled: false
+field_type: entity_reference_revisions

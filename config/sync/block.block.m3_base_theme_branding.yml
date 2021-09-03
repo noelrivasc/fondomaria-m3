@@ -1,0 +1,25 @@
+uuid: 7cca3bc1-1092-4ab2-8db2-b71ee2da745d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_base_theme
+_core:
+  default_config_hash: axGVl-2ukpmIvxnJL-s7Ad-3DZU4oZFod7G47vSSzlU
+id: m3_base_theme_branding
+theme: m3_base_theme
+region: brand
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

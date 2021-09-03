@@ -1,0 +1,22 @@
+uuid: 9ee7af03-7ae4-460c-b7b6-b7bf8137937c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_custom_theme
+_core:
+  default_config_hash: kO9kSXAolUJ-27t4BesvFzBG9aY7qZO1DceMVmZr1H4
+id: m3_custom_theme_content
+theme: m3_custom_theme
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

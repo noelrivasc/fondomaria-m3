@@ -1,0 +1,12 @@
+uuid: 23ce4507-9bf5-4bbe-9387-355e7822ae66
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NMiN3Ax2IIj94RAoFiFb9Duigp9T0mVWeL5dkAGv7IY
+id: freeform_image
+label: 'Freeform Image'
+icon_uuid: null
+icon_default: null
+description: 'Image data that can be embedded in a freeform template.'
+behavior_plugins: {  }

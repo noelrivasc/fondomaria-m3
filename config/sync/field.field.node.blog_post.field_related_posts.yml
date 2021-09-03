@@ -1,0 +1,29 @@
+uuid: 60469202-9f9b-487c-accd-3de944c98a99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_posts
+    - node.type.blog_post
+_core:
+  default_config_hash: b3ZQlxX6heBVNMQggHLFhvHtZPfdNrcqpROXzpiNZMw
+id: node.blog_post.field_related_posts
+field_name: field_related_posts
+entity_type: node
+bundle: blog_post
+label: 'Related posts'
+description: 'Optional. Link posts with related content to display as cards at the bottom of this post.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blog_post: blog_post
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

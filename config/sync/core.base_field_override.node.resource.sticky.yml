@@ -1,0 +1,24 @@
+uuid: b4c95b3d-4868-4186-99fc-523a11d6faaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.resource
+_core:
+  default_config_hash: bep6vbwiVqR7SJ26nxvQbnH7TA9qkMge4SsbdV3PbVY
+id: node.resource.sticky
+field_name: sticky
+entity_type: node
+bundle: resource
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

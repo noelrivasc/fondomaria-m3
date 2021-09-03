@@ -1,0 +1,31 @@
+uuid: dd9c48ee-27f8-420d-8738-575ee27e9a64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preview_image
+    - media.type.image
+    - node.type.resource
+_core:
+  default_config_hash: il0k85AsXlx0cYZymlM91286L9JMZoiTRnRt9n8Yjw0
+id: node.resource.field_preview_image
+field_name: field_preview_image
+entity_type: node
+bundle: resource
+label: 'Preview Image'
+description: 'Used for card or teaser preview'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

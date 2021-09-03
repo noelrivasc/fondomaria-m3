@@ -1,0 +1,23 @@
+uuid: 62047841-2161-4a5b-be36-9c3334469ddd
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+_core:
+  default_config_hash: L09xnOn7DexxaYP5bZSz71Xtvb8yXgdjWWukAIJN9pk
+id: node.field_intro
+field_name: field_intro
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

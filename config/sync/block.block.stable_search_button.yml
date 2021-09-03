@@ -1,0 +1,22 @@
+uuid: c897abda-e9cc-48f3-9874-f78aee982979
+langcode: en
+status: true
+dependencies:
+  module:
+    - m3_search_tools
+  theme:
+    - stable
+_core:
+  default_config_hash: 8T9DtGDHj3LCyCC9y8cOQAm-qkGi2CMWBWDS0n7djbM
+id: stable_search_button
+theme: stable
+region: sidebar_first
+weight: -8
+provider: null
+plugin: search_button_block
+settings:
+  id: search_button_block
+  label: 'Search button'
+  provider: m3_search_tools
+  label_display: '0'
+visibility: {  }

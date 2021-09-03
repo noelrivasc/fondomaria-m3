@@ -1,0 +1,24 @@
+uuid: 8e20413e-4c5e-464e-96a6-eaa773f0094c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_embed_resource
+_core:
+  default_config_hash: 9NFQehpTIcBl0xO7Z76EDQclgCnDQP83Z0pgESq0oqY
+id: paragraph.content_embed_resource.status
+field_name: status
+entity_type: paragraph
+bundle: content_embed_resource
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

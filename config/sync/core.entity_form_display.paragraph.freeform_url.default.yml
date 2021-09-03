@@ -1,0 +1,36 @@
+uuid: 505818fb-136d-437c-b882-9a03172c83d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.freeform_url.field_freeform_code
+    - field.field.paragraph.freeform_url.field_freeform_link
+    - paragraphs.paragraphs_type.freeform_url
+  module:
+    - link
+_core:
+  default_config_hash: MCfvXFhSlwbBfW7dyLBawJWznEz_vX97eXCwGULorEE
+id: paragraph.freeform_url.default
+targetEntityType: paragraph
+bundle: freeform_url
+mode: default
+content:
+  field_freeform_code:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_freeform_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

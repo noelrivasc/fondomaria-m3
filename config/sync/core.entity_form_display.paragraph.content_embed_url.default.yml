@@ -1,0 +1,27 @@
+uuid: 195cdffd-4334-4ca5-8435-cb47c3e828ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_url.field_embedded_url
+    - paragraphs.paragraphs_type.content_embed_url
+  module:
+    - link
+_core:
+  default_config_hash: lZ7p7MgXKiq2aRJcDPSs_g9hWGFAzbjQnU0zkgCElCM
+id: paragraph.content_embed_url.default
+targetEntityType: paragraph
+bundle: content_embed_url
+mode: default
+content:
+  field_embedded_url:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

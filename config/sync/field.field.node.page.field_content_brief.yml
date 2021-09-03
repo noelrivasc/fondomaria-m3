@@ -1,0 +1,21 @@
+uuid: 2ab56681-3aee-4b4f-ba44-90388049fe92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_brief
+    - node.type.page
+_core:
+  default_config_hash: '-2WTfP8S-JWeby19XQ6GawTWGCp1rSP4myAHMmk6sLY'
+id: node.page.field_content_brief
+field_name: field_content_brief
+entity_type: node
+bundle: page
+label: Brief
+description: 'Only used for Cards and Teasers. Should be the shortest possible.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

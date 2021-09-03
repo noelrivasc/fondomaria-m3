@@ -1,0 +1,38 @@
+uuid: acfe2560-bd2b-42ce-bf38-a4dca7f34dad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.resource_collection.field_content
+    - field.field.node.resource_collection.field_content_brief
+    - field.field.node.resource_collection.field_metatags
+    - field.field.node.resource_collection.field_resources
+    - node.type.resource_collection
+  module:
+    - user
+_core:
+  default_config_hash: Vz3VGbHnqHzL6pdbqOfxt7jsvh50MYaYWRIYMzRQ3jg
+id: node.resource_collection.teaser
+targetEntityType: node
+bundle: resource_collection
+mode: teaser
+content:
+  field_content_brief:
+    type: basic_string
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_content: true
+  field_metatags: true
+  field_resources: true
+  langcode: true
+  search_api_excerpt: true

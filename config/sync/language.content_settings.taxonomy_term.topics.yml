@@ -1,0 +1,20 @@
+uuid: b30aa72e-cf8e-46b5-a00f-22d131fbcc3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.topics
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: tp3tUw6pEtkEip9Rwv_9s9UWzKfir1jbeYnZJ-3rnpA
+id: taxonomy_term.topics
+target_entity_type_id: taxonomy_term
+target_bundle: topics
+default_langcode: site_default
+language_alterable: true

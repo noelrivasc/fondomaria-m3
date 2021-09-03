@@ -1,0 +1,17 @@
+uuid: 171a0d3b-a317-446a-8521-c044638a1a98
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5MtS3c5P5F2czeUcTJcNaqozSOVliJtx4jYf-vhh_dA
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format formatted_text'
+  - 'view media'

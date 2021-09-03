@@ -1,0 +1,20 @@
+uuid: a6055fff-e7cf-47d5-815a-653da9140cc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.freeform_formatted_text
+_core:
+  default_config_hash: _IW4RXJoDKq-6CyXOuQpasYcf1gXL3f6aUjeiza-oqg
+id: paragraph.freeform_formatted_text.created
+field_name: created
+entity_type: paragraph
+bundle: freeform_formatted_text
+label: 'Authored on'
+description: 'The time that the paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

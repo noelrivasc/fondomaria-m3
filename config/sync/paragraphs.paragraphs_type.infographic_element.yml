@@ -1,0 +1,12 @@
+uuid: c7c056d9-5887-421f-8ebf-0f21b962315d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: k1X4AxgP9-4hvHWF-fSYuICfEAi4zrmQM4WbBxaARto
+id: infographic_element
+label: 'Infographic element'
+icon_uuid: null
+icon_default: null
+description: 'Element item for the infographic content type'
+behavior_plugins: {  }

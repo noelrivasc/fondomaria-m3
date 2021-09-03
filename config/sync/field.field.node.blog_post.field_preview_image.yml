@@ -1,0 +1,31 @@
+uuid: 13625e54-5540-458a-affd-e484d42ec17f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preview_image
+    - media.type.image
+    - node.type.blog_post
+_core:
+  default_config_hash: dJOlNAhKbDiev7hsnNvB4x9wyPLgGbY-nZbLVufK908
+id: node.blog_post.field_preview_image
+field_name: field_preview_image
+entity_type: node
+bundle: blog_post
+label: 'Preview Image'
+description: 'Used for card or teaser preview'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

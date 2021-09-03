@@ -1,0 +1,20 @@
+uuid: 01704cee-58d3-45c5-9a18-64850d49fe6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.profile
+_core:
+  default_config_hash: 9ph6qOrar--Op-RrfXoBGknCyXE7GC6le8Y_r1k7Hcs
+id: node.profile.created
+field_name: created
+entity_type: node
+bundle: profile
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

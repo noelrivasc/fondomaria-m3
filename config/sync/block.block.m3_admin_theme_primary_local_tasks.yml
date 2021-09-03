@@ -1,0 +1,22 @@
+uuid: e987c5e1-de32-4880-87b3-37a75e888a0b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - m3_admin_theme
+_core:
+  default_config_hash: 2e50E6Qd8kyz_MNNVYsWssgS3nMBuYEaEjr2a3fG7t0
+id: m3_admin_theme_primary_local_tasks
+theme: m3_admin_theme
+region: header
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

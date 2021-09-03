@@ -1,0 +1,43 @@
+uuid: fe2cdb96-98ed-4412-af9a-7c5aac0e3b51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.freeform.field_freeform_code
+    - field.field.node.freeform.field_freeform_contents
+    - node.type.freeform
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: 3jgtxiMHbQTyBuCQzZ6PvnyBnK-LdjtP1X5yICIc3sY
+id: node.freeform.default
+targetEntityType: node
+bundle: freeform
+mode: default
+content:
+  field_freeform_code:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_freeform_contents:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

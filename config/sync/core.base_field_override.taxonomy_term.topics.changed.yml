@@ -1,0 +1,20 @@
+uuid: 5faa3374-57b5-438b-a05e-2c1b616e1e10
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.topics
+_core:
+  default_config_hash: fh9EHeau5z0aSVtkQTk8hteeXp3HEYbuojlsozVNFUk
+id: taxonomy_term.topics.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: topics
+label: Changed
+description: 'The date on which the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

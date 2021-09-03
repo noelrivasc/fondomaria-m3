@@ -1,0 +1,10 @@
+uuid: 9637d2fe-1259-4d57-8774-689a5002dbcd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: oj3xPYQD3nQxz2_YV3H7DFBY3gAUw3bKxbFupeUrxKc
+id: social-networks
+label: 'Social networks'
+description: ''
+locked: false

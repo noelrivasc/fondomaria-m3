@@ -1,0 +1,25 @@
+uuid: 74fc961a-de0f-4cff-abe2-da315d7dc89e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_infographic.field_embedded_infographic
+    - paragraphs.paragraphs_type.content_embed_infographic
+_core:
+  default_config_hash: WV-kUYCAXCoIdNuu0OaZN214lWZZfaMZEq6RdvvNZrY
+id: paragraph.content_embed_infographic.default
+targetEntityType: paragraph
+bundle: content_embed_infographic
+mode: default
+content:
+  field_embedded_infographic:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: dd875416-4812-440b-bf40-f247dd7aaf10
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: XatK5o5puR4r869w4h9wTMGb-FQRrgqLsygmiS1G0ao
+id: m3_fondomaria_theme_content
+theme: m3_fondomaria_theme
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: d1f469cf-c224-4c09-be87-5d3a6df8a9d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preview_image
+    - media.type.image
+    - node.type.profile
+_core:
+  default_config_hash: kLL2CTW5Hl0TEoylcBylDeIGlGVrdP6hiqwAgmdHlUA
+id: node.profile.field_preview_image
+field_name: field_preview_image
+entity_type: node
+bundle: profile
+label: 'Preview Image'
+description: 'Used as profile image, and card or teaser preview'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

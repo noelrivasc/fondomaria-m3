@@ -1,0 +1,69 @@
+uuid: 63283f73-2e50-4f98-82ab-c464ae8356bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.infographic_element.field_element_button
+    - field.field.paragraph.infographic_element.field_element_content
+    - field.field.paragraph.infographic_element.field_element_header
+    - field.field.paragraph.infographic_element.field_element_mobile_button
+    - field.field.paragraph.infographic_element.field_element_x_coordinate
+    - field.field.paragraph.infographic_element.field_element_y_coordinate
+    - paragraphs.paragraphs_type.infographic_element
+  module:
+    - file
+    - text
+_core:
+  default_config_hash: pQCq1zKv2i-5h6SRah5934pxSB2TJ1vtusxZKnFZXZM
+id: paragraph.infographic_element.default
+targetEntityType: paragraph
+bundle: infographic_element
+mode: default
+content:
+  field_element_button:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+  field_element_content:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_element_header:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_element_mobile_button:
+    weight: 5
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_element_x_coordinate:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_element_y_coordinate:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

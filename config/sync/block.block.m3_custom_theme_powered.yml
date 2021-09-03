@@ -1,0 +1,22 @@
+uuid: 507cf745-0b81-4e56-babf-3de0696b111f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_custom_theme
+_core:
+  default_config_hash: EBs-a2tPkHIMXCLlDq9hCez28tazxaOk_IA6Ow3-7jE
+id: m3_custom_theme_powered
+theme: m3_custom_theme
+region: signature
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

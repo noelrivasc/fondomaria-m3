@@ -1,0 +1,45 @@
+uuid: 630adbe9-cf2b-4ccb-bc45-1b6707ce584b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.freeform_image.field_freeform_code
+    - field.field.paragraph.freeform_image.field_freeform_image
+    - field.field.paragraph.freeform_image.field_image_alt
+    - field.field.paragraph.freeform_image.field_image_title
+    - paragraphs.paragraphs_type.freeform_image
+_core:
+  default_config_hash: 1NHNpLAlyQ_vdPMl-Cvex2fZspvuIECTizA370dPdCs
+id: paragraph.freeform_image.default
+targetEntityType: paragraph
+bundle: freeform_image
+mode: default
+content:
+  field_freeform_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image_alt:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_title:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_freeform_code: true
+  search_api_excerpt: true

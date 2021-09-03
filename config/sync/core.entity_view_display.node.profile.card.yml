@@ -1,0 +1,68 @@
+uuid: 7756edc0-478d-4e17-b89a-cf7644d125c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.profile.field_content
+    - field.field.node.profile.field_content_brief
+    - field.field.node.profile.field_metatags
+    - field.field.node.profile.field_preview_image
+    - field.field.node.profile.field_profile_type
+    - field.field.node.profile.field_role
+    - field.field.node.profile.field_weight
+    - node.type.profile
+  module:
+    - user
+_core:
+  default_config_hash: S9R9owohCWXEuw_qRnv4BGexFHO82kiP6QrCeXjW6D4
+id: node.profile.card
+targetEntityType: node
+bundle: profile
+mode: card
+content:
+  field_preview_image:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_profile_type:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_role:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_weight:
+    type: number_integer
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_content: true
+  field_content_brief: true
+  field_metatags: true
+  langcode: true
+  search_api_excerpt: true

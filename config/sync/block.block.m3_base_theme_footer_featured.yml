@@ -1,0 +1,23 @@
+uuid: 4ee3908f-977b-414c-89ee-cd89b393fcd7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - m3_base_theme
+_core:
+  default_config_hash: _B3TkyAF8Vqm_T5J3lxsOCUAgFI0XFuWTMsnvSEpPOw
+id: m3_base_theme_footer_featured
+theme: m3_base_theme
+region: index
+weight: 1
+provider: null
+plugin: 'system_menu_block:footer-featured'
+settings:
+  id: 'system_menu_block:footer-featured'
+  label: 'Footer featured'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

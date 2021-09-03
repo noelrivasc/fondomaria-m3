@@ -1,0 +1,24 @@
+uuid: 64d6843b-7704-4824-82db-f17145ea4235
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_slider
+_core:
+  default_config_hash: so_NZE6bsnda8O9ay-UhRxnIOA_bCdsL-HD1-zUsUbo
+id: paragraph.content_slider.status
+field_name: status
+entity_type: paragraph
+bundle: content_slider
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

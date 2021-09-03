@@ -1,0 +1,21 @@
+uuid: e56e83c9-13a8-4f6c-914e-1da39bb17632
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_freeform_code
+    - paragraphs.paragraphs_type.freeform_content_canvas
+_core:
+  default_config_hash: IQ5N0iIFAafXci6jU4AV5j5AAjmgxm2W_Z8f3tIa0Qw
+id: paragraph.freeform_content_canvas.field_freeform_code
+field_name: field_freeform_code
+entity_type: paragraph
+bundle: freeform_content_canvas
+label: Code
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

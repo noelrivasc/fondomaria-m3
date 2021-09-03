@@ -1,0 +1,22 @@
+uuid: 0251de89-cba1-4bc4-b30c-e2b92cd9ecac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: 9JL2VBOJNMh4jRMFO643aG6IRKj2MrgKWvlAsvWH3JE
+id: m3_fondomaria_theme_messages
+theme: m3_fondomaria_theme
+region: system
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

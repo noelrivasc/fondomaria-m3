@@ -1,0 +1,10 @@
+uuid: b6454fbd-ec61-46bf-8322-c00eed02ba40
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PmWlg1zLX0onD5SXjtmCYjShEf7hPMBr2gfUBqfTzVM
+name: Topics
+vid: topics
+description: 'Topic categorization tags for the contents'
+weight: 0

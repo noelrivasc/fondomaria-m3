@@ -1,0 +1,21 @@
+uuid: b5d3a0cf-8934-4cd0-98ab-89fa6833aa0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_heading_code
+    - paragraphs.paragraphs_type.content_heading
+_core:
+  default_config_hash: zwbOo6fjKa4mPgRhr0jKiw8jbH-xx0_vZkIztgDwNaw
+id: paragraph.content_heading.field_content_heading_code
+field_name: field_content_heading_code
+entity_type: paragraph
+bundle: content_heading
+label: 'Heading code'
+description: 'Use middle dash to separate words (-), never use underscore.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

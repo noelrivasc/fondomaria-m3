@@ -1,0 +1,20 @@
+uuid: a8ef847f-04c7-46eb-85f3-26b3a5ab104f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.resource_collection
+_core:
+  default_config_hash: 5UmTYTMPuZvjd7B5qzj1B0WCz5BYzUtuviZVyRsjm3Y
+id: node.resource_collection.title
+field_name: title
+entity_type: node
+bundle: resource_collection
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

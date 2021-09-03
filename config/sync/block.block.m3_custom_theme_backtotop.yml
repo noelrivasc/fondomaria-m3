@@ -1,0 +1,22 @@
+uuid: a8c540e3-e6c4-4085-9f82-3f06b9c74c08
+langcode: en
+status: true
+dependencies:
+  module:
+    - m3_custom_blocks
+  theme:
+    - m3_custom_theme
+_core:
+  default_config_hash: JMfPxlWB7VncTg6pM2_t7bKscq_Jx4Jv5Pghnlcd15o
+id: m3_custom_theme_backtotop
+theme: m3_custom_theme
+region: index
+weight: 2
+provider: null
+plugin: back_to_top_block
+settings:
+  id: back_to_top_block
+  label: 'Back to Top'
+  provider: m3_custom_blocks
+  label_display: '0'
+visibility: {  }

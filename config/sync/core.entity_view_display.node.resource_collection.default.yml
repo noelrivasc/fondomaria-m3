@@ -1,0 +1,61 @@
+uuid: ac2d1025-8129-4291-a3fa-744e547ca6a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.resource_collection.field_content
+    - field.field.node.resource_collection.field_content_brief
+    - field.field.node.resource_collection.field_metatags
+    - field.field.node.resource_collection.field_resources
+    - node.type.resource_collection
+  module:
+    - layout_paragraphs
+    - metatag
+    - user
+_core:
+  default_config_hash: bBenWdd9tnKy6EzpT7RLiYm1-xg_UYalW8Zmv6dTORM
+id: node.resource_collection.default
+targetEntityType: node
+bundle: resource_collection
+mode: default
+content:
+  field_content:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: layout_paragraphs
+    region: content
+  field_content_brief:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_metatags:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_resources:
+    type: entity_reference_entity_view
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 85a6e7e0-a7e0-48fd-a553-f5ef7d37240e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_brief
+    - node.type.blog_post
+_core:
+  default_config_hash: IbTUhFphmKSU5Ezk1bF2tH_5TQEqVZqMvzswwKv1wj4
+id: node.blog_post.field_content_brief
+field_name: field_content_brief
+entity_type: node
+bundle: blog_post
+label: Brief
+description: 'Should be the shortest possible. Placed at the top of content, also shown for Cards and Teasers.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

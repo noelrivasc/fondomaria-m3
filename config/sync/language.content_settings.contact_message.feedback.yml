@@ -1,0 +1,13 @@
+uuid: 5474f07a-b66e-49f3-b9d8-97e9c2b9e66e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+_core:
+  default_config_hash: _yOQg_XWkWfVb6jD7cvWDSC2pWuZwFwN451ohyT4LFo
+id: contact_message.feedback
+target_entity_type_id: contact_message
+target_bundle: feedback
+default_langcode: site_default
+language_alterable: false

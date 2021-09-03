@@ -1,0 +1,25 @@
+uuid: 2c8a115e-7277-4c3b-9ea0-b98331bcc85d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_item.field_content_item_column
+    - paragraphs.paragraphs_type.content_item
+  module:
+    - text
+_core:
+  default_config_hash: QiqfonUzMlou3SOsHOrL2KauDQHBdcCV9l4zSslJLIQ
+id: paragraph.content_item.default
+targetEntityType: paragraph
+bundle: content_item
+mode: default
+content:
+  field_content_item_column:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

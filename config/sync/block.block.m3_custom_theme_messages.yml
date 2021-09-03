@@ -1,0 +1,22 @@
+uuid: 3f6ab468-1ff2-4808-b2d3-50a0092b0246
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_custom_theme
+_core:
+  default_config_hash: ZuOSi18XcJUCsGeYWUGF7rQSBoFJnyzqUcmV2j67HLg
+id: m3_custom_theme_messages
+theme: m3_custom_theme
+region: system
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

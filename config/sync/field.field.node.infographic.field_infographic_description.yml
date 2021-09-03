@@ -1,0 +1,21 @@
+uuid: 35e1273f-da12-41ad-a24d-0743939b7fda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_infographic_description
+    - node.type.infographic
+_core:
+  default_config_hash: M9-NYtZnKMX9FYOyXkv87-jPA3UV6b0IJ5keMWIonpk
+id: node.infographic.field_infographic_description
+field_name: field_infographic_description
+entity_type: node
+bundle: infographic
+label: Description
+description: 'Alternative description for accessibility'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

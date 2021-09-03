@@ -1,0 +1,31 @@
+uuid: cfe99c19-f442-47ab-8363-c69563de65b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.user_picture
+    - image.style.max_325x325
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: 9wFfhPAmAg_Slsx3R7bIkdTJXcpkaEwH9bFlOjpB1-E
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: max_325x325
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  langcode: true
+  member_for: true
+  search_api_excerpt: true

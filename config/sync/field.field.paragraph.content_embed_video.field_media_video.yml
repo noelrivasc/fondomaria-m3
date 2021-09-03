@@ -1,0 +1,31 @@
+uuid: 95c1542e-f71f-4220-beb5-0939ee0bbaf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_video
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.content_embed_video
+_core:
+  default_config_hash: uNP9PFQvbJ9ZDBu-XnX6lBXDPnhRLaWnPjRUKdkmMQs
+id: paragraph.content_embed_video.field_media_video
+field_name: field_media_video
+entity_type: paragraph
+bundle: content_embed_video
+label: Video
+description: 'Pick a Video from your media library or add a new one.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

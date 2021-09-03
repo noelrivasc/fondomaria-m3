@@ -1,0 +1,22 @@
+uuid: c084a76b-90f9-4967-8eba-82e19bd81fa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - m3_custom_blocks
+  theme:
+    - stable
+_core:
+  default_config_hash: JMfPxlWB7VncTg6pM2_t7bKscq_Jx4Jv5Pghnlcd15o
+id: stable_backtotop
+theme: stable
+region: sidebar_first
+weight: 2
+provider: null
+plugin: back_to_top_block
+settings:
+  id: back_to_top_block
+  label: 'Back to Top'
+  provider: m3_custom_blocks
+  label_display: '0'
+visibility: {  }

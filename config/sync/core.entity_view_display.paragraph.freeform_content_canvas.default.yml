@@ -1,0 +1,29 @@
+uuid: bca5ea5e-fbe0-4aab-803f-647f4f4cd725
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.freeform_content_canvas.field_canvas_content
+    - field.field.paragraph.freeform_content_canvas.field_freeform_code
+    - paragraphs.paragraphs_type.freeform_content_canvas
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: KsaqacoeWX5p8fBIgtiFdkCWdkNsVFy9jNms9auxWC4
+id: paragraph.freeform_content_canvas.default
+targetEntityType: paragraph
+bundle: freeform_content_canvas
+mode: default
+content:
+  field_canvas_content:
+    type: layout_paragraphs
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_freeform_code: true
+  search_api_excerpt: true

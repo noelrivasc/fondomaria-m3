@@ -1,0 +1,24 @@
+uuid: 62114bdb-ae70-4d06-976d-c7a37249ccbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.freeform_image
+_core:
+  default_config_hash: Az_8jCmyVtzooz8PrQnAhEKCfKTizDKdEizkO2VZ3aQ
+id: paragraph.freeform_image.status
+field_name: status
+entity_type: paragraph
+bundle: freeform_image
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Enabled
+  off_label: Disabled
+field_type: boolean

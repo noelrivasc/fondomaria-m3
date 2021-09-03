@@ -1,0 +1,76 @@
+uuid: c4cec850-93d1-4820-a2be-a14fc511db59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.infographic_element.field_element_button
+    - field.field.paragraph.infographic_element.field_element_content
+    - field.field.paragraph.infographic_element.field_element_header
+    - field.field.paragraph.infographic_element.field_element_mobile_button
+    - field.field.paragraph.infographic_element.field_element_x_coordinate
+    - field.field.paragraph.infographic_element.field_element_y_coordinate
+    - paragraphs.paragraphs_type.infographic_element
+  module:
+    - file
+    - text
+_core:
+  default_config_hash: cpC2hGYwPE3y6FUlgCIQTorU_LKR1Xu5mCuhM1fsXmE
+id: paragraph.infographic_element.default
+targetEntityType: paragraph
+bundle: infographic_element
+mode: default
+content:
+  field_element_button:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_element_content:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_element_header:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_element_mobile_button:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_element_x_coordinate:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_element_y_coordinate:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

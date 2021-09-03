@@ -1,0 +1,29 @@
+uuid: 92f195cc-40c5-4104-a75d-e6423053159d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_element_button
+    - paragraphs.paragraphs_type.infographic_element
+  module:
+    - file
+_core:
+  default_config_hash: e-UwM7rbxiVzOU2_t138ReSIipwj3eyvtb8inv3pGhg
+id: paragraph.infographic_element.field_element_button
+field_name: field_element_button
+entity_type: paragraph
+bundle: infographic_element
+label: Button
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: infographic/buttons
+  file_extensions: 'svg png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

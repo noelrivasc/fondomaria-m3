@@ -1,0 +1,85 @@
+uuid: b20ec9c4-8f07-4a98-ae6b-616008d77371
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slider_content_items
+    - paragraphs.paragraphs_type.content_embed_image
+    - paragraphs.paragraphs_type.content_embed_video
+    - paragraphs.paragraphs_type.content_item
+    - paragraphs.paragraphs_type.content_slider
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: VO5JcPcjPJNzZSs0jEJMl10Wfe7FDS4eo2lILscbdVA
+id: paragraph.content_slider.field_slider_content_items
+field_name: field_slider_content_items
+entity_type: paragraph
+bundle: content_slider
+label: 'Content Items'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_embed_image: content_embed_image
+      content_embed_video: content_embed_video
+      content_item: content_item
+    target_bundles_drag_drop:
+      content_embed_blog_post:
+        weight: 19
+        enabled: false
+      content_embed_collection:
+        weight: 20
+        enabled: false
+      content_embed_freeform:
+        weight: 21
+        enabled: false
+      content_embed_image:
+        enabled: true
+        weight: 22
+      content_embed_infographic:
+        weight: 23
+        enabled: false
+      content_embed_resource:
+        weight: 24
+        enabled: false
+      content_embed_url:
+        weight: 25
+        enabled: false
+      content_embed_video:
+        enabled: true
+        weight: 26
+      content_heading:
+        weight: 27
+        enabled: false
+      content_item:
+        enabled: true
+        weight: 28
+      content_layout:
+        weight: 29
+        enabled: false
+      content_slider:
+        weight: 18
+        enabled: false
+      freeform_formatted_text:
+        weight: 30
+        enabled: false
+      freeform_image:
+        weight: 31
+        enabled: false
+      freeform_plain_text:
+        weight: 32
+        enabled: false
+      freeform_url:
+        weight: 33
+        enabled: false
+      infographic_element:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

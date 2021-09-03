@@ -1,0 +1,22 @@
+uuid: 86c722da-4d4a-4611-a73b-4aff6fab9311
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_admin_theme
+_core:
+  default_config_hash: d-005AF8SlJ0ja5naC-sltOfw_OlmYH1dvyXj2Zvfas
+id: m3_admin_theme_breadcrumbs
+theme: m3_admin_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

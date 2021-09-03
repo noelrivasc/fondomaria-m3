@@ -1,0 +1,31 @@
+uuid: b76fd516-b392-4e56-874d-8b64517a45c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_topics
+    - node.type.blog_post
+    - taxonomy.vocabulary.topics
+_core:
+  default_config_hash: rhR1Lg5zGimP6zbi-RT68KoHNfbjxlEgXxz_l_-Sf3A
+id: node.blog_post.field_content_topics
+field_name: field_content_topics
+entity_type: node
+bundle: blog_post
+label: Topics
+description: 'Global site topics. Use this to tag this content properly. Multiple values allowed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

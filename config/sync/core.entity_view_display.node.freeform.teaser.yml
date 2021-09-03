@@ -1,0 +1,28 @@
+uuid: 9b03d3da-9103-4c5b-be00-2f9ac9bf8156
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.freeform.field_freeform_code
+    - field.field.node.freeform.field_freeform_contents
+    - node.type.freeform
+  module:
+    - user
+_core:
+  default_config_hash: MdpUdePxQ1SmNv7oJAF_oZxXBFsYLY-_MMTkTej2iIU
+id: node.freeform.teaser
+targetEntityType: node
+bundle: freeform
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_freeform_code: true
+  field_freeform_contents: true
+  langcode: true
+  search_api_excerpt: true

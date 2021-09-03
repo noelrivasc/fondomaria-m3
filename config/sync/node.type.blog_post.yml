@@ -1,0 +1,20 @@
+uuid: 65945155-c834-4a5d-a4bb-5ba8c768d573
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 56mleAQ52TzO-atTyB-t9ca68EEdEXXueU6FsAM0l3k
+name: 'Blog post'
+type: blog_post
+description: 'Used for news or periodic publications.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

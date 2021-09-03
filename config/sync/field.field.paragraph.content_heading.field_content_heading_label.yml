@@ -1,0 +1,21 @@
+uuid: a2c2ff89-349c-4f21-84ba-f7e78f0e02fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_heading_label
+    - paragraphs.paragraphs_type.content_heading
+_core:
+  default_config_hash: tHt5EoGvw1aAu4cZpUN50d3lZ2uNxcpECWVRtfAUqPw
+id: paragraph.content_heading.field_content_heading_label
+field_name: field_content_heading_label
+entity_type: paragraph
+bundle: content_heading
+label: 'Heading label'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

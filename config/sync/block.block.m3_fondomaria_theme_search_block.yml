@@ -1,0 +1,26 @@
+uuid: 2fd5d1cb-c511-4abb-92f8-7931a8fea52f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: Z4vy9ulNBE_urJ9EfdTu4gwzOLj8vP893236nP90mdo
+id: m3_fondomaria_theme_search_block
+theme: m3_fondomaria_theme
+region: modals
+weight: 0
+provider: null
+plugin: 'views_block:search-block'
+settings:
+  id: 'views_block:search-block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

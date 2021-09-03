@@ -1,0 +1,20 @@
+uuid: a99d4d1a-547a-4ce1-9eae-417aaff8a457
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog_post
+_core:
+  default_config_hash: o54Nft3M9h6ncGzH9GGvwQLHfqn0fy4JOB5ykDhhwNI
+id: node.blog_post.created
+field_name: created
+entity_type: node
+bundle: blog_post
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

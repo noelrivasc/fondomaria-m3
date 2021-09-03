@@ -1,0 +1,29 @@
+uuid: 96e7440d-a1c6-4b27-9e3d-7209ba5f96fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_infographic_background
+    - node.type.infographic
+  module:
+    - file
+_core:
+  default_config_hash: LQPKo-UZHXjpw0D2MrpnHUfrKhgwuJ0Vjn9PsuPt-lk
+id: node.infographic.field_infographic_background
+field_name: field_infographic_background
+entity_type: node
+bundle: infographic
+label: Background
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: infographic/backgrounds
+  file_extensions: 'svg png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,24 @@
+uuid: 64737423-b704-44ca-983d-e8de0b6e2630
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.infographic
+_core:
+  default_config_hash: dkC4EAa0ItdypOTQWIECtJOy8hYaumYgYhLSzdyj5wc
+id: node.infographic.sticky
+field_name: sticky
+entity_type: node
+bundle: infographic
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

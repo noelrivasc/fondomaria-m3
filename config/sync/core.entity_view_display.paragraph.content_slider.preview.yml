@@ -1,0 +1,28 @@
+uuid: c0d20a7b-29c2-4654-903a-653072c57f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.content_slider.field_slider_content_items
+    - paragraphs.paragraphs_type.content_slider
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: YgsD9cR4WJnMe9QO45zAjv4T5ZcF0AhVnYE0Fj6NRMY
+id: paragraph.content_slider.preview
+targetEntityType: paragraph
+bundle: content_slider
+mode: preview
+content:
+  field_slider_content_items:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: inline
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

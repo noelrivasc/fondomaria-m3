@@ -1,0 +1,27 @@
+uuid: 73ad95e7-8c61-401d-8e50-82cf1ed6282e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-featured
+  module:
+    - system
+  theme:
+    - stable
+_core:
+  default_config_hash: 3vi2KP7DyQJ82Z72KZSHSsicwBmLj4jSqSHqnrr_V_E
+id: stable_footer_featured
+theme: stable
+region: sidebar_first
+weight: 1
+provider: null
+plugin: 'system_menu_block:footer-featured'
+settings:
+  id: 'system_menu_block:footer-featured'
+  label: 'Footer featured'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

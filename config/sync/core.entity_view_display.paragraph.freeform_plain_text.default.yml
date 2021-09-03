@@ -1,0 +1,26 @@
+uuid: e1bc5280-b187-4428-82c5-66a67f8b20f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.freeform_plain_text.field_freeform_code
+    - field.field.paragraph.freeform_plain_text.field_freeform_plain_text
+    - paragraphs.paragraphs_type.freeform_plain_text
+_core:
+  default_config_hash: uZJLw2k3H6TOCoj6BgSn8CVnu7CQeO_V8L5eX0gmncQ
+id: paragraph.freeform_plain_text.default
+targetEntityType: paragraph
+bundle: freeform_plain_text
+mode: default
+content:
+  field_freeform_plain_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_freeform_code: true
+  search_api_excerpt: true

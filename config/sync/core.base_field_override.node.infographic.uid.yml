@@ -1,0 +1,22 @@
+uuid: c5c4f092-4429-4a66-a14d-9337b7237496
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.infographic
+_core:
+  default_config_hash: DAt6pPH_f-57mlUaaZSmLeKR7AVGm2DbBgTJJ4w7XdM
+id: node.infographic.uid
+field_name: uid
+entity_type: node
+bundle: infographic
+label: 'Written by'
+description: 'The user name of the author of the content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

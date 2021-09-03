@@ -1,0 +1,20 @@
+uuid: aa357984-7181-4b53-b420-7f97a79bdebc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.profile
+_core:
+  default_config_hash: GT_WW7nvc0YOmLlAKPcwDJ6zq8anjk6URr2RXUF1WvI
+id: node.profile.changed
+field_name: changed
+entity_type: node
+bundle: profile
+label: Changed
+description: 'The date on which the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

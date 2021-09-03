@@ -1,0 +1,29 @@
+uuid: d0c6428b-0c24-412f-a2da-7f9ff993a2d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_infographic_overlay
+    - node.type.infographic
+  module:
+    - file
+_core:
+  default_config_hash: 3mrA5vMycoOBQZoPRTQ41Vg7ALV4mmRQ0plwAIst3wk
+id: node.infographic.field_infographic_overlay
+field_name: field_infographic_overlay
+entity_type: node
+bundle: infographic
+label: Overlay
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: infographic/overlays
+  file_extensions: 'svg png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,22 @@
+uuid: e418d94a-fc18-4457-b1f9-d3c3d78598d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - stable
+_core:
+  default_config_hash: 9UbAEFaWrvmnb-YgjcxMVL_Obip6ca0geJGxVsbS8lI
+id: stable_languageswitcher
+theme: stable
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: ea92ff41-5ffd-497c-9f6d-b4b3397b0e8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stable
+_core:
+  default_config_hash: GDWLFnTa_qKP5UTiInpWuxio7kPZt31bYYc4VLMCdf0
+id: stable_page_title
+theme: stable
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/resources\r\n/taxonomy/term/*"
+    negate: false
+    context_mapping: {  }

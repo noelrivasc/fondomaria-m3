@@ -1,0 +1,17 @@
+uuid: a8dce025-62a7-43d6-931b-f490e07dc12d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kofDPCs7t6m9PHVZg966oeN9aRbufb6qsT9RJF3Si0g
+name: max_165x165
+label: 'Extra Small (Max 165 x 165)'
+effects:
+  55e0136b-0de0-4fff-815e-e419bb539e52:
+    uuid: 55e0136b-0de0-4fff-815e-e419bb539e52
+    id: image_scale
+    weight: 1
+    data:
+      width: 165
+      height: 165
+      upscale: false

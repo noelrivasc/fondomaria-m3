@@ -1,0 +1,20 @@
+uuid: ae5225bf-14af-4398-b5a5-10e73fd47e10
+langcode: en
+status: false
+dependencies:
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: yj6fTiS54wbE4wiwDdHIh8r-wZw2vKZrmHtNKMB8MY0
+id: m3_fondomaria_theme_local_actions
+theme: m3_fondomaria_theme
+region: system
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

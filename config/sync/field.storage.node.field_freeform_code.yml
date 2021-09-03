@@ -1,0 +1,23 @@
+uuid: 57c827ce-2912-46c0-9c44-61529df2f029
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: KIihL63cG2Y-rQo8d8LCKVzdQ6q2WFRzyA6raGDsf0Q
+id: node.field_freeform_code
+field_name: field_freeform_code
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

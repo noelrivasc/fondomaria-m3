@@ -1,0 +1,27 @@
+uuid: 4ade15c1-db2b-4486-ab08-bf4729d17bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - m3_base_theme
+_core:
+  default_config_hash: mCyaMUMHMH7Gf7ytu3DHA1zH_gCkElicdbsifO2mGfw
+id: m3_base_theme_footer
+theme: m3_base_theme
+region: index
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

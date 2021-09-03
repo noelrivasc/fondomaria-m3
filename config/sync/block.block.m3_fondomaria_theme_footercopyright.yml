@@ -1,0 +1,22 @@
+uuid: 42b6bc98-5eac-4a7b-9d22-36f033220ae0
+langcode: en
+status: true
+dependencies:
+  module:
+    - m3_custom_blocks
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: HyiXHMP-rDIdEZtSgZAOpRPgH1XGaI2Kxo8x0paZIlo
+id: m3_fondomaria_theme_footercopyright
+theme: m3_fondomaria_theme
+region: signature
+weight: -8
+provider: null
+plugin: footer_copyright_block
+settings:
+  id: footer_copyright_block
+  label: 'Footer Copyright'
+  provider: m3_custom_blocks
+  label_display: '0'
+visibility: {  }

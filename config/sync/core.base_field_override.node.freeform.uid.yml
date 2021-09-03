@@ -1,0 +1,22 @@
+uuid: 4460f1f7-1795-4071-a31e-9e4fb94ae3a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.freeform
+_core:
+  default_config_hash: Zn5mlN5CL4BTjkJKNyDlzCPU5Kjme6IJrmVd7VM811k
+id: node.freeform.uid
+field_name: uid
+entity_type: node
+bundle: freeform
+label: 'Written by'
+description: 'The user name of the author of the content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

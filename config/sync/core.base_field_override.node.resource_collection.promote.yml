@@ -1,0 +1,24 @@
+uuid: beb65d55-133d-4853-9cd5-0a1cd40e074d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.resource_collection
+_core:
+  default_config_hash: KdK6s2bUqxSdvIO9K2e5pBMuNoGGeugdTvboKL9u-F0
+id: node.resource_collection.promote
+field_name: promote
+entity_type: node
+bundle: resource_collection
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

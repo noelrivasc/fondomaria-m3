@@ -1,0 +1,22 @@
+uuid: 46589149-6d73-441c-a770-9739936ac74e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - m3_base_theme
+_core:
+  default_config_hash: TZ7FgIpUv8i_LYYxMArU1xn6nTCDVxza8wnBLuGumck
+id: m3_base_theme_help
+theme: m3_base_theme
+region: system
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

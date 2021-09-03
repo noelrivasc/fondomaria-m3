@@ -1,0 +1,22 @@
+uuid: a6883133-6472-4a0c-8e89-0d1bcdb353f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: PrMiesuVb7KoAymQkhFgZxlcD4A14gJbYXImSM1gWc4
+id: m3_fondomaria_theme_help
+theme: m3_fondomaria_theme
+region: system
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

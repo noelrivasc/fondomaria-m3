@@ -1,0 +1,20 @@
+uuid: b5caf20c-f52a-4aed-a286-e0791a39e86e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - m3_admin_theme
+_core:
+  default_config_hash: kY7PzmU4H0kFP7VuoonBC1q7hgnxZKqSkfm3y2PEiqw
+id: m3_admin_theme_local_actions
+theme: m3_admin_theme
+region: content
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 1c138f20-b3d8-4fa8-b025-25bf43da2f09
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+_core:
+  default_config_hash: oxezphx3r10oOGTz4vuZeWx5r4ju_6ArI8CkezLkp9M
+id: paragraph.field_element_mobile_button
+field_name: field_element_mobile_button
+entity_type: paragraph
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

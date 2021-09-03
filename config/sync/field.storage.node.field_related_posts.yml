@@ -1,0 +1,21 @@
+uuid: 61f96240-8316-4037-8ba9-f0a945a7ffa5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: vOK3ryqrfR3SRKbAtNZknqswcFgaZM7H5tn9zwD-dgA
+id: node.field_related_posts
+field_name: field_related_posts
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

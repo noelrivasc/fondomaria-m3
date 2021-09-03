@@ -1,0 +1,34 @@
+uuid: 7c5caeb5-28b4-44fa-aaab-22f9374e986b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_blog_post.field_embedded_content
+    - field.field.paragraph.content_embed_blog_post.field_view_mode
+    - paragraphs.paragraphs_type.content_embed_blog_post
+_core:
+  default_config_hash: UYvk90zc3iR4RdSz1zRlqLse9pbKeDCfzx4GgFzKT7M
+id: paragraph.content_embed_blog_post.default
+targetEntityType: paragraph
+bundle: content_embed_blog_post
+mode: default
+content:
+  field_embedded_content:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_view_mode:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

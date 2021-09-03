@@ -1,0 +1,91 @@
+uuid: 4122e1ca-de9f-461d-b7d5-626e4c94ccb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_post.field_author
+    - field.field.node.blog_post.field_blog_post_type
+    - field.field.node.blog_post.field_content
+    - field.field.node.blog_post.field_content_brief
+    - field.field.node.blog_post.field_content_topics
+    - field.field.node.blog_post.field_metatags
+    - field.field.node.blog_post.field_preview_image
+    - field.field.node.blog_post.field_related_posts
+    - node.type.blog_post
+  module:
+    - layout_paragraphs
+    - metatag
+    - text
+    - user
+_core:
+  default_config_hash: CsJZv9jqIRFGUxK5M8DSIRsJaWyId9wMQlrkR5h9Iuc
+id: node.blog_post.default
+targetEntityType: node
+bundle: blog_post
+mode: default
+content:
+  field_author:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_blog_post_type:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_content:
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: layout_paragraphs
+    region: content
+  field_content_brief:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_content_topics:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_metatags:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_related_posts:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_preview_image: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

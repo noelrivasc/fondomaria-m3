@@ -1,0 +1,21 @@
+uuid: 294df701-7ed1-4842-8954-d13ab2ad3d66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_role
+    - node.type.profile
+_core:
+  default_config_hash: l9MrcpwkLyjML3O9KYlbYcqTiLbN8635lPAHfdak2J8
+id: node.profile.field_role
+field_name: field_role
+entity_type: node
+bundle: profile
+label: Role
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

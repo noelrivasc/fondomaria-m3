@@ -1,0 +1,24 @@
+uuid: ed76aa4f-b704-48be-82cd-0212c3007d24
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 2sSAXcbfl6bGdBfQu2oY4rqQgneDquSX0wXLiaiDzrM
+id: resource_collection_path
+label: 'Resource Collection path'
+type: 'canonical_entities:node'
+pattern: 'resource-collections/[node:title]'
+selection_criteria:
+  94f67b44-b1c9-4c23-a1c0-025f2e78ec3b:
+    id: node_type
+    bundles:
+      resource_collection: resource_collection
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 94f67b44-b1c9-4c23-a1c0-025f2e78ec3b
+selection_logic: and
+weight: -5
+relationships: {  }

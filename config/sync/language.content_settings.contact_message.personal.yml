@@ -1,0 +1,13 @@
+uuid: 428b66f3-5b43-48f8-a4c4-1aa254e69d79
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+_core:
+  default_config_hash: PEEDLLufEXpt5cvwnV4huMl_ZSJM170mffIC5ItwAIU
+id: contact_message.personal
+target_entity_type_id: contact_message
+target_bundle: personal
+default_langcode: site_default
+language_alterable: false

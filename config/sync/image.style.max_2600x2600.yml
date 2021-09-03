@@ -1,0 +1,20 @@
+uuid: 843ca856-484a-4e8c-b28f-005ffcc0bc64
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: a84U5he85LDmA9YQEXK3vh6wSJNDEDRVY_R_UaV6tvY
+name: max_2600x2600
+label: 'Extra Large (Max 2600 x 2600)'
+effects:
+  9b311dd1-0351-45a1-9500-cd069e4670cb:
+    uuid: 9b311dd1-0351-45a1-9500-cd069e4670cb
+    id: image_scale
+    weight: 3
+    data:
+      width: 2600
+      height: 2600
+      upscale: false

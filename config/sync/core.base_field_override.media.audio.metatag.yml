@@ -1,0 +1,20 @@
+uuid: 7862507b-be28-420e-a98d-36865d8aa714
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+_core:
+  default_config_hash: soBkdT9PfGSBJDrP9F6CFN3CLJzBguzFnq6CcaRPqVU
+id: media.audio.metatag
+field_name: metatag
+entity_type: media
+bundle: audio
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

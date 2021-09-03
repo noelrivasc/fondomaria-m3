@@ -1,0 +1,23 @@
+uuid: cd83a2ae-1a41-4b7b-be75-b46fc0770700
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_item_column
+    - paragraphs.paragraphs_type.content_item
+  module:
+    - text
+_core:
+  default_config_hash: y8U_E0T7arX9RpnLaRJI84DHy2cEukAtmLgb2gQ5Uoc
+id: paragraph.content_item.field_content_item_column
+field_name: field_content_item_column
+entity_type: paragraph
+bundle: content_item
+label: 'Content column'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

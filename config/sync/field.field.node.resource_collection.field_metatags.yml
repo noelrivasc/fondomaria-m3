@@ -1,0 +1,23 @@
+uuid: fe7e5c6e-bb3d-4ed5-b236-c33b6abcb883
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.resource_collection
+  module:
+    - metatag
+_core:
+  default_config_hash: AHdhCMEOymJw4yKDxM36qxQ1NoFkfZfYHJLYrzYZjTw
+id: node.resource_collection.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: resource_collection
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

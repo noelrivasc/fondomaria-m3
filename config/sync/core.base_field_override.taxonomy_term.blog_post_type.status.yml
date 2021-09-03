@@ -1,0 +1,24 @@
+uuid: 5adf07ca-8ba3-4e8c-8d2b-885feb9fdd4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.blog_post_type
+_core:
+  default_config_hash: 1rY5epmwOtpMMiZWM-un6aPA5UdVMVGmJOgGHWJNbK8
+id: taxonomy_term.blog_post_type.status
+field_name: status
+entity_type: taxonomy_term
+bundle: blog_post_type
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Enabled
+  off_label: Disabled
+field_type: boolean

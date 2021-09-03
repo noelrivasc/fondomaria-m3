@@ -1,0 +1,20 @@
+uuid: 1fac55f3-082a-499b-84ad-e77d1781fcdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_embed_blog_post
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: hkEQhDh5wJPUCqtyuhR_5ZtpFOZq19BhdUfncmb-YU4
+id: paragraph.content_embed_blog_post
+target_entity_type_id: paragraph
+target_bundle: content_embed_blog_post
+default_langcode: site_default
+language_alterable: false

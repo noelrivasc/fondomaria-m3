@@ -1,0 +1,23 @@
+uuid: 76388ff7-5380-4373-a20f-d7f300f65af6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - m3_base_theme
+_core:
+  default_config_hash: _pAj5jczR8kdh5FvkwbhczSlCF7uUjigYCTIU3iiQRc
+id: m3_base_theme_social_networks
+theme: m3_base_theme
+region: taskbar
+weight: 2
+provider: null
+plugin: 'system_menu_block:social-networks'
+settings:
+  id: 'system_menu_block:social-networks'
+  label: 'Social networks'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 4bfc3eba-a554-49e0-a0a5-3923056732de
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - m3_base_theme
+_core:
+  default_config_hash: mG6BFFLE4UeDWsNz9Tg_IGWfnMIGZQpEWtiJpT3hGa4
+id: m3_base_theme_tools
+theme: m3_base_theme
+region: system
+weight: -6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

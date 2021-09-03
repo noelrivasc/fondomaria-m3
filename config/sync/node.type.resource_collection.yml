@@ -1,0 +1,20 @@
+uuid: 7eaff5e6-5321-47a2-ac24-4775e0492a8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 8mozgSSfZetdJrg_elBO4zPYcQHfOcusfnd1qjRsw_o
+name: 'Resource collection'
+type: resource_collection
+description: 'Used for resource collection publications.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

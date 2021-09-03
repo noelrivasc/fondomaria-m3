@@ -1,0 +1,31 @@
+uuid: 5ccbeb5d-5433-4e0c-b3cf-59a809946401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embedded_freeform
+    - node.type.freeform
+    - paragraphs.paragraphs_type.content_embed_freeform
+_core:
+  default_config_hash: Ey-etjgceDhPGE-hgn67tijqmJg8hjjR4cVEHuh8i8A
+id: paragraph.content_embed_freeform.field_embedded_freeform
+field_name: field_embedded_freeform
+entity_type: paragraph
+bundle: content_embed_freeform
+label: 'Embedded freeform'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      freeform: freeform
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

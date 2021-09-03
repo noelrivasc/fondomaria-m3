@@ -1,0 +1,59 @@
+uuid: 6a7a2e68-d2d9-458d-a862-93c57310682c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.infographic.field_infographic_background
+    - field.field.node.infographic.field_infographic_description
+    - field.field.node.infographic.field_infographic_elements
+    - field.field.node.infographic.field_infographic_overlay
+    - node.type.infographic
+  module:
+    - entity_reference_revisions
+    - file
+    - user
+_core:
+  default_config_hash: AibjjnpWdqu9DAguK__0Xz3BBjlKJCrjdPk425zT0kw
+id: node.infographic.default
+targetEntityType: node
+bundle: infographic
+mode: default
+content:
+  field_infographic_background:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+  field_infographic_description:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_infographic_elements:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_infographic_overlay:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+uuid: 6ef1af86-9b43-41d5-8821-010079b1348c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.freeform
+_core:
+  default_config_hash: V2TtBofuZ6rFij3yJhDd1h9Q-S47FuCVA5st3pjuGSU
+id: node.freeform.created
+field_name: created
+entity_type: node
+bundle: freeform
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,22 @@
+uuid: d0bfa832-4916-4364-8379-c47220b10c6c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: UdHKdKLx-qkW8Uefi1g_nkSUh7ruO-jh5IAARP7Q-sc
+id: m3_fondomaria_theme_breadcrumbs
+theme: m3_fondomaria_theme
+region: content
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

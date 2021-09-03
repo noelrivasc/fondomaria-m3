@@ -1,0 +1,29 @@
+uuid: 250e1d43-e472-4d36-9484-16d6ef66f3d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_element_mobile_button
+    - paragraphs.paragraphs_type.infographic_element
+  module:
+    - file
+_core:
+  default_config_hash: PSZLXDW5IfwKlLkF6hTjepzIem9AtKzj39GRDG5oiUY
+id: paragraph.infographic_element.field_element_mobile_button
+field_name: field_element_mobile_button
+entity_type: paragraph
+bundle: infographic_element
+label: 'Mobile button'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: infographic/buttons
+  file_extensions: 'svg png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

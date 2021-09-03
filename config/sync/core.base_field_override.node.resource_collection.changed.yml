@@ -1,0 +1,20 @@
+uuid: 1e9af033-6c85-43ad-8402-21c61ad35ea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.resource_collection
+_core:
+  default_config_hash: wK3jmC78TY6rRsZ61ECNYa205wsicVVsOkGcfbFtovI
+id: node.resource_collection.changed
+field_name: changed
+entity_type: node
+bundle: resource_collection
+label: Changed
+description: 'The date on which the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

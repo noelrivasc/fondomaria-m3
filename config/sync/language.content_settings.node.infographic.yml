@@ -1,0 +1,20 @@
+uuid: 202b5509-1489-4b7c-950c-a6bd053b98ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.infographic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: wZDtHqGgsupaFBXkYMA6_CFiFe_lnMhQyInyHt49BXM
+id: node.infographic
+target_entity_type_id: node
+target_bundle: infographic
+default_langcode: site_default
+language_alterable: true

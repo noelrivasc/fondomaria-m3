@@ -1,0 +1,38 @@
+uuid: 9da27f43-8f25-4c1d-bcc9-61b4e9357851
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.resource_collection.field_content
+    - field.field.node.resource_collection.field_content_brief
+    - field.field.node.resource_collection.field_metatags
+    - field.field.node.resource_collection.field_resources
+    - node.type.resource_collection
+  module:
+    - user
+_core:
+  default_config_hash: _qCgMvitIrEqKT4wbYaMkABDCFk50fRVUeB61loAvcw
+id: node.resource_collection.card
+targetEntityType: node
+bundle: resource_collection
+mode: card
+content:
+  field_content_brief:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_content: true
+  field_metatags: true
+  field_resources: true
+  langcode: true
+  search_api_excerpt: true

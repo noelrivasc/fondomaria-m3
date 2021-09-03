@@ -1,0 +1,20 @@
+uuid: 086ad878-765f-4abe-95ff-faf3b8730c44
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_logo_carrousel
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: o_Cla4AyJ0JRV4C7yWXh2SQW0C8_RmzAhUJn67X54TQ
+id: paragraph.content_logo_carrousel
+target_entity_type_id: paragraph
+target_bundle: content_logo_carrousel
+default_langcode: site_default
+language_alterable: false

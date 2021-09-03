@@ -1,0 +1,20 @@
+uuid: cda55688-86f7-455d-a5b5-9e944603d9bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.profile
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: P-j1aORtl3ccMMjeL5WWDzE21hxFP0s8ETT1gfPqp-0
+id: node.profile
+target_entity_type_id: node
+target_bundle: profile
+default_langcode: site_default
+language_alterable: true

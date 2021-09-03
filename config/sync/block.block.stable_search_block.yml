@@ -1,0 +1,26 @@
+uuid: 9c45c103-9fb3-49c0-a393-07b9d94dd3e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - stable
+_core:
+  default_config_hash: XwAa5xMVZYTatNJXu6hHUtY6p6N67p3GIBKgPXSB63M
+id: stable_search_block
+theme: stable
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:search-block'
+settings:
+  id: 'views_block:search-block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

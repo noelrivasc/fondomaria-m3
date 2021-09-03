@@ -1,0 +1,14 @@
+uuid: 135fe767-c6d1-4dd1-b9d8-eca5ff31d7b4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:0d7f09be-1b89-4e6e-8791-0d294a5aaba1'
+_core:
+  default_config_hash: lFeyS7xBcTZcpkVd8FdzBFYl1Uu7MlckflRcVozBeh8
+id: content_embed_video
+label: Video
+icon_uuid: 0d7f09be-1b89-4e6e-8791-0d294a5aaba1
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48ZyBpZD0idmlkZW9fY29weSIgZGF0YS1uYW1lPSJ2aWRlbyBjb3B5Ij48cGF0aCBkPSJNOTYuMSwxNjYuNDlhNjguMjMsNjguMjMsMCwxLDEsNjguMjMtNjguMjNBNjguMzEsNjguMzEsMCwwLDEsOTYuMSwxNjYuNDlabTAtMTI4Ljg3YTYwLjY1LDYwLjY1LDAsMSwwLDYwLjY1LDYwLjY0QTYwLjcyLDYwLjcyLDAsMCwwLDk2LjEsMzcuNjJaIi8+PHBhdGggZD0iTTc4LjE0LDY4Ljk0djU4LjY0YTQuNzQsNC43NCwwLDAsMCw3LjM3LDRsNDMuNTgtMjkuMzJhNC44LDQuOCwwLDAsMCwwLThMODUuNTEsNjVBNC43NCw0Ljc0LDAsMCwwLDc4LjE0LDY4Ljk0WiIvPjwvZz48L3N2Zz4='
+description: 'Provides a paragraph to embed an video from a URL.'
+behavior_plugins: {  }

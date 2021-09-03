@@ -1,0 +1,22 @@
+uuid: 013678ba-4a46-4360-8ee6-a229bcb553c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+_core:
+  default_config_hash: XS5Z1rLE-48_GmzAyAK13KHU-pJReYrvB5vQjb9L7p8
+id: paragraph.field_embedded_infographic
+field_name: field_embedded_infographic
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 489addcc-40ff-45da-8fb8-97b56b03de24
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Eacwa9p2mPTNCV8VT4HCYSWXtMpnAdeW04JkE8MI5xs
+id: freeform_content_canvas
+label: 'Freeform content canvas'
+icon_uuid: null
+icon_default: null
+description: 'Embed a section with customizable layout and content.'
+behavior_plugins: {  }

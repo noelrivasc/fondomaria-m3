@@ -1,0 +1,21 @@
+uuid: 0ff3276b-5ba5-4ff6-898a-1db329ccc772
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_freeform_plain_text
+    - paragraphs.paragraphs_type.freeform_plain_text
+_core:
+  default_config_hash: gIICaBoiUFJYHnVSTnd8LJq5vKW2hUH80-QmxgZbdgI
+id: paragraph.freeform_plain_text.field_freeform_plain_text
+field_name: field_freeform_plain_text
+entity_type: paragraph
+bundle: freeform_plain_text
+label: Text
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 16bd4647-3b58-4e78-b209-258191adb2bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: wSXn2D6bL06M6B2_Witlna4-jLpwxQ_ZgyK-o0KHzhQ
+id: paragraph.field_freeform_code
+field_name: field_freeform_code
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,51 @@
+uuid: 1611f53f-1db2-41f8-abe1-49aebc61e8d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_infographic_elements
+    - node.type.infographic
+    - paragraphs.paragraphs_type.infographic_element
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: moOEAG2_yEsofTzdgLMN2Ylbk1KAqkoP1jqYbrGGWug
+id: node.infographic.field_infographic_elements
+field_name: field_infographic_elements
+entity_type: node
+bundle: infographic
+label: Elements
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      infographic_element: infographic_element
+    target_bundles_drag_drop:
+      content_heading:
+        weight: 9
+        enabled: false
+      content_item:
+        weight: 10
+        enabled: false
+      freeform_formatted_text:
+        weight: 11
+        enabled: false
+      freeform_image:
+        weight: 12
+        enabled: false
+      freeform_plain_text:
+        weight: 13
+        enabled: false
+      freeform_url:
+        weight: 14
+        enabled: false
+      infographic_element:
+        enabled: true
+        weight: 15
+field_type: entity_reference_revisions

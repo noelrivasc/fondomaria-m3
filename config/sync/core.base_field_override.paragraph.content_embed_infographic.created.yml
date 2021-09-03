@@ -1,0 +1,20 @@
+uuid: 10e2704f-4c2b-4ba6-8f30-012d65e6b844
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_embed_infographic
+_core:
+  default_config_hash: wdSYDJPTj_q4u_t03Z4hYAqyvBzPZUOcOYuGCo7eDdg
+id: paragraph.content_embed_infographic.created
+field_name: created
+entity_type: paragraph
+bundle: content_embed_infographic
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

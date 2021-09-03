@@ -1,0 +1,28 @@
+uuid: f46caf00-f86e-4935-9982-c40f2245b428
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_logo_carrousel.field_logo_list
+    - image.style.max_325x325
+    - paragraphs.paragraphs_type.content_logo_carrousel
+  module:
+    - image
+_core:
+  default_config_hash: psR8fzxPJWgzR3rPBZ-u34-qbn3cO_EgnvX48tDEv9E
+id: paragraph.content_logo_carrousel.default
+targetEntityType: paragraph
+bundle: content_logo_carrousel
+mode: default
+content:
+  field_logo_list:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: max_325x325
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  search_api_excerpt: true

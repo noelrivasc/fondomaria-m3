@@ -1,0 +1,10 @@
+uuid: c13c2d6e-ee18-4ea4-8644-77b4f9e1f2be
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EZiZ4d2EYk1y8j3S1QVUbRjv2hEFdeHBjTNrIcz3X8A
+id: footer-featured
+label: 'Footer featured'
+description: 'Footer featured links'
+locked: false

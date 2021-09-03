@@ -1,0 +1,22 @@
+uuid: 787d5c30-b9c1-4bd0-a700-c46de9aafd18
+langcode: en
+status: true
+dependencies:
+  theme:
+    - m3_custom_theme
+_core:
+  default_config_hash: XwAa5xMVZYTatNJXu6hHUtY6p6N67p3GIBKgPXSB63M
+id: m3_custom_theme_search_block
+theme: m3_custom_theme
+region: modals
+weight: 0
+provider: null
+plugin: 'views_block:search-block'
+settings:
+  id: 'views_block:search-block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

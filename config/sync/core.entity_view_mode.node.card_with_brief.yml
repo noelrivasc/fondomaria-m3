@@ -1,0 +1,12 @@
+uuid: 03b42423-6e33-4f17-87ca-da67b069ef7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fV9Nr-R3VgNg7A-ciCRUdnMjslOtO5Jb5YKEdFWyupo
+id: node.card_with_brief
+label: 'Card with brief'
+targetEntityType: node
+cache: true

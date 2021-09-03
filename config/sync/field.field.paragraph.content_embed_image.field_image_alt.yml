@@ -1,0 +1,21 @@
+uuid: 61b0ef2c-1031-4aea-95f3-b70acc9b9b50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_alt
+    - paragraphs.paragraphs_type.content_embed_image
+_core:
+  default_config_hash: hBFWdLsh5gkwYxt674OUZT-cdCR2Ic0xfnoT9LIYQeY
+id: paragraph.content_embed_image.field_image_alt
+field_name: field_image_alt
+entity_type: paragraph
+bundle: content_embed_image
+label: 'Image Alt'
+description: 'Write or translate the alt value for the image. Won''t be displayed. Leave it blank for decorative images.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

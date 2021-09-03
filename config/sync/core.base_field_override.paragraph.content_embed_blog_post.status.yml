@@ -1,0 +1,24 @@
+uuid: 27192743-03c0-450f-825f-1f35f1acd2cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_embed_blog_post
+_core:
+  default_config_hash: Zljzz1PGA5dWqfNrsjsgtVlWZ6o3Kp05v51d10KD5gA
+id: paragraph.content_embed_blog_post.status
+field_name: status
+entity_type: paragraph
+bundle: content_embed_blog_post
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

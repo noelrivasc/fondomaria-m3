@@ -1,0 +1,24 @@
+uuid: e2e6f940-4878-4d69-be86-e9418291f78d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.infographic_element
+_core:
+  default_config_hash: HfmOiJRed0Zsnfg2S7WI0VsitmPAQWJ1OVFkzseQPQ4
+id: paragraph.infographic_element.status
+field_name: status
+entity_type: paragraph
+bundle: infographic_element
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Enabled
+  off_label: Disabled
+field_type: boolean

@@ -1,0 +1,31 @@
+uuid: d8a15d3e-7653-4169-9847-aeea9bfde4ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embedded_infographic
+    - node.type.infographic
+    - paragraphs.paragraphs_type.content_embed_infographic
+_core:
+  default_config_hash: IFdnRCN2TuNx2MY1MtxcKvvdHmVcpQKdC-PlOv_Kzgo
+id: paragraph.content_embed_infographic.field_embedded_infographic
+field_name: field_embedded_infographic
+entity_type: paragraph
+bundle: content_embed_infographic
+label: 'Embedded infographic'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      infographic: infographic
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

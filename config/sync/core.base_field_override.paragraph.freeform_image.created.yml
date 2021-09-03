@@ -1,0 +1,20 @@
+uuid: cdc07568-00cc-42c8-8c23-75872459fbe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.freeform_image
+_core:
+  default_config_hash: bcjAnNEgv8iCWr3n_UdwqV_kblZNQuIYGVbFH5wAeJM
+id: paragraph.freeform_image.created
+field_name: created
+entity_type: paragraph
+bundle: freeform_image
+label: 'Authored on'
+description: 'The time that the paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

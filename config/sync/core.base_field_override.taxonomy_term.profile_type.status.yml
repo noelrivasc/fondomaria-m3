@@ -1,0 +1,24 @@
+uuid: 3a03f814-425d-4c25-b7a3-171cfe19ac27
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.profile_type
+_core:
+  default_config_hash: fcW6kU5b3WoT0DJZ5zfjDjTHC5sfhy_T8fU-LypHVt0
+id: taxonomy_term.profile_type.status
+field_name: status
+entity_type: taxonomy_term
+bundle: profile_type
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Enabled
+  off_label: Disabled
+field_type: boolean

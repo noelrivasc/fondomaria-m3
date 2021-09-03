@@ -1,0 +1,35 @@
+uuid: 8790f97d-8097-495e-839e-c93d3a6f94fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_blog_post.field_embedded_content
+    - field.field.paragraph.content_embed_blog_post.field_view_mode
+    - paragraphs.paragraphs_type.content_embed_blog_post
+  module:
+    - options
+_core:
+  default_config_hash: yuHy8KUoE71f8XCkyu9not4TdYCtvm0N5kHwOMRtcKs
+id: paragraph.content_embed_blog_post.default
+targetEntityType: paragraph
+bundle: content_embed_blog_post
+mode: default
+content:
+  field_embedded_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_view_mode:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  search_api_excerpt: true

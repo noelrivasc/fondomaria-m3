@@ -1,0 +1,22 @@
+uuid: fa669016-136a-4f7e-b89b-890e78bf6c30
+langcode: en
+status: true
+dependencies:
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: ChC841vnXjNEnULTBvm6s0yGItgQVJsppga9yN11nXA
+id: m3_fondomaria_theme_local_tasks
+theme: m3_fondomaria_theme
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 5ebc348e-2ab7-49c5-a413-01a968175f59
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: H9C0m2LNCLfLmM7qKGK9_Hji7pARpRthMxN4BLx_0xo
+name: Page
+type: page
+description: 'Website information page.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

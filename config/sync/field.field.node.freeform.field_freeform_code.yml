@@ -1,0 +1,21 @@
+uuid: 95b13b91-96bb-48a4-80cc-11fe8d0e4df6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_freeform_code
+    - node.type.freeform
+_core:
+  default_config_hash: fVMiz3_BUmfkn6bAcC7pjW_8wMdP0GebXl7RhfXE8To
+id: node.freeform.field_freeform_code
+field_name: field_freeform_code
+entity_type: node
+bundle: freeform
+label: Code
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,26 @@
+uuid: 940c52c5-6c53-4145-b907-67dab6ca2812
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_video.field_media_video
+    - paragraphs.paragraphs_type.content_embed_video
+  module:
+    - media_library
+_core:
+  default_config_hash: asHLhmbZaT8_srCPlSt4PwkdmkE_kM_Rfe811vU8OlY
+id: paragraph.content_embed_video.default
+targetEntityType: paragraph
+bundle: content_embed_video
+mode: default
+content:
+  field_media_video:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

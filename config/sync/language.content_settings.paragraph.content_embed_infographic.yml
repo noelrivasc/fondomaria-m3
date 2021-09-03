@@ -1,0 +1,20 @@
+uuid: b9489c86-d5df-41ad-9dfd-9baed8c167b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_embed_infographic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: yA6SBxPvHGchcFZwTv9qTArIyxBfw4dRqZ5qNd89wX8
+id: paragraph.content_embed_infographic
+target_entity_type_id: paragraph
+target_bundle: content_embed_infographic
+default_langcode: site_default
+language_alterable: false

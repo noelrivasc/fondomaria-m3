@@ -1,0 +1,20 @@
+uuid: bd343bb8-b188-4edf-9cf4-36df853422d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.freeform
+_core:
+  default_config_hash: 96GZCrO3NTVOjv86HpovYEfPI06MTKPIZi1uBMn62hM
+id: node.freeform.changed
+field_name: changed
+entity_type: node
+bundle: freeform
+label: Changed
+description: 'The date on which the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,22 @@
+uuid: 44f4f848-e691-4eff-bf11-dc354da11cf0
+langcode: en
+status: true
+dependencies:
+  module:
+    - m3_custom_blocks
+  theme:
+    - stable
+_core:
+  default_config_hash: tuDpatnIMXQXA_-vRn-EHjmMkU9YFbNokIU0JTwmgS4
+id: stable_footercopyright
+theme: stable
+region: sidebar_first
+weight: -8
+provider: null
+plugin: footer_copyright_block
+settings:
+  id: footer_copyright_block
+  label: 'Footer Copyright'
+  provider: m3_custom_blocks
+  label_display: '0'
+visibility: {  }

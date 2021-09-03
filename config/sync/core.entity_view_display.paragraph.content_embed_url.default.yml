@@ -1,0 +1,25 @@
+uuid: 5bc8e6df-470d-4ff7-8641-1e28b2ca6848
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_url.field_embedded_url
+    - paragraphs.paragraphs_type.content_embed_url
+  module:
+    - url_embed
+_core:
+  default_config_hash: D2hD8rDWwvQt0exGhntZ_vwFXEovEniHnv1EmDTRggU
+id: paragraph.content_embed_url.default
+targetEntityType: paragraph
+bundle: content_embed_url
+mode: default
+content:
+  field_embedded_url:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: url_embed
+    region: content
+hidden:
+  search_api_excerpt: true

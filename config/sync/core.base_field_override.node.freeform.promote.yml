@@ -1,0 +1,24 @@
+uuid: 0978922f-a837-4c19-8d45-457bd9345e6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.freeform
+_core:
+  default_config_hash: ZKm3QPFlo95d4pHjhJT3B5HVUCaWnM0Tqo_StztSRBM
+id: node.freeform.promote
+field_name: promote
+entity_type: node
+bundle: freeform
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,12 @@
+uuid: 671fcb9e-e18f-4426-a811-e53bb580be2c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 71AbRq5VuwSbtBaoN6FvXUWR2dDaFe0cgFr0QJ0tBqc
+id: freeform_plain_text
+label: 'Freeform Plain Text'
+icon_uuid: null
+icon_default: null
+description: 'Unformatted Text string that can be embedded into a freeform template.'
+behavior_plugins: {  }

@@ -1,0 +1,12 @@
+uuid: 7c91f032-fb67-4b30-b3de-6d49d30ae754
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rulmPQSpfhqjDcgPg2weEdNV3kuYV_t39iU5I4tf4Mw
+id: freeform_url
+label: 'Freeform URL'
+icon_uuid: null
+icon_default: null
+description: 'URL that can be embedded into a freeform template.'
+behavior_plugins: {  }

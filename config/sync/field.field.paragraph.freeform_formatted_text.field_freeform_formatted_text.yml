@@ -1,0 +1,23 @@
+uuid: 0f5725a4-17e6-4b3a-a4db-c2789f6bc162
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_freeform_formatted_text
+    - paragraphs.paragraphs_type.freeform_formatted_text
+  module:
+    - text
+_core:
+  default_config_hash: b8F2TRmkYGUguR-aLLR1cZpPW0h0QXXwsQ61AwaPrCc
+id: paragraph.freeform_formatted_text.field_freeform_formatted_text
+field_name: field_freeform_formatted_text
+entity_type: paragraph
+bundle: freeform_formatted_text
+label: Text
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

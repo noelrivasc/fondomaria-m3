@@ -1,0 +1,31 @@
+uuid: 3b9730c7-718d-4759-a11e-f04b0a145e21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_type
+    - node.type.resource
+    - taxonomy.vocabulary.resource_type
+_core:
+  default_config_hash: kQRJ7lilcg6MpvqwDAjSUSi12fX18iTfFSI9tdnO3qQ
+id: node.resource.field_resource_type
+field_name: field_resource_type
+entity_type: node
+bundle: resource
+label: 'Resource type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      resource_type: resource_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

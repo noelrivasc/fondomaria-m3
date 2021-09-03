@@ -1,0 +1,25 @@
+uuid: f0c27660-2459-42d6-bcc6-8ac33e80e1f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_mode
+    - paragraphs.paragraphs_type.content_embed_blog_post
+  module:
+    - options
+_core:
+  default_config_hash: gvvPukbozUysG3HEq7QFnatcRVkTbvhiiwvvlp-tiEM
+id: paragraph.content_embed_blog_post.field_view_mode
+field_name: field_view_mode
+entity_type: paragraph
+bundle: content_embed_blog_post
+label: 'Card style'
+description: 'Defines the style for the embed element.'
+required: true
+translatable: false
+default_value:
+  -
+    value: card
+default_value_callback: ''
+settings: {  }
+field_type: list_string

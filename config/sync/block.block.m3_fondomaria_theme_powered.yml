@@ -1,0 +1,22 @@
+uuid: ae5b8c39-351b-4ed3-a79f-7c77915d9427
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: ZUHx_SF2hgjFFgNnCjzJ8AMizJuWXwO6qjektNjVE-c
+id: m3_fondomaria_theme_powered
+theme: m3_fondomaria_theme
+region: signature
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

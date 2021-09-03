@@ -1,0 +1,22 @@
+uuid: 9435a472-3346-4d84-9229-050278d4754b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - m3_admin_theme
+_core:
+  default_config_hash: 4z4qBf07I3L7CBRrfeX5G6ePqXUBr7ueGNyuOX0oNVs
+id: m3_admin_theme_help
+theme: m3_admin_theme
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

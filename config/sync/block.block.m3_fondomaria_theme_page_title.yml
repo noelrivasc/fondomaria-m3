@@ -1,0 +1,27 @@
+uuid: 51bb872c-b4fb-4473-a683-803c5e4cb5f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - m3_fondomaria_theme
+_core:
+  default_config_hash: 3E3WY7Uw-IQuG0hZJWet8T9YNZaH3tWghMNtuMhRURE
+id: m3_fondomaria_theme_page_title
+theme: m3_fondomaria_theme
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/resources\r\n/taxonomy/term/*"
+    negate: false
+    context_mapping: {  }

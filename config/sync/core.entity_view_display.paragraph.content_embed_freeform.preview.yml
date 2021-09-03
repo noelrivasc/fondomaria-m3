@@ -1,0 +1,25 @@
+uuid: fa6b6721-7cc9-4b55-a633-fda5e99ee2c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.content_embed_freeform.field_embedded_freeform
+    - paragraphs.paragraphs_type.content_embed_freeform
+_core:
+  default_config_hash: CHViTFidtTN8I9Lqvtla9NRkrQ51M2PViWur9psxnKI
+id: paragraph.content_embed_freeform.preview
+targetEntityType: paragraph
+bundle: content_embed_freeform
+mode: preview
+content:
+  field_embedded_freeform:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  search_api_excerpt: true

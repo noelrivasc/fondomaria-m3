@@ -1,0 +1,21 @@
+uuid: ee41ca5a-e292-4c54-bb78-5f1c771c7f9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_title
+    - paragraphs.paragraphs_type.freeform_image
+_core:
+  default_config_hash: m6gOBzYTp8w0We4JmsMm1uNVQbg_Tb7wNcoSXXoQPdU
+id: paragraph.freeform_image.field_image_title
+field_name: field_image_title
+entity_type: paragraph
+bundle: freeform_image
+label: 'Image Title'
+description: 'Optional text label for the image that could be rendered for display in some cases.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

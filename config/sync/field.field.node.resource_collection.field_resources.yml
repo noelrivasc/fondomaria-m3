@@ -1,0 +1,30 @@
+uuid: 4e4a1dad-233d-49c4-9529-cacb8575230c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources
+    - node.type.resource
+    - node.type.resource_collection
+_core:
+  default_config_hash: gzBzO7Inw514dU3rFhtfRDyVXDSwpSHXzCZIo12lcQo
+id: node.resource_collection.field_resources
+field_name: field_resources
+entity_type: node
+bundle: resource_collection
+label: Resources
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      resource: resource
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

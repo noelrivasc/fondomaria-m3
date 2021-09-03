@@ -1,0 +1,27 @@
+uuid: aaf02a34-705e-4a43-be13-4234abd03773
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_embed_infographic.field_embedded_infographic
+    - paragraphs.paragraphs_type.content_embed_infographic
+_core:
+  default_config_hash: eY652CPD8g5uqArjgx8FIH_5Xq-FR8cWQgMlAinKvuQ
+id: paragraph.content_embed_infographic.default
+targetEntityType: paragraph
+bundle: content_embed_infographic
+mode: default
+content:
+  field_embedded_infographic:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

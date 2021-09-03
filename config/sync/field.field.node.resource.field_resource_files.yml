@@ -1,0 +1,31 @@
+uuid: 8ff9dfc6-66c0-40fb-bd0c-957c357823da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_files
+    - media.type.file
+    - node.type.resource
+_core:
+  default_config_hash: iy32dLuKdXHQl4kbGD0zWBgqdbSZhZ2p4NHCi-WTAI0
+id: node.resource.field_resource_files
+field_name: field_resource_files
+entity_type: node
+bundle: resource
+label: Files
+description: 'Attached files belonging for this resource.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

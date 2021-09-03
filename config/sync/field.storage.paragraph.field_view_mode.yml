@@ -1,0 +1,32 @@
+uuid: 799bad03-bc3c-4947-9703-da84c7e7b98e
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: tJmfgrGeS3jVDvqvaIdjwXiiO86Z7rhSvaYek4zCmCc
+id: paragraph.field_view_mode
+field_name: field_view_mode
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: card
+      label: Simple
+    -
+      value: card_with_brief
+      label: 'With Brief'
+    -
+      value: featured_card
+      label: Featured
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

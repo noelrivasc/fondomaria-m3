@@ -1,0 +1,58 @@
+uuid: 757e027a-76b1-4388-a010-65d657fcd89a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.freeform_image.field_freeform_code
+    - field.field.paragraph.freeform_image.field_freeform_image
+    - field.field.paragraph.freeform_image.field_image_alt
+    - field.field.paragraph.freeform_image.field_image_title
+    - paragraphs.paragraphs_type.freeform_image
+  module:
+    - media_library
+_core:
+  default_config_hash: fCd4YIiDs0fw2EJXAk716iCgsevY46BqYUOKIAvbo84
+id: paragraph.freeform_image.default
+targetEntityType: paragraph
+bundle: freeform_image
+mode: default
+content:
+  field_freeform_code:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_freeform_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_alt:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  translation:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
