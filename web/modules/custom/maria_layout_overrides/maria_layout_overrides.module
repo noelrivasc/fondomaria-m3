@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Contains maria_layout_overrides.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function maria_layout_overrides_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the maria_layout_overrides module.
+    case 'help.page.maria_layout_overrides':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Fondo Maria M3 based web layout overrides.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function maria_layout_overrides_layout_alter(&$definitions) {
+    foreach ($definitions as &$definition) {
+      $id = $definition->id();
+      if(substr($id,0,3) == "m3_") {
+        $additional = $definition->get('additional');
+        $additional['classes']['custom_style']['options'] = array(
+          'content-layout--style-default' => 'Default',
+          // 'content-layout--style-light' => 'Light',
+          // 'content-layout--style-dark' => 'Dark',
+          'content-layout--style-maria-1' => 'Yellow',
+          'content-layout--style-maria-2' => 'Waves',
+          'content-layout--style-maria-3' => 'Peach',
+          'content-layout--style-maria-4' => 'Flower',
+        );
+        $definition->set('additional', $additional);
+      }
+    }
+}

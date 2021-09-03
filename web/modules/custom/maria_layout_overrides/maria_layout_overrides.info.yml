@@ -1,0 +1,6 @@
+name: 'Fondo Maria Web Layout Overrides'
+type: module
+description: 'Fondo Maria M3 based web layout overrides.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Fondo Maria M3'
