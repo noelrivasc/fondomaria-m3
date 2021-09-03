@@ -6,9 +6,3 @@ node_modules
 
 # Ignore license information for node/yarn packages
 .npmrc
-
-# Ignore vendor
-assets/vendor
-
-# Ignore css build
-assets/css
