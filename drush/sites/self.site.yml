@@ -1,17 +1,21 @@
 # Edit or remove this file as needed.
 # Docs at https://github.com/drush-ops/drush/blob/master/examples/example.site.yml
 
-#local:
-#   paths:
-#     files: sites/default/files
-#   root: /var/www/html/web
-#   uri: 'https://domain.ddev.site'
-#prod:
-#  host: prod.domain.com
-#  user: www-admin
-#  root: /path/to/drupal
-#  uri: http://www.example.com
-#
+prod:
+  host: 143.198.142.195
+  paths:
+    drush-script: /home/master/applications/tndyygbmpw/public_html/vendor/drush/drush/drush
+    files: sites/default/files
+  root: /home/master/applications/tndyygbmpw/public_html/web
+  uri: 'http://phpstack-614061-2137863.cloudwaysapps.com/'
+  user: master_vdxatdyhgq
+
+local:
+  paths:
+    files: sites/default/files
+  root: /var/www/html/web
+  uri: 'https://fondomaria.ddev.site'
+
 #stage:
 #  host: stage.domain.com
 #  user: www-admin
