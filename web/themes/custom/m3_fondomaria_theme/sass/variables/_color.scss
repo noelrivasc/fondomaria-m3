@@ -20,9 +20,31 @@ $m3-info: #17A2B8;
 $m3-light: #FFFFFF;
 $m3-dark: #303030;
 
+// Color Variables for Maria
+$ma-purple-200: #ECD8F0;
+$ma-purple-300: #A785B0;
+$ma-purple-400: #7F368E;
+$ma-purple-500: #7F368E;
+$ma-purple-600: #390C42;
+
+$ma-orange-100: #FFEDEB;
+$ma-orange-200: #FFD4D1;
+$ma-orange-300: #FF9186;
+$ma-orange-400: #FC786A;
+$ma-orange-500: #FB5A4A;
+
+$ma-green-300: #97DBBD;
+$ma-green-400: #4CC18D;
+$ma-green-500: #2C865F;
+$ma-green-600: #226E4E;
+
+$ma-yellow-300: #FAEAB5;
+$ma-yellow-400: #FCD856;
+$ma-yellow-500: #F5C20B;
+
 // Override bootstrap default colors
-$primary:       $m3-gray-900 !default;
-$secondary:     $m3-gray-400 !default;
+$primary:       $ma-purple-400 !default;
+$secondary:     $ma-orange-400 !default;
 $success:       $m3-success !default;
 $info:          $m3-info !default;
 $warning:       $m3-warning !default;
@@ -32,5 +54,5 @@ $dark:          $m3-dark !default;
 
 // Extend bootstrap theme pallete
 $theme-colors: (
-    "gray": $m3-gray-600
+    "gray": $m3-gray-400
 );
