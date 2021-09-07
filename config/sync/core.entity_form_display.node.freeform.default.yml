@@ -18,12 +18,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_freeform_code:
-    weight: 4
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -32,7 +32,7 @@ content:
     region: content
   field_freeform_contents:
     type: entity_reference_paragraphs
-    weight: 5
+    weight: 6
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -42,9 +42,16 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -52,7 +59,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
@@ -64,25 +71,25 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 9
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
-  langcode: true
   promote: true
   sticky: true

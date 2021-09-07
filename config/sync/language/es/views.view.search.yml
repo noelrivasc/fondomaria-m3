@@ -1,0 +1,65 @@
+label: Buscar
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Buscar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+      fields:
+        title:
+          separator: ', '
+        type:
+          separator: ', '
+        changed:
+          label: 'Última actualización'
+          separator: ', '
+        field_blog_post_type:
+          separator: ', '
+        field_resource_type:
+          separator: ', '
+        field_content_topics:
+          separator: ', '
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Palabras clave'
+        field_resource_type:
+          expose:
+            label: 'Tipo de recurso'
+        field_content_topics:
+          expose:
+            label: Tema
+      title: Buscar
+  block:
+    display_title: Bloque
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Palabras clave'
+  page:
+    display_title: Página
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Palabras clave'
+        field_resource_type:
+          expose:
+            label: 'Tipo de recurso'
+        field_content_topics:
+          expose:
+            label: Tema
