@@ -232,6 +232,12 @@
 }
 
 
+// Content Canvas
+.paragraph--type--freeform-content-canvas {
+    @extend .m3-text-styled;
+}
+
+
 // Embed Image
 
 .content-item--embed-image {

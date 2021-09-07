@@ -15,8 +15,11 @@
 
 // Bootstrap overrides
 .btn {
-    @extend .m3-rounded, .btn-fx;
+    @extend .btn-fx;
+    padding: $spacer-xs $spacer-sm;
     font-size: $t-03;
+    text-transform: uppercase;
+    border-radius: 999px;
 
     &:focus {
         outline: none;
@@ -32,28 +35,35 @@
 // Button styles
 .m3-cta-button {
     @extend .btn;
-    background-color: theme-color('primary');
+    background-color: $ma-green-600;
     color: theme-color('light');
 
     &:hover {
+        background-color: $ma-green-400;
         color: theme-color('light');
     }
 }
 
 .m3-standard-button {
     @extend .btn;
-    border: 2px solid theme-color('secondary');
-    color: theme-color('secondary');
+    border: 2px solid $ma-green-600;
+    color: $ma-green-600;
     background-color: theme-color('light');
 
     &:hover {
-        color: theme-color('secondary');
+        color: theme-color('light');
+        background-color: $ma-green-400;
+        border-color: $ma-green-400;
     }
 }
 
 .m3-ghost-button {
     @extend .btn, .btn-link;
-    color: $m3-gray-600;
+    color: $ma-green-400;
+
+    &:hover {
+        color: $ma-green-600;
+    }
 }
 
 .m3-tag-button {
