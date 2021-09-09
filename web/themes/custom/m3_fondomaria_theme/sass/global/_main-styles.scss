@@ -39,12 +39,17 @@ h1, h2, h3, h4, h5, h6, h7 {
     min-width: 200px;
     max-width: 600px;
     height: 5px;
-    background-color: $m3-gray-500;
+    background-color: $ma-gray-500;
     border: 0;
   }
 
-  a {
+  a:not([class]) {
     @extend .m3-link;
+    color: $ma-green-600;
+
+    &:hover {
+      color: $ma-green-700;
+    }
   }
   
   a.cta-button {
@@ -151,14 +156,14 @@ h1, h2, h3, h4, h5, h6, h7 {
     max-width: unset;
     padding-left: 65%;
     margin-bottom: 0;
-    color: $m3-gray-500;
+    color: $ma-gray-500;
   }
 
   .quote-attribution-position {
     max-width: unset;
     padding-left: 65%;
     margin-bottom: 0;
-    color: $m3-gray-500;
+    color: $ma-gray-500;
     font-weight: 500px;
     text-transform: uppercase;
   }
@@ -167,7 +172,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     @extend .m3-indented-column;
     padding-top: 80px;
     padding-bottom: 40px;
-    background: $m3-gray-100;
+    background: rgba($ma-gray-600, 0.1);
   }
 
   .featured-image-wrapper {
@@ -176,7 +181,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     padding-bottom: 30px;
 
     img {
-      border-top: 20px solid $m3-gray-500;
+      border-top: 20px solid $ma-gray-500;
       max-width: 1110px;
     }
   }

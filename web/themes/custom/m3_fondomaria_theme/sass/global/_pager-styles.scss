@@ -17,7 +17,7 @@
     .pager__label {
       @extend .page-link, .m3-body-md;
       margin: 0;
-      border: 1px solid $m3-gray-500;
+      border: 1px solid $ma-gray-500;
       border-left: none;
       border-right: none;
       padding: 10px 20px !important;
@@ -30,10 +30,10 @@
     }
 
     .is-disabled {
-      color: $m3-gray-200;
+      color: $ma-gray-500;
 
       &:hover {
-        color: $m3-gray-200;
+        color: $ma-gray-500;
         background-color: inherit;
       }
     }
@@ -41,7 +41,7 @@
     &:hover {
       .pager__link,
       .pager__label {
-        border: 1px solid $m3-gray-500;
+        border: 1px solid $ma-gray-500;
         border-left: none;
         border-right: none;
       }
@@ -50,7 +50,7 @@
     &:first-child {
       .pager__link,
       .pager__label {
-        border-left: 1px solid $m3-gray-500;
+        border-left: 1px solid $ma-gray-500;
         border-top-left-radius: 0.25rem;
         border-bottom-left-radius: 0.25rem;
       }
@@ -59,7 +59,7 @@
     &:last-child {
       .pager__link,
       .pager__label {
-        border-right: 1px solid $m3-gray-500;
+        border-right: 1px solid $ma-gray-500;
         border-top-right-radius: 0.25rem;
         border-bottom-right-radius: 0.25rem;
       }
@@ -70,9 +70,9 @@
     
       .pager__link,
       .pager__label {
-        background-color: $m3-gray-100;
-        color: $m3-gray-800;
-        border: 1px solid $m3-gray-500;
+        background-color: rgba($ma-gray-600, 0.1);
+        color: $ma-gray-600;
+        border: 1px solid $ma-gray-500;
         border-left: none;
         border-right: none;
       }
@@ -97,13 +97,13 @@
   .pager__item--previous {
     .pager__link,
     .pager__label {
-      border-right: 1px solid $m3-gray-500;
+      border-right: 1px solid $ma-gray-500;
     }
 
     &:hover {
       .pager__link,
       .pager__label {
-        border-right: 1px solid $m3-gray-500;
+        border-right: 1px solid $ma-gray-500;
       }
     }
   }
@@ -126,13 +126,13 @@
   .pager__item--last {
     .pager__link,
     .pager__label {
-      border-left: 1px solid $m3-gray-500;
+      border-left: 1px solid $ma-gray-500;
     }
 
     &:hover {
       .pager__link,
       .pager__label {
-        border-left: 1px solid $m3-gray-500;
+        border-left: 1px solid $ma-gray-500;
       }
     }
   }
@@ -144,14 +144,14 @@
     .pager__link,
     .pager__label {
       color: theme-color('light');
-      background: $m3-gray-500;
+      background-color: $ma-gray-500;
     }
 
     &:hover {
       .pager__link,
       .pager__label {
         color: theme-color('light');
-        background: $m3-gray-500;
+        background-color: $ma-gray-500;
       }
     }
   }

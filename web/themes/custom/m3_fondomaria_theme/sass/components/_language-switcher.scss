@@ -17,7 +17,7 @@
 .language-switcher__toggle-button {
     @extend .m3-language-button;
     min-width: 90px;
-    color: $m3-gray-500;
+    color: $ma-gray-500;
 }
 
 .language-switcher__dropdown {
@@ -25,7 +25,7 @@
     padding: 6px 0;
     @include centerThis('top');
     top: 140%;
-    border: 3px solid $m3-gray-500;
+    border: 3px solid $ma-gray-500;
     border-radius: 10px;
     background: $m3-light;
     text-align: center;
@@ -41,7 +41,7 @@
 
     a {
         display: block;
-        color: $m3-gray-500;
+        color: $ma-gray-500;
         padding: 5px 0;
         font-weight: 500
     }
@@ -52,7 +52,7 @@
     }
 
     a.is-active {
-        background: $m3-gray-100;
+        background: rgba($ma-gray-600, 0.1);
     }
 
     &:before {
@@ -63,7 +63,7 @@
         @include centerThis('top');
         top: -20px;
         border: 10px solid transparent;
-        border-bottom-color: $m3-gray-500;
+        border-bottom-color: $ma-gray-500;
     }
 
     &:after {

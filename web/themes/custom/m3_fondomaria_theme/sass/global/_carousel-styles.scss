@@ -41,7 +41,7 @@
     background-color: transparent;
     
     &:before {
-      color: $m3-gray-400;
+      color: $ma-gray-500;
       display: block;
       width: 42px;
       height: 42px;
@@ -80,7 +80,7 @@
       width: $spacer-sm;
       height: $spacer-sm;
       padding: 0;
-      border: 1px solid $m3-gray-500;
+      border: 1px solid $ma-gray-500;
       border-radius: $spacer-sm / 2;
       background-color: $m3-light;
       overflow: hidden;
@@ -89,7 +89,7 @@
     }
 
     .slick-active button {
-      background-color: $m3-gray-600;
+      background-color: $ma-gray-600;
     }
   }
 }

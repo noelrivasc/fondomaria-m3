@@ -5,7 +5,7 @@
 .m3-view {
   .block--page-title-block {
     position: relative;
-    background-color: $m3-gray-100;
+    background-color: rgba($ma-gray-600, 0.1);
     padding-top: $spacer-xl;
     padding-bottom: $spacer-md;
     color: theme-color("primary");
@@ -23,7 +23,7 @@
 
   .content__wrapper {
     .view__exposed {
-      background-color: $m3-gray-100;
+      background-color: rgba($ma-gray-600, 0.1);
       padding-top: $spacer-md;
       padding-bottom: $spacer-xl;
       position: relative;

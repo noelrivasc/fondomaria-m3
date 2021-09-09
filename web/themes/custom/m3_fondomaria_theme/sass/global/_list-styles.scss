@@ -23,13 +23,13 @@
 
         li {
             @include appendIcon('fa-chevron-circle-right', $t-06);
-            color: $m3-gray-500 !important;
+            color: $ma-gray-500 !important;
             list-style-type: none;
             margin: 1em 0 !important;
         }
 
         a {
-            color: $m3-gray-500 !important;
+            color: $ma-gray-500 !important;
         }
     }
 }

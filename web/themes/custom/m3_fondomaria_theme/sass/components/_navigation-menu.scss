@@ -58,14 +58,14 @@
 
             a {
               @extend .m3-link-sm;
-              color: $m3-gray-500;
+              color: $ma-gray-500;
               text-decoration: none;
               padding-right: $spacer-sm;
               transition: color 0.2s;
             }
 
             a:hover {
-              color: $m3-gray-900;
+              color: $ma-gray-600;
               text-decoration: none;
             }
         }
@@ -99,7 +99,7 @@
       padding: $spacer-md;
       padding-top: $spacer-xl;
       background-color: $m3-light;
-      border-left: 3px solid $m3-gray-100;
+      border-left: 3px solid rgba($ma-gray-600, 0.1);
       pointer-events: all;
       transition: transform 0.3s;
       transform: translateX(100%);

@@ -9,20 +9,18 @@ $t-root: 16px;
 
 // Global line height
 
-$m3-line-height: 1.35;
+$m3-line-height: 1.25;
 
 
 // Global font sizes
 
-$t-01: 0.75rem;   // 12px
-$t-02: 0.88rem;   // 14.08px
-$t-03: 1rem;      // 16px
-$t-04: 1.25rem;   // 20px
-$t-05: 1.5rem;    // 24px
-$t-06: 2rem;      // 32px
-$t-07: 2.5rem;    // 40px
-$t-08: 3rem;      // 48px
-$t-09: 5.5rem;    // 88px
+$t-01: 0.875rem;   // 14px
+$t-02: 1rem;   // 16px
+$t-03: 1.25rem;      // 20px
+$t-04: 1.5rem;   // 24px
+$t-05: 2rem;    // 32px
+$t-06: 2.5rem;      // 40px
+
 
 // NOTE: pixel measures were determined asuming the 16px default base
 
@@ -35,9 +33,6 @@ $t-tablet-03: 0.8 * $t-03;
 $t-tablet-04: 0.8 * $t-04;
 $t-tablet-05: 0.8 * $t-05;
 $t-tablet-06: 0.8 * $t-06;
-$t-tablet-07: 0.8 * $t-07;
-$t-tablet-08: 0.8 * $t-08;
-$t-tablet-09: 0.8 * $t-09;
 
 
 // Mobile font sizes
@@ -48,6 +43,3 @@ $t-mobile-03: 0.8 * $t-03;
 $t-mobile-04: 0.8 * $t-04;
 $t-mobile-05: 0.6 * $t-05;
 $t-mobile-06: 0.6 * $t-06;
-$t-mobile-07: 0.6 * $t-07;
-$t-mobile-08: 0.6 * $t-08;
-$t-mobile-09: 0.6 * $t-09;

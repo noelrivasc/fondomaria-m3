@@ -4,7 +4,7 @@
 
 .node--teaser {
   padding-top: $spacer-md;
-  border-bottom: 1px solid $m3-gray-300;
+  border-bottom: 1px solid rgba($ma-gray-600, 0.3);
 
   .content__header {}
 
@@ -23,7 +23,7 @@
   }
 
   .content__description {
-    @extend .m3-featured-xs, .m3-lecture-safe !optional;
+    @extend .m3-featured-sm, .m3-lecture-safe !optional;
   }
 
   .content__body {

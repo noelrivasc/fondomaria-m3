@@ -69,7 +69,7 @@
         transform: translateY(120%);
         opacity: 0;
         transition: transform 0.2s, opacity 0.2s;
-        background: $m3-gray-100;
+        background: rgba($ma-gray-600, 0.1);
 
         ul {
             @extend .nav;
@@ -81,13 +81,13 @@
 
         a {
             @extend .nav-link, .m3-link-sm;
-            color: $m3-gray-500 !important;
+            color: $ma-gray-500 !important;
             transition: color 0.2s;
             position: relative;
         }
 
         a:hover {
-            color: $m3-gray-900 !important;
+            color: $ma-gray-600 !important;
         }
 
         a:after {
@@ -95,7 +95,7 @@
             display: block;
             width: 80%;
             height: 3px;
-            background-color: $m3-gray-500;
+            background-color: $ma-gray-500;
             opacity: 0;
             transition: opacity 0.2s;
             @include centerThis(top);

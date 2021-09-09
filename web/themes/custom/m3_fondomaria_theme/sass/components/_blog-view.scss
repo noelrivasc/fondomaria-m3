@@ -8,7 +8,7 @@
   .content__wrapper {
     .view__exposed {
       padding-top: 40px;
-      background-color: $m3-gray-100;
+      background-color: rgba($ma-gray-600, 0.1);
 
       .form-item-search-api-fulltext {
         @extend .col-sm-12;
