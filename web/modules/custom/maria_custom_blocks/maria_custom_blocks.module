@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains maria_custom_blocks.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function maria_custom_blocks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the maria_custom_blocks module.
+    case 'help.page.maria_custom_blocks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Fondo Maria M3 based web custom blocks enabler module.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
