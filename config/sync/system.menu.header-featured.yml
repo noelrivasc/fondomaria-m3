@@ -1,0 +1,8 @@
+uuid: 83d288d0-3fad-4f38-8ea2-bd5abb76f0bb
+langcode: es
+status: true
+dependencies: {  }
+id: header-featured
+label: 'Header Featured'
+description: ''
+locked: false

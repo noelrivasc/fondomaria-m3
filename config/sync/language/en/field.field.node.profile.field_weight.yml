@@ -1,0 +1,2 @@
+label: Weight
+description: 'Defines the display order for profile items con custom lists. An item with a larger number will be displayed after any with a lower one.'

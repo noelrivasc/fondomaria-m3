@@ -1,5 +1,5 @@
 uuid: 17044fd0-ff44-40a1-9560-4bafaa1960b8
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: 'language_block:language_interface'
 settings:
   id: 'language_block:language_interface'
-  label: 'Language switcher'
+  label: 'Alternador de idioma'
   provider: language
   label_display: '0'
 visibility: {  }

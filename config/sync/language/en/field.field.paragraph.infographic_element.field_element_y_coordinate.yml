@@ -1,0 +1,4 @@
+label: 'Y position'
+default_value:
+  -
+    value: 50%

@@ -1,5 +1,5 @@
 uuid: 5a77a4c6-3360-4142-987f-a811d7497867
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -33,14 +33,6 @@ field_settings:
     dependencies:
       module:
         - node
-  field_content_topics:
-    label: Topics
-    datasource_id: 'entity:node'
-    property_path: field_content_topics
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_content_topics
   field_blog_post_type:
     label: 'Blog post type'
     datasource_id: 'entity:node'
@@ -49,6 +41,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_blog_post_type
+  field_content_topics:
+    label: Topics
+    datasource_id: 'entity:node'
+    property_path: field_content_topics
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_content_topics
   field_resource_type:
     label: 'Resource type'
     datasource_id: 'entity:node'

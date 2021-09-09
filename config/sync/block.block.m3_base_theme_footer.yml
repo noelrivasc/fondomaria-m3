@@ -1,5 +1,5 @@
 uuid: 4ade15c1-db2b-4486-ab08-bf4729d17bc2
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  label: 'Menú del pie'
   provider: system
   label_display: '0'
   level: 1

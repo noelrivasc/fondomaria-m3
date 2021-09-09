@@ -1,3 +1,4 @@
 make_unused_managed_files_temporary: true
 _core:
   default_config_hash: U6tdjVAlzBWeJCchp_7B6pco4qmcw11SF60kmkDvZ4g
+langcode: es

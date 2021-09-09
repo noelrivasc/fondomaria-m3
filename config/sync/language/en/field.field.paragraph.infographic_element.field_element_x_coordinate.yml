@@ -1,0 +1,4 @@
+label: 'X position'
+default_value:
+  -
+    value: 50%

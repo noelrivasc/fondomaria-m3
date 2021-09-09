@@ -2,3 +2,4 @@ admin: m3_admin_theme
 default: m3_fondomaria_theme
 _core:
   default_config_hash: TIXPLR1D_a_1eIDrsab3To3Shsi0K85IO1ii1UmLOe0
+langcode: es

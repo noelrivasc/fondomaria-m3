@@ -1,5 +1,5 @@
 uuid: 573b9d43-00d7-4b8a-99dd-7de493981fc7
-langcode: en
+langcode: es
 status: 0
 dependencies: {  }
 _core:
@@ -11,4 +11,4 @@ orientation: portrait
 dimensions:
   width: 768
   height: 1280
-  dppx: 2
+  dppx: !!float 2

@@ -1,0 +1,20 @@
+uuid: ec43468b-a419-4e83-9633-de3917bdb589
+langcode: es
+status: true
+dependencies:
+  module:
+    - maria_custom_blocks
+  theme:
+    - m3_fondomaria_theme
+id: contactdata
+theme: m3_fondomaria_theme
+region: contactbar
+weight: -10
+provider: null
+plugin: freeform_contact_data_block
+settings:
+  id: freeform_contact_data_block
+  label: 'Datos de Contacto'
+  provider: maria_custom_blocks
+  label_display: '0'
+visibility: {  }
