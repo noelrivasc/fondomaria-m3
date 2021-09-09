@@ -46,6 +46,7 @@ $fa-font-path: "#{$m3_assets_dir}/vendor/fontawesome/webfonts" !default;
 // Components
 @import "components/navigation-menu";
 @import "components/social-networks-menu";
+@import "components/header-featured-menu";
 @import "components/language-switcher";
 @import "components/back-to-top-button";
 @import "components/login";

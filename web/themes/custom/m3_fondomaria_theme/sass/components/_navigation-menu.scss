@@ -59,26 +59,40 @@
         @extend .nav-item;
 
             a {
-              @extend .m3-link-sm;
-              color: $ma-gray-500;
+              @extend .m3-link-md;
+              color: $ma-green-600;
               text-decoration: none;
-              padding-right: $spacer-sm;
+              padding-right: $spacer-sm + $spacer-xs;
               transition: color 0.2s;
             }
 
             a:hover {
-              color: $ma-gray-600;
+              color: $ma-green-400;
               text-decoration: none;
             }
         }
     }
 }
 
+.block--datos-de-contacto {
+  margin-right: $spacer-sm + $spacer-xs;
+  
+  p {
+    @extend .m3-label;
+    margin: 0;
+  }
+
+  a {
+    color: $ma-green-600;
+    font-weight: 700;
+  }
+}
+
 .navigation__search-button {
     @extend .m3-circle-button;
 
     .icon {
-        @include iconize('fa-search', 20px);
+        @include iconize('fa-search', 16px);
     }
 }
 

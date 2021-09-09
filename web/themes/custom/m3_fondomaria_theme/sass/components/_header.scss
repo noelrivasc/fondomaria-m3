@@ -12,7 +12,7 @@
 }
 
 .header {
-    @extend .container, .navbar, .navbar-expand-lg, .navbar-light;
+    @extend .container, .navbar, .navbar-expand-lg;
     padding: $spacer-sm + $spacer-xs;
     max-width: $extended-max-width;
 }

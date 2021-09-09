@@ -16,8 +16,8 @@
 // Bootstrap overrides
 .btn {
     @extend .btn-fx;
-    padding: $spacer-xs $spacer-sm;
-    font-size: $t-02;
+    padding: ($spacer-xs + $spacer-xxs) ($spacer-sm + $spacer-xxs);
+    font-size: $t-01;
     text-transform: uppercase;
     border-radius: 999px;
 
@@ -28,7 +28,8 @@
 }
 
 .btn-lg {
-    font-size: $t-03;
+    font-size: $t-01;
+    padding: $spacer-sm + $spacer-xs;
 }
 
 
@@ -85,9 +86,10 @@
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    border: 2px solid theme-color('secondary');
+    border: 2px solid theme-color('primary');
     background-color: theme-color('light');
-    color: theme-color('secondary');
+    color: theme-color('primary');
+    padding: 0;
 
     .icon {
         @include centerThis();

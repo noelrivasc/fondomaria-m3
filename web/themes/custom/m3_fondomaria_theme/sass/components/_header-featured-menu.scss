@@ -1,0 +1,29 @@
+///////////////////////////////////////////
+//  Styles for the header featured menu  //
+///////////////////////////////////////////
+
+.block--system-menu-blockheader-featured {
+    ul {
+        @extend .nav;
+    }
+
+    li {
+        @extend .nav-item;
+    }
+
+    li:not(:last-child) {
+        margin-right: $spacer-sm + $spacer-xs;
+    }
+
+    li:first-child {
+        a {
+            @extend .m3-cta-button;
+        }
+    }
+    
+    li:not(:first-child) {
+        a {
+            @extend .m3-standard-button;
+        }
+    }
+}

@@ -17,31 +17,36 @@
 
     a {
         @extend .nav-link;
-        @include iconize('fa-link', 24px);
-        width: 30px;
+        @include iconize('fa-link', 16px);
+        width: 20px;
         padding-right: 0 !important;
-        padding-left: 30px !important;
+        padding-left: 20px !important;
         overflow: hidden;
         position: relative;
+        color: $ma-purple-500;
 
         &:before {
             @include centerThis();
         }
+
+        &:hover {
+            color: $ma-purple-300;
+        }
     }
 
     .facebook {
-        @include iconize('fa-facebook-square', 24px, 'fab');
+        @include iconize('fa-facebook-square', 16px, 'fab');
     }
 
     .twitter {
-        @include iconize('fa-twitter', 24px, 'fab');
+        @include iconize('fa-twitter', 16px, 'fab');
     }
 
     .instagram {
-        @include iconize('fa-instagram', 24px, 'fab');
+        @include iconize('fa-instagram', 16px, 'fab');
     }
 
     .youtube {
-        @include iconize('fa-youtube', 24px, 'fab');
+        @include iconize('fa-youtube', 16px, 'fab');
     }
 }
