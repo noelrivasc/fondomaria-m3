@@ -13,7 +13,8 @@
 
 .header {
     @extend .container, .navbar, .navbar-expand-lg, .navbar-light;
-    padding: 30px 0;
+    padding: $spacer-sm + $spacer-xs;
+    max-width: $extended-max-width;
 }
 
 

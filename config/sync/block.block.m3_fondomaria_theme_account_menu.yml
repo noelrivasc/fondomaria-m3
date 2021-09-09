@@ -13,7 +13,7 @@ _core:
 id: m3_fondomaria_theme_account_menu
 theme: m3_fondomaria_theme
 region: taskbar
-weight: 1
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:

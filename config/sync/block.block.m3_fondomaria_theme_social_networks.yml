@@ -12,8 +12,8 @@ _core:
   default_config_hash: sIzRiEIllOHJpHDAxeeaGWalKySarGWVdiGtZ3BvLCE
 id: m3_fondomaria_theme_social_networks
 theme: m3_fondomaria_theme
-region: taskbar
-weight: 2
+region: contactbar
+weight: -9
 provider: null
 plugin: 'system_menu_block:social-networks'
 settings:

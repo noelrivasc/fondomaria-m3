@@ -32,11 +32,13 @@
   
 }
 
+.contactbar__wrapper,
 .taskbar__wrapper,
 .navigation__wrapper {
   width: 100%;
 }
 
+.contactbar,
 .taskbar,
 .navigation {
   @extend .navbar-nav, .mr-auto;
@@ -104,6 +106,7 @@
       transition: transform 0.3s;
       transform: translateX(100%);
 
+      .contactbar,
       .taskbar,
       .navigation {
         justify-content: flex-start;
