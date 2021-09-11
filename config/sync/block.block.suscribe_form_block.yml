@@ -1,0 +1,20 @@
+uuid: 5341d3b1-7608-4862-82d4-33c1d5205084
+langcode: es
+status: true
+dependencies:
+  module:
+    - maria_custom_blocks
+  theme:
+    - m3_fondomaria_theme
+id: suscribe_form_block
+theme: m3_fondomaria_theme
+region: ctas
+weight: 0
+provider: null
+plugin: freeform_suscribe_form_block
+settings:
+  id: freeform_suscribe_form_block
+  label: 'Suscríbete a nuestro boletín'
+  provider: maria_custom_blocks
+  label_display: visible
+visibility: {  }
