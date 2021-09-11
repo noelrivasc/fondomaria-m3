@@ -161,7 +161,7 @@ input[type='submit'] {
         }
 
         input:checked ~ .checkmark {
-            background-color: rgba($ma-gray-600, 0.2);
+            background-color: rgba($ma-gray-500, 0.2);
             @include iconize("fa-check", 24px);
 
             &:before {

@@ -10,7 +10,7 @@
     @extend .container-fluid;
     padding-top: 30px;
     padding-bottom: 10px;
-    border-bottom: 2px solid rgba($ma-gray-600, 0.3);
+    border-bottom: 2px solid rgba($ma-gray-500, 0.3);
     position: absolute;
     top: 0;
     z-index: 3;
@@ -54,7 +54,7 @@
   footer {
     @extend .bg-light;
     width: 100%;
-    border-top: 2px solid rgba($ma-gray-600, 0.3);
+    border-top: 2px solid rgba($ma-gray-500, 0.3);
     position: absolute;
     bottom: 0;
     padding: 30px;

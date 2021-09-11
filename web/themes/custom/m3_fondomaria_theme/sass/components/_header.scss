@@ -8,7 +8,6 @@
     padding: 0;
     position: fixed;
     z-index: 20;
-    border-bottom: 1px dashed theme-color("secondary");
 }
 
 .header {
@@ -45,6 +44,22 @@
     transition: transform 0.2s, opacity 0.2s;
 }
 
+.navbar__toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .navbar-toggler {
+        padding: 20px;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        @include iconize('fa-bars', 28px);
+        color: $ma-green-600;
+    }
+}
+
 // Content table
 .navigation__content-title {
     position: absolute;
@@ -70,7 +85,7 @@
         transform: translateY(120%);
         opacity: 0;
         transition: transform 0.2s, opacity 0.2s;
-        background: rgba($ma-gray-600, 0.1);
+        background: rgba($ma-gray-500, 0.1);
 
         ul {
             @extend .nav;
@@ -88,7 +103,7 @@
         }
 
         a:hover {
-            color: $ma-gray-600 !important;
+            color: $ma-gray-500 !important;
         }
 
         a:after {

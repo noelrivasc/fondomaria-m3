@@ -10,7 +10,7 @@ body {
   @extend .m3-root-text;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
+h1, h2, h3, h4, h5, h6 {
   @extend .m3-title;
 }
 
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     @extend .m3-indented-column;
     padding-top: 80px;
     padding-bottom: 40px;
-    background: rgba($ma-gray-600, 0.1);
+    background: rgba($ma-gray-500, 0.1);
   }
 
   .featured-image-wrapper {

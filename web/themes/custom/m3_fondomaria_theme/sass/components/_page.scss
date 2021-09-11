@@ -6,7 +6,7 @@
 .node--page--content {
     .content__header {
         @extend .container-fluid;
-        background-color: rgba($ma-gray-600, 0.1);
+        background-color: rgba($ma-gray-500, 0.1);
         padding-top: $spacer-lg;
         padding-bottom: $spacer-lg;
     }

@@ -3,12 +3,78 @@
 /////////////////////////
 
 .footer {
-    & > div {
-        border-top: 1px dashed theme-color("secondary");
-        padding: 30px 0;
+    padding: $spacer-xl 0;
+    background-color: $ma-purple-400;
+
+    .block__label h2 {
+        @extend .m3-title-sm;
+        color: theme-color("light");
     }
 }
 
-.index__wrapper {
+.footer__wrapper {
     @extend .container;
+}
+
+.footer__row {
+    @extend .row;
+}
+
+.footer__main-col {
+    @extend .col-md-7;
+    padding-right: $spacer-xxl;
+}
+
+.footer__aside-col {
+    @extend .col-md-5;
+}
+
+
+// Index
+
+.index {
+    @extend .row;
+}
+
+.block--system-menu-blockfooter-featured {
+    ul {
+        @extend .nav, .flex-column;
+    }
+
+    li {
+        @extend .nav-item;
+    }
+
+    a {
+        @extend .nav-link;
+        color: $ma-green-300;
+        text-decoration: underline;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: $spacer-sm;
+    }
+}
+
+
+// Signature
+
+.signature__wrapper {
+    @extend .container;
+    
+}
+
+.signature {
+    @extend .row;
+}
+
+.block--footer-copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: first baseline;
+    color: theme-color('light');
+    padding-top: $spacer-xs;
+
+    i {
+        margin-right: $spacer-xs;
+    }
 }

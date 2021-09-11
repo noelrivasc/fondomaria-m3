@@ -6,7 +6,7 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     // font-size: $t-root; // Removed fixed size to allow accesibility base font configuration
-    color: theme-color('dark');
+    color: $ma-purple-600;
     line-height: $m3-line-height;
 }
 
@@ -15,6 +15,7 @@
 
 .m3-title {
     font-weight: 700;
+    color: $ma-purple-400;
 }
 
 .m3-title-lg {

@@ -108,19 +108,27 @@
     </main>
   
     <footer class="footer" role="contentinfo" aria-label="{{ 'Website footer'|t }}">
-      <div class="footer__ctas">
-        <div class="ctas__wrapper">
-          {{ page.ctas }}
-        </div>
-      </div>
-      <div class="footer__index">
-        <div class="index__wrapper">
-          {{ page.index }}
-        </div>
-      </div>
-      <div class="footer__signature">
-        <div class="signature__wrapper">
-          {{ page.signature }}
+      <div class="footer__wrapper">
+        <div class="footer__row">
+          <div class="footer__main-col">
+            <div class="footer__ctas">
+              <div class="ctas__wrapper">
+                {{ page.ctas }}
+              </div>
+            </div>
+          </div>
+          <div class="footer__aside-col">
+            <div class="footer__index">
+              <div class="index__wrapper">
+                {{ page.index }}
+              </div>
+            </div>
+            <div class="footer__signature">
+              <div class="signature__wrapper">
+                {{ page.signature }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

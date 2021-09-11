@@ -44,7 +44,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid rgba($ma-gray-600, 0.1);
+    border: 1px solid rgba($ma-gray-500, 0.1);
 }
 
 .section-card__inner {
@@ -147,7 +147,7 @@
     .content-card__content {
         @extend .col-7;
         border-top: none;
-        border-left: 1px dotted $ma-gray-600;
+        border-left: 1px dotted $ma-gray-500;
         padding-top: $spacer-lg;
         padding-bottom: $spacer-lg;
     }
@@ -222,7 +222,7 @@
     @extend .content-card__content;
     padding: $spacer-sm $spacer-md;
     border-top: 0;
-    border-bottom: 1px dotted $ma-gray-600;
+    border-bottom: 1px dotted $ma-gray-500;
 }
 
 .collection-card__title {

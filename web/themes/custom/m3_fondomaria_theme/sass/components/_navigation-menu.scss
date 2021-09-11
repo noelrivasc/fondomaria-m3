@@ -7,12 +7,6 @@
   flex-direction: column;
   align-items: flex-end;
 }
-  
-.navbar__wrapper,
-.navbar__toggler {
-  transition: transform 0.3s, opacity 0.3s;
-  opacity: 1;
-}
 
 .navbar__elements {
   width: 100%;
@@ -20,16 +14,6 @@
 
 .navbar__row:not(:last-child) {
   margin-bottom: $spacer-sm;
-}
-
-.navbar__toggler {
-  position: absolute;
-  right: 0;
-}
-
-.navbar-toggler {
-  background-color: $m3-light;
-  
 }
 
 .contactbar__wrapper,
@@ -80,6 +64,7 @@
   p {
     @extend .m3-label;
     margin: 0;
+    color: $ma-gray-500;
   }
 
   a {
@@ -99,6 +84,18 @@
 
 // Responsive
 @include media-breakpoint-down(md) {
+  .contactbar__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: $spacer-xs + $spacer-xxs;
+
+    .block--datos-de-contacto {
+      margin-right: 0;
+      margin-bottom: $spacer-xs + $spacer-xxs;
+    }
+  }
+
   .navbar__wrapper {
     position: fixed;
     right: 0;
@@ -112,10 +109,10 @@
     .navbar__elements {
       width: 100%;
       height: 100%;
-      padding: $spacer-md;
-      padding-top: $spacer-xl;
+      padding: $spacer-xs + $spacer-xxs;
+      padding-bottom: $spacer-xl;
       background-color: $m3-light;
-      border-left: 3px solid rgba($ma-gray-600, 0.1);
+      border: 1px solid $ma-green-300;
       pointer-events: all;
       transition: transform 0.3s;
       transform: translateX(100%);
@@ -125,22 +122,10 @@
       .navigation {
         justify-content: flex-start;
         align-items: flex-start;
+      }
 
-        .block {
-          padding-bottom: $spacer-sm;
-        }
-
-        .language-switcher {
-          position: absolute;
-          top: $spacer-sm;
-          right: $spacer-sm;
-        }
-
-        .block--search-button {
-          position: absolute;
-          top: 25px;
-          left: $spacer-sm;
-        }
+      .navbar__row:not(:last-child) {
+        margin-bottom: 0;
       }
     }
   }
@@ -151,17 +136,24 @@
     }
   }
 
+  .block--system-menu-blockheader-featured,
   .block--system-menu-blockmain {
+    width: 100%;
+
     ul {
       -ms-flex-direction: column !important;
       flex-direction: column !important;
 
       li {
-        padding-bottom: 10px;
+        padding-bottom: $spacer-sm;
 
         a {
-          font-size: $t-05;
+          width: 100%;
         }
+      }
+
+      li:not(:last-child) {
+        margin-right: 0;
       }
     }
   }
