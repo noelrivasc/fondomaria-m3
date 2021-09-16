@@ -3,12 +3,18 @@
 //////////////////////////////////////
 
 .node--page--full,
-.node--page--content {
+.node--page--content,
+.node--blog_post--full,
+.node--resource--full {
     .content__header {
         @extend .container-fluid;
-        background-color: rgba($ma-gray-500, 0.1);
-        padding-top: $spacer-lg;
-        padding-bottom: $spacer-lg;
+        background-color: $ma-orange-300;
+        padding-top: $spacer-xl;
+        padding-bottom: $spacer-xl;
+        background-image: url("#{$m3_assets_dir}/img/flowers_peach.svg");
+        background-size: 225px;
+        background-position: 75% $spacer-xl;
+        background-repeat: no-repeat;
     }
 
     .content__title {
@@ -18,32 +24,11 @@
 
     .content__title-h {
         @extend .m3-title-lg;
+        color: $ma-purple-600;
         margin: 0;
     }
 
-    .content__intro {
-        @extend .container;
-    }
-
-    .content__intro-row {
-        @extend .row;
-        flex-direction: column-reverse;
-    }
-
-    .content__brief {
-        @extend .col-md-6, .m3-featured-sm;
-        margin-bottom: $spacer-md;
-    }
-
-    .content__featured-image {
-        @extend .col-md-6;
-        margin-bottom: $spacer-md;
-        max-width: unset;
-
-        img {
-            @extend .img-fluid;
-        }
-    }
+    .content__intro {}
 
     .content__content-table {
         @extend .container;
@@ -63,6 +48,7 @@
 
             a {
                 @extend .nav-link, .m3-body-md;
+                color: $ma-green-100;
                 padding-left: 0;
             }
         }
@@ -73,7 +59,9 @@
     }
 
     .content__footer {
-        margin-top: $spacer-xxl;
+        @extend .m3-block-shade-1-half;
+        padding-top: $spacer-xxl;
+        padding-bottom: $spacer-xl;
     }
 
     .content__related {
@@ -100,7 +88,9 @@
 
 @include media-breakpoint-down(md) {
     .node--page--full,
-    .node--page--content {
+    .node--page--content,
+    .node--blog_post--full,
+    .node--resource--full {
         .content__footer {
             &:before {
                 height: 75%;

@@ -64,7 +64,7 @@
 .navigation__content-title {
     position: absolute;
     left: 200px;
-    top: $spacer-md;
+    top: $spacer-md + $spacer-sm;
     transform: translateY(-120%);
     opacity: 0;
     transition: transform 0.2s, opacity 0.2s;
@@ -85,7 +85,8 @@
         transform: translateY(120%);
         opacity: 0;
         transition: transform 0.2s, opacity 0.2s;
-        background: rgba($ma-gray-500, 0.1);
+        background: $ma-orange-100;
+        border-radius: 999px;
 
         ul {
             @extend .nav;
@@ -97,21 +98,21 @@
 
         a {
             @extend .nav-link, .m3-link-sm;
-            color: $ma-gray-500 !important;
+            color: $ma-green-500 !important;
             transition: color 0.2s;
             position: relative;
         }
 
         a:hover {
-            color: $ma-gray-500 !important;
+            color: $ma-green-500 !important;
         }
 
         a:after {
             content: '';
             display: block;
             width: 80%;
-            height: 3px;
-            background-color: $ma-gray-500;
+            height: 4px;
+            background-color: $ma-green-500;
             opacity: 0;
             transition: opacity 0.2s;
             @include centerThis(top);
@@ -127,7 +128,7 @@
 
 .header__wrapper.is-shrinked {
     .brand__wrapper {
-        transform: translateY(-10px) scale(0.9);
+        transform: translateY(-15px) scale(0.8);
     }
 
     .navbar__wrapper,

@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   p.featured {
-    @extend .m3-featured-sm, .m3-lecture-safe !optional;
+    @extend .m3-featured-lg, .m3-lecture-safe !optional;
   }
 
   p.block-shadow {

@@ -7,13 +7,11 @@
 
 // Homepage styles
 .homepage {
-    @extend .container;
     padding-top: $spacer-md;
-    padding-left: 100px;
 }
   
-.homepage__header,
-.homepage__body {
+.homepage__header {
+    @extend .container;
     padding-right: 350px;
 }
 
@@ -27,9 +25,4 @@
     @extend .m3-featured-sm;
     margin-top: $spacer-md;
     margin-bottom: $spacer-md;
-}
-
-.homepage__footer {
-    margin-top: $spacer-xl;
-    margin-bottom: $spacer-xxl;
 }
