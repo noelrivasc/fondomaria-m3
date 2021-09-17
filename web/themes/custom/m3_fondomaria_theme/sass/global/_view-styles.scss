@@ -5,28 +5,49 @@
 .m3-view {
   .block--page-title-block {
     position: relative;
-    background-color: rgba($ma-gray-500, 0.1);
+    background-color: $ma-orange-300;
     padding-top: $spacer-xl;
     padding-bottom: $spacer-md;
     color: theme-color("primary");
 
     .block__content {
       @extend .container;
-      padding: 0;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 225px;
+        height: 198px;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-image: url("#{$m3_assets_dir}/img/flowers_peach.svg");
+        background-size: 225px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
     }
 
     h1 {
       @extend .m3-title-lg;
+      color: $ma-purple-600;
       margin: 0;
     }
   }
 
   .content__wrapper {
     .view__exposed {
-      background-color: rgba($ma-gray-500, 0.1);
+      background-color: $ma-orange-300;
       padding-top: $spacer-md;
       padding-bottom: $spacer-xl;
       position: relative;
+
+      .form__container {
+        position: relative;
+        z-index: 2;
+      }
   
       .views-exposed-form {
         @extend .row;
@@ -39,7 +60,7 @@
     }
 
     .view__content {
-      padding-top: $spacer-md;
+      padding-top: $spacer-xxl;
       padding-bottom: $spacer-xl;
     }
 

@@ -3,9 +3,7 @@
 //////////////////////////////////////
 
 .node--page--full,
-.node--page--content,
-.node--blog_post--full,
-.node--resource--full {
+.node--page--content {
     .content__header {
         @extend .container-fluid;
         background-color: $ma-orange-300;
@@ -20,6 +18,12 @@
     .content__title {
         @extend .container;
         margin-bottom: $spacer-md;
+        padding-right: 225px;
+        position: relative;
+        
+        .contextual {
+            z-index: 10;
+        }
     }
 
     .content__title-h {
@@ -88,9 +92,7 @@
 
 @include media-breakpoint-down(md) {
     .node--page--full,
-    .node--page--content,
-    .node--blog_post--full,
-    .node--resource--full {
+    .node--page--content {
         .content__footer {
             &:before {
                 height: 75%;

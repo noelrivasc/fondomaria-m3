@@ -7,9 +7,6 @@
 
   .content__wrapper {
     .view__exposed {
-      padding-top: 40px;
-      background-color: rgba($ma-gray-500, 0.1);
-
       .form-item-search-api-fulltext {
         @extend .col-sm-12;
       }
@@ -19,11 +16,12 @@
       } 
     
       .form-actions {
-        @extend .col-xl-4, .col-12;
+        @extend .col-12;
+        margin-top: $spacer-xs;
       }
 
       .advanced-search-link {
-        @extend .col-12;
+        display: none;
       }
     }
   }

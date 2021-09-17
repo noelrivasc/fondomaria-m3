@@ -19,7 +19,8 @@
 
 .views-row {
   @extend .m3-restricted-column;
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-bottom: $spacer-xl;
 }
 
 .item-list {

@@ -2,63 +2,40 @@
 //  Styles for the Blog post full nodes  //
 ///////////////////////////////////////////
 
-// .node--blog_post--full {
-//   .content__header {
-//     @extend .container, .m3-indented-column;
-//   }
+.node--blog_post--full {
+    @extend .node--page--full;
 
-//   .content__title {
-//     margin-top: $spacer-md;
-//     margin-bottom: $spacer-md;
-//     margin-right: 5%;
-//   }
+    .content__description {
+        @extend .container;
+        margin-bottom: $spacer-md;
+        padding-right: 225px;
+    }
 
-//   .content__title-h {
-//     @extend .m3-title-lg;
-//     margin: 0;
-//   }
+    .content__labels {
+        @extend .container;
+        padding-right: 225px;
+    }
 
-//   .content__brief {
-//     @extend .container, .m3-featured-sm, .m3-indented-column;
-//     margin-bottom: $spacer-md;
-//   }
+    .field-author {
+        display: inline;
+        color: $ma-purple-500;
 
-//   .content__footer {
-//     margin-top: $spacer-xl;
-//   }
+        p {
+            display: inline;
+        }
+    }
 
-//   .content__related {
-//     @extend .container;
-//     max-width: 850px !important;
-//   }
+    .field-related-posts {
+        @extend .row;
+    }
 
-//   .field-author {
-//     display: inline;
-//   }
+    .field-related-posts__item {
+        @extend .col-lg-6;
+        padding-bottom: $spacer-lg;
 
-//   .field-related-posts {
-//     @extend .row;
-//   }
-
-//   .field-related-posts__item {
-//     @extend .col-lg-6;
-//     padding-bottom: $spacer-lg;
-
-//     .node--card {
-//       display: flex;
-//       justify-content: center;
-//     }
-//   }
-// }
-
-// // Responsive styles
-
-// @include media-breakpoint-down(md) {
-//   .node--blog_post--full {
-//       .content__footer {
-//           &:before {
-//               height: 75%;
-//           }
-//       }
-//   }
-// }
+        .node--card {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

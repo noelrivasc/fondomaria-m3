@@ -305,14 +305,11 @@
 
 
 // Miscellaneous
-.m3-label {
-    font-weight: 500;
-    font-size: $t-01;
-}
-
+.m3-label,
 .m3-tag {
-    font-weight: 500;
+    font-weight: 700;
     font-size: $t-01;
+    text-transform: uppercase;
 }
 
 .m3-hero {

@@ -8,11 +8,12 @@
 
     .form-item__label {
         @extend .col-form-label;
-        margin: 10px 0;
+        margin: 0;
+        margin-bottom: $spacer-sm;
         padding: 0;
-        text-indent: 0.5em;
 
         label {
+            @extend .m3-label;
             margin: 0;
         }
 
@@ -29,14 +30,15 @@
 }
 
 .m3-form-control {
-    @extend .form-control, .m3-rounded;
+    @extend .form-control;
     background: theme-color('light');
     padding: 0.375rem 1rem;
-    border: 1px solid $ma-gray-500;
+    border: 1px solid $ma-green-600;
+    border-radius: 4px;
     transition: background-color 0.3s, border-color 0.3s;
 
     &:focus {
-        border-color: $ma-gray-500;
+        border-color: $ma-green-400;
         box-shadow: none;
     }
 }
@@ -105,8 +107,8 @@ input[type='radio'] {
     @include centerThis('right');
     @include iconize('fa-chevron-down', 40px);
     height: 100%;
-    background-color: theme-color('secondary');
-    color: theme-color('light');
+    background-color: transparent;
+    color: $ma-green-600;
     pointer-events: none;
 
     &:before {

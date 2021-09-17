@@ -5,9 +5,6 @@
 .node {
   .content__description {
     @extend .m3-featured-sm;
-    margin-right: 5%;
-    margin-bottom: 30px;
-    color: $ma-gray-500;
 
     a {
       @extend .m3-link;
@@ -15,15 +12,12 @@
   }
   
   .content__labels {
-    max-width: 340px;
-    margin-bottom: 15px;
-
     .field-content-topics {
       display: inline;
     }
   
     .field-content-topics__item {
-      margin-bottom: 15px;
+      margin-bottom: $spacer-sm;
       display: inline-block;
       
       a {
@@ -35,7 +29,7 @@
     .field-resource-type,
     .field-blog-post-type,
     .field-profile-type {
-      margin-bottom: 15px;
+      margin-bottom: $spacer-sm;
       display: inline-block;
 
       a {
