@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/blog\r\n/resources\r\n/taxonomy/term/*"
+    pages: "/blog\r\n/resources\r\n/taxonomy/term/*\r\n/search"
     negate: false
     context_mapping: {  }
