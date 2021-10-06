@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "350e69388b9565782817c3fb1db68e0f",
+    "content-hash": "23968d61a9ca33066000c0fd14b78093",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3404,59 +3404,6 @@
             }
         },
         {
-            "name": "drupal/views_entity_embed",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_entity_embed.git",
-                "reference": "2.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_entity_embed-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "c66b3977ea1e2b9e8ede50e87308ac13564fbfc3"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/embed": "^1.0",
-                "drupal/entity_embed": "^1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1597141846",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Milka Petkova",
-                    "homepage": "https://www.drupal.org/user/1443204",
-                    "email": "milka.petkova.88@gmail.com",
-                    "role": "Creator and Maintainer"
-                },
-                {
-                    "name": "skek",
-                    "homepage": "https://www.drupal.org/user/417078"
-                }
-            ],
-            "description": "Allows views to be embedded using a text editor.",
-            "homepage": "https://www.drupal.org/project/views_entity_embed",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_entity_embed",
-                "issues": "https://www.drupal.org/project/issues/views_entity_embed"
-            }
-        },
-        {
             "name": "drupal/webform",
             "version": "6.0.5",
             "source": {
@@ -4722,11 +4669,11 @@
         },
         {
             "name": "matrushka/matrushka-standard-cms",
-            "version": "v4.2.4",
+            "version": "v4.2.5",
             "source": {
                 "type": "git",
                 "url": "https://josueMartin@bitbucket.org/matrushka/matrushka-standard-cms-m-iii.git",
-                "reference": "4e73acc1079aa8c72e759482e71d128a6f90fcee"
+                "reference": "ff164720285a5cf0960d05e22f4c1ba6ccd245d4"
             },
             "require": {
                 "ckeditor/div": "4.10.1",
@@ -4751,11 +4698,7 @@
                 "drupal/twig_tweak": "^3.0.0",
                 "drupal/url_embed": "^1.0.0-beta1",
                 "drupal/views_custom_cache_tag": "^1.2.0",
-                "drupal/views_entity_embed": "^2.0.0",
                 "drupal/webform": "^6.0.2"
-            },
-            "require-dev": {
-                "drupal/devel": "^3.0"
             },
             "type": "drupal-profile",
             "license": [
@@ -4768,7 +4711,7 @@
                 }
             ],
             "description": "Matrushka standard cms installation profile for Drupal",
-            "time": "2021-09-06T23:21:47+00:00"
+            "time": "2021-10-06T00:54:22+00:00"
         },
         {
             "name": "nikic/php-parser",

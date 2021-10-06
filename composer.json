@@ -41,7 +41,7 @@
         "drupal/core-recommended": "^9.1.7",
         "drupal/seckit": "^2.0",
         "drush/drush": "^10.4.0",
-        "matrushka/matrushka-standard-cms": "v4.2.4"
+        "matrushka/matrushka-standard-cms": "v4.2.5"
     },
     "conflict": {
         "drupal/drupal": "*"

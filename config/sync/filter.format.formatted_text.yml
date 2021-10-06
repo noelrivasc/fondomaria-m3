@@ -7,7 +7,6 @@ dependencies:
     - entity_embed
     - media
     - url_embed
-    - views_entity_embed
 _core:
   default_config_hash: NY_1TCzldFaESCE736XDVQyLX4Bo6pzqRD5H8tOcNic
 name: 'Formatted text'
@@ -23,7 +22,7 @@ filters:
   entity_embed:
     id: entity_embed
     provider: entity_embed
-    status: true
+    status: false
     weight: -44
     settings: {  }
   filter_html_image_secure:
@@ -45,7 +44,7 @@ filters:
     status: true
     weight: -42
     settings:
-      allowed_html: '<br> <em> <strong> <cite> <blockquote cite> <code> <ol type start> <li> <dl> <dt> <dd> <h6 id> <hr> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title> <drupal-views data-view-name data-view-display data-view-arguments data-embed-button> <ul type class="featured-list"> <img src alt data-entity-type data-entity-uuid data-align data-caption> <a href hreflang class="primary-button secondary-button ghost-button standard-button cta-button featured-link"> <div class="indented-column indented-left indented-right card-container--lg card-container--md card-container--sm border-box"> <h2 id class="heading-1"> <h3 id class="title-sm subtitle heading-2"> <h4 id class="title-xs subtitle-sm heading-3"> <h5 id class="heading-4"> <p class="text-align-left text-align-center text-align-right text-align-justify featured quote-attribution-name quote-attribution-position">'
+      allowed_html: '<br> <em> <strong> <cite> <blockquote cite> <code> <ol type start> <li> <dl> <dt> <dd> <h6 id> <hr> <ul type class="featured-list"> <img src alt data-entity-type data-entity-uuid data-align data-caption> <a href hreflang class="primary-button secondary-button ghost-button standard-button cta-button featured-link"> <div class="indented-column indented-left indented-right card-container--lg card-container--md card-container--sm border-box"> <h2 id class="heading-1"> <h3 id class="title-sm subtitle heading-2"> <h4 id class="title-xs subtitle-sm heading-3"> <h5 id class="heading-4"> <p class="text-align-left text-align-center text-align-right text-align-justify featured quote-attribution-name quote-attribution-position">'
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
@@ -88,14 +87,8 @@ filters:
   url_embed:
     id: url_embed
     provider: url_embed
-    status: true
+    status: false
     weight: -46
-    settings: {  }
-  views_embed:
-    id: views_embed
-    provider: views_entity_embed
-    status: true
-    weight: -45
     settings: {  }
   media_embed:
     id: media_embed
@@ -104,5 +97,5 @@ filters:
     weight: -37
     settings:
       default_view_mode: default
-      allowed_media_types: {  }
       allowed_view_modes: {  }
+      allowed_media_types: {  }
