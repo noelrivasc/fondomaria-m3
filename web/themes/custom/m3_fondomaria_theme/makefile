@@ -17,6 +17,8 @@ include-yarn-deps:
 	mkdir -p $(VENDOR_DIR)
 	mkdir -p $(VENDOR_DIR)/popper
 	cp $(NODE_MODULES)/popper.js/dist/umd/popper.min.js $(VENDOR_DIR)/popper/
+	mkdir -p $(VENDOR_DIR)/popper2
+	cp $(NODE_MODULES)/@popperjs/core/dist/umd/popper.min.js $(VENDOR_DIR)/popper2/
 	mkdir -p $(VENDOR_DIR)/bootstrap
 	cp $(NODE_MODULES)/bootstrap/dist/js/bootstrap.min.js $(VENDOR_DIR)/bootstrap/
 	mkdir -p $(VENDOR_DIR)/slick
