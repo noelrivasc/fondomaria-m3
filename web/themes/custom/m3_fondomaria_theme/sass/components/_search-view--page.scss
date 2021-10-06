@@ -2,57 +2,33 @@
 //  Styles for the search view page  //
 ///////////////////////////////////////
 
-.search-view--page {
+.page--search {
+  @extend .m3-view;
 
-  .view__exposed {
-    @extend .container;
-
-    .form__container {
-      @extend .m3-rounded-border;
-    }
-  
-    .views-exposed-form {
-      @extend .row;
-    }
-  
-    .form-item {
-      @extend .col;
-    }
-
-    // .form-item-content-type {
-    //   .form-item__wrapper {
-    //     @extend .row;
-    //     padding-bottom: 30px;
-    //     border-bottom: 2px solid rgba($ma-gray-500, 0.3);
-    //   }
-
-    //   .form-item__label {
-    //     @extend .col-lg-4, .col-md-5;
-    //     margin: 0;
-
-    //     label {
-    //       @extend .m3-featured-sm;
-    //     }
-    //   }
-
-    //   .form-item__contents {
-    //     @extend .col-lg-8, .col-md-7;
-    //   }
-    // }
-  
-    .form-item-content-type,
-    .form-item-keys,
-    .form-item-search-api-fulltext {
-      @extend .col-6;
-    }
-  
-    .form-item-langcode,
-    .form-item-search-api-language {
-      @extend .col-12;
-    }
+  .content__wrapper {
+    .view__exposed {
+      .form-item-content-type,
+      .form-item-keys,
+      .form-item-search-api-fulltext {
+        @extend .col-6;
+      }
     
-    .form-actions {
-      @extend .col-12;
+      .form-item-langcode,
+      .form-item-search-api-language {
+        @extend .col-12;
+      }
+      
+      .form-actions {
+        @extend .col-12;
+      }
+    }
+
+    .view__content-inner {
+      display: initial;
+    }
+  
+    .views-row {
+      margin-bottom: initial;
     }
   }
 }
