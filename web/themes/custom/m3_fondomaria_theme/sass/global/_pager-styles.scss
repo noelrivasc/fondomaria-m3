@@ -12,16 +12,24 @@
 
   .pager__item {
     @extend .page-item;
+    margin-right: $spacer-sm + $spacer-xs;
+
+    &:last-child {
+      margin-right: 0;
+    }
     
     .pager__link,
     .pager__label {
       @extend .page-link, .m3-body-md;
+      display: flex;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
       margin: 0;
-      border: 1px solid $ma-gray-500;
-      border-left: none;
-      border-right: none;
-      padding: 10px 20px !important;
-      color: theme-color('secondary');
+      border: none;
+      border-radius: 99px;
+      color: $ma-green-600;
+      background-color: transparent;
 
       &:focus {
         outline: 0;
@@ -29,40 +37,17 @@
       }
     }
 
-    .is-disabled {
-      color: $ma-gray-500;
-
-      &:hover {
-        color: $ma-gray-500;
-        background-color: inherit;
-      }
-    }
-
     &:hover {
       .pager__link,
       .pager__label {
-        border: 1px solid $ma-gray-500;
-        border-left: none;
-        border-right: none;
+        background-color: $ma-green-100;
       }
     }
 
-    &:first-child {
-      .pager__link,
-      .pager__label {
-        border-left: 1px solid $ma-gray-500;
-        border-top-left-radius: 0.25rem;
-        border-bottom-left-radius: 0.25rem;
-      }
-    }
-
-    &:last-child {
-      .pager__link,
-      .pager__label {
-        border-right: 1px solid $ma-gray-500;
-        border-top-right-radius: 0.25rem;
-        border-bottom-right-radius: 0.25rem;
-      }
+    .is-disabled {
+      color: $ma-gray-500 !important;
+      border-color: $ma-gray-500 !important;
+      background-color: transparent !important;
     }
 
     &.is-active {
@@ -70,19 +55,39 @@
     
       .pager__link,
       .pager__label {
-        background-color: rgba($ma-gray-500, 0.1);
-        color: $ma-gray-500;
-        border: 1px solid $ma-gray-500;
-        border-left: none;
-        border-right: none;
+        background-color: $ma-purple-200;
+        color: $ma-purple-400;
       }
     }
   }
 
-  .pager__item--first {
+  .pager__item--previous,
+  .pager__item--next {
+    .pager__link,
+    .pager__label {
+      border: 2px solid $ma-green-600;
+    }
+
+    &:hover {
+      .pager__link,
+      .pager__label {
+        border: 2px solid $ma-green-600;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .pager__item--first,
+  .pager__item--last {
     .icon {
-      @include iconize("fa-angle-double-left", $t-03);
-      display: inline;
+      display: none;
+    }
+
+    &:hover {
+      .pager__link,
+      .pager__label {
+        background-color: transparent;
+      }
     }
   }
 
@@ -93,66 +98,10 @@
     }
   }
   
-  .pager__item--first,
-  .pager__item--previous {
-    .pager__link,
-    .pager__label {
-      border-right: 1px solid $ma-gray-500;
-    }
-
-    &:hover {
-      .pager__link,
-      .pager__label {
-        border-right: 1px solid $ma-gray-500;
-      }
-    }
-  }
-  
   .pager__item--next {
     .icon {
       @include iconize("fa-angle-right", $t-03);
       display: inline;
-    }
-  }
-
-  .pager__item--last {
-    .icon {
-      @include iconize("fa-angle-double-right", $t-03);
-      display: inline;
-    }
-  }
-
-  .pager__item--next,
-  .pager__item--last {
-    .pager__link,
-    .pager__label {
-      border-left: 1px solid $ma-gray-500;
-    }
-
-    &:hover {
-      .pager__link,
-      .pager__label {
-        border-left: 1px solid $ma-gray-500;
-      }
-    }
-  }
-}
-
-.pager--dark {
-  .pager__item--first,
-  .pager__item--last {
-    .pager__link,
-    .pager__label {
-      color: theme-color('light');
-      background-color: $ma-gray-500;
-    }
-
-    &:hover {
-      .pager__link,
-      .pager__label {
-        color: theme-color('light');
-        background-color: $ma-gray-500;
-      }
     }
   }
 }
@@ -163,7 +112,6 @@
       .pager__link,
       .pager__label {
         font-size: $t-02;
-        padding: 5px 10px !important;
       }
     }
 
