@@ -5,6 +5,10 @@
 .page--taxonomy-term {
   @extend .m3-view;
 
+  .block--page-title-block {
+    background-color: transparent;
+  }
+
   .block--system-main-block {
     padding-bottom: $spacer-lg;
 
