@@ -3,8 +3,8 @@
 ////////////////////////////
 
 .pager {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: $spacer-xxl;
+  margin-bottom: $spacer-xxl;
 
   .pager__items {
     @extend .pagination, .justify-content-center;

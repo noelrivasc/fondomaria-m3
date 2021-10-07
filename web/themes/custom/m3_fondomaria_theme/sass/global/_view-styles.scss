@@ -61,13 +61,24 @@
 
     .view__content {
       padding-top: $spacer-xxl;
-      padding-bottom: $spacer-xl;
+      padding-bottom: $spacer-xxl - $spacer-xl;
     }
 
     .view__content-inner {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: $spacer-md;
+      grid-gap: 0 $spacer-md;
+
+      .content-card,
+      .collection-card {
+        margin: 0 auto;
+      }
+    }
+
+    .view__pager {
+      .pager {
+        margin-top: 0;
+      }
     }
   }
 }
