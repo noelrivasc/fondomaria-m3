@@ -36,10 +36,10 @@
     top: 15px;
     right: 15px;
     z-index: 10;
-    color: $ma-gray-500;
+    color: $ma-green-600;
     overflow: hidden;
     padding-left: 40px;
-    @include iconize('fa-times-circle', 40px);
+    @include iconize('fa-times-circle', 40px, "far");
 
     &:before {
       @include centerThis();
