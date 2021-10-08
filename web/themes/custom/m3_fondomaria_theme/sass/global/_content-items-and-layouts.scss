@@ -241,6 +241,8 @@
 // Embed Image
 
 .content-item--embed-image {
+    margin-bottom: $spacer-sm;
+    
     .embed-image__img {
         img {
             display: block;
