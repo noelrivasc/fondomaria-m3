@@ -81,6 +81,7 @@
     bottom: 0;
     left: 0;
     overflow: hidden;
+    pointer-events: none;
 
     .content-table__table {
         transform: translateY(120%);
@@ -102,6 +103,7 @@
             color: $ma-green-700 !important;
             transition: color 0.2s;
             position: relative;
+            pointer-events: all;
         }
 
         a:hover {
