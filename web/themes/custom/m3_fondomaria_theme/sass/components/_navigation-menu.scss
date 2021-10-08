@@ -62,14 +62,14 @@
   margin-right: $spacer-sm + $spacer-xs;
   
   p {
-    @extend .m3-label;
     margin: 0;
     color: $ma-gray-500;
   }
 
   a {
+    @extend .m3-label;
     color: $ma-green-600;
-    font-weight: 700;
+    font-size: $t-02;
   }
 }
 
