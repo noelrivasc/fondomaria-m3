@@ -60,11 +60,11 @@
 
     .content__content {
         margin-top: $spacer-xxl;
+        margin-bottom: $spacer-xxl;
     }
 
     .content__footer {
         @extend .m3-block-shade-1-half;
-        padding-top: $spacer-xxl;
         padding-bottom: $spacer-xl;
     }
 
