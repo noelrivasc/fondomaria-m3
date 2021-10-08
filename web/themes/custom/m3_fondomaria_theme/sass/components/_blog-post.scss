@@ -7,6 +7,7 @@
 
     .content__description {
         @extend .container;
+        margin-top: $spacer-sm + $spacer-xs;
         margin-bottom: $spacer-md;
         padding-right: 225px;
     }
