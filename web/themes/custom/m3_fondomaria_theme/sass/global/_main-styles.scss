@@ -32,14 +32,12 @@ h1, h2, h3, h4, h5, h6 {
 
   hr {
     display: block;
-    margin: 0;
-    margin-top: 4em;
-    margin-bottom: 1em;
-    width: 60%;
+    margin: $spacer-xl auto;
+    width: 100%;
     min-width: 200px;
-    max-width: 600px;
-    height: 5px;
-    background-color: $ma-gray-500;
+    max-width: 900px;
+    height: $spacer-md;
+    background: url("#{$m3_assets_dir}/img/hr.svg") no-repeat center center;
     border: 0;
   }
 
