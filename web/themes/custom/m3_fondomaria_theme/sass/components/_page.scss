@@ -39,6 +39,7 @@
 
         .content-table__label {
             @extend .m3-body-sm;
+            text-transform: uppercase;
         }
 
         .content-table__table {
@@ -52,8 +53,9 @@
 
             a {
                 @extend .nav-link, .m3-body-md;
-                color: $ma-green-100;
+                color: $ma-green-800;
                 padding-left: 0;
+                text-decoration: underline;
             }
         }
     }

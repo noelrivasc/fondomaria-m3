@@ -77,6 +77,7 @@
 .navigation__content-table {
     position: absolute;
     width: 100%;
+    padding: $spacer-xxs ($spacer-sm + $spacer-xs);
     bottom: 0;
     left: 0;
     overflow: hidden;
@@ -98,13 +99,13 @@
 
         a {
             @extend .nav-link, .m3-link-sm;
-            color: $ma-green-500 !important;
+            color: $ma-green-700 !important;
             transition: color 0.2s;
             position: relative;
         }
 
         a:hover {
-            color: $ma-green-500 !important;
+            color: $ma-green-800 !important;
         }
 
         a:after {
@@ -112,7 +113,7 @@
             display: block;
             width: 80%;
             height: 4px;
-            background-color: $ma-green-500;
+            background-color: $ma-green-700;
             opacity: 0;
             transition: opacity 0.2s;
             @include centerThis(top);
