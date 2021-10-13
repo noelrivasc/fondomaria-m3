@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: 8mozgSSfZetdJrg_elBO4zPYcQHfOcusfnd1qjRsw_o
-name: 'Resource collection'
+name: 'Colección de recursos'
 type: resource_collection
 description: 'Used for resource collection publications.'
 help: ''

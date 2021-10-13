@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: 11fOcXxY7uBmr_hlKAMkLtKF65Vidn8KzMWBC2_TKG0
-name: 'Resource type'
+name: 'Tipo de recurso'
 vid: resource_type
 description: 'Classification tags for resource contents'
 weight: 0

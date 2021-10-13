@@ -24,7 +24,7 @@ id: paragraph.freeform_content_canvas.field_canvas_content
 field_name: field_canvas_content
 entity_type: paragraph
 bundle: freeform_content_canvas
-label: Content
+label: Contenidos
 description: ''
 required: true
 translatable: false

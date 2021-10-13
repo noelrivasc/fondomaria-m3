@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: 6CsHnV0SNIxgKEfYTi3anqSq1OkzlXX9M3_vqkknZv8
-name: 'Blog post type'
+name: Categoría
 vid: blog_post_type
 description: 'Classification tags for Blog posts'
 weight: 0

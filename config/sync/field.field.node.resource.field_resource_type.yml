@@ -12,7 +12,7 @@ id: node.resource.field_resource_type
 field_name: field_resource_type
 entity_type: node
 bundle: resource
-label: 'Resource type'
+label: 'Tipo de recurso'
 description: ''
 required: false
 translatable: false

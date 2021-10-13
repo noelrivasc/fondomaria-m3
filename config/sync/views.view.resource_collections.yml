@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: UL1XFDAmFrX6xIxY4PZabshxbj3TDnyP6TVKz4QFy_w
 id: resource_collections
-label: 'Resource Collections'
+label: 'Colecciones de recursos'
 module: views
 description: 'Provides a block to display all available Resource Collections'
 tag: ''
@@ -140,7 +140,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts: {  }
-      title: 'Resource Collections'
+      title: 'Colecciones de recursos'
       header: {  }
       footer: {  }
       empty: {  }

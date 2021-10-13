@@ -10,7 +10,7 @@ id: media.image.uid
 field_name: uid
 entity_type: media
 bundle: image
-label: 'Authored by'
+label: 'Escrito por'
 description: 'The user ID of the author.'
 required: false
 translatable: false

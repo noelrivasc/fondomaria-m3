@@ -895,7 +895,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Página
     position: 1
     display_options:
       path: admin/people/list

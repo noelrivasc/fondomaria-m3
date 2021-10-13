@@ -12,7 +12,7 @@ id: node.blog_post.field_blog_post_type
 field_name: field_blog_post_type
 entity_type: node
 bundle: blog_post
-label: 'Blog post type'
+label: Categoría
 description: ''
 required: false
 translatable: false

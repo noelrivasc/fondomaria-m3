@@ -15,7 +15,7 @@ dependencies:
 _core:
   default_config_hash: VMv6aDicparTt8GqsA1wKPfeVC0zU7cpcNIknKLl-c0
 id: search
-label: Search
+label: Buscar
 module: views
 description: 'Provides a search page and block to filter content across the site.'
 tag: ''
@@ -43,7 +43,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Search
+          submit_button: Buscar
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -755,7 +755,7 @@ display:
           exposed: true
           expose:
             operator_id: field_blog_post_type_op
-            label: 'Blog post type'
+            label: Categoría
             description: ''
             use_operator: false
             operator: field_blog_post_type_op
@@ -803,7 +803,7 @@ display:
           exposed: true
           expose:
             operator_id: field_resource_type_op
-            label: 'Resource type'
+            label: 'Tipo de recurso'
             description: ''
             use_operator: false
             operator: field_resource_type_op
@@ -903,7 +903,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_language_op
-            label: 'Item language'
+            label: Idioma
             description: ''
             use_operator: false
             operator: search_api_language_op
@@ -943,7 +943,7 @@ display:
           order: ASC
           exposed: true
           expose:
-            label: 'Most recent'
+            label: 'Más reciente'
           plugin_id: search_api
         search_api_relevance:
           id: search_api_relevance
@@ -955,9 +955,9 @@ display:
           order: ASC
           exposed: true
           expose:
-            label: 'Most relevant'
+            label: 'Más relevante'
           plugin_id: search_api
-      title: Search
+      title: Buscar
       header: {  }
       footer: {  }
       empty:
@@ -1078,7 +1078,7 @@ display:
           exposed: false
           expose:
             operator_id: search_api_language_op
-            label: 'Item language'
+            label: Idioma
             description: ''
             use_operator: false
             operator: search_api_language_op
@@ -1122,7 +1122,7 @@ display:
           order: DESC
           exposed: false
           expose:
-            label: 'Most relevant'
+            label: 'Más relevante'
           plugin_id: search_api
       pager:
         type: some
@@ -1146,7 +1146,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Página
     position: 1
     display_options:
       display_extenders: {  }
@@ -1265,7 +1265,7 @@ display:
           exposed: true
           expose:
             operator_id: field_blog_post_type_op
-            label: 'Blog post type'
+            label: Categoría
             description: ''
             use_operator: false
             operator: field_blog_post_type_op
@@ -1313,7 +1313,7 @@ display:
           exposed: true
           expose:
             operator_id: field_resource_type_op
-            label: 'Resource type'
+            label: 'Tipo de recurso'
             description: ''
             use_operator: false
             operator: field_resource_type_op
@@ -1413,7 +1413,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_language_op
-            label: 'Item language'
+            label: Idioma
             description: ''
             use_operator: false
             operator: search_api_language_op

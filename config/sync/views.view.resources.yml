@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: 2ntwV4o3wQO51tpm4WUvgaQvJ27KEbEoTb1ShM5X4Os
 id: resources
-label: Resources
+label: Recursos
 module: views
 description: 'Provides a page to display all available Resources in content.'
 tag: ''
@@ -252,7 +252,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Keywords search'
+            label: 'Palabras clave'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -297,7 +297,7 @@ display:
           exposed: true
           expose:
             operator_id: field_resource_type_op
-            label: 'Resource type'
+            label: 'Tipo de recurso'
             description: ''
             use_operator: false
             operator: field_resource_type_op
@@ -403,9 +403,9 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: Alphabetically
+            label: Alfabéticamente
           plugin_id: search_api
-      title: Resources
+      title: Recursos
       header: {  }
       footer: {  }
       empty: {  }
@@ -429,7 +429,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Página
     position: 1
     display_options:
       display_extenders: {  }

@@ -12,7 +12,7 @@ id: paragraph.content_embed_blog_post.field_embedded_content
 field_name: field_embedded_content
 entity_type: paragraph
 bundle: content_embed_blog_post
-label: 'Blog post'
+label: 'Entrada de blog'
 description: ''
 required: true
 translatable: false

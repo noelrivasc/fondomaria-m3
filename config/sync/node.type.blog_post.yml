@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: 56mleAQ52TzO-atTyB-t9ca68EEdEXXueU6FsAM0l3k
-name: 'Blog post'
+name: 'Entrada de blog'
 type: blog_post
 description: 'Used for news or periodic publications.'
 help: ''

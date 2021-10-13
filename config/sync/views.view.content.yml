@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: 12Bd0mJQFIaXAkRfMVCAAcZ0oaxm94PoK8oHR9hkLmY
 id: content
-label: Content
+label: Contenidos
 module: node
 description: 'Find and manage content.'
 tag: default
@@ -183,7 +183,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Content type'
+          label: 'Tipo de contenido'
           exclude: false
           alter:
             alter_text: false
@@ -410,7 +410,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: 'Tipo de contenido'
             description: ''
             use_operator: false
             operator: type_op
@@ -544,7 +544,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts: {  }
-      title: Content
+      title: Contenidos
       empty:
         area_text_custom:
           id: area_text_custom
@@ -588,20 +588,20 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Contenidos
         description: ''
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Content
+        title: Contenidos
         description: 'Find and manage content'
         menu_name: admin
         weight: -10
       display_extenders: {  }
     display_plugin: page
-    display_title: Page
+    display_title: Página
     id: page_1
     position: 1
     cache_metadata:

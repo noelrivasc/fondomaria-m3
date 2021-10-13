@@ -252,7 +252,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Keywords search'
+            label: 'Palabras clave'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -297,7 +297,7 @@ display:
           exposed: true
           expose:
             operator_id: field_blog_post_type_op
-            label: 'Blog post type'
+            label: Categoría
             description: ''
             use_operator: false
             operator: field_blog_post_type_op
@@ -403,7 +403,7 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: Alphabetically
+            label: Alfabéticamente
           plugin_id: search_api
       title: Blog
       header: {  }
@@ -433,7 +433,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Página
     position: 1
     display_options:
       display_extenders: {  }

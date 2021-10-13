@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: Y5Xe7l_oN9vr0gzXZZhTc94u5mF3uJaQlEBsRP8kK-4
-name: Resource
+name: Recurso
 type: resource
 description: 'Used for publications featuring media resources and files.'
 help: ''

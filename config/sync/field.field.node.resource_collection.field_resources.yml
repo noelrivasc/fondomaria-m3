@@ -12,7 +12,7 @@ id: node.resource_collection.field_resources
 field_name: field_resources
 entity_type: node
 bundle: resource_collection
-label: Resources
+label: Recursos
 description: ''
 required: true
 translatable: false

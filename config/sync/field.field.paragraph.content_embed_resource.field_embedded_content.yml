@@ -12,7 +12,7 @@ id: paragraph.content_embed_resource.field_embedded_content
 field_name: field_embedded_content
 entity_type: paragraph
 bundle: content_embed_resource
-label: Resource
+label: Recurso
 description: ''
 required: true
 translatable: false
