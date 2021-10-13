@@ -32,3 +32,17 @@
     }
   }
 }
+
+
+// Latest Posts
+
+.blog-view-block--latest {
+  .view__content-inner {
+    @extend .row;
+  }
+
+  .views-row {
+    @extend .col-sm-4;
+    margin-bottom: 0;
+  }
+}

@@ -57,6 +57,18 @@
     line-height: 1.5;
 }
 
+@include media-breakpoint-down(md) {
+    .homepage__header-inner {
+        padding-bottom: 350px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .homepage__header-inner {
+        padding-bottom: 230px;
+    }
+}
+
 
 // Featured
 
@@ -75,7 +87,11 @@
     height: 280px;
     position: relative;
     background-size: cover;
-    border: 1px solid $ma-green-500;
+    margin-bottom: $spacer-lg / 2;
+}
+
+.cta-card__link {
+    text-decoration: none !important;
 }
 
 .cta-card__header {
@@ -97,15 +113,17 @@
 }
 
 
+// Latest posts
 
-@include media-breakpoint-down(md) {
-    .homepage__header-inner {
-        padding-bottom: 350px;
-    }
+.latest-posts {
+    padding: ($spacer-xxl - $spacer-sm) 0;
+    padding-bottom: $spacer-xxl - $spacer-md;
 }
 
-@include media-breakpoint-down(sm) {
-    .homepage__header-inner {
-        padding-bottom: 230px;
+.latest-posts__header {
+    @extend .container;
+
+    h2 {
+        margin-bottom: $spacer-sm;
     }
 }
