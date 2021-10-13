@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Theme override for freeform node.
+ *
+ * Add here custom HTML to display using the contents defined in the node with the given code.
+ *
+ * Template name should be: node--freeform--CODE.html.twig
+ *
+ * CODE should not use spaces or underscores. Either on its definition or in the template name.
+ *
+ * Only codes for Freeform contents (CONTENT-CODES) can use slashes.
+ *
+ * Available variables:
+ * - freeform: the freeform data fetched
+ *  - contents: the freeform data fetched
+ *    - CONTENT-CODE: Freeform content code used in the node, can use underscores
+ *      - entity: Freeform content paragraph entity
+ *      - content: Freeform content paragraph entity contents (as provided by drupal display configuration)
+ *  - code: Freeform code
+ *  - node: Freeform node
+ *  - nid: Freeform nid
+ */
+#}
+
+{# Include this import to use freeformMacros on your template #}
+{% import '@freeforms/macros.twig' as freeformMacros %}
+
+<div class="homepage__featured">
+  <div class="homepage__featured-innner">
+    <div class="homepage__featured-item">
+      <a href="{{ freeformMacros.freeformLinkURL('url-1', freeform) }}" class="cta-card__link">
+        <div class="cta-card" style="background-image: url('{{ freeformMacros.freeformImageUri('image-1', freeform)|trim }}')">
+          <div class="cta-card__header">
+            {{ freeformMacros.freeformText('title-1', freeform) }}
+          </div>
+          <div class="cta-card__footer">
+            {{ freeformMacros.freeformText('cta-1', freeform) }}
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="homepage__featured-item">
+      <a href="{{ freeformMacros.freeformLinkURL('url-1', freeform) }}" class="cta-card__link">
+        <div class="cta-card" style="background-image: url('{{ freeformMacros.freeformImageUri('image-2', freeform)|trim }}')">
+          <div class="cta-card__header">
+            {{ freeformMacros.freeformText('title-2', freeform) }}
+          </div>
+          <div class="cta-card__footer">
+            {{ freeformMacros.freeformText('cta-2', freeform) }}
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="homepage__featured-item">
+      <a href="{{ freeformMacros.freeformLinkURL('url-1', freeform) }}" class="cta-card__link">
+        <div class="cta-card" style="background-image: url('{{ freeformMacros.freeformImageUri('image-3', freeform)|trim }}')">
+          <div class="cta-card__header">
+            {{ freeformMacros.freeformText('title-3', freeform) }}
+          </div>
+          <div class="cta-card__footer">
+            {{ freeformMacros.freeformText('cta-3', freeform) }}
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

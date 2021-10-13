@@ -21,13 +21,13 @@
 .m3-title-lg {
     @extend .m3-title;
     font-size: $t-06;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 .m3-title-md {
     @extend .m3-title;
     font-size: $t-05;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 .m3-title-sm {
@@ -136,7 +136,7 @@
 .m3-featured-lg {
     @extend .m3-featured;
     font-size: $t-05;
-    line-height: 1.5;
+    line-height: 1.25;
 
     * {
         font-size: $t-05;
@@ -155,7 +155,7 @@
 .m3-featured-sm {
     @extend .m3-featured;
     font-size: $t-03;
-    line-height: 1.5;
+    line-height: 1.25;
 
     * {
         font-size: $t-03;
