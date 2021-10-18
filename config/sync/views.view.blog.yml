@@ -6,6 +6,8 @@ dependencies:
     - search_api.index.general_search
     - taxonomy.vocabulary.blog_post_type
     - taxonomy.vocabulary.topics
+  content:
+    - 'node:freeform:eab40ec1-7ada-43e2-8526-b41e258735f0'
   module:
     - search_api
     - views_custom_cache_tag
@@ -554,6 +556,22 @@ display:
     display_options:
       display_extenders: {  }
       path: blog
+      header:
+        entity_node:
+          id: entity_node
+          table: views
+          field: entity_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: true
+          target: eab40ec1-7ada-43e2-8526-b41e258735f0
+          view_mode: full
+          bypass_access: false
+          plugin_id: entity
+      defaults:
+        header: false
     cache_metadata:
       max-age: -1
       contexts:
