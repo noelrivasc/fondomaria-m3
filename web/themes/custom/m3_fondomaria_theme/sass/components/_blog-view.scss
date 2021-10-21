@@ -5,6 +5,35 @@
 .page--blog {
   @extend .m3-view;
 
+  .block--story-share {
+    background-color: $ma-orange-300;
+    padding-bottom: 1px;
+
+    .blog-story-share {
+      @extend .container;
+      background: $ma-yellow-300;
+      padding-top: $spacer-sm;
+      padding-bottom: $spacer-sm;
+      border-bottom-left-radius: $spacer-xs;
+      border-bottom-right-radius: $spacer-xs;
+    }
+
+    .blog-story-share__header {
+      h2 {
+        @extend .m3-title-xs;
+        font-size: $t-02;
+      }
+    }
+
+    .blog-story-share__body {
+      @extend .m3-body-sm;
+
+      p:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
   .content__wrapper {
     .view__exposed {
       .form-item-search-api-fulltext {

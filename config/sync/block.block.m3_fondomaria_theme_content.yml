@@ -11,7 +11,7 @@ _core:
 id: m3_fondomaria_theme_content
 theme: m3_fondomaria_theme
 region: content
-weight: -4
+weight: -8
 provider: null
 plugin: system_main_block
 settings:

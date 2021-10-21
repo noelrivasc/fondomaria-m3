@@ -1,0 +1,25 @@
+uuid: 307fc373-fb7e-475e-9e1e-ce28c15028e9
+langcode: es
+status: true
+dependencies:
+  module:
+    - maria_custom_blocks
+    - system
+  theme:
+    - m3_fondomaria_theme
+id: storysharecta
+theme: m3_fondomaria_theme
+region: content
+weight: -11
+provider: null
+plugin: freeform_story_share_block
+settings:
+  id: freeform_story_share_block
+  label: 'Compartir historias (Blog)'
+  provider: maria_custom_blocks
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false

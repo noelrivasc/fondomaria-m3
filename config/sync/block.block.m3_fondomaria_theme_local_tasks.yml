@@ -9,7 +9,7 @@ _core:
 id: m3_fondomaria_theme_local_tasks
 theme: m3_fondomaria_theme
 region: content
-weight: -5
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:
