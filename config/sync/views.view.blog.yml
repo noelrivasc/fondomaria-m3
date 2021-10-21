@@ -7,7 +7,7 @@ dependencies:
     - taxonomy.vocabulary.blog_post_type
     - taxonomy.vocabulary.topics
   content:
-    - 'node:freeform:eab40ec1-7ada-43e2-8526-b41e258735f0'
+    - 'node:freeform:3d6b435e-4ade-4a92-b801-c3812a6d249b'
   module:
     - search_api
     - views_custom_cache_tag
@@ -566,7 +566,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: true
-          target: eab40ec1-7ada-43e2-8526-b41e258735f0
+          target: 3d6b435e-4ade-4a92-b801-c3812a6d249b
           view_mode: full
           bypass_access: false
           plugin_id: entity
