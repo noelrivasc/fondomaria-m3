@@ -1150,7 +1150,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: search
+      path: busqueda
       css_class: 'search-view search-view--page'
       defaults:
         css_class: false
