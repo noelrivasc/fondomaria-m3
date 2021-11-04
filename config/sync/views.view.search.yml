@@ -1396,52 +1396,6 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: search_api_term
-        search_api_language:
-          id: search_api_language
-          table: search_api_index_general_search
-          field: search_api_language
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            en: en
-            ru: ru
-            fr: fr
-            es: es
-          group: 1
-          exposed: true
-          expose:
-            operator_id: search_api_language_op
-            label: Idioma
-            description: ''
-            use_operator: false
-            operator: search_api_language_op
-            identifier: search_api_language
-            required: false
-            remember: true
-            multiple: false
-            remember_roles:
-              anonymous: anonymous
-              authenticated: authenticated
-              administrator: '0'
-              editor: '0'
-            reduce: true
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: search_api_language
       filter_groups:
         operator: AND
         groups:

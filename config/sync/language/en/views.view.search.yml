@@ -96,6 +96,3 @@ display:
         field_content_topics:
           expose:
             label: Topic
-        search_api_language:
-          expose:
-            label: 'Item language'
