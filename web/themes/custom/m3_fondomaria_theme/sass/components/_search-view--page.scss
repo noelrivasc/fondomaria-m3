@@ -2,7 +2,8 @@
 //  Styles for the search view page  //
 ///////////////////////////////////////
 
-.page--search {
+.page--search,
+.page--busqueda {
   @extend .m3-view;
 
   .content__wrapper {
