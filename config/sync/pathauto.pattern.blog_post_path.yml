@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: KmNx3oW6DCypJlwZe8AIvUKjnSUtCQZNW1h7jxI30YI
 id: blog_post_path
-label: 'Blog Post path'
+label: 'Ruta de entrada de blog'
 type: 'canonical_entities:node'
 pattern: 'blog/[node:title]'
 selection_criteria:

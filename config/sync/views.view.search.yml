@@ -1175,7 +1175,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content Type'
+            label: 'Tipo de contenido'
             description: ''
             use_operator: false
             operator: type_op

@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: rdEJG5BrBonvfCsUevciWztr9Lho4aduS4agI4HZkKY
-name: Profile
+name: Perfil
 type: profile
 description: 'Used for members, people or organizations descriptions.'
 help: ''

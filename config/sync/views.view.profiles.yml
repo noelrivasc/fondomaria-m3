@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: y4kDNpxMLoedyQDPQlY53HshdBPjmO8bXMN_wOIQEKQ
 id: profiles
-label: Profiles
+label: Perfiles
 module: views
 description: 'Provides a block to display all available profiles'
 tag: ''
@@ -221,7 +221,7 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      title: Profiles
+      title: Perfiles
       header: {  }
       footer: {  }
       empty: {  }
