@@ -55,7 +55,7 @@
       }
 
       .form-item {
-        @extend .col;
+        @extend .col-sm-4;
       }
     }
 
@@ -83,11 +83,27 @@
   }
 }
 
+@include media-breakpoint-down(md) {
+  .m3-view {
+    .content__wrapper {
+      .view__content-inner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .m3-view {
     .block--page-title-block {
       padding-left: $spacer-sm;
       padding-right: $spacer-sm;
+    }
+
+    .content__wrapper {
+      .view__content-inner {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 }

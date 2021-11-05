@@ -29,6 +29,7 @@
                 a {
                     @extend .m3-link-lg;
                     @include appendIcon('fa-file-download', 25px);
+                    display: block;
                 }
 
                 .file--mime-application-zip a {

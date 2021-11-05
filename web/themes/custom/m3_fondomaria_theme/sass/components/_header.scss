@@ -7,7 +7,7 @@
     background-color: theme-color("light");
     padding: 0;
     position: fixed;
-    z-index: 20;
+    z-index: 200;
 }
 
 .header {
@@ -52,11 +52,21 @@
     .navbar-toggler {
         padding: 20px;
         border: none;
+        outline: none;
     }
 
     .navbar-toggler-icon {
         @include iconize('fa-bars', 28px);
         color: $ma-green-600;
+    }
+}
+
+.header__wrapper.is-expanded {
+    .navbar__toggler {
+        .navbar-toggler-icon {
+            @include iconize('fa-times', 28px);
+            color: $ma-green-600;
+        }
     }
 }
 

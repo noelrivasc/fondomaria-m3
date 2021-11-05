@@ -127,11 +127,11 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       width: 40px;
       height: 40px;
-      font-size: 40px;
       position: absolute;
       left: 5%;
       top: 0;
       background: url("#{$m3_assets_dir}/img/quote_left.svg") no-repeat center center;
+      background-size: contain;
     }
 
     &:before {
@@ -139,11 +139,11 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       width: 40px;
       height: 40px;
-      font-size: 40px;
       position: absolute;
       right: 5%;
       top: 0;
       background: url("#{$m3_assets_dir}/img/quote_right.svg") no-repeat center center;
+      background-size: contain;
     }
   }
 

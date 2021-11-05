@@ -35,6 +35,16 @@
   }
 
   .content__wrapper {
+    header {
+      position: relative;
+      background-color: $ma-orange-300;
+      
+      .view__header {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
     .view__exposed {
       .form-item-search-api-fulltext {
         @extend .col-sm-12;
@@ -52,10 +62,6 @@
       .advanced-search-link {
         display: none;
       }
-    }
-
-    .blog-intro {
-      background-color: $ma-orange-300;
     }
 
     .content-card {

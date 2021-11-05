@@ -79,7 +79,7 @@
 }
 
 .homepage__featured-item {
-    @extend .col-sm-4;
+    @extend .col-md-4;
 }
 
 .cta-card {
@@ -110,6 +110,12 @@
     position: absolute;
     left: 0;
     bottom: -1 * $spacer-lg / 2;
+}
+
+@include media-breakpoint-down(sm) {
+    .cta-card {
+        margin-bottom: $spacer-lg;
+    }
 }
 
 

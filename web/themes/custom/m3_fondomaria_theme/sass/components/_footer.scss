@@ -78,3 +78,21 @@
         margin-right: $spacer-xs;
     }
 }
+
+
+// Responsive
+@include media-breakpoint-down(md) {
+    .footer__main-col {
+        padding-right: 15px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .footer {
+        padding: ($spacer-md + $spacer-xs) 0;
+    }
+
+    .footer__main-col {
+        margin-bottom: $spacer-sm + $spacer-xs;
+    }
+}

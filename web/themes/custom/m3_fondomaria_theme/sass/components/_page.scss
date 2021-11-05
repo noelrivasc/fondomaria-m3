@@ -80,6 +80,7 @@
     .field-related-pages__item {
         @extend .col-lg-6;
         padding-bottom: $spacer-lg;
+        transform: scale(85%);
 
         .node--card {
             display: flex;

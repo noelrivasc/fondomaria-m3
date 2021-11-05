@@ -64,6 +64,7 @@
   p {
     margin: 0;
     color: $ma-gray-500;
+    font-size: $t-01;
   }
 
   a {
@@ -84,30 +85,19 @@
 
 // Responsive
 @include media-breakpoint-down(md) {
-  .contactbar__wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: $spacer-xs + $spacer-xxs;
-
-    .block--datos-de-contacto {
-      margin-right: 0;
-      margin-bottom: $spacer-xs + $spacer-xxs;
-    }
-  }
-
   .navbar__wrapper {
     position: fixed;
     right: 0;
-    width: 55vw;
+    width: 100vw;
     height: 100vh;
     top: 0;
     pointer-events: none;
     transform: translateY(0) !important;
     overflow: hidden;
+    display: flex;
 
     .navbar__elements {
-      width: 100%;
+      width: 55%;
       height: 100%;
       padding: $spacer-xs + $spacer-xxs;
       padding-bottom: $spacer-xl;
@@ -116,6 +106,38 @@
       pointer-events: all;
       transition: transform 0.3s;
       transform: translateX(100%);
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: $m3-light;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 100vw;
+        height: 100%;
+        background: rgba($ma-gray-500, 0.8);
+        position: absolute;
+        right: 0;
+        top: -1px;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .navbar__row {
+        position: relative;
+        z-index: 1;
+      }
 
       .contactbar,
       .taskbar,
@@ -127,12 +149,30 @@
       .navbar__row:not(:last-child) {
         margin-bottom: 0;
       }
+
+      .contactbar__wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: $spacer-xs + $spacer-xxs;
+    
+        .block--datos-de-contacto {
+          margin-right: 0;
+          margin-bottom: $spacer-xs + $spacer-xxs;
+          max-width: 230px;
+        }
+      }
     }
   }
 
   .navbar__wrapper.is-expanded {
     .navbar__elements {
       transform: translateX(0%);
+
+      &:before {
+        pointer-events: all;
+        opacity: 1;
+      }
     }
   }
 
@@ -161,12 +201,32 @@
 
 @include media-breakpoint-down(sm) {
   .navbar__wrapper {
-    width: 75vw;
+    .navbar__elements {
+      width: 75%;
+    }
   }
 }
 
 @include media-breakpoint-down(xs) {
   .navbar__wrapper {
-    width: 95vw;
+    .navbar__elements {
+      width: 100%;
+      display: flex;
+      overflow-y: auto;
+      flex-direction: column;
+      padding-bottom: $spacer-sm;
+      border-left: $spacer-sm solid rgba($ma-gray-500, 0.6);
+
+      &:after,
+      &:before {
+        display: none;
+      }
+
+      .contactbar__wrapper {
+        margin-top: $spacer-sm;
+        position: relative;
+        order: 3;
+      }
+    }
   }
 }
