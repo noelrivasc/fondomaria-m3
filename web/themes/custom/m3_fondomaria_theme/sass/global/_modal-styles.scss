@@ -21,12 +21,12 @@
 }
 
 .modal {
-  display: none;
   @extend .m3-rounded-border;
   max-width: 60%;
   max-height: 80%;
   padding-top: 60px;
   @include centerThis();
+  display: none;
 
   .button-close {
     display: block;

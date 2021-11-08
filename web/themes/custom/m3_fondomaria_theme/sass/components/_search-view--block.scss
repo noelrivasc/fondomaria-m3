@@ -8,8 +8,8 @@
 
   .view__exposed {
     @extend .container-fluid;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: $spacer-md;
+    padding-bottom: $spacer-xs;
     border-bottom: 2px solid rgba($ma-gray-500, 0.3);
     position: absolute;
     top: 0;
@@ -37,8 +37,8 @@
     height: 100%;
     position: absolute;
     top: 0;
-    padding-top: 140px;
-    padding-bottom: 70px;
+    padding-top: $spacer-xxl;
+    padding-bottom: $spacer-xl;
     max-width: unset;
 
     .view__content-inner {
@@ -61,7 +61,7 @@
     border-top: 2px solid rgba($ma-gray-500, 0.3);
     position: absolute;
     bottom: 0;
-    padding: 30px;
+    padding: $spacer-md;
     padding-bottom: 0;
 
     .advanced-search-link {
@@ -89,6 +89,10 @@
 }
 
 @include media-breakpoint-down(sm) {
+  .modal--views-blocksearch-block {
+    padding: 0;
+  }
+
   .search-view--block {
     .view__exposed {
       .form-actions {
@@ -101,6 +105,11 @@
 
     .view__content {
       padding-top: 210px;
+      padding-bottom: 110px;
+    }
+
+    & > footer {
+      padding-bottom: $spacer-md;
     }
   }
 }
