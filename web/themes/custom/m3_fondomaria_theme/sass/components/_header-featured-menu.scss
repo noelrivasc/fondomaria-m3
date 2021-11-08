@@ -9,6 +9,15 @@
 
     li {
         @extend .nav-item;
+
+        a.external {
+            @include preppendIcon("fa-external-link-square-alt", $spacer-sm);
+            padding-right: $spacer-md + $spacer-xs;
+
+            &::before {
+                right: $spacer-sm;
+            }
+        }
     }
 
     li:not(:last-child) {
