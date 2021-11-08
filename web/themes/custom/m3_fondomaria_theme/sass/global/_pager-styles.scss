@@ -131,3 +131,28 @@
     }
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .pager {
+    margin-top: $spacer-lg;
+    margin-bottom: $spacer-lg;
+
+    .pager__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around !important;
+    }
+
+    .pager__item {
+      margin: 0;
+    }
+    
+    .pager__item--first,
+    .pager__item--last {
+      flex-grow: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
