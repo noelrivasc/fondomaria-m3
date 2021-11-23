@@ -336,6 +336,45 @@ elements: |-
       si: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+  pruebas_embarazo:
+    '#type': webform_custom_composite
+    '#title': '¿Qué tipo de prueba te has hecho? ¿Cuál fue el resultado? ¿En qué fecha la hiciste?'
+    '#multiple': 3
+    '#states':
+      visible:
+        ':input[name="prueba_de_embarazo"]':
+          value: si
+    '#default_value':
+      - resultado: '0'
+        semanas: ''
+        tipo: Orina
+      - resultado: ''
+        semanas: ''
+        tipo: Sangre
+      - resultado: ''
+        semanas: ''
+        tipo: Ultrasonido
+    '#multiple__min_items': 3
+    '#multiple__sorting': false
+    '#multiple__operations': false
+    '#multiple__add_more': false
+    '#element':
+      tipo:
+        '#type': textfield
+        '#title': 'Tipo de prueba'
+        '#disabled': true
+      resultado:
+        '#type': select
+        '#options':
+          positivo: Positivo
+          negativo: Negativo
+        '#title': Resultado
+      semanas:
+        '#type': number
+        '#title': Semanas
+      fecha:
+        '#type': date
+        '#title': Fecha
   procedimiento_medicamentos:
     '#type': radios
     '#title': '¿Has utilizado medicamentos para intentar interrumpir el embarazo?'
@@ -589,6 +628,9 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_method: ''
+  form_action: ''
+  form_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
