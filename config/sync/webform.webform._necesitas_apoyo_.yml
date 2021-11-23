@@ -1,0 +1,730 @@
+uuid: b7c800cd-4b0a-450c-8c2e-3ce94cdcdffc
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 2
+template: false
+archive: false
+id: _necesitas_apoyo_
+title: '¿Necesitas apoyo?'
+description: 'Solicitud de apoyo conectada a base de datos.&nbsp;'
+category: ''
+elements: |-
+  formulario_maria:
+    '#type': processed_text
+    '#admin_title': 'Formulario MARIA'
+    '#text': |
+      <p><strong>Aviso de Privacidad:</strong> Balance Promoción para el Desarrollo y Juventud A.C. es responsable de la confidencialidad, uso y protección de la información personal que nos proporcionas. Los datos personales que te solicitamos son necesarios para tu proceso de apoyo en el acceso a servicios de salud. Con el interés de incrementar el análisis de los aspectos sociales relacionados con el apoyo al acceso a servicios de salud algunos datos personas se usarán con fines estadísticos, esto guardando la identidad de las personas apoyadas. Para ejercitar tus derechos de acceso, rectificación y cancelación de datos personales, así como de oposición al tratamiento de los mismos o revocar el consentimiento que para tal fin nos hayas otorgado, lo podrás realizar a través del correo <a href="mailto:comunicacion@redbalance.org">comunicacion@balancemx.org</a></p>
+
+      <p>Puedes consultar una versión más amplia de nuestro Aviso de Privacidad <a href="%20/sites/default/files/archivos-web/aviso-de-privacidad.pdf">aquí</a>.</p>
+
+      <p><em><strong>Nota:</strong>&nbsp;Las preguntas que están marcadas con * son indispensables para poder continuar.</em></p>
+    '#format': formatted_text
+  nombre:
+    '#type': textfield
+    '#title': '¿Cómo te llamas?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  telefono_fijo:
+    '#type': textfield
+    '#title': '¿Cuál es tu número de teléfono fijo?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  permite_llamar_celular:
+    '#type': radios
+    '#title': '¿Te podemos hablar a este número?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  horario_para_llamar:
+    '#type': textfield
+    '#title': '¿Hay algún horario en el que prefieras recibir la llamada?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  celular:
+    '#type': textfield
+    '#title': '¿Cuál es tu número de celular?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  permite_llamar_:
+    '#type': radios
+    '#title': '¿Te podemos hablar a este número?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  email:
+    '#type': textfield
+    '#title': 'Tu correo electrónico es:'
+    '#input_mask': '''alias'': ''email'''
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  permite_contactar_email:
+    '#type': radios
+    '#title': '¿Te podemos contactar por correo?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  contacto_preferencia:
+    '#type': textfield
+    '#title': 'Entre las opciones que nos diste, ¿cómo prefieres que te contactemos?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  edad_fecha_de_nacimiento:
+    '#type': date
+    '#title': '¿Cuál es tu fecha de nacimiento?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  lugar_nacimiento:
+    '#type': select
+    '#title': '¿En dónde naciste?'
+    '#options':
+      aguascalientes: Aguascalientes
+      baja_california: 'Baja California'
+      baja_california_sur: 'Baja California Sur'
+      campeche: Campeche
+      chiapas: Chiapas
+      chihuahua: Chihuahua
+      cdmx: 'Ciudad de México'
+      coahuila: Coahuila
+      colima: colima
+      durango: durango
+      estado_de_mexico: estado_de_mexico
+      guanajuato: guanajuato
+      guerrero: guerrero
+      hidalgo: hidalgo
+      jalisco: Jalisco
+      michoacan: Michoacán
+      morelos: Morelos
+      nayarit: Nayarit
+      nuevo_leon: nuevo_leon
+      oaxaca: Oaxaca
+      puebla: Puebla
+      queretaro: Querétaro
+      quintana_roo: Quintana_Roo
+      san_luis_potosi: 'San Luis Potosí'
+      sinaloa: Sinaloa
+      sonora: Sonora
+      tabasco: Tabasco
+      tamaulipas: Tamaulipas
+      tlaxcala: Tlaxcala
+      veracruz: Veracruz
+      yucatan: Yucatan
+      zacatecas: Zacatecas
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  lugar_residencia:
+    '#type': select
+    '#title': '¿En dónde vives?'
+    '#options':
+      aguascalientes: Aguascalientes
+      baja_california: 'Baja California'
+      'baja_california _sur': 'Baja California Sur'
+      campeche: Campeche
+      chiapas: Chiapas
+      chihuahua: Chihuahua
+      coahuila: Coahuila
+      colima: Colima
+      cdmx: 'Ciudad de México'
+      durango: Durango
+      estado_de_mexico: 'Estado de México'
+      guanajuato: Guanajuato
+      guerrero: Guerrero
+      hidalgo: Hidalgo
+      jalisco: Jalisco
+      michoacan: Michoacán
+      morelos: Morelos
+      nayarit: Nayarit
+      nuevo_leon: 'Nuevo León'
+      oaxaca: Oaxaca
+      puebla: Puebla
+      queretaro: Querétaro
+      quintana_roo: 'Quintana Roo'
+      san_luis_potosi: 'San Luis Potosí'
+      sinaloa: Sinaloa
+      sonora: Sonora
+      tabasco: Tabasco
+      tamaulipas: Tamaulipas
+      tlaxcala: Tlaxcala
+      veracruz: Veracruz
+      yucatan: Yucatán
+      zacatecas: Zacatecas
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  ciudad_poblacion:
+    '#type': textfield
+    '#title': '¿En qué ciudad o población?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  _cual_es_tu_estado_civil_:
+    '#type': select
+    '#title': '¿Cuál es tu estado civil?'
+    '#options':
+      soltera: Soltera
+      'casada ': 'Casada '
+      union_libre: 'Unión Libre'
+      divorciada: Divorciada
+      viuda: Viuda
+      separada: Separada
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  religion:
+    '#type': select
+    '#title': '¿Practicas alguna religión?'
+    '#options':
+      cristiana: Cristiana
+      catolica: Católica
+      judia: Judía
+      musulmana: Musulmana
+      budista: Budista
+      no_creyente_atea: 'No creyente-Atea'
+      ninguna: Ninguna
+      Otra: Otra
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  especifica_religion:
+    '#type': textfield
+    '#title': 'Especifica:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  pertenece_etnia:
+    '#type': radios
+    '#title': '¿Perteneces a alguna etnia?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  etnia_perteneciente:
+    '#type': textfield
+    '#title': '¿A cuál etnia perteneces?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  ocupacion:
+    '#type': select
+    '#title': '¿Cuál es tu ocupación?'
+    '#options':
+      estudiante: Estudiante
+      empleada: Empleada
+      autoempleo: Autoempleo
+      profesionista: Profesionista
+      trabajadora_domestica: 'Trabajadora Doméstica'
+      trabajadora_en_el_cuidado_de_la_familia_y_el_hogar: 'Trabajadora en el cuidado de la familia y el hogar'
+      otra: Otra
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  especifica_ocupacion:
+    '#type': textfield
+    '#title': 'Especifica:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  escolaridad:
+    '#type': select
+    '#title': '¿Cuál es tu escolaridad?'
+    '#options':
+      primaria: Primaria
+      secundaria: Secundaria
+      bachillerato: Bachillerato
+      carrera_tecnica: 'Carrera técnica'
+      profesionista: Profesionista
+      posgrado: Posgrado
+      ninguna: Ninguna
+    '#select2': true
+    '#required': true
+  servicios:
+    '#type': checkboxes
+    '#title': 'Por favor marca los servicios con los que cuentes en el lugar donde vives (estas respuestas no determinarán el tipo de apoyo que recibas del Fondo):'
+    '#options':
+      agua_potable: 'Agua potable'
+      luz: Luz
+      telefono: Teléfono
+      celular: Celular
+      tv_publica: 'TV Pública'
+      tv_paga: 'TV Paga'
+      internet: Internet
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  piso_casa:
+    '#type': select
+    '#title': '¿De qué material es el piso de tu vivienda (el material visible)?'
+    '#options':
+      tierra: Tierra
+      barro: Barro
+      cemento: Cemento
+      loseta: Loseta
+      alfombra: Alfombra
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  apoyo_recibir:
+    '#type': textarea
+    '#title': 'Describe por favor el apoyo que necesitas recibir del Fondo MARIA'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  numero_embarazos:
+    '#type': select
+    '#title': '¿Cuántos embarazos has tenido contando este?'
+    '#options':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+      6: '6'
+      7: '7'
+      8: '8'
+      9: '9'
+      10: '10'
+      11: '11'
+      12: '12'
+      13: '13'
+      14: '14'
+      15: '15'
+      16: '16'
+      17: '17'
+      18: '18'
+      19: '19'
+      20: '20'
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  numero_de_hijxs:
+    '#type': select
+    '#title': 'Número de hijxs'
+    '#options':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+      6: '6'
+      7: '7'
+      8: '8'
+      9: '9'
+      10: '10'
+      11: '11'
+      12: '12'
+      13: '13'
+      14: '14'
+      15: '15'
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  fecha_ultima_menstruacion:
+    '#type': date
+    '#title': '¿Qué día inició tu última menstruación?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  prueba_de_embarazo:
+    '#type': radios
+    '#title': '¿Te has realizado alguna prueba de embarazo?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  procedimiento_medicamentos:
+    '#type': radios
+    '#title': '¿Has utilizado medicamentos para intentar interrumpir el embarazo?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  protocolo_medicamentos:
+    '#type': textarea
+    '#title': '¿Qué medicamento? ¿Cómo lo utilizaste?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  utiliza_anticonceptivo:
+    '#type': radios
+    '#title': '¿Utilizaste algún anticonceptivo al momento de quedar embarazada?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  notas_anticonceptivos:
+    '#type': textarea
+    '#title': '¿Cuál usabas? ¿De qué manera?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  por_favor_senala_los_metodos_anticonceptivos_que_has_utilizado_e:
+    '#type': checkboxes
+    '#title': 'Por favor señala los métodos anticonceptivos que has utilizado en el pasado:'
+    '#options':
+      condon: Condón
+      pastillas: Pastillas
+      anticoncepcion_de_emergencia: 'Anticoncepción de Emergencia'
+      diu: DIU
+      parche: Parche
+      inyecciones: Inyecciones
+      implante: Implante
+      ninguno: Ninguno
+      otros: Otros
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  especifica_anticonceptivos:
+    '#type': textfield
+    '#title': 'Especifica:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  tipo_sangre:
+    '#type': select
+    '#title': '¿Cuál es tu tipo de sangre?'
+    '#options':
+      o+: O+
+      o-: O-
+      a+: A+
+      a-: A-
+      b+: B+
+      b-: B-
+      ab+: AB+
+      ab-: AB-
+      no_se: 'No sé'
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  relacion_estable:
+    '#type': radios
+    '#title': '¿El embarazo ocurrió dentro de una relación de pareja?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  tipo_relacion:
+    '#type': checkboxes
+    '#title': '¿Qué tipo de relación?'
+    '#options':
+      soltera: Soltera
+      noviazgo: Noviazgo
+      union_libre: 'Unión Libre'
+      casada: Casada
+      divorciada: Divorciada
+      viuda: Viuda
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  apoyo_pareja:
+    '#type': radios
+    '#title': '¿La persona con quién tuviste la relación sexual te está apoyando?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  especifica_apoyo_pareja:
+    '#type': textarea
+    '#title': '¿Cómo te apoya?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  apoyo_alguien_confianza:
+    '#type': textfield
+    '#title': '¿Hay alguien de confianza para ti que te esté apoyando? ¿Quién?¿Cómo?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  menor_de_edad:
+    '#type': radios
+    '#title': '¿Eres menor de edad?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  tutor_saben_aborto:
+    '#type': radios
+    '#title': '¿Padre, madre o tutor saben sobre tu decisión de interrumpir el embarazo?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  padres_apoyan:
+    '#type': radios
+    '#title': '¿Tus padres te apoyan?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  especifica_apoyo_menores:
+    '#type': textarea
+    '#title': '¿Cómo te está(n) apoyando?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  razones_apoyo:
+    '#type': textarea
+    '#title': 'Explica por favor las razones por las que consideras que necesitas el apoyo:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  fecha_viajar_ciudad_de_mexico:
+    '#type': date
+    '#title': '¿Cuándo podrías viajar a la Ciudad de México?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  alguien_acompana:
+    '#type': textfield
+    '#title': '¿Alguien podrá viajar contigo? ¿Quién?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  acompanamiento_proceso:
+    '#type': radios
+    '#title': '¿Te interesa que nosotras estemos contigo en la clínica?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  dinero_aportar:
+    '#type': select
+    '#title': '¿Cuánto dinero podrías aportar tú ahora? (La respuesta a esta pregunta no cambia la opción de apoyo que el Fondo MARIA te brindará):'
+    '#options':
+      '0_500': '$0 - $500'
+      '500_1000': '$500 - $1000'
+      '1000_1500': '$1000 - $1500'
+      '1500_2000': '$1500 - $2000'
+      '2000_2500': '$2000 - $2500'
+      '2500_3000': '$2500 - $3000'
+      '3000_3500': '$3000 - $3500'
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  reembolso:
+    '#type': select
+    '#title': '¿Podrías aportar en los próximos 3 meses el dinero que el Fondo MARIA invierte en apoyarte? (La respuesta a esta pregunta no cambia la opción de apoyo que el Fondo MARIA te brindará):'
+    '#options':
+      todo: 'Sí, todo'
+      parte: 'Sí, una parte'
+      'no': 'No'
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  info_email:
+    '#type': checkboxes
+    '#title': '¿Te interesaría recibir información sobre el tema para decidir cuál es la mejor opción para ti? Selecciona la información que desees recibir, la información llegará a tu correo electrónico:'
+    '#options':
+      'anticonceptivos|Métodos anticonceptivos': 'Métodos anticonceptivos'
+      aborto: '¿Qué es el aborto?'
+      proced: 'Procedimientos seguros para interrumpir un embarazo'
+      emergencia: 'Anticoncepción de emergencia'
+      leycdmx: 'Ley de Interrupción del Embarazo durante las primeras 12 semanas en la Ciudad de México'
+  conocimiento_fondo_maria:
+    '#type': select
+    '#title': '¿Cómo te enteraste del Fondo MARIA?'
+    '#options':
+      internet: Internet
+      amigx: Amigo(a)
+      folleto: Folleto
+      postal: Postal
+      linea_de_atencion_de_marie_stopes: 'Línea de atención de Marie Stopes'
+      cipa: Cipa
+      organizacion_civil: 'Organización civi'
+      mujerapoyadaporelfondo: 'Una mujer que fue apoyada antes por el Fondo'
+      tv: TV
+      otro: Otro
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  otra_forma:
+    '#type': textfield
+    '#title': 'Especifica:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  informacion_relevante:
+    '#type': textarea
+    '#title': 'Por favor escribe cualquier otra información que consideres relevante:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }
