@@ -23,9 +23,23 @@ elements: |-
 
       <p><em><strong>Nota:</strong>&nbsp;Las preguntas que están marcadas con * son indispensables para poder continuar.</em></p>
     '#format': formatted_text
+  como_te_llamas:
+    '#type': processed_text
+    '#admin_title': '¿Cómo te llamas?'
+    '#text': |
+      <p>¿Cómo te llamas?</p>
+    '#format': formatted_text
   nombre:
     '#type': textfield
-    '#title': '¿Cómo te llamas?'
+    '#title': Nombre(s)
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+  edad_fecha_de_nacimiento:
+    '#type': date
+    '#title': '¿Cuál es tu fecha de nacimiento?'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   telefono_fijo:
@@ -76,11 +90,6 @@ elements: |-
   contacto_preferencia:
     '#type': textfield
     '#title': 'Entre las opciones que nos diste, ¿cómo prefieres que te contactemos?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  edad_fecha_de_nacimiento:
-    '#type': date
-    '#title': '¿Cuál es tu fecha de nacimiento?'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   lugar_nacimiento:
@@ -163,112 +172,35 @@ elements: |-
     '#required_error': 'Esta pregunta es obligatoria.'
   ciudad_poblacion:
     '#type': textfield
-    '#title': '¿En qué ciudad o población?'
+    '#title': '¿En qué municipio?'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
-  _cual_es_tu_estado_civil_:
+  conocimiento_fondo_maria:
     '#type': select
-    '#title': '¿Cuál es tu estado civil?'
+    '#title': '¿Cómo te enteraste del Fondo MARIA?'
     '#options':
-      soltera: Soltera
-      'casada ': 'Casada '
-      union_libre: 'Unión Libre'
-      divorciada: Divorciada
-      viuda: Viuda
-      separada: Separada
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  religion:
-    '#type': select
-    '#title': '¿Practicas alguna religión?'
-    '#options':
-      cristiana: Cristiana
-      catolica: Católica
-      judia: Judía
-      musulmana: Musulmana
-      budista: Budista
-      no_creyente_atea: 'No creyente-Atea'
-      ninguna: Ninguna
-      Otra: Otra
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  especifica_religion:
-    '#type': textfield
-    '#title': 'Especifica:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  pertenece_etnia:
-    '#type': radios
-    '#title': '¿Perteneces a alguna etnia?'
-    '#options':
-      'no': 'No'
-      si: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  etnia_perteneciente:
-    '#type': textfield
-    '#title': '¿A cuál etnia perteneces?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  ocupacion:
-    '#type': select
-    '#title': '¿Cuál es tu ocupación?'
-    '#options':
-      estudiante: Estudiante
-      empleada: Empleada
-      autoempleo: Autoempleo
-      profesionista: Profesionista
-      trabajadora_domestica: 'Trabajadora Doméstica'
-      trabajadora_en_el_cuidado_de_la_familia_y_el_hogar: 'Trabajadora en el cuidado de la familia y el hogar'
-      otra: Otra
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  especifica_ocupacion:
-    '#type': textfield
-    '#title': 'Especifica:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  escolaridad:
-    '#type': select
-    '#title': '¿Cuál es tu escolaridad?'
-    '#options':
-      primaria: Primaria
-      secundaria: Secundaria
-      bachillerato: Bachillerato
-      carrera_tecnica: 'Carrera técnica'
-      profesionista: Profesionista
-      posgrado: Posgrado
-      ninguna: Ninguna
-    '#select2': true
-    '#required': true
-  servicios:
-    '#type': checkboxes
-    '#title': 'Por favor marca los servicios con los que cuentes en el lugar donde vives (estas respuestas no determinarán el tipo de apoyo que recibas del Fondo):'
-    '#options':
-      agua_potable: 'Agua potable'
-      luz: Luz
-      telefono: Teléfono
-      celular: Celular
-      tv_publica: 'TV Pública'
-      tv_paga: 'TV Paga'
       internet: Internet
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  piso_casa:
-    '#type': select
-    '#title': '¿De qué material es el piso de tu vivienda (el material visible)?'
-    '#options':
-      tierra: Tierra
-      barro: Barro
-      cemento: Cemento
-      loseta: Loseta
-      alfombra: Alfombra
+      amigx: Amigo(a)
+      folleto: Folleto
+      postal: Postal
+      linea_de_atencion_de_marie_stopes: 'Línea de atención de Marie Stopes'
+      cipa: Cipa
+      organizacion_civil: 'Organización civi'
+      mujerapoyadaporelfondo: 'Una mujer que fue apoyada antes por el Fondo'
+      tv: TV
+      otro: Otro
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+  otra_forma:
+    '#type': textfield
+    '#title': 'Especifica:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="conocimiento_fondo_maria"]':
+          value: otro
   apoyo_recibir:
     '#type': textarea
     '#title': 'Describe por favor el apoyo que necesitas recibir del Fondo MARIA'
@@ -305,21 +237,66 @@ elements: |-
     '#type': select
     '#title': 'Número de hijxs'
     '#options':
-      1: '1'
-      2: '2'
-      3: '3'
-      4: '4'
-      5: '5'
-      6: '6'
-      7: '7'
-      8: '8'
-      9: '9'
-      10: '10'
-      11: '11'
-      12: '12'
-      13: '13'
-      14: '14'
-      15: '15'
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  num_abortos_inducidos:
+    '#type': select
+    '#title': '¿Has tenido un aborto inducido antes? ¿Cuántos?'
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+    '#select2': true
+  num_abortos_espontaneos:
+    '#type': select
+    '#title': '¿Has tenido un aborto espontáneo antes? ¿Cuántos?'
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
@@ -396,9 +373,24 @@ elements: |-
       si: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+  que_anticonceptivo_utilizabas:
+    '#type': radios
+    '#title': '¿Qué anticonceptivo utilizabas?'
+    '#options':
+      condon: Condón
+      pastillas: Pastillas
+      anticonceptivos_de_emergencia: 'Anticonceptivos de emergencia'
+      diu: DIU
+      parche: Parche
+      inyecciones: Inyecciones
+      implante: Implante
+      ritmo: 'Ritmo según el ciclo menstrual'
+      coito_interrumpido: 'Coito interrumpido (eyaculó fuera)'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
   notas_anticonceptivos:
     '#type': textarea
-    '#title': '¿Cuál usabas? ¿De qué manera?'
+    '#title': '¿De qué manera lo usabas?'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   por_favor_senala_los_metodos_anticonceptivos_que_has_utilizado_e:
@@ -414,11 +406,6 @@ elements: |-
       implante: Implante
       ninguno: Ninguno
       otros: Otros
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  especifica_anticonceptivos:
-    '#type': textfield
-    '#title': 'Especifica:'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   tipo_sangre:
@@ -437,24 +424,42 @@ elements: |-
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+  razones_apoyo:
+    '#type': textarea
+    '#title': 'Explica por favor las razones por las que consideras que necesitas el apoyo:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  _cual_es_tu_estado_civil_:
+    '#type': select
+    '#title': '¿Cuál es tu estado civil?'
+    '#options':
+      soltera: Soltera
+      'casada ': 'Casada '
+      union_libre: 'Unión Libre'
+      divorciada: Divorciada
+      viuda: Viuda
+      separada: Separada
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
   relacion_estable:
     '#type': radios
-    '#title': '¿El embarazo ocurrió dentro de una relación de pareja?'
+    '#title': '¿El embarazo ocurrió dentro de una relación de pareja? *'
     '#options':
       'no': 'No'
       si: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   tipo_relacion:
-    '#type': checkboxes
+    '#type': select
     '#title': '¿Qué tipo de relación?'
     '#options':
-      soltera: Soltera
-      noviazgo: Noviazgo
-      union_libre: 'Unión Libre'
-      casada: Casada
-      divorciada: Divorciada
-      viuda: Viuda
+      1: Soltera
+      2: Noviazgo
+      3: 'Unión Libre'
+      4: Casada
+      5: Divorciada
+      6: Viuda
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   apoyo_pareja:
@@ -470,6 +475,10 @@ elements: |-
     '#title': '¿Cómo te apoya?'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="apoyo_pareja"]':
+          value: si
   apoyo_alguien_confianza:
     '#type': textfield
     '#title': '¿Hay alguien de confianza para ti que te esté apoyando? ¿Quién?¿Cómo?'
@@ -491,6 +500,10 @@ elements: |-
       si: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="menor_de_edad"]':
+          value: si
   padres_apoyan:
     '#type': radios
     '#title': '¿Tus padres te apoyan?'
@@ -499,14 +512,204 @@ elements: |-
       si: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="menor_de_edad"]':
+          value: si
   especifica_apoyo_menores:
     '#type': textarea
     '#title': '¿Cómo te está(n) apoyando?'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
-  razones_apoyo:
-    '#type': textarea
-    '#title': 'Explica por favor las razones por las que consideras que necesitas el apoyo:'
+    '#states':
+      visible:
+        ':input[name="padres_apoyan"]':
+          value: si
+  pertenece_etnia:
+    '#type': radios
+    '#title': '¿Perteneces a alguna etnia?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  etnia_perteneciente:
+    '#type': textfield
+    '#title': '¿A cuál etnia perteneces?'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="pertenece_etnia"]':
+          value: si
+  religion:
+    '#type': select
+    '#title': '¿Practicas alguna religión?'
+    '#options':
+      cristiana: Cristiana
+      catolica: Católica
+      judia: Judía
+      musulmana: Musulmana
+      budista: Budista
+      no_creyente_atea: 'No creyente-Atea'
+      ninguna: Ninguna
+      Otra: Otra
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  especifica_religion:
+    '#type': textfield
+    '#title': 'Especifica:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="religion"]':
+          value: Otra
+  menores_edad_dependientes:
+    '#type': select
+    '#title': '¿Cuántos menores de edad actualmente dependen de ti (y tu pareja, si tienes)?'
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  trabajando_actualmente:
+    '#type': radios
+    '#title': '¿Estás trabajando actualmente?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  ocupacion:
+    '#type': select
+    '#title': '¿Cuál es tu ocupación?'
+    '#options':
+      estudiante: Estudiante
+      empleada: Empleada
+      autoempleo: Autoempleo
+      profesionista: Profesionista
+      trabajadora_domestica: 'Trabajadora Doméstica'
+      trabajadora_en_el_cuidado_de_la_familia_y_el_hogar: 'Trabajadora en el cuidado de la familia y el hogar'
+      otra: Otra
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  especifica_ocupacion:
+    '#type': textfield
+    '#title': 'Especifica:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="ocupacion"]':
+          value: otra
+  estudiando_actualmente:
+    '#type': radios
+    '#title': '¿Estás estudiando actualmente?'
+    '#options':
+      'no': 'No'
+      si: Sí
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  escolaridad:
+    '#type': select
+    '#title': '¿Cuál es tu escolaridad?'
+    '#options':
+      primaria: Primaria
+      secundaria: Secundaria
+      bachillerato: Bachillerato
+      carrera_tecnica: 'Carrera técnica'
+      profesionista: Profesionista
+      posgrado: Posgrado
+      ninguna: Ninguna
+    '#select2': true
+    '#required': true
+  piso_casa:
+    '#type': select
+    '#title': '¿De qué material es el piso de tu vivienda (el material visible)?'
+    '#options':
+      tierra: Tierra
+      barro: Barro
+      cemento: Cemento
+      loseta: Loseta
+      alfombra: Alfombra
+    '#select2': true
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  personas_viven_casa:
+    '#type': select
+    '#title': '¿Cuántas personas viven en tu casa incluyéndote a ti?'
+    '#options':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+      6: '6'
+      7: '7'
+      8: '8'
+      9: '9'
+      10: '10'
+      11: '11'
+      12: '12'
+      13: '13'
+      14: '14'
+      15: '15'
+      16: '16'
+      17: '17'
+      18: '18'
+      19: '19'
+      20: '20'
+    '#select2': true
+    '#required': true
+    '#required_error': personas_viven_casa
+  ingreso_mensual:
+    '#type': select
+    '#title': 'Entre todas las personas en tu casa, ¿cuánto ganan mensualmente?'
+    '#options':
+      1: 'Menos de $2,200'
+      2: 'Entre $2,200 y $4,500'
+      3: 'Entre $4,500 y $8,000'
+      4: 'Entre $8,000 y $15,000'
+      5: 'Más de $15,000'
+      6: 'No sé'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  servicios:
+    '#type': checkboxes
+    '#title': 'Por favor marca los servicios con los que cuentes en el lugar donde vives (estas respuestas no determinarán el tipo de apoyo que recibas del Fondo):'
+    '#options':
+      agua_potable: 'Agua potable'
+      luz: Luz
+      telefono: Teléfono
+      celular: Celular
+      tv_publica: 'TV Pública'
+      tv_paga: 'TV Paga'
+      internet: Internet
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
+  acompanamiento_proceso:
+    '#type': radios
+    '#title': '¿Te interesa que nosotras estemos contigo en la clínica?'
+    '#options':
+      'no': 'No'
+      si: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   fecha_viajar_ciudad_de_mexico:
@@ -517,14 +720,6 @@ elements: |-
   alguien_acompana:
     '#type': textfield
     '#title': '¿Alguien podrá viajar contigo? ¿Quién?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  acompanamiento_proceso:
-    '#type': radios
-    '#title': '¿Te interesa que nosotras estemos contigo en la clínica?'
-    '#options':
-      'no': 'No'
-      si: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   dinero_aportar:
@@ -551,6 +746,11 @@ elements: |-
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+  informacion_relevante:
+    '#type': textarea
+    '#title': 'Por favor escribe cualquier otra información que consideres relevante:'
+    '#required': true
+    '#required_error': 'Esta pregunta es obligatoria.'
   info_email:
     '#type': checkboxes
     '#title': '¿Te interesaría recibir información sobre el tema para decidir cuál es la mejor opción para ti? Selecciona la información que desees recibir, la información llegará a tu correo electrónico:'
@@ -560,33 +760,6 @@ elements: |-
       proced: 'Procedimientos seguros para interrumpir un embarazo'
       emergencia: 'Anticoncepción de emergencia'
       leycdmx: 'Ley de Interrupción del Embarazo durante las primeras 12 semanas en la Ciudad de México'
-  conocimiento_fondo_maria:
-    '#type': select
-    '#title': '¿Cómo te enteraste del Fondo MARIA?'
-    '#options':
-      internet: Internet
-      amigx: Amigo(a)
-      folleto: Folleto
-      postal: Postal
-      linea_de_atencion_de_marie_stopes: 'Línea de atención de Marie Stopes'
-      cipa: Cipa
-      organizacion_civil: 'Organización civi'
-      mujerapoyadaporelfondo: 'Una mujer que fue apoyada antes por el Fondo'
-      tv: TV
-      otro: Otro
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  otra_forma:
-    '#type': textfield
-    '#title': 'Especifica:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  informacion_relevante:
-    '#type': textarea
-    '#title': 'Por favor escribe cualquier otra información que consideres relevante:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
 css: ''
 javascript: ''
 settings:

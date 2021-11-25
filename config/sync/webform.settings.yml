@@ -6,7 +6,7 @@ settings:
   default_ajax_speed: 500
   default_ajax_progress_type: throbber
   default_form_open_message: 'This form has not yet been opened to submissions.'
-  default_form_close_message: 'Sorry… This form is closed to new submissions.'
+  default_form_close_message: 'Sorry&hellip; This form is closed to new submissions.'
   default_form_exception_message: 'Unable to display this webform. Please contact the site administrator.'
   default_submit_button_label: Enviar
   default_reset_button_label: Reset
@@ -24,12 +24,7 @@ settings:
   default_form_required_label: 'Indicates required field'
   default_form_details_toggle: true
   default_form_file_limit: ''
-  form_classes: |
-    container-inline clearfix
-    form--inline clearfix
-    messages messages--error
-    messages messages--warning
-    messages messages--status
+  form_classes: "container-inline clearfix\r\nform--inline clearfix\r\nmessages messages--error\r\nmessages messages--warning\r\nmessages messages--status\r\n"
   button_classes: ''
   default_wizard_prev_button_label: '< Previous'
   default_wizard_next_button_label: 'Next >'
@@ -41,7 +36,7 @@ settings:
   default_preview_prev_button_label: '< Previous'
   default_preview_label: Preview
   default_preview_title: '[webform:title]: Preview'
-  default_preview_message: 'Please review your submission. Your submission is not complete until you press the "Submit" button!'
+  default_preview_message: 'Please review your submission. Your submission is not complete until you press the &quot;Submit&quot; button!'
   default_draft_button_label: 'Save Draft'
   default_draft_saved_message: 'Submission saved. You may return to this form later and it will restore the current values.'
   default_draft_loaded_message: 'A partially-completed form was found. Please complete the remaining portions.'
@@ -71,16 +66,9 @@ settings:
   default_previous_submission_message: 'You have already submitted this webform. <a href="#">View your previous submission</a>.'
   default_previous_submissions_message: 'You have already submitted this webform. <a href="#">View your previous submissions</a>.'
   default_autofill_message: 'This submission has been autofilled with your previous submission.'
-  preview_classes: |
-    messages messages--error
-    messages messages--warning
-    messages messages--status
-  confirmation_classes: |
-    messages messages--error
-    messages messages--warning
-    messages messages--status
-  confirmation_back_classes: |
-    button
+  preview_classes: "messages messages--error\r\nmessages messages--warning\r\nmessages messages--status\r\n"
+  confirmation_classes: "messages messages--error\r\nmessages messages--warning\r\nmessages messages--status\r\n"
+  confirmation_back_classes: "button\r\n"
   default_limit_total_message: 'No more submissions are permitted.'
   default_limit_user_message: 'No more submissions are permitted.'
   default_share: false
@@ -330,7 +318,7 @@ requirements:
   spam: true
 langcode: es
 third_party_settings:
-  captcha:
-    replace_administration_mode: true
+  honeypot:
+    honeypot: true
 _core:
   default_config_hash: 9qAvxkBYFcXXYVGI3KlH9Ks1AxdH0u6GpCrxzqDXO8M
