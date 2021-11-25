@@ -1,0 +1,6 @@
+name: 'Fondo Maria Database Connection'
+type: module
+description: 'Tools and methods for Fondo Maria database case registration.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Fondo Maria M3'
