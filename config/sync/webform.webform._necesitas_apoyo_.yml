@@ -365,6 +365,10 @@ elements: |-
     '#title': '¿Qué medicamento? ¿Cómo lo utilizaste?'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="procedimiento_medicamentos"]':
+          value: si
   utiliza_anticonceptivo:
     '#type': radios
     '#title': '¿Utilizaste algún anticonceptivo al momento de quedar embarazada?'
@@ -388,11 +392,19 @@ elements: |-
       coito_interrumpido: 'Coito interrumpido (eyaculó fuera)'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="utiliza_anticonceptivo"]':
+          value: si
   notas_anticonceptivos:
     '#type': textarea
     '#title': '¿De qué manera lo usabas?'
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="utiliza_anticonceptivo"]':
+          value: si
   por_favor_senala_los_metodos_anticonceptivos_que_has_utilizado_e:
     '#type': checkboxes
     '#title': 'Por favor señala los métodos anticonceptivos que has utilizado en el pasado:'
@@ -462,6 +474,10 @@ elements: |-
       6: Viuda
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="relacion_estable"]':
+          value: si
   apoyo_pareja:
     '#type': radios
     '#title': '¿La persona con quién tuviste la relación sexual te está apoyando?'
@@ -610,6 +626,10 @@ elements: |-
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
+    '#states':
+      visible:
+        ':input[name="trabajando_actualmente"]':
+          value: si
   especifica_ocupacion:
     '#type': textfield
     '#title': 'Especifica:'
@@ -760,6 +780,7 @@ elements: |-
       proced: 'Procedimientos seguros para interrumpir un embarazo'
       emergencia: 'Anticoncepción de emergencia'
       leycdmx: 'Ley de Interrupción del Embarazo durante las primeras 12 semanas en la Ciudad de México'
+      ninguno: Ninguno
 css: ''
 javascript: ''
 settings:
