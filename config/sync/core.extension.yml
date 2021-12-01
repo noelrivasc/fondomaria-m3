@@ -51,6 +51,7 @@ module:
   m3_paragraph_types: 0
   m3_search_tools: 0
   maria_custom_blocks: 0
+  maria_database_connection: 0
   maria_layout_overrides: 0
   media: 0
   media_library: 0

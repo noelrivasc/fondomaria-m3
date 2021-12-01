@@ -5,6 +5,8 @@
  * Contains maria_layout_overrides.module.
  */
 
+use Drupal\Core\Routing\RouteMatchInterface;
+
  /**
  * Implements hook_help().
  */
@@ -22,8 +24,18 @@ function maria_database_connection_help($route_name, RouteMatchInterface $route_
   }
 
 function maria_database_connection_form_alter(&$form, &$form_state, $form_id) {
-    // Aim here to the newly created webform and attach the case register method from the include
+  if($form_id == 'webform_submission_direct_attention_form_add_form') {
     module_load_include('inc', 'maria_database_connection', 'includes/fondomariadb_api_integration');
+    $api_config = fondomariadb_get_api_configuration();
 
-    $isApiConfigured = fondomariadb_check_api_configuration();
+    if($api_config) {
+      $form['#api'] = $api_config;
+      $form['actions']['submit']['#submit'][] = 'maria_database_connection_form_handler';
+    }
+  }
+}
+
+function maria_database_connection_form_handler($form, &$form_state) {
+  module_load_include('inc', 'maria_database_connection', 'includes/fondomariadb_api_integration');
+  fondomariadb_send_data($form, $form_state);
 }
