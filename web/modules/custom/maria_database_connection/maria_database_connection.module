@@ -30,7 +30,7 @@ function maria_database_connection_form_alter(&$form, &$form_state, $form_id) {
 
     if($api_config) {
       $form['#api'] = $api_config;
-      $form['actions']['submit']['#submit'][] = 'maria_database_connection_form_handler';
+      // $form['actions']['submit']['#submit'][] = 'maria_database_connection_form_handler';
     }
   }
 }

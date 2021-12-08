@@ -52,7 +52,7 @@ elements: |-
     '#title': '¿Te podemos hablar a este número?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   calls:
@@ -84,7 +84,7 @@ elements: |-
     '#title': '¿Te podemos contactar por correo?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   preference_contact:
@@ -96,38 +96,38 @@ elements: |-
     '#type': select
     '#title': '¿En dónde naciste?'
     '#options':
-      'Aguascalientes': 'Aguascalientes'
+      Aguascalientes: Aguascalientes
       'Baja California Norte': 'Baja California Norte'
       'Baja California Sur': 'Baja California Sur'
-      'Campeche': 'Campeche'
-      'Chiapas': 'Chiapas'
-      'Chihuahua': 'Chihuahua'
+      Campeche: Campeche
+      Chiapas: Chiapas
+      Chihuahua: Chihuahua
       'Ciudad de México': 'Ciudad de México'
-      'Coahuila': 'Coahuila'
-      'Colima': 'Colima'
-      'Durango': 'Durango'
+      Coahuila: Coahuila
+      Colima: Colima
+      Durango: Durango
       'Estado de México': 'Estado de México'
-      'Guanajuato': 'Guanajuato'
-      'Guerrero': 'Guerrero'
-      'Hidalgo': 'Hidalgo'
-      'Jalisco': 'Jalisco'
-      'Michoacán': 'Michoacán'
-      'Morelos': 'Morelos'
-      'Nayarit': 'Nayarit'
+      Guanajuato: Guanajuato
+      Guerrero: Guerrero
+      Hidalgo: Hidalgo
+      Jalisco: Jalisco
+      Michoacán: Michoacán
+      Morelos: Morelos
+      Nayarit: Nayarit
       'Nuevo Leon': 'Nuevo Leon'
-      'Oaxaca': 'Oaxaca'
-      'Puebla': 'Puebla'
-      'Querétaro': 'Querétaro'
+      Oaxaca: Oaxaca
+      Puebla: Puebla
+      Querétaro: Querétaro
       'Quintana Roo': 'Quintana Roo'
       'San Luis Potosí': 'San Luis Potosí'
-      'Sinaloa': 'Sinaloa'
-      'Sonora': 'Sonora'
-      'Tabasco': 'Tabasco'
-      'Tamaulipas': 'Tamaulipas'
-      'Tlaxcala': 'Tlaxcala'
-      'Veracruz': 'Veracruz'
-      'Yucatan': 'Yucatan'
-      'Zacatecas': 'Zacatecas'
+      Sinaloa: Sinaloa
+      Sonora: Sonora
+      Tabasco: Tabasco
+      Tamaulipas: Tamaulipas
+      Tlaxcala: Tlaxcala
+      Veracruz: Veracruz
+      Yucatan: Yucatan
+      Zacatecas: Zacatecas
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
@@ -135,38 +135,38 @@ elements: |-
     '#type': select
     '#title': '¿En dónde vives?'
     '#options':
-      'Aguascalientes': 'Aguascalientes'
+      Aguascalientes: Aguascalientes
       'Baja California Norte': 'Baja California Norte'
       'Baja California Sur': 'Baja California Sur'
-      'Campeche': 'Campeche'
-      'Chiapas': 'Chiapas'
-      'Chihuahua': 'Chihuahua'
+      Campeche: Campeche
+      Chiapas: Chiapas
+      Chihuahua: Chihuahua
       'Ciudad de México': 'Ciudad de México'
-      'Coahuila': 'Coahuila'
-      'Colima': 'Colima'
-      'Durango': 'Durango'
+      Coahuila: Coahuila
+      Colima: Colima
+      Durango: Durango
       'Estado de México': 'Estado de México'
-      'Guanajuato': 'Guanajuato'
-      'Guerrero': 'Guerrero'
-      'Hidalgo': 'Hidalgo'
-      'Jalisco': 'Jalisco'
-      'Michoacán': 'Michoacán'
-      'Morelos': 'Morelos'
-      'Nayarit': 'Nayarit'
+      Guanajuato: Guanajuato
+      Guerrero: Guerrero
+      Hidalgo: Hidalgo
+      Jalisco: Jalisco
+      Michoacán: Michoacán
+      Morelos: Morelos
+      Nayarit: Nayarit
       'Nuevo Leon': 'Nuevo Leon'
-      'Oaxaca': 'Oaxaca'
-      'Puebla': 'Puebla'
-      'Querétaro': 'Querétaro'
+      Oaxaca: Oaxaca
+      Puebla: Puebla
+      Querétaro: Querétaro
       'Quintana Roo': 'Quintana Roo'
       'San Luis Potosí': 'San Luis Potosí'
-      'Sinaloa': 'Sinaloa'
-      'Sonora': 'Sonora'
-      'Tabasco': 'Tabasco'
-      'Tamaulipas': 'Tamaulipas'
-      'Tlaxcala': 'Tlaxcala'
-      'Veracruz': 'Veracruz'
-      'Yucatan': 'Yucatan'
-      'Zacatecas': 'Zacatecas'
+      Sinaloa: Sinaloa
+      Sonora: Sonora
+      Tabasco: Tabasco
+      Tamaulipas: Tamaulipas
+      Tlaxcala: Tlaxcala
+      Veracruz: Veracruz
+      Yucatan: Yucatan
+      Zacatecas: Zacatecas
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
@@ -179,16 +179,16 @@ elements: |-
     '#type': select
     '#title': '¿Cómo te enteraste del Fondo MARIA?'
     '#options':
-      'Internet': 'Internet'
-      'Amigo(a)': 'Amigo(a)'
-      'Folleto': 'Folleto'
-      'Postal': 'Postal'
+      Internet: Internet
+      Amigo(a): Amigo(a)
+      Folleto: Folleto
+      Postal: Postal
       'Línea de atención de Marie Stopes': 'Línea de atención de Marie Stopes'
-      'Cipa': 'Cipa'
+      Cipa: Cipa
       'Organización civi': 'Organización civi'
       'Una mujer que fue apoyada antes por el Fondo': 'Una mujer que fue apoyada antes por el Fondo'
-      'TV': 'TV'
-      'Otro': 'Otro'
+      TV: TV
+      Otro: Otro
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
@@ -200,7 +200,7 @@ elements: |-
     '#states':
       visible:
         ':input[name="hear_about"]':
-          value: 'Otro'
+          value: Otro
   support_request:
     '#type': textarea
     '#title': 'Describe por favor el apoyo que necesitas recibir del Fondo MARIA'
@@ -310,7 +310,7 @@ elements: |-
     '#title': '¿Te has realizado alguna prueba de embarazo?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   pruebas_embarazo:
@@ -320,20 +320,21 @@ elements: |-
     '#states':
       visible:
         ':input[name="prueba_de_embarazo"]':
-          value: 'Sí'
+          value: Sí
+    '#states_clear': false
     '#default_value':
       - resultado: ''
         semanas: ''
-        tipo: 'Orina'
-        name: 'orina'
+        tipo: Orina
+        name: orina
       - resultado: ''
         semanas: ''
-        tipo: 'Sangre'
-        name: 'sangre'
+        tipo: Sangre
+        name: sangre
       - resultado: ''
         semanas: ''
-        tipo: 'Ultrasonido'
-        name: 'ultrasonido'
+        tipo: Ultrasonido
+        name: ultrasonido
     '#multiple__min_items': 3
     '#multiple__sorting': false
     '#multiple__operations': false
@@ -353,7 +354,9 @@ elements: |-
         '#type': number
         '#title': Semanas
       name:
-        '#type': hidden
+        '#type': textfield
+        '#title': codename
+        '#hidden': true
       fecha:
         '#type': date
         '#title': Fecha
@@ -362,7 +365,7 @@ elements: |-
     '#title': '¿Has utilizado medicamentos para intentar interrumpir el embarazo?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   protocolo_medicamentos:
@@ -373,13 +376,13 @@ elements: |-
     '#states':
       visible:
         ':input[name="procedimiento_medicamentos"]':
-          value: 'Sí'
+          value: Sí
   contraceptive:
     '#type': radios
     '#title': '¿Utilizaste algún anticonceptivo al momento de quedar embarazada?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   contraceptive_before_pregnancy:
@@ -400,7 +403,7 @@ elements: |-
     '#states':
       visible:
         ':input[name="contraceptive"]':
-          value: 'Sí'
+          value: Sí
   contraceptive_notes:
     '#type': textarea
     '#title': '¿De qué manera lo usabas?'
@@ -409,7 +412,7 @@ elements: |-
     '#states':
       visible:
         ':input[name="contraceptive"]':
-          value: 'Sí'
+          value: Sí
   contraceptive_types:
     '#type': checkboxes
     '#title': 'Por favor señala los métodos anticonceptivos que has utilizado en el pasado:'
@@ -450,12 +453,12 @@ elements: |-
     '#type': select
     '#title': '¿Cuál es tu estado civil?'
     '#options':
-      'Soltera': 'Soltera'
-      'Casada': 'Casada'
+      Soltera: Soltera
+      Casada: Casada
       'Union Libre': 'Unión Libre'
-      'Separada': 'Separada'
-      'Divorciada': 'Divorciada'
-      'Viuda': 'Viuda'
+      Separada: Separada
+      Divorciada: Divorciada
+      Viuda: Viuda
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
@@ -464,31 +467,31 @@ elements: |-
     '#title': '¿El embarazo ocurrió dentro de una relación de pareja?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   relationship:
     '#type': select
     '#title': '¿Qué tipo de relación?'
     '#options':
-      'Soltera': 'Soltera'
-      'Noviazgo': 'Noviazgo'
+      Soltera: Soltera
+      Noviazgo: Noviazgo
       'Union Libre': 'Unión Libre'
-      'Matrimonio': 'Matrimonio'
-      'Divorciada': 'Divorciada'
-      'Viuda': 'Viuda'
+      Matrimonio: Matrimonio
+      Divorciada: Divorciada
+      Viuda: Viuda
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
     '#states':
       visible:
         ':input[name="stable"]':
-          value: 'Sí'
+          value: Sí
   partner_support:
     '#type': radios
     '#title': '¿La persona con quién tuviste la relación sexual te está apoyando?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   partner_support_description:
@@ -499,7 +502,7 @@ elements: |-
     '#states':
       visible:
         ':input[name="partner_support"]':
-          value: 'Sí'
+          value: Sí
   trust_support_description:
     '#type': textfield
     '#title': '¿Hay alguien de confianza para ti que te esté apoyando? ¿Quién?¿Cómo?'
@@ -510,7 +513,7 @@ elements: |-
     '#title': '¿Eres menor de edad?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   parents_knows:
@@ -518,25 +521,25 @@ elements: |-
     '#title': '¿Padre, madre o tutor saben sobre tu decisión de interrumpir el embarazo?'
     '#options':
       'No': 'No'
-      'Sí': Sí
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
     '#states':
       visible:
         ':input[name="menor_de_edad"]':
-          value: 'Sí'
+          value: Sí
   parents_support:
     '#type': radios
     '#title': '¿Tus padres te apoyan?'
     '#options':
       'No': 'No'
-      'Sí': Sí
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
     '#states':
       visible:
         ':input[name="menor_de_edad"]':
-          value: 'Sí'
+          value: Sí
   parents_support_description:
     '#type': textarea
     '#title': '¿Cómo te está(n) apoyando?'
@@ -545,13 +548,13 @@ elements: |-
     '#states':
       visible:
         ':input[name="parents_support"]':
-          value: 'Sí'
+          value: Sí
   ethnic:
     '#type': radios
     '#title': '¿Perteneces a alguna etnia?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   which_ethnic:
@@ -562,19 +565,19 @@ elements: |-
     '#states':
       visible:
         ':input[name="ethnic"]':
-          value: 'Sí'
+          value: Sí
   religion:
     '#type': select
     '#title': '¿Practicas alguna religión?'
     '#options':
-      'Cristiana': 'Cristiana'
-      'Católica': 'Católica'
-      'Judía': 'Judía'
-      'Musulmana': 'Musulmana'
-      'Budista': 'Budista'
+      Cristiana: Cristiana
+      Católica: Católica
+      Judía: Judía
+      Musulmana: Musulmana
+      Budista: Budista
       'No creyente - Atea': 'No creyente - Atea'
-      'Ninguna': 'Ninguna'
-      'Otra': 'Otra'
+      Ninguna: Ninguna
+      Otra: Otra
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
@@ -586,7 +589,7 @@ elements: |-
     '#states':
       visible:
         ':input[name="religion"]':
-          value: 'Otra'
+          value: Otra
   dependent_minors:
     '#type': select
     '#title': '¿Cuántos menores de edad actualmente dependen de ti (y tu pareja, si tienes)?'
@@ -614,27 +617,27 @@ elements: |-
     '#title': '¿Estás trabajando actualmente?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   occupation:
     '#type': select
     '#title': '¿Cuál es tu ocupación?'
     '#options':
-      'Estudiante': 'Estudiante'
-      'Empleada': 'Empleada'
-      'Autoempleo': 'Autoempleo'
-      'Profesionista': 'Profesionista'
+      Estudiante: Estudiante
+      Empleada: Empleada
+      Autoempleo: Autoempleo
+      Profesionista: Profesionista
       'Trabajadora Doméstica': 'Trabajadora Doméstica'
       'Trabajadora en el cuidado de la familia y el hogar': 'Trabajadora en el cuidado de la familia y el hogar'
-      'Otra': 'Otra'
+      Otra: Otra
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
     '#states':
       visible:
         ':input[name="trabajando_actualmente"]':
-          value: 'Sí'
+          value: Sí
   occupation_notes:
     '#type': textfield
     '#title': 'Especifica:'
@@ -643,37 +646,37 @@ elements: |-
     '#states':
       visible:
         ':input[name="occupation"]':
-          value: 'Otra'
+          value: Otra
   estudiando_actualmente:
     '#type': radios
     '#title': '¿Estás estudiando actualmente?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   last_studies_degree:
     '#type': select
     '#title': '¿Cuál es tu escolaridad?'
     '#options':
-      'Primaria': 'Primaria'
-      'Secundaria': 'Secundaria'
-      'Bachillerato': 'Bachillerato'
+      Primaria: Primaria
+      Secundaria: Secundaria
+      Bachillerato: Bachillerato
       'Carrera técnica': 'Carrera técnica'
-      'Profesionista': 'Profesionista'
-      'Posgrado': 'Posgrado'
-      'Ninguna': 'Ninguna'
+      Profesionista: Profesionista
+      Posgrado: Posgrado
+      Ninguna: Ninguna
     '#select2': true
     '#required': true
   floor_material:
     '#type': select
     '#title': '¿De qué material es el piso de tu vivienda (el material visible)?'
     '#options':
-      'Tierra': 'Tierra'
-      'Barro': 'Barro'
-      'Cemento': 'Cemento'
-      'Loseta': 'Loseta'
-      'Alfombra': 'Alfombra'
+      Tierra: Tierra
+      Barro: Barro
+      Cemento: Cemento
+      Loseta: Loseta
+      Alfombra: Alfombra
     '#select2': true
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
@@ -734,7 +737,7 @@ elements: |-
     '#title': '¿Te interesa que nosotras estemos contigo en la clínica?'
     '#options':
       'No': 'No'
-      'Sí': 'Sí'
+      Sí: Sí
     '#required': true
     '#required_error': 'Esta pregunta es obligatoria.'
   travel:
@@ -780,12 +783,11 @@ elements: |-
     '#type': checkboxes
     '#title': '¿Te interesaría recibir información sobre el tema para decidir cuál es la mejor opción para ti? Selecciona la información que desees recibir, la información llegará a tu correo electrónico:'
     '#options':
-      'anticonceptivos|Métodos anticonceptivos': 'Métodos anticonceptivos'
+      anticonceptivos: 'Métodos anticonceptivos'
       aborto: '¿Qué es el aborto?'
-      proced: 'Procedimientos seguros para interrumpir un embarazo'
+      interrupcion: 'Procedimientos seguros para interrumpir un embarazo'
       emergencia: 'Anticoncepción de emergencia'
       leycdmx: 'Ley de Interrupción del Embarazo durante las primeras 12 semanas en la Ciudad de México'
-      ninguno: Ninguno
 css: ''
 javascript: ''
 settings:
@@ -967,5 +969,56 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  maria_database_api:
+    id: remote_post
+    label: 'MARIA database APi'
+    notes: ''
+    handler_id: maria_database_api
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      method: POST
+      type: json
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+      custom_data: ''
+      custom_options: "verify: false\r\nheaders:\r\n  Content-Type: 'application/json'\r\n  Authorization-Id: 2\r\n  Authorization: s5AjitLmKXhVpEhLvhD9lBQLTaO3PkpRcoGjh3JIjpfcR4ob5YyFWKVAJtXnHzv0eKVkGbWiCLnJMEMH"
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: 'https://ddev-fondomaria-app-web/api/cases'
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_created_url: ''
+      draft_created_custom_data: ''
+      draft_updated_url: ''
+      draft_updated_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+      error_url: ''
 variants: {  }
