@@ -1,0 +1,51 @@
+//////////////////////////////////////////////
+//  Styles for maria direct attention form  //
+//////////////////////////////////////////////
+
+.page--webform-direct-attention-form {
+    @extend .m3-view;
+
+    .form__container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .form__introduction {
+        @extend .container-fluid;
+        background-color: $ma-orange-300;
+        padding-top: $spacer-md;
+        padding-bottom: $spacer-xl;
+
+        & > div {
+            @extend .container;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .form__body,
+    .form-actions {
+        @extend .container;
+    }
+
+    .form__body {
+        padding-top: $spacer-xl;
+        padding-bottom: $spacer-md;
+    }
+
+    .form-actions {
+        padding-bottom: $spacer-xl;
+    }
+
+    #edit-como-te-llamas {
+        @extend .col-form-label;
+        margin: 0;
+        margin-bottom: $spacer-sm;
+        padding: 0;
+
+        p {
+            @extend .m3-label;
+            margin: 0;
+        }
+    }
+}

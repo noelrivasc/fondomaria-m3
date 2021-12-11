@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/blog\r\n/resources\r\n/recursos\r\n/taxonomy/term/*\r\n/search\r\n/busqueda"
+    pages: "/blog\r\n/resources\r\n/recursos\r\n/taxonomy/term/*\r\n/search\r\n/busqueda\r\n/form/direct-attention-form"
     negate: false
     context_mapping: {  }

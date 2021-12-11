@@ -13,781 +13,811 @@ title: '¿Necesitas apoyo?'
 description: 'Solicitud de apoyo conectada a base de datos.&nbsp;'
 category: ''
 elements: |-
-  formulario_maria:
-    '#type': processed_text
-    '#admin_title': 'Formulario MARIA'
-    '#text': |
-      <p><strong>Aviso de Privacidad:</strong> Balance Promoción para el Desarrollo y Juventud A.C. es responsable de la confidencialidad, uso y protección de la información personal que nos proporcionas. Los datos personales que te solicitamos son necesarios para tu proceso de apoyo en el acceso a servicios de salud. Con el interés de incrementar el análisis de los aspectos sociales relacionados con el apoyo al acceso a servicios de salud algunos datos personas se usarán con fines estadísticos, esto guardando la identidad de las personas apoyadas. Para ejercitar tus derechos de acceso, rectificación y cancelación de datos personales, así como de oposición al tratamiento de los mismos o revocar el consentimiento que para tal fin nos hayas otorgado, lo podrás realizar a través del correo <a href="mailto:comunicacion@redbalance.org">comunicacion@balancemx.org</a></p>
+  case_id:
+    '#type': hidden
+    '#title': 'Case ID'
+    '#default_value': '[webform:handler:maria_database_api:completed:case_id]'
+  introduction:
+    '#type': container
+    '#attributes':
+      class:
+        - form__introduction
+    formulario_maria:
+      '#type': processed_text
+      '#admin_title': 'Formulario MARIA'
+      '#text': |
+        <p><strong>Aviso de Privacidad:</strong> Balance Promoción para el Desarrollo y Juventud A.C. es responsable de la confidencialidad, uso y protección de la información personal que nos proporcionas. Los datos personales que te solicitamos son necesarios para tu proceso de apoyo en el acceso a servicios de salud. Con el interés de incrementar el análisis de los aspectos sociales relacionados con el apoyo al acceso a servicios de salud algunos datos personas se usarán con fines estadísticos, esto guardando la identidad de las personas apoyadas. Para ejercitar tus derechos de acceso, rectificación y cancelación de datos personales, así como de oposición al tratamiento de los mismos o revocar el consentimiento que para tal fin nos hayas otorgado, lo podrás realizar a través del correo <a href="mailto:comunicacion@redbalance.org">comunicacion@balancemx.org</a></p>
 
-      <p>Puedes consultar una versión más amplia de nuestro Aviso de Privacidad <a href="%20/sites/default/files/archivos-web/aviso-de-privacidad.pdf">aquí</a>.</p>
+        <p>Puedes consultar una versión más amplia de nuestro Aviso de Privacidad <a href="%20/sites/default/files/archivos-web/aviso-de-privacidad.pdf">aquí</a>.</p>
 
-      <p><em><strong>Nota:</strong>&nbsp;Las preguntas que están marcadas con * son indispensables para poder continuar.</em></p>
-    '#format': formatted_text
-  como_te_llamas:
-    '#type': processed_text
-    '#admin_title': '¿Cómo te llamas?'
-    '#text': |
-      <p>¿Cómo te llamas?</p>
-    '#format': formatted_text
-  name:
-    '#type': textfield
-    '#title': Nombre(s)
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  last_name:
-    '#type': textfield
-    '#title': Apellidos
-  birth:
-    '#type': date
-    '#title': '¿Cuál es tu fecha de nacimiento?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  phone:
-    '#type': textfield
-    '#title': '¿Cuál es tu número de teléfono fijo?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  phone_contact:
-    '#type': radios
-    '#title': '¿Te podemos hablar a este número?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  calls:
-    '#type': textfield
-    '#title': '¿Hay algún horario en el que prefieras recibir la llamada?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  cellphone:
-    '#type': textfield
-    '#title': '¿Cuál es tu número de celular?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  cellphone_contact:
-    '#type': radios
-    '#title': '¿Te podemos hablar a este número?'
-    '#options':
-      'no': 'No'
-      si: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  email:
-    '#type': textfield
-    '#title': 'Tu correo electrónico es:'
-    '#input_mask': '''alias'': ''email'''
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  email_contact:
-    '#type': radios
-    '#title': '¿Te podemos contactar por correo?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  preference_contact:
-    '#type': textfield
-    '#title': 'Entre las opciones que nos diste, ¿cómo prefieres que te contactemos?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  birth_state:
-    '#type': select
-    '#title': '¿En dónde naciste?'
-    '#options':
-      Aguascalientes: Aguascalientes
-      'Baja California Norte': 'Baja California Norte'
-      'Baja California Sur': 'Baja California Sur'
-      Campeche: Campeche
-      Chiapas: Chiapas
-      Chihuahua: Chihuahua
-      'Ciudad de México': 'Ciudad de México'
-      Coahuila: Coahuila
-      Colima: Colima
-      Durango: Durango
-      'Estado de México': 'Estado de México'
-      Guanajuato: Guanajuato
-      Guerrero: Guerrero
-      Hidalgo: Hidalgo
-      Jalisco: Jalisco
-      Michoacán: Michoacán
-      Morelos: Morelos
-      Nayarit: Nayarit
-      'Nuevo Leon': 'Nuevo Leon'
-      Oaxaca: Oaxaca
-      Puebla: Puebla
-      Querétaro: Querétaro
-      'Quintana Roo': 'Quintana Roo'
-      'San Luis Potosí': 'San Luis Potosí'
-      Sinaloa: Sinaloa
-      Sonora: Sonora
-      Tabasco: Tabasco
-      Tamaulipas: Tamaulipas
-      Tlaxcala: Tlaxcala
-      Veracruz: Veracruz
-      Yucatan: Yucatan
-      Zacatecas: Zacatecas
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  state:
-    '#type': select
-    '#title': '¿En dónde vives?'
-    '#options':
-      Aguascalientes: Aguascalientes
-      'Baja California Norte': 'Baja California Norte'
-      'Baja California Sur': 'Baja California Sur'
-      Campeche: Campeche
-      Chiapas: Chiapas
-      Chihuahua: Chihuahua
-      'Ciudad de México': 'Ciudad de México'
-      Coahuila: Coahuila
-      Colima: Colima
-      Durango: Durango
-      'Estado de México': 'Estado de México'
-      Guanajuato: Guanajuato
-      Guerrero: Guerrero
-      Hidalgo: Hidalgo
-      Jalisco: Jalisco
-      Michoacán: Michoacán
-      Morelos: Morelos
-      Nayarit: Nayarit
-      'Nuevo Leon': 'Nuevo Leon'
-      Oaxaca: Oaxaca
-      Puebla: Puebla
-      Querétaro: Querétaro
-      'Quintana Roo': 'Quintana Roo'
-      'San Luis Potosí': 'San Luis Potosí'
-      Sinaloa: Sinaloa
-      Sonora: Sonora
-      Tabasco: Tabasco
-      Tamaulipas: Tamaulipas
-      Tlaxcala: Tlaxcala
-      Veracruz: Veracruz
-      Yucatan: Yucatan
-      Zacatecas: Zacatecas
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  city:
-    '#type': textfield
-    '#title': '¿En qué municipio?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  hear_about:
-    '#type': select
-    '#title': '¿Cómo te enteraste del Fondo MARIA?'
-    '#options':
-      Internet: Internet
-      Amigo(a): Amigo(a)
-      Folleto: Folleto
-      Postal: Postal
-      'Línea de atención de Marie Stopes': 'Línea de atención de Marie Stopes'
-      Cipa: Cipa
-      'Organización civi': 'Organización civi'
-      'Una mujer que fue apoyada antes por el Fondo': 'Una mujer que fue apoyada antes por el Fondo'
-      TV: TV
-      Otro: Otro
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  other_hear_about:
-    '#type': textfield
-    '#title': 'Especifica:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="hear_about"]':
-          value: Otro
-  support_request:
-    '#type': textarea
-    '#title': 'Describe por favor el apoyo que necesitas recibir del Fondo MARIA'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  pregnancies:
-    '#type': select
-    '#title': '¿Cuántos embarazos has tenido contando este?'
-    '#options':
-      1: '1'
-      2: '2'
-      3: '3'
-      4: '4'
-      5: '5'
-      6: '6'
-      7: '7'
-      8: '8'
-      9: '9'
-      10: '10'
-      11: '11'
-      12: '12'
-      13: '13'
-      14: '14'
-      15: '15'
-      16: '16'
-      17: '17'
-      18: '18'
-      19: '19'
-      20: '20'
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  childrens:
-    '#type': select
-    '#title': 'Número de hijxs'
-    '#options':
-      - '0'
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  abortions:
-    '#type': select
-    '#title': '¿Has tenido un aborto inducido antes? ¿Cuántos?'
-    '#options':
-      - '0'
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-    '#select2': true
-  spontaneous_abortions:
-    '#type': select
-    '#title': '¿Has tenido un aborto espontáneo antes? ¿Cuántos?'
-    '#options':
-      - '0'
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  last_menstruation:
-    '#type': date
-    '#title': '¿Qué día inició tu última menstruación?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  prueba_de_embarazo:
-    '#type': radios
-    '#title': '¿Te has realizado alguna prueba de embarazo?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  pruebas_embarazo:
-    '#type': webform_custom_composite
-    '#title': '¿Qué tipo de prueba te has hecho? ¿Cuál fue el resultado? ¿En qué fecha la hiciste?'
-    '#multiple': 3
-    '#states':
-      visible:
-        ':input[name="prueba_de_embarazo"]':
-          value: Sí
-    '#states_clear': false
-    '#default_value':
-      - resultado: ''
-        semanas: ''
-        tipo: Orina
-        name: orina
-      - resultado: ''
-        semanas: ''
-        tipo: Sangre
-        name: sangre
-      - resultado: ''
-        semanas: ''
-        tipo: Ultrasonido
-        name: ultrasonido
-    '#multiple__min_items': 3
-    '#multiple__sorting': false
-    '#multiple__operations': false
-    '#multiple__add_more': false
-    '#element':
-      tipo:
-        '#type': textfield
-        '#title': 'Tipo de prueba'
-        '#disabled': true
-      resultado:
-        '#type': select
-        '#options':
-          positivo: Positivo
-          negativo: Negativo
-        '#title': Resultado
-      semanas:
-        '#type': number
-        '#title': Semanas
+        <p><em><strong>Nota:</strong>&nbsp;Las preguntas que están marcadas con * son indispensables para poder continuar.</em></p>
+      '#format': formatted_text
+  body:
+    '#type': container
+    '#attributes':
+      class:
+        - form__body
+    como_te_llamas:
+      '#type': processed_text
+      '#admin_title': '¿Cómo te llamas?'
+      '#text': |
+        <p class="heading-4">¿Cómo te llamas?</p>
+      '#format': formatted_text
+    name_container:
+      '#type': webform_flexbox
       name:
         '#type': textfield
-        '#title': codename
-        '#hidden': true
-      fecha:
-        '#type': date
-        '#title': Fecha
-  procedimiento_medicamentos:
-    '#type': radios
-    '#title': '¿Has utilizado medicamentos para intentar interrumpir el embarazo?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  protocolo_medicamentos:
-    '#type': textarea
-    '#title': '¿Qué medicamento? ¿Cómo lo utilizaste?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="procedimiento_medicamentos"]':
-          value: Sí
-  contraceptive:
-    '#type': radios
-    '#title': '¿Utilizaste algún anticonceptivo al momento de quedar embarazada?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  contraceptive_before_pregnancy:
-    '#type': radios
-    '#title': '¿Qué anticonceptivo utilizabas?'
-    '#options':
-      condon: Condón
-      pastillas: Pastillas
-      'anticonceptivos de emergencia': 'Anticonceptivos de emergencia'
-      diu: DIU
-      parche: Parche
-      inyecciones: Inyecciones
-      implante: Implante
-      ritmo: 'Ritmo según el ciclo menstrual'
-      'coito interrumpido': 'Coito interrumpido (eyaculó fuera)'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="contraceptive"]':
-          value: Sí
-  contraceptive_notes:
-    '#type': textarea
-    '#title': '¿De qué manera lo usabas?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="contraceptive"]':
-          value: Sí
-  contraceptive_types:
-    '#type': checkboxes
-    '#title': 'Por favor señala los métodos anticonceptivos que has utilizado en el pasado:'
-    '#options':
-      condon: Condón
-      pastillas: Pastillas
-      'anticoncepcion de emergencia': 'Anticoncepción de Emergencia'
-      diu: DIU
-      parche: Parche
-      inyecciones: Inyecciones
-      implante: Implante
-      ninguno: Ninguno
-      otros: Otros
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  blood_type:
-    '#type': select
-    '#title': '¿Cuál es tu tipo de sangre?'
-    '#options':
-      o+: O+
-      o-: O-
-      a+: A+
-      a-: A-
-      b+: B+
-      b-: B-
-      ab+: AB+
-      ab-: AB-
-      no_se: 'No sé'
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  why_support_request:
-    '#type': textarea
-    '#title': 'Explica por favor las razones por las que consideras que necesitas el apoyo:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  status:
-    '#type': select
-    '#title': '¿Cuál es tu estado civil?'
-    '#options':
-      Soltera: Soltera
-      Casada: Casada
-      'Union Libre': 'Unión Libre'
-      Separada: Separada
-      Divorciada: Divorciada
-      Viuda: Viuda
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  stable:
-    '#type': radios
-    '#title': '¿El embarazo ocurrió dentro de una relación de pareja?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  relationship:
-    '#type': select
-    '#title': '¿Qué tipo de relación?'
-    '#options':
-      Soltera: Soltera
-      Noviazgo: Noviazgo
-      'Union Libre': 'Unión Libre'
-      Matrimonio: Matrimonio
-      Divorciada: Divorciada
-      Viuda: Viuda
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="stable"]':
-          value: Sí
-  partner_support:
-    '#type': radios
-    '#title': '¿La persona con quién tuviste la relación sexual te está apoyando?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  partner_support_description:
-    '#type': textarea
-    '#title': '¿Cómo te apoya?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="partner_support"]':
-          value: Sí
-  trust_support_description:
-    '#type': textfield
-    '#title': '¿Hay alguien de confianza para ti que te esté apoyando? ¿Quién?¿Cómo?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  menor_de_edad:
-    '#type': radios
-    '#title': '¿Eres menor de edad?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  parents_knows:
-    '#type': radios
-    '#title': '¿Padre, madre o tutor saben sobre tu decisión de interrumpir el embarazo?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="menor_de_edad"]':
-          value: Sí
-  parents_support:
-    '#type': radios
-    '#title': '¿Tus padres te apoyan?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="menor_de_edad"]':
-          value: Sí
-  parents_support_description:
-    '#type': textarea
-    '#title': '¿Cómo te está(n) apoyando?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="parents_support"]':
-          value: Sí
-  ethnic:
-    '#type': radios
-    '#title': '¿Perteneces a alguna etnia?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  which_ethnic:
-    '#type': textfield
-    '#title': '¿A cuál etnia perteneces?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="ethnic"]':
-          value: Sí
-  religion:
-    '#type': select
-    '#title': '¿Practicas alguna religión?'
-    '#options':
-      Cristiana: Cristiana
-      Católica: Católica
-      Judía: Judía
-      Musulmana: Musulmana
-      Budista: Budista
-      'No creyente - Atea': 'No creyente - Atea'
-      Ninguna: Ninguna
-      Otra: Otra
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  religion_other:
-    '#type': textfield
-    '#title': 'Especifica:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="religion"]':
-          value: Otra
-  dependent_minors:
-    '#type': select
-    '#title': '¿Cuántos menores de edad actualmente dependen de ti (y tu pareja, si tienes)?'
-    '#options':
-      - '0'
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  trabajando_actualmente:
-    '#type': radios
-    '#title': '¿Estás trabajando actualmente?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  occupation:
-    '#type': select
-    '#title': '¿Cuál es tu ocupación?'
-    '#options':
-      Estudiante: Estudiante
-      Empleada: Empleada
-      Autoempleo: Autoempleo
-      Profesionista: Profesionista
-      'Trabajadora Doméstica': 'Trabajadora Doméstica'
-      'Trabajadora en el cuidado de la familia y el hogar': 'Trabajadora en el cuidado de la familia y el hogar'
-      Otra: Otra
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="trabajando_actualmente"]':
-          value: Sí
-  occupation_notes:
-    '#type': textfield
-    '#title': 'Especifica:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-    '#states':
-      visible:
-        ':input[name="occupation"]':
-          value: Otra
-  estudiando_actualmente:
-    '#type': radios
-    '#title': '¿Estás estudiando actualmente?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  last_studies_degree:
-    '#type': select
-    '#title': '¿Cuál es tu escolaridad?'
-    '#options':
-      Primaria: Primaria
-      Secundaria: Secundaria
-      Bachillerato: Bachillerato
-      'Carrera técnica': 'Carrera técnica'
-      Profesionista: Profesionista
-      Posgrado: Posgrado
-      Ninguna: Ninguna
-    '#select2': true
-    '#required': true
-  floor_material:
-    '#type': select
-    '#title': '¿De qué material es el piso de tu vivienda (el material visible)?'
-    '#options':
-      Tierra: Tierra
-      Barro: Barro
-      Cemento: Cemento
-      Loseta: Loseta
-      Alfombra: Alfombra
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  people_live_house:
-    '#type': select
-    '#title': '¿Cuántas personas viven en tu casa incluyéndote a ti?'
-    '#options':
-      1: '1'
-      2: '2'
-      3: '3'
-      4: '4'
-      5: '5'
-      6: '6'
-      7: '7'
-      8: '8'
-      9: '9'
-      10: '10'
-      11: '11'
-      12: '12'
-      13: '13'
-      14: '14'
-      15: '15'
-      16: '16'
-      17: '17'
-      18: '18'
-      19: '19'
-      20: '20'
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  household_income:
-    '#type': select
-    '#title': 'Entre todas las personas en tu casa, ¿cuánto ganan mensualmente?'
-    '#options':
-      'Menos de $2,200': 'Menos de $2,200'
-      'Entre $2,200 y $4,500': 'Entre $2,200 y $4,500'
-      'Entre $4,500 y $8,000': 'Entre $4,500 y $8,000'
-      'Entre $8,000 y $15,000': 'Entre $8,000 y $15,000'
-      'Más de $15,000': 'Más de $15,000'
-      'No sé': 'No sé'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  servicios:
-    '#type': checkboxes
-    '#title': 'Por favor marca los servicios con los que cuentes en el lugar donde vives (estas respuestas no determinarán el tipo de apoyo que recibas del Fondo):'
-    '#options':
-      agua_potable: 'Agua potable'
-      luz: Luz
-      telefono: Teléfono
-      celular: Celular
-      tv_publica: 'TV Pública'
-      tv_paga: 'TV Paga'
-      internet: Internet
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  accompaniment_process:
-    '#type': radios
-    '#title': '¿Te interesa que nosotras estemos contigo en la clínica?'
-    '#options':
-      'No': 'No'
-      Sí: Sí
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  travel:
-    '#type': date
-    '#title': '¿Cuándo podrías viajar a la Ciudad de México?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  plus_one_details:
-    '#type': textfield
-    '#title': '¿Alguien podrá viajar contigo? ¿Quién?'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  contribution_now:
-    '#type': select
-    '#title': '¿Cuánto dinero podrías aportar tú ahora? (La respuesta a esta pregunta no cambia la opción de apoyo que el Fondo MARIA te brindará):'
-    '#options':
-      '0_500': '$0 - $500'
-      '500_1000': '$500 - $1000'
-      '1000_1500': '$1000 - $1500'
-      '1500_2000': '$1500 - $2000'
-      '2000_2500': '$2000 - $2500'
-      '2500_3000': '$2500 - $3000'
-      '3000_3500': '$3000 - $3500'
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  contribution_later:
-    '#type': select
-    '#title': '¿Podrías aportar en los próximos 3 meses el dinero que el Fondo MARIA invierte en apoyarte? (La respuesta a esta pregunta no cambia la opción de apoyo que el Fondo MARIA te brindará):'
-    '#options':
-      todo: 'Sí, todo'
-      parte: 'Sí, una parte'
-      'no': 'No'
-    '#select2': true
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  relevant_information:
-    '#type': textarea
-    '#title': 'Por favor escribe cualquier otra información que consideres relevante:'
-    '#required': true
-    '#required_error': 'Esta pregunta es obligatoria.'
-  info_email:
-    '#type': checkboxes
-    '#title': '¿Te interesaría recibir información sobre el tema para decidir cuál es la mejor opción para ti? Selecciona la información que desees recibir, la información llegará a tu correo electrónico:'
-    '#options':
-      anticonceptivos: 'Métodos anticonceptivos'
-      aborto: '¿Qué es el aborto?'
-      interrupcion: 'Procedimientos seguros para interrumpir un embarazo'
-      emergencia: 'Anticoncepción de emergencia'
-      leycdmx: 'Ley de Interrupción del Embarazo durante las primeras 12 semanas en la Ciudad de México'
+        '#title': Nombre(s)
+        '#required': true
+        '#required_error': 'Esta pregunta es obligatoria.'
+      last_name:
+        '#type': textfield
+        '#title': Apellidos
+    birth:
+      '#type': date
+      '#title': '¿Cuál es tu fecha de nacimiento?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    phone:
+      '#type': textfield
+      '#title': '¿Cuál es tu número de teléfono fijo?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    phone_contact:
+      '#type': radios
+      '#title': '¿Te podemos hablar a este número?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    calls:
+      '#type': textfield
+      '#title': '¿Hay algún horario en el que prefieras recibir la llamada?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    cellphone:
+      '#type': textfield
+      '#title': '¿Cuál es tu número de celular?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    cellphone_contact:
+      '#type': radios
+      '#title': '¿Te podemos hablar a este número?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    email:
+      '#type': textfield
+      '#title': 'Tu correo electrónico es:'
+      '#input_mask': '''alias'': ''email'''
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    email_contact:
+      '#type': radios
+      '#title': '¿Te podemos contactar por correo?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    preference_contact:
+      '#type': textfield
+      '#title': 'Entre las opciones que nos diste, ¿cómo prefieres que te contactemos?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    birth_state:
+      '#type': select
+      '#title': '¿En dónde naciste?'
+      '#options':
+        Aguascalientes: Aguascalientes
+        'Baja California Norte': 'Baja California Norte'
+        'Baja California Sur': 'Baja California Sur'
+        Campeche: Campeche
+        Chiapas: Chiapas
+        Chihuahua: Chihuahua
+        'Ciudad de México': 'Ciudad de México'
+        Coahuila: Coahuila
+        Colima: Colima
+        Durango: Durango
+        'Estado de México': 'Estado de México'
+        Guanajuato: Guanajuato
+        Guerrero: Guerrero
+        Hidalgo: Hidalgo
+        Jalisco: Jalisco
+        Michoacán: Michoacán
+        Morelos: Morelos
+        Nayarit: Nayarit
+        'Nuevo Leon': 'Nuevo Leon'
+        Oaxaca: Oaxaca
+        Puebla: Puebla
+        Querétaro: Querétaro
+        'Quintana Roo': 'Quintana Roo'
+        'San Luis Potosí': 'San Luis Potosí'
+        Sinaloa: Sinaloa
+        Sonora: Sonora
+        Tabasco: Tabasco
+        Tamaulipas: Tamaulipas
+        Tlaxcala: Tlaxcala
+        Veracruz: Veracruz
+        Yucatan: Yucatan
+        Zacatecas: Zacatecas
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    state:
+      '#type': select
+      '#title': '¿En dónde vives?'
+      '#options':
+        Aguascalientes: Aguascalientes
+        'Baja California Norte': 'Baja California Norte'
+        'Baja California Sur': 'Baja California Sur'
+        Campeche: Campeche
+        Chiapas: Chiapas
+        Chihuahua: Chihuahua
+        'Ciudad de México': 'Ciudad de México'
+        Coahuila: Coahuila
+        Colima: Colima
+        Durango: Durango
+        'Estado de México': 'Estado de México'
+        Guanajuato: Guanajuato
+        Guerrero: Guerrero
+        Hidalgo: Hidalgo
+        Jalisco: Jalisco
+        Michoacán: Michoacán
+        Morelos: Morelos
+        Nayarit: Nayarit
+        'Nuevo Leon': 'Nuevo Leon'
+        Oaxaca: Oaxaca
+        Puebla: Puebla
+        Querétaro: Querétaro
+        'Quintana Roo': 'Quintana Roo'
+        'San Luis Potosí': 'San Luis Potosí'
+        Sinaloa: Sinaloa
+        Sonora: Sonora
+        Tabasco: Tabasco
+        Tamaulipas: Tamaulipas
+        Tlaxcala: Tlaxcala
+        Veracruz: Veracruz
+        Yucatan: Yucatan
+        Zacatecas: Zacatecas
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    city:
+      '#type': textfield
+      '#title': '¿En qué municipio?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    hear_about:
+      '#type': select
+      '#title': '¿Cómo te enteraste del Fondo MARIA?'
+      '#options':
+        Internet: Internet
+        Amigo(a): Amigo(a)
+        Folleto: Folleto
+        Postal: Postal
+        'Línea de atención de Marie Stopes': 'Línea de atención de Marie Stopes'
+        Cipa: Cipa
+        'Organización civi': 'Organización civi'
+        'Una mujer que fue apoyada antes por el Fondo': 'Una mujer que fue apoyada antes por el Fondo'
+        TV: TV
+        Otro: Otro
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    other_hear_about:
+      '#type': textfield
+      '#title': 'Especifica:'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="hear_about"]':
+            value: Otro
+    support_request:
+      '#type': textarea
+      '#title': 'Describe por favor el apoyo que necesitas recibir del Fondo MARIA'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    pregnancies:
+      '#type': select
+      '#title': '¿Cuántos embarazos has tenido contando este?'
+      '#options':
+        1: '1'
+        2: '2'
+        3: '3'
+        4: '4'
+        5: '5'
+        6: '6'
+        7: '7'
+        8: '8'
+        9: '9'
+        10: '10'
+        11: '11'
+        12: '12'
+        13: '13'
+        14: '14'
+        15: '15'
+        16: '16'
+        17: '17'
+        18: '18'
+        19: '19'
+        20: '20'
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    childrens:
+      '#type': select
+      '#title': 'Número de hijxs'
+      '#options':
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    abortions:
+      '#type': select
+      '#title': '¿Has tenido un aborto inducido antes? ¿Cuántos?'
+      '#options':
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+      '#select2': true
+    spontaneous_abortions:
+      '#type': select
+      '#title': '¿Has tenido un aborto espontáneo antes? ¿Cuántos?'
+      '#options':
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    last_menstruation:
+      '#type': date
+      '#title': '¿Qué día inició tu última menstruación?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    prueba_de_embarazo:
+      '#type': radios
+      '#title': '¿Te has realizado alguna prueba de embarazo?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    pruebas_embarazo:
+      '#type': webform_custom_composite
+      '#title': '¿Qué tipo de prueba te has hecho? ¿Cuál fue el resultado? ¿En qué fecha la hiciste?'
+      '#multiple': 3
+      '#states':
+        visible:
+          ':input[name="prueba_de_embarazo"]':
+            value: Sí
+      '#states_clear': false
+      '#default_value':
+        - resultado: ''
+          semanas: ''
+          tipo: Orina
+          name: orina
+        - resultado: ''
+          semanas: ''
+          tipo: Sangre
+          name: sangre
+        - resultado: ''
+          semanas: ''
+          tipo: Ultrasonido
+          name: ultrasonido
+      '#multiple__min_items': 3
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add_more': false
+      '#element':
+        tipo:
+          '#type': textfield
+          '#title': 'Tipo de prueba'
+          '#disabled': true
+        resultado:
+          '#type': select
+          '#options':
+            positivo: Positivo
+            negativo: Negativo
+          '#title': Resultado
+        semanas:
+          '#type': number
+          '#title': Semanas
+        name:
+          '#type': textfield
+          '#title': codename
+          '#hidden': true
+        fecha:
+          '#type': date
+          '#title': Fecha
+    procedimiento_medicamentos:
+      '#type': radios
+      '#title': '¿Has utilizado medicamentos para intentar interrumpir el embarazo?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    protocolo_medicamentos:
+      '#type': textarea
+      '#title': '¿Qué medicamento? ¿Cómo lo utilizaste?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="procedimiento_medicamentos"]':
+            value: Sí
+    contraceptive:
+      '#type': radios
+      '#title': '¿Utilizaste algún anticonceptivo al momento de quedar embarazada?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    contraceptive_before_pregnancy:
+      '#type': radios
+      '#title': '¿Qué anticonceptivo utilizabas?'
+      '#options':
+        condon: Condón
+        pastillas: Pastillas
+        'anticonceptivos de emergencia': 'Anticonceptivos de emergencia'
+        diu: DIU
+        parche: Parche
+        inyecciones: Inyecciones
+        implante: Implante
+        ritmo: 'Ritmo según el ciclo menstrual'
+        'coito interrumpido': 'Coito interrumpido (eyaculó fuera)'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="contraceptive"]':
+            value: Sí
+    contraceptive_notes:
+      '#type': textarea
+      '#title': '¿De qué manera lo usabas?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="contraceptive"]':
+            value: Sí
+    contraceptive_types:
+      '#type': checkboxes
+      '#title': 'Por favor señala los métodos anticonceptivos que has utilizado en el pasado:'
+      '#options':
+        condon: Condón
+        pastillas: Pastillas
+        'anticoncepcion de emergencia': 'Anticoncepción de Emergencia'
+        diu: DIU
+        parche: Parche
+        inyecciones: Inyecciones
+        implante: Implante
+        ninguno: Ninguno
+        otros: Otros
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    contraceptive_others:
+      '#type': textfield
+      '#title': '¿Qué otros anticonceptivos has usado?'
+      '#states':
+        invisible:
+          ':input[name="contraceptive_types[otros]"]':
+            checked: true
+      '#states_clear': false
+    blood_type:
+      '#type': select
+      '#title': '¿Cuál es tu tipo de sangre?'
+      '#options':
+        o+: O+
+        o-: O-
+        a+: A+
+        a-: A-
+        b+: B+
+        b-: B-
+        ab+: AB+
+        ab-: AB-
+        no_se: 'No sé'
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    why_support_request:
+      '#type': textarea
+      '#title': 'Explica por favor las razones por las que consideras que necesitas el apoyo:'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    status:
+      '#type': select
+      '#title': '¿Cuál es tu estado civil?'
+      '#options':
+        Soltera: Soltera
+        Casada: Casada
+        'Union Libre': 'Unión Libre'
+        Separada: Separada
+        Divorciada: Divorciada
+        Viuda: Viuda
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    stable:
+      '#type': radios
+      '#title': '¿El embarazo ocurrió dentro de una relación de pareja?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    relationship:
+      '#type': select
+      '#title': '¿Qué tipo de relación?'
+      '#options':
+        Soltera: Soltera
+        Noviazgo: Noviazgo
+        'Union Libre': 'Unión Libre'
+        Matrimonio: Matrimonio
+        Divorciada: Divorciada
+        Viuda: Viuda
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="stable"]':
+            value: Sí
+    partner_support:
+      '#type': radios
+      '#title': '¿La persona con quién tuviste la relación sexual te está apoyando?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    partner_support_description:
+      '#type': textarea
+      '#title': '¿Cómo te apoya?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="partner_support"]':
+            value: Sí
+    trust_support_description:
+      '#type': textfield
+      '#title': '¿Hay alguien de confianza para ti que te esté apoyando? ¿Quién?¿Cómo?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    menor_de_edad:
+      '#type': radios
+      '#title': '¿Eres menor de edad?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    parents_knows:
+      '#type': radios
+      '#title': '¿Padre, madre o tutor saben sobre tu decisión de interrumpir el embarazo?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="menor_de_edad"]':
+            value: Sí
+    parents_support:
+      '#type': radios
+      '#title': '¿Tus padres te apoyan?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="menor_de_edad"]':
+            value: Sí
+    parents_support_description:
+      '#type': textarea
+      '#title': '¿Cómo te está(n) apoyando?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="parents_support"]':
+            value: Sí
+    ethnic:
+      '#type': radios
+      '#title': '¿Perteneces a alguna etnia?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    which_ethnic:
+      '#type': textfield
+      '#title': '¿A cuál etnia perteneces?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="ethnic"]':
+            value: Sí
+    religion:
+      '#type': select
+      '#title': '¿Practicas alguna religión?'
+      '#options':
+        Cristiana: Cristiana
+        Católica: Católica
+        Judía: Judía
+        Musulmana: Musulmana
+        Budista: Budista
+        'No creyente - Atea': 'No creyente - Atea'
+        Ninguna: Ninguna
+        Otra: Otra
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    religion_other:
+      '#type': textfield
+      '#title': 'Especifica:'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="religion"]':
+            value: Otra
+    dependent_minors:
+      '#type': select
+      '#title': '¿Cuántos menores de edad actualmente dependen de ti (y tu pareja, si tienes)?'
+      '#options':
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    trabajando_actualmente:
+      '#type': radios
+      '#title': '¿Estás trabajando actualmente?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    occupation:
+      '#type': select
+      '#title': '¿Cuál es tu ocupación?'
+      '#options':
+        Estudiante: Estudiante
+        Empleada: Empleada
+        Autoempleo: Autoempleo
+        Profesionista: Profesionista
+        'Trabajadora Doméstica': 'Trabajadora Doméstica'
+        'Trabajadora en el cuidado de la familia y el hogar': 'Trabajadora en el cuidado de la familia y el hogar'
+        Otra: Otra
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="trabajando_actualmente"]':
+            value: Sí
+    occupation_notes:
+      '#type': textfield
+      '#title': 'Especifica:'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+      '#states':
+        visible:
+          ':input[name="occupation"]':
+            value: Otra
+    estudiando_actualmente:
+      '#type': radios
+      '#title': '¿Estás estudiando actualmente?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    last_studies_degree:
+      '#type': select
+      '#title': '¿Cuál es tu escolaridad?'
+      '#options':
+        Primaria: Primaria
+        Secundaria: Secundaria
+        Bachillerato: Bachillerato
+        'Carrera técnica': 'Carrera técnica'
+        Profesionista: Profesionista
+        Posgrado: Posgrado
+        Ninguna: Ninguna
+      '#select2': true
+      '#required': true
+    floor_material:
+      '#type': select
+      '#title': '¿De qué material es el piso de tu vivienda (el material visible)?'
+      '#options':
+        Tierra: Tierra
+        Barro: Barro
+        Cemento: Cemento
+        Loseta: Loseta
+        Alfombra: Alfombra
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    people_live_house:
+      '#type': select
+      '#title': '¿Cuántas personas viven en tu casa incluyéndote a ti?'
+      '#options':
+        1: '1'
+        2: '2'
+        3: '3'
+        4: '4'
+        5: '5'
+        6: '6'
+        7: '7'
+        8: '8'
+        9: '9'
+        10: '10'
+        11: '11'
+        12: '12'
+        13: '13'
+        14: '14'
+        15: '15'
+        16: '16'
+        17: '17'
+        18: '18'
+        19: '19'
+        20: '20'
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    household_income:
+      '#type': select
+      '#title': 'Entre todas las personas en tu casa, ¿cuánto ganan mensualmente?'
+      '#options':
+        'Menos de $2,200': 'Menos de $2,200'
+        'Entre $2,200 y $4,500': 'Entre $2,200 y $4,500'
+        'Entre $4,500 y $8,000': 'Entre $4,500 y $8,000'
+        'Entre $8,000 y $15,000': 'Entre $8,000 y $15,000'
+        'Más de $15,000': 'Más de $15,000'
+        'No sé': 'No sé'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    servicios:
+      '#type': checkboxes
+      '#title': 'Por favor marca los servicios con los que cuentes en el lugar donde vives (estas respuestas no determinarán el tipo de apoyo que recibas del Fondo):'
+      '#options':
+        agua_potable: 'Agua potable'
+        luz: Luz
+        telefono: Teléfono
+        celular: Celular
+        tv_publica: 'TV Pública'
+        tv_paga: 'TV Paga'
+        internet: Internet
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    accompaniment_process:
+      '#type': radios
+      '#title': '¿Te interesa que nosotras estemos contigo en la clínica?'
+      '#options':
+        'No': 'No'
+        Sí: Sí
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    travel:
+      '#type': date
+      '#title': '¿Cuándo podrías viajar a la Ciudad de México?'
+    plus_one_details:
+      '#type': textfield
+      '#title': '¿Alguien podrá viajar contigo? ¿Quién?'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    contribution_now:
+      '#type': select
+      '#title': '¿Cuánto dinero podrías aportar tú ahora? (La respuesta a esta pregunta no cambia la opción de apoyo que el Fondo MARIA te brindará):'
+      '#options':
+        '0_500': '$0 - $500'
+        '500_1000': '$500 - $1000'
+        '1000_1500': '$1000 - $1500'
+        '1500_2000': '$1500 - $2000'
+        '2000_2500': '$2000 - $2500'
+        '2500_3000': '$2500 - $3000'
+        '3000_3500': '$3000 - $3500'
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    refund:
+      '#type': select
+      '#title': '¿Podrías aportar en los próximos 3 meses el dinero que el Fondo MARIA invierte en apoyarte? (La respuesta a esta pregunta no cambia la opción de apoyo que el Fondo MARIA te brindará):'
+      '#options':
+        'si, todo': 'Sí, todo'
+        'si, una parte': 'Sí, una parte'
+        'no': 'No'
+      '#select2': true
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    relevant_information:
+      '#type': textarea
+      '#title': 'Por favor escribe cualquier otra información que consideres relevante:'
+      '#required': true
+      '#required_error': 'Esta pregunta es obligatoria.'
+    info_email:
+      '#type': checkboxes
+      '#title': '¿Te interesaría recibir información sobre el tema para decidir cuál es la mejor opción para ti? Selecciona la información que desees recibir, la información llegará a tu correo electrónico:'
+      '#options':
+        anticonceptivos: 'Métodos anticonceptivos'
+        aborto: '¿Qué es el aborto?'
+        interrupcion: 'Procedimientos seguros para interrumpir un embarazo'
+        emergencia: 'Anticoncepción de emergencia'
+        leycdmx: 'Ley de Interrupción del Embarazo durante las primeras 12 semanas en la Ciudad de México'
+  mail_additional_info:
+    '#type': webform_computed_twig
+    '#title': 'Mail Additional Info'
+    '#template': |-
+      {% if data.body.info_email.anticonceptivos %}
+      Información sobre Anticonceptivos
+      {% endif %}
+    '#ajax': true
 css: ''
 javascript: ''
 settings:
@@ -1002,7 +1032,7 @@ handlers:
         sticky: sticky
         notes: notes
       custom_data: ''
-      custom_options: "verify: false\r\nheaders:\r\n  Content-Type: 'application/json'\r\n  Authorization-Id: 2\r\n  Authorization: s5AjitLmKXhVpEhLvhD9lBQLTaO3PkpRcoGjh3JIjpfcR4ob5YyFWKVAJtXnHzv0eKVkGbWiCLnJMEMH"
+      custom_options: "headers:\r\n  Content-Type: 'application/json'\r\n  Authorization-Id: 2\r\n  Authorization: s5AjitLmKXhVpEhLvhD9lBQLTaO3PkpRcoGjh3JIjpfcR4ob5YyFWKVAJtXnHzv0eKVkGbWiCLnJMEMH"
       file_data: true
       cast: false
       debug: false
@@ -1021,4 +1051,41 @@ handlers:
       message: ''
       messages: {  }
       error_url: ''
+  confirmacion_de_recepcion_de_solicitud:
+    id: email
+    label: 'Confirmación de recepción de solicitud'
+    notes: ''
+    handler_id: confirmacion_de_recepcion_de_solicitud
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: _default
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: 'Confirmación de solicitud de apoyo recibida'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
 variants: {  }

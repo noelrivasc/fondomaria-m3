@@ -3,16 +3,19 @@
 ///////////////////
 
 .form-item,
-.form-actions {
+.form-actions,
+.fieldset {
     @extend .form-group;
 
-    .form-item__label {
+    .form-item__label,
+    legend {
         @extend .col-form-label;
         margin: 0;
         margin-bottom: $spacer-sm;
         padding: 0;
 
-        label {
+        label,
+        span {
             @extend .m3-label;
             margin: 0;
         }
@@ -124,23 +127,26 @@ input[type='submit'] {
 }
 
 .form-checkboxes,
-.js-form-type-checkbox {
+.js-form-type-checkbox,
+.js-form-type-radio {
     .form-item {
         margin: 0;
         padding: 0 !important;
+    }
+
+    .form-item__contents {
+        display: flex;
+        align-items: center;
+        margin-bottom: $spacer-sm;
 
         .form-item__label {
             text-indent: 0.2em;
+            margin-bottom: 0;
         }
 
         label {
             cursor: pointer;
         }
-    }
-
-    .form-item__contents {
-        display: flex;
-        align-items: flex-start;
     }
 
     .input__container {
@@ -151,11 +157,21 @@ input[type='submit'] {
             display: block;
             width: 24px;
             height: 24px;
-            margin: 12px 0;
+            margin: 0;
             padding: 0;
             border-width: 2px;
             border-radius: 4px !important;
             cursor: pointer;
+        }
+
+        .radio {
+            @extend .m3-form-control;
+            @include iconize("fa-circle", 24px, "far");
+            margin: 0;
+            padding: 0;
+            border-width: 0px;
+            cursor: pointer;
+            color: $ma-green-600;
         }
         
         input {
@@ -170,6 +186,10 @@ input[type='submit'] {
                 font-size: 16px;
                 line-height: 20px;
             }
+        }
+
+        input:checked ~ .radio {
+            @include iconize("fa-dot-circle", 24px, "far");
         }
     }
 }
