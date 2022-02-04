@@ -13,15 +13,45 @@ title: 'Suscripción al Boletín'
 description: ''
 category: ''
 elements: |-
-  first_name:
-    '#type': textfield
-    '#title': 'Tu nombre'
-  last_name:
-    '#type': textfield
-    '#title': 'Tus apellidos'
-  email:
-    '#type': email
-    '#title': 'Tu correo'
+  title:
+    '#type': processed_text
+    '#text': |
+      <h2 class="heading-1">&nbsp;</h2>
+
+      <h2 class="heading-1">Lorem ipsum</h2>
+    '#format': formatted_text
+  flex_container:
+    '#type': webform_flexbox
+    message:
+      '#type': container
+      mesage_contents:
+        '#type': processed_text
+        '#text': |
+          <p>Proin eu risus nulla. Vivamus rhoncus justo sed ante porttitor, porta egestas purus pharetra. Aliquam aliquet erat ante, sit amet varius justo feugiat nec.</p>
+        '#format': formatted_text
+    fields:
+      '#type': container
+      first_name:
+        '#type': textfield
+        '#title': 'Tu nombre'
+      last_name:
+        '#type': textfield
+        '#title': 'Tus apellidos'
+      email:
+        '#type': email
+        '#title': 'Tu correo'
+      actions:
+        '#type': webform_actions
+        '#title': 'Submit button(s)'
+      spacer:
+        '#type': processed_text
+        '#text': |
+          <p>&nbsp;</p>
+
+          <p>&nbsp;</p>
+
+          <h2 class="heading-1">&nbsp;</h2>
+        '#format': formatted_text
 css: ''
 javascript: ''
 settings:
@@ -31,7 +61,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /suscribirse-al-boletin
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
