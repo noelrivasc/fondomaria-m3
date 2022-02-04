@@ -10,7 +10,7 @@ id: paragraph.content_heading.created
 field_name: created
 entity_type: paragraph
 bundle: content_heading
-label: 'Authored on'
+label: Fecha
 description: 'The time that the paragraph was created.'
 required: false
 translatable: false

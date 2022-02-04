@@ -39,9 +39,14 @@
         "drupal/core-composer-scaffold": "^9.1.7",
         "drupal/core-project-message": "^9.1.7",
         "drupal/core-recommended": "^9.1.7",
+        "drupal/dynamic_entity_reference": "^1.15",
+        "drupal/key": "^1.15",
+        "drupal/salesforce": "^5.0",
+        "drupal/salesforce_jwt": "^5.0",
         "drupal/seckit": "^2.0",
+        "drupal/typed_data": "^1.0@beta",
         "drush/drush": "^10.4.0",
-        "matrushka/matrushka-standard-cms": "v4.2.5"
+        "matrushka/matrushka-standard-cms": "v4.3.0"
     },
     "conflict": {
         "drupal/drupal": "*"

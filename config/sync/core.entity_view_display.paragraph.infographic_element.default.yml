@@ -21,49 +21,49 @@ bundle: infographic_element
 mode: default
 content:
   field_element_button:
-    weight: 1
+    type: file_url_plain
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: file_url_plain
+    weight: 1
     region: content
   field_element_content:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
   field_element_header:
-    weight: 4
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 4
     region: content
   field_element_mobile_button:
-    weight: 5
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 5
     region: content
   field_element_x_coordinate:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_element_y_coordinate:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
 hidden:
   search_api_excerpt: true

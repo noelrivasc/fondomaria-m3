@@ -10,7 +10,7 @@ id: node.profile.title
 field_name: title
 entity_type: node
 bundle: profile
-label: Name
+label: Nombre
 description: ''
 required: true
 translatable: true

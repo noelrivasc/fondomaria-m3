@@ -13,12 +13,12 @@ pattern: 'blog/[node:title]'
 selection_criteria:
   e3a653f5-d9a3-461b-ad0d-6c507418c888:
     id: node_type
-    bundles:
-      blog_post: blog_post
     negate: false
+    uuid: e3a653f5-d9a3-461b-ad0d-6c507418c888
     context_mapping:
       node: node
-    uuid: e3a653f5-d9a3-461b-ad0d-6c507418c888
+    bundles:
+      blog_post: blog_post
 selection_logic: and
 weight: -5
 relationships: {  }

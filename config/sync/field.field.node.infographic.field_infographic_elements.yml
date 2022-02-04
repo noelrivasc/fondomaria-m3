@@ -23,9 +23,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       infographic_element: infographic_element
+    negate: 0
     target_bundles_drag_drop:
       content_heading:
         weight: 9
@@ -46,6 +46,6 @@ settings:
         weight: 14
         enabled: false
       infographic_element:
-        enabled: true
         weight: 15
+        enabled: true
 field_type: entity_reference_revisions

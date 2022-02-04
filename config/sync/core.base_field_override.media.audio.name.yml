@@ -10,7 +10,7 @@ id: media.audio.name
 field_name: name
 entity_type: media
 bundle: audio
-label: Name
+label: Nombre
 description: ''
 required: true
 translatable: false

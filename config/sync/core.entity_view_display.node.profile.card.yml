@@ -23,43 +23,43 @@ mode: card
 content:
   field_preview_image:
     type: entity_reference_entity_view
-    weight: 1
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_profile_type:
     type: entity_reference_label
-    weight: 3
-    region: content
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_role:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_weight:
     type: number_integer
-    weight: 4
-    region: content
     label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-  links:
-    weight: 0
+    weight: 4
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_content: true
   field_content_brief: true

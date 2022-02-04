@@ -20,79 +20,23 @@ base_table: search_api_index_general_search
 base_field: search_api_id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: none
-        options: {  }
-      cache:
-        type: custom_tag
-        options:
-          custom_tag: node_list
-      query:
-        type: views_query
-        options:
-          bypass_access: false
-          skip_access: false
-          preserve_facet_query_args: false
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: full
-        options:
-          items_per_page: 12
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
-      style:
-        type: default
-      row:
-        type: search_api
-        options:
-          view_modes:
-            'entity:node':
-              blog_post: card
-              infographic: card
-              page: card
-              profile: card
-              resource: card
-              resource_collection: card
+      title: Recursos
       fields:
         changed:
+          id: changed
           table: search_api_index_general_search
           field: changed
-          id: changed
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api_field
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
           label: ''
           exclude: false
           alter:
@@ -157,6 +101,73 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 12
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: custom_tag
+        options:
+          custom_tag: node_list
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: search_api_index_general_search
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: Fecha
+            field_identifier: created
+          exposed: true
+        title:
+          id: title
+          table: search_api_index_general_search
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: Alfabéticamente
+            field_identifier: title
+          exposed: true
+      arguments: {  }
       filters:
         type:
           id: type
@@ -165,6 +176,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_options
           operator: or
           value:
             resource: resource
@@ -198,7 +210,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: search_api_options
         search_api_language:
           id: search_api_language
           table: search_api_index_general_search
@@ -206,6 +217,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_language
           operator: in
           value:
             '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
@@ -238,7 +250,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: search_api_language
         search_api_fulltext:
           id: search_api_fulltext
           table: search_api_index_general_search
@@ -246,6 +257,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_fulltext
           operator: and
           value: ''
           group: 1
@@ -283,7 +295,6 @@ display:
           parse_mode: terms
           min_length: null
           fields: {  }
-          plugin_id: search_api_fulltext
         field_resource_type:
           id: field_resource_type
           table: search_api_index_general_search
@@ -291,6 +302,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_term
           operator: or
           value: {  }
           group: 1
@@ -326,12 +338,11 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: resource_type
+          type: select
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: search_api_term
         field_content_topics:
           id: field_content_topics
           table: search_api_index_general_search
@@ -339,13 +350,14 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_term
           operator: or
           value: {  }
           group: 1
           exposed: true
           expose:
             operator_id: field_content_topics_op
-            label: Topics
+            label: Temas
             description: ''
             use_operator: false
             operator: field_content_topics_op
@@ -374,45 +386,35 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: topics
+          type: select
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: search_api_term
-      sorts:
-        created:
-          id: created
-          table: search_api_index_general_search
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: true
-          expose:
-            label: 'Authored on'
-          plugin_id: search_api
-        title:
-          id: title
-          table: search_api_index_general_search
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: true
-          expose:
-            label: Alfabéticamente
-          plugin_id: search_api
-      title: Recursos
+      style:
+        type: default
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              blog_post: card
+              infographic: card
+              page: card
+              profile: card
+              resource: card
+              resource_collection: card
+      query:
+        type: views_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+      relationships: {  }
+      css_class: resources-view-page
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      css_class: resources-view-page
     cache_metadata:
       max-age: -1
       contexts:
@@ -427,9 +429,9 @@ display:
       tags:
         - 'config:search_api.index.general_search'
   page:
-    display_plugin: page
     id: page
-    display_title: Página
+    display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

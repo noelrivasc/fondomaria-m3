@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: H9C0m2LNCLfLmM7qKGK9_Hji7pARpRthMxN4BLx_0xo
-name: Página
+name: Page
 type: page
 description: 'Website information page.'
 help: ''

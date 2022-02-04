@@ -16,7 +16,7 @@ bundle: freeform_url
 mode: default
 content:
   field_freeform_link:
-    weight: 0
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -25,7 +25,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 0
     region: content
 hidden:
   field_freeform_code: true

@@ -16,19 +16,19 @@ mode: preview
 content:
   field_embed_image:
     type: entity_reference_label
-    weight: 0
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_image_alt:
     type: string
-    weight: 1
-    region: content
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   search_api_excerpt: true

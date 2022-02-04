@@ -10,7 +10,7 @@ id: shortcut.default.title
 field_name: title
 entity_type: shortcut
 bundle: default
-label: Name
+label: Nombre
 description: 'The name of the shortcut.'
 required: true
 translatable: false

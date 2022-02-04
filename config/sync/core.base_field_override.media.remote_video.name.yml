@@ -10,7 +10,7 @@ id: media.remote_video.name
 field_name: name
 entity_type: media
 bundle: remote_video
-label: Name
+label: Nombre
 description: ''
 required: true
 translatable: false

@@ -11,7 +11,7 @@ id: node.profile.field_role
 field_name: field_role
 entity_type: node
 bundle: profile
-label: Role
+label: Rol
 description: ''
 required: false
 translatable: false

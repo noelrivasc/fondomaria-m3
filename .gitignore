@@ -34,3 +34,10 @@ node_modules
 
 # Ignore OSX index files
 .DS_store
+
+# Ignore Vim temp files
+*.swp
+*.swo
+
+# Ignore keys directory to avoid committing private keys to the repo
+keys

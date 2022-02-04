@@ -10,7 +10,7 @@ id: paragraph.infographic_element.status
 field_name: status
 entity_type: paragraph
 bundle: infographic_element
-label: Published
+label: Publicado
 description: ''
 required: false
 translatable: false

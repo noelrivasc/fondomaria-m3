@@ -16,10 +16,10 @@ plugin: freeform_story_share_block
 settings:
   id: freeform_story_share_block
   label: 'Compartir historias (Blog)'
-  provider: maria_custom_blocks
   label_display: '0'
+  provider: maria_custom_blocks
 visibility:
   request_path:
     id: request_path
-    pages: /blog
     negate: false
+    pages: /blog

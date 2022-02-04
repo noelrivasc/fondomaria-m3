@@ -20,10 +20,10 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: max_650x650
       image_link: ''
-    weight: 0
+      image_style: max_650x650
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

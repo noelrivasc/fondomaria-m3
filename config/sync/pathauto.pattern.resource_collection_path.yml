@@ -13,12 +13,12 @@ pattern: 'resource-collections/[node:title]'
 selection_criteria:
   94f67b44-b1c9-4c23-a1c0-025f2e78ec3b:
     id: node_type
-    bundles:
-      resource_collection: resource_collection
     negate: false
+    uuid: 94f67b44-b1c9-4c23-a1c0-025f2e78ec3b
     context_mapping:
       node: node
-    uuid: 94f67b44-b1c9-4c23-a1c0-025f2e78ec3b
+    bundles:
+      resource_collection: resource_collection
 selection_logic: and
 weight: -5
 relationships: {  }

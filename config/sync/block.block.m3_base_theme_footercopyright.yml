@@ -17,6 +17,6 @@ plugin: footer_copyright_block
 settings:
   id: footer_copyright_block
   label: 'Footer Copyright'
-  provider: m3_custom_blocks
   label_display: '0'
+  provider: m3_custom_blocks
 visibility: {  }

@@ -10,7 +10,7 @@ id: node.resource_collection.created
 field_name: created
 entity_type: node
 bundle: resource_collection
-label: 'Authored on'
+label: Fecha
 description: 'La fecha en que el nodo fue creado.'
 required: false
 translatable: false

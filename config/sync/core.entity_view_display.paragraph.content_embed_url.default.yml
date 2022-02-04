@@ -15,11 +15,11 @@ bundle: content_embed_url
 mode: default
 content:
   field_embedded_url:
-    weight: 0
+    type: url_embed
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: url_embed
+    weight: 0
     region: content
 hidden:
   search_api_excerpt: true

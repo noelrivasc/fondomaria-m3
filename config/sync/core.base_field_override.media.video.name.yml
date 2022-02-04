@@ -10,7 +10,7 @@ id: media.video.name
 field_name: name
 entity_type: media
 bundle: video
-label: Name
+label: Nombre
 description: ''
 required: true
 translatable: false

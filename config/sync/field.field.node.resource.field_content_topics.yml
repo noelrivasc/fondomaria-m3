@@ -12,7 +12,7 @@ id: node.resource.field_content_topics
 field_name: field_content_topics
 entity_type: node
 bundle: resource
-label: Topics
+label: Temas
 description: 'Global site topics. Use this to tag this content properly. Multiple values allowed.'
 required: false
 translatable: false

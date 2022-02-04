@@ -1,0 +1,56 @@
+langcode: es
+id: create_contact
+label: 'Crear contacto'
+weight: 0
+type: salesforce_mapping
+key: Email
+always_upsert: false
+async: false
+push_standalone: false
+pull_standalone: false
+pull_trigger_date: LastModifiedDate
+pull_frequency: 0
+push_frequency: 0
+push_limit: 0
+push_retries: 3
+pull_where_clause: ''
+sync_triggers:
+  push_create: true
+  push_update: false
+  push_delete: false
+  pull_create: false
+  pull_update: false
+  pull_delete: false
+salesforce_object_type: Contact
+drupal_entity_type: webform_submission
+drupal_bundle: newsletter_subscription
+field_mappings:
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: email
+    direction: drupal_sf
+    salesforce_field: Email
+    id: 0
+    description: ''
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: first_name
+    direction: drupal_sf
+    salesforce_field: FirstName
+    id: 1
+    description: ''
+  -
+    drupal_field_type: WebformElements
+    drupal_field_value: last_name
+    direction: drupal_sf
+    salesforce_field: LastName
+    id: 2
+    description: ''
+status: true
+dependencies:
+  config:
+    - webform.webform.newsletter_subscription
+  module:
+    - salesforce_push
+    - salesforce_webform
+uuid: 83f7536d-373a-48c3-8528-03f8f1a674bc

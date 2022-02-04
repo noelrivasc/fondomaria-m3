@@ -10,7 +10,7 @@ id: paragraph.freeform_content_canvas.status
 field_name: status
 entity_type: paragraph
 bundle: freeform_content_canvas
-label: Published
+label: Publicado
 description: ''
 required: false
 translatable: false

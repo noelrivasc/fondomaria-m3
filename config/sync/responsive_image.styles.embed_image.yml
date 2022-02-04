@@ -16,29 +16,29 @@ id: embed_image
 label: 'Embed Image'
 image_style_mappings:
   -
-    breakpoint_id: m3_base_theme.xl
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: max_2600x2600
-  -
-    breakpoint_id: m3_base_theme.lg
+    breakpoint_id: m3_base_theme.xl
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: max_1300x1300
-  -
-    breakpoint_id: m3_base_theme.md
+    breakpoint_id: m3_base_theme.lg
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: max_650x650
-  -
-    breakpoint_id: m3_base_theme.sm
+    breakpoint_id: m3_base_theme.md
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: max_325x325
-  -
-    breakpoint_id: m3_base_theme.xs
+    breakpoint_id: m3_base_theme.sm
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: max_165x165
+    breakpoint_id: m3_base_theme.xs
+    multiplier: 1x
 breakpoint_group: m3_base_theme
 fallback_image_style: max_1300x1300

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: PmWlg1zLX0onD5SXjtmCYjShEf7hPMBr2gfUBqfTzVM
-name: Topics
+name: Temas
 vid: topics
 description: 'Topic categorization tags for the contents'
 weight: 0

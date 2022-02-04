@@ -10,7 +10,7 @@ id: node.resource.created
 field_name: created
 entity_type: node
 bundle: resource
-label: 'Authored on'
+label: Fecha
 description: 'The time that the node was created.'
 required: false
 translatable: false

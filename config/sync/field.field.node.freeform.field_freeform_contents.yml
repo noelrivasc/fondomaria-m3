@@ -27,13 +27,13 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       freeform_formatted_text: freeform_formatted_text
       freeform_image: freeform_image
       freeform_plain_text: freeform_plain_text
       freeform_url: freeform_url
       freeform_content_canvas: freeform_content_canvas
+    negate: 0
     target_bundles_drag_drop:
       content_embed_blog_post:
         weight: -34
@@ -75,20 +75,20 @@ settings:
         weight: -22
         enabled: false
       freeform_content_canvas:
-        enabled: true
         weight: -35
+        enabled: true
       freeform_formatted_text:
-        enabled: true
         weight: -39
+        enabled: true
       freeform_image:
-        enabled: true
         weight: -38
+        enabled: true
       freeform_plain_text:
-        enabled: true
         weight: -37
-      freeform_url:
         enabled: true
+      freeform_url:
         weight: -36
+        enabled: true
       infographic_element:
         weight: -21
         enabled: false

@@ -23,43 +23,43 @@ mode: default
 content:
   field_content:
     type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
   field_intro:
     type: layout_paragraphs
-    weight: 1
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 1
     region: content
   field_metatags:
-    weight: 4
+    type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    weight: 4
     region: content
   field_related_pages:
     type: entity_reference_entity_view
-    weight: 3
-    region: content
     label: hidden
     settings:
       view_mode: card
       link: false
     third_party_settings: {  }
-  links:
-    weight: 0
+    weight: 3
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_content_brief: true
   field_preview_image: true

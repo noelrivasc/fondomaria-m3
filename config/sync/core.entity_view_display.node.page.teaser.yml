@@ -22,16 +22,16 @@ mode: teaser
 content:
   field_content_brief:
     type: basic_string
-    weight: 1
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 0
+    weight: 1
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_content: true
   field_intro: true

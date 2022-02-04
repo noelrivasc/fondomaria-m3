@@ -16,13 +16,13 @@ bundle: content_logo_carrousel
 mode: default
 content:
   field_logo_list:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: max_325x325
       image_link: ''
+      image_style: max_325x325
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
 hidden:
   search_api_excerpt: true

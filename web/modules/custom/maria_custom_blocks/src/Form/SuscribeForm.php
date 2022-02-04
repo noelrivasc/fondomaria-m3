@@ -50,7 +50,16 @@ class SuscribeForm extends FormBase {
   }
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    return $form;
+    // Make a URL pointing to the webform, and pass the email through the query string
+    $values = $form_state->getValues();
+    $email = $values['email'];
+
+    $url =  \Drupal\Core\Url::fromUserInput('/suscribirse-al-boletin');
+    $url->setOption('query', [
+      'email' => $email,
+    ]);
+
+    $form_state->setRedirectUrl($url);
   }
 }
 

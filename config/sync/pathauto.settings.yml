@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: A-mJZa_tWBFJ-m52Yo0XilFR_un0TJ39n0k2EURg6V8
+langcode: es
 enabled_entity_types:
   - user
 punctuation:
@@ -18,6 +21,3 @@ safe_tokens:
   - login-url
   - url
   - url-brief
-langcode: es
-_core:
-  default_config_hash: A-mJZa_tWBFJ-m52Yo0XilFR_un0TJ39n0k2EURg6V8

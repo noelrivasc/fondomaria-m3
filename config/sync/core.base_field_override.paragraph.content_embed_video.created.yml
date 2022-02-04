@@ -10,7 +10,7 @@ id: paragraph.content_embed_video.created
 field_name: created
 entity_type: paragraph
 bundle: content_embed_video
-label: 'Authored on'
+label: Fecha
 description: 'The time that the Paragraph was created.'
 required: false
 translatable: false

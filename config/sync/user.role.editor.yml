@@ -1,7 +1,46 @@
 uuid: 9ccc9bca-e3a0-4110-beaa-67d4eb213b3f
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.formatted_text
+    - media.type.audio
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.blog_post
+    - node.type.freeform
+    - node.type.infographic
+    - node.type.page
+    - node.type.profile
+    - node.type.resource
+    - node.type.resource_collection
+    - taxonomy.vocabulary.blog_post_type
+    - taxonomy.vocabulary.profile_type
+    - taxonomy.vocabulary.resource_type
+    - taxonomy.vocabulary.topics
+  module:
+    - coffee
+    - contact
+    - content_translation
+    - contextual
+    - entity_reference_revisions
+    - file
+    - filter
+    - layout_paragraphs
+    - locale
+    - media
+    - node
+    - paragraphs
+    - path
+    - quickedit
+    - responsive_favicons
+    - responsive_preview
+    - roleassign
+    - system
+    - taxonomy
+    - toolbar
 _core:
   default_config_hash: TsLus9845wno2OrLSTrBmvADJKBcsmPh4b92fAmgYvY
 id: editor
@@ -32,11 +71,6 @@ permissions:
   - 'administer users'
   - 'assign roles'
   - 'change own username'
-  - 'configure all blog_post node layout overrides'
-  - 'configure all page node layout overrides'
-  - 'configure all profile node layout overrides'
-  - 'configure all resource node layout overrides'
-  - 'create and edit custom blocks'
   - 'create audio media'
   - 'create blog_post content'
   - 'create content translations'
@@ -141,7 +175,6 @@ permissions:
   - 'update content translations'
   - 'update media'
   - 'use text format formatted_text'
-  - 'use text format full_html'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view blog_post revisions'

@@ -10,7 +10,7 @@ id: paragraph.freeform_content_canvas.created
 field_name: created
 entity_type: paragraph
 bundle: freeform_content_canvas
-label: 'Authored on'
+label: Fecha
 description: 'The time that the Paragraph was created.'
 required: false
 translatable: false

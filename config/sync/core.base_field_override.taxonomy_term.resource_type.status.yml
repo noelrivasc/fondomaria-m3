@@ -10,7 +10,7 @@ id: taxonomy_term.resource_type.status
 field_name: status
 entity_type: taxonomy_term
 bundle: resource_type
-label: Published
+label: Publicado
 description: ''
 required: false
 translatable: false

@@ -20,21 +20,21 @@ mode: teaser
 content:
   field_infographic_description:
     type: basic_string
-    weight: 1
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
+  search_api_excerpt:
     settings: {  }
     third_party_settings: {  }
-  search_api_excerpt:
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_infographic_background: true
   field_infographic_elements: true

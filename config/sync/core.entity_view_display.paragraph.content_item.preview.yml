@@ -16,12 +16,12 @@ bundle: content_item
 mode: preview
 content:
   field_content_item_column:
-    weight: 1
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 400
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 1
     region: content
 hidden:
   search_api_excerpt: true

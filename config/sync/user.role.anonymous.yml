@@ -1,15 +1,18 @@
 uuid: 3fd34727-10f3-4647-9d7b-038d9237729b
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact
+    - media
+    - system
 _core:
   default_config_hash: _eUlGwMP1UnbNPfyEm8F7IV2zSWcCMqRnoQUSFcY6Sk
 id: anonymous
-label: 'Anonymous user'
+label: 'Usuario anónimo'
 weight: 0
 is_admin: false
 permissions:
   - 'access content'
   - 'access site-wide contact form'
-  - 'search content'
   - 'view media'

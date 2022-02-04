@@ -10,7 +10,7 @@ id: node.resource_collection.title
 field_name: title
 entity_type: node
 bundle: resource_collection
-label: Name
+label: Nombre
 description: ''
 required: true
 translatable: true

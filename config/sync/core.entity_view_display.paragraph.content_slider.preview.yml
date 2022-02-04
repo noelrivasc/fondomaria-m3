@@ -17,12 +17,12 @@ mode: preview
 content:
   field_slider_content_items:
     type: entity_reference_revisions_entity_view
-    weight: 0
     label: inline
     settings:
       view_mode: preview
       link: ''
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   search_api_excerpt: true

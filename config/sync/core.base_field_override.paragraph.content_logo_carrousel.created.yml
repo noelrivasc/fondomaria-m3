@@ -10,7 +10,7 @@ id: paragraph.content_logo_carrousel.created
 field_name: created
 entity_type: paragraph
 bundle: content_logo_carrousel
-label: 'Authored on'
+label: Fecha
 description: 'The time that the Paragraph was created.'
 required: false
 translatable: false

@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.media.field_media_file
     - media.type.file
+  module:
+    - file
   enforced:
     module:
       - media
-  module:
-    - file
 _core:
   default_config_hash: rwZwCl8pZh2XbW00F2FW10hAtVpIFdoI9UrY9GWbV1Y
 id: media.file.field_media_file
@@ -23,10 +23,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: media-files/files
   file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages'
   max_filesize: '25 MB'
   description_field: false
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: file

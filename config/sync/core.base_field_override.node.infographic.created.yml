@@ -10,7 +10,7 @@ id: node.infographic.created
 field_name: created
 entity_type: node
 bundle: infographic
-label: 'Authored on'
+label: Fecha
 description: 'The time that the node was created.'
 required: false
 translatable: false

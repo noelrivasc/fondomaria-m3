@@ -10,7 +10,7 @@ id: media.file.name
 field_name: name
 entity_type: media
 bundle: file
-label: Name
+label: Nombre
 description: ''
 required: true
 translatable: false

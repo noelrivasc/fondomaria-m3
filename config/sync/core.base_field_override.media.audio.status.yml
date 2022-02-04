@@ -10,7 +10,7 @@ id: media.audio.status
 field_name: status
 entity_type: media
 bundle: audio
-label: Published
+label: Publicado
 description: ''
 required: false
 translatable: false

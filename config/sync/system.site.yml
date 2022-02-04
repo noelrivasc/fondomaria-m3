@@ -1,3 +1,7 @@
+_core:
+  default_config_hash: fHtW2n8196WpVhW80f9niBXTAT_zlDGg_DXTiLmh1QA
+langcode: es
+uuid: 298b4078-6007-466b-a54c-1a7ded0dcdb8
 name: fondomaria
 mail: web-admin@matrushka.com.mx
 slogan: ''
@@ -7,9 +11,5 @@ page:
   front: /homepage
 admin_compact_mode: false
 weight_select_max: 100
-langcode: es
 default_langcode: es
 mail_notification: ''
-_core:
-  default_config_hash: fHtW2n8196WpVhW80f9niBXTAT_zlDGg_DXTiLmh1QA
-uuid: 298b4078-6007-466b-a54c-1a7ded0dcdb8

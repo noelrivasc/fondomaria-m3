@@ -17,6 +17,6 @@ plugin: search_button_block
 settings:
   id: search_button_block
   label: 'Search button'
-  provider: m3_search_tools
   label_display: '0'
+  provider: m3_search_tools
 visibility: {  }

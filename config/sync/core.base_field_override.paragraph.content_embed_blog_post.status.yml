@@ -10,7 +10,7 @@ id: paragraph.content_embed_blog_post.status
 field_name: status
 entity_type: paragraph
 bundle: content_embed_blog_post
-label: Published
+label: Publicado
 description: ''
 required: false
 translatable: false

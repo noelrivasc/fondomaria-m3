@@ -24,32 +24,32 @@ mode: teaser
 content:
   field_blog_post_type:
     type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
   field_content_brief:
     type: basic_string
-    weight: 1
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_content_topics:
     type: entity_reference_label
-    weight: 3
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-  links:
-    weight: 0
+    weight: 3
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_author: true
   field_content: true

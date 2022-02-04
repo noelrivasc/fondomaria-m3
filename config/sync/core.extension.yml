@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
+langcode: es
 module:
   admin_toolbar: 0
   automated_cron: 0
@@ -15,6 +18,7 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  dynamic_entity_reference: 0
   dynamic_page_cache: 0
   editor: 0
   embed: 0
@@ -29,6 +33,7 @@ module:
   history: 0
   honeypot: 0
   image: 0
+  key: 0
   language: 0
   layout_discovery: 0
   layout_paragraphs: 0
@@ -72,6 +77,13 @@ module:
   responsive_image: 0
   responsive_preview: 0
   roleassign: 0
+  salesforce: 0
+  salesforce_jwt: 0
+  salesforce_mapping: 0
+  salesforce_mapping_ui: 0
+  salesforce_pull: 0
+  salesforce_push: 0
+  salesforce_webform: 0
   search_api: 0
   search_api_db: 0
   shortcut: 0
@@ -83,6 +95,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  typed_data: 0
   update: 0
   url_embed: 0
   user: 0
@@ -104,6 +117,3 @@ theme:
   m3_custom_theme: 0
   m3_fondomaria_theme: 0
 profile: matrushka_standard_cms
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
-langcode: es

@@ -15,6 +15,6 @@ plugin: freeform_suscribe_form_block
 settings:
   id: freeform_suscribe_form_block
   label: 'Suscríbete a nuestro boletín'
-  provider: maria_custom_blocks
   label_display: visible
+  provider: maria_custom_blocks
 visibility: {  }

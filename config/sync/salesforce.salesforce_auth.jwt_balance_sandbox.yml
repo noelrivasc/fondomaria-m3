@@ -1,0 +1,16 @@
+uuid: 38f8cff8-e2f3-4007-839b-c9d66f5c9a54
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.salesforce_sandbox
+  module:
+    - salesforce_jwt
+id: jwt_balance_sandbox
+label: 'JWT Balance Sandbox'
+provider: jwt
+provider_settings:
+  consumer_key: 3MVG9jBOyAOWY5bXW8L1Dxm2G3jYtpvvh_G9UUIICtVWQgwVPokK6S0IHst3t6uAXJEvagOz62P8uDr8Q.kbZ
+  login_user: noel@matrushka.com.mx
+  login_url: 'https://test.salesforce.com'
+  encrypt_key: salesforce_sandbox

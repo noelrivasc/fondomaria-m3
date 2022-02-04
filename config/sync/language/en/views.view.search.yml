@@ -29,6 +29,9 @@ display:
           separator: ', '
         changed:
           label: 'Last update'
+          settings:
+            future_format: '@interval hence'
+            past_format: '@interval ago'
           separator: ', '
         field_blog_post_type:
           separator: ', '

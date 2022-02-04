@@ -15,20 +15,20 @@ bundle: content_heading
 mode: preview
 content:
   field_content_heading_code:
-    weight: 1
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_content_heading_label:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
 hidden:
   search_api_excerpt: true

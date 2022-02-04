@@ -34,7 +34,6 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       content_layout: content_layout
       content_heading: content_heading
@@ -48,46 +47,47 @@ settings:
       content_logo_carrousel: content_logo_carrousel
       content_embed_infographic: content_embed_infographic
       content_embed_freeform: content_embed_freeform
+    negate: 0
     target_bundles_drag_drop:
       content_embed_blog_post:
-        enabled: true
         weight: -34
+        enabled: true
       content_embed_collection:
-        enabled: true
         weight: -32
+        enabled: true
       content_embed_freeform:
-        enabled: true
         weight: -26
+        enabled: true
       content_embed_image:
-        enabled: true
         weight: -31
+        enabled: true
       content_embed_infographic:
-        enabled: true
         weight: -27
-      content_embed_resource:
         enabled: true
+      content_embed_resource:
         weight: -33
+        enabled: true
       content_embed_url:
         weight: -25
         enabled: false
       content_embed_video:
-        enabled: true
         weight: -30
+        enabled: true
       content_heading:
-        enabled: true
         weight: -36
+        enabled: true
       content_item:
-        enabled: true
         weight: -35
+        enabled: true
       content_layout:
-        enabled: true
         weight: -37
+        enabled: true
       content_logo_carrousel:
-        enabled: true
         weight: -28
-      content_slider:
         enabled: true
+      content_slider:
         weight: -29
+        enabled: true
       freeform_formatted_text:
         weight: -24
         enabled: false

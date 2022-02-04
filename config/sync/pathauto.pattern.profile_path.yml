@@ -13,12 +13,12 @@ pattern: 'profiles/[node:title]'
 selection_criteria:
   7d4d6ea0-fa72-4c80-8f02-94c9042a2419:
     id: node_type
-    bundles:
-      profile: profile
     negate: false
+    uuid: 7d4d6ea0-fa72-4c80-8f02-94c9042a2419
     context_mapping:
       node: node
-    uuid: 7d4d6ea0-fa72-4c80-8f02-94c9042a2419
+    bundles:
+      profile: profile
 selection_logic: and
 weight: -5
 relationships: {  }

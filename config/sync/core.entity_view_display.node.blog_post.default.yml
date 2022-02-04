@@ -25,65 +25,65 @@ bundle: blog_post
 mode: default
 content:
   field_author:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_blog_post_type:
-    weight: 1
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 1
     region: content
   field_content:
-    weight: 5
+    type: layout_paragraphs
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: layout_paragraphs
+    weight: 5
     region: content
   field_content_brief:
-    weight: 4
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 4
     region: content
   field_content_topics:
-    weight: 3
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 3
     region: content
   field_metatags:
-    weight: 7
+    type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    weight: 7
     region: content
   field_related_posts:
-    weight: 6
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: card
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 6
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_preview_image: true
   langcode: true
