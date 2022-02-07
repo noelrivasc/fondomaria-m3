@@ -577,8 +577,8 @@ elements: |-
       '#type': radios
       '#title': '¿Perteneces a alguna etnia?'
       '#options':
-        'No': 'No'
-        Sí: Sí
+        - 'No'
+        - Sí
       '#required': true
       '#required_error': 'Esta pregunta es obligatoria.'
     which_ethnic:
@@ -589,7 +589,7 @@ elements: |-
       '#states':
         visible:
           ':input[name="ethnic"]':
-            value: Sí
+            value: '1'
     religion:
       '#type': select
       '#title': '¿Practicas alguna religión?'
@@ -747,12 +747,12 @@ elements: |-
       '#type': checkboxes
       '#title': 'Por favor marca los servicios con los que cuentes en el lugar donde vives (estas respuestas no determinarán el tipo de apoyo que recibas del Fondo):'
       '#options':
-        agua_potable: 'Agua potable'
-        luz: Luz
-        telefono: Teléfono
-        celular: Celular
-        tv_publica: 'TV Pública'
-        tv_paga: 'TV Paga'
+        drinking_water: 'Agua potable'
+        electricity: Luz
+        phone: Teléfono
+        cellphone: Celular
+        tv_public: 'TV Pública'
+        tv_payment: 'TV Paga'
         internet: Internet
       '#required': true
       '#required_error': 'Esta pregunta es obligatoria.'
@@ -807,12 +807,13 @@ elements: |-
       '#options':
         anticonceptivos: 'Métodos anticonceptivos'
         aborto: '¿Qué es el aborto?'
-        interrupcion: 'Procedimientos seguros para interrumpir un embarazo'
-        emergencia: 'Anticoncepción de emergencia'
-        leycdmx: 'Ley de Interrupción del Embarazo durante las primeras 12 semanas en la Ciudad de México'
+        'procedimientos seguros para interrumpir el embarazo': 'Procedimientos seguros para interrumpir un embarazo'
+        'anticoncepción de emergencia': 'Anticoncepción de emergencia'
+        'ley de ile': 'Ley de Interrupción del Embarazo durante las primeras 12 semanas en la Ciudad de México'
   mail_additional_info:
     '#type': webform_computed_twig
     '#title': 'Mail Additional Info'
+    '#display_on': none
     '#template': |-
       {% if data.body.info_email.anticonceptivos %}
       Información sobre Anticonceptivos
@@ -827,7 +828,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /solicitud-de-apoyo
   page_confirm_path: ''
   page_theme_name: ''
   form_title: both
@@ -835,7 +836,7 @@ settings:
   form_open_message: ''
   form_close_message: ''
   form_exception_message: ''
-  form_previous_submissions: true
+  form_previous_submissions: false
   form_confidential: false
   form_confidential_message: ''
   form_disable_remote_addr: false
@@ -1003,7 +1004,7 @@ handlers:
   maria_database_api:
     id: remote_post
     handler_id: maria_database_api
-    label: 'MARIA database APi'
+    label: 'MARIA database API'
     notes: ''
     status: true
     conditions: {  }
