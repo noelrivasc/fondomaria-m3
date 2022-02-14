@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Contains maria_donation.module.
+ */
+
+function maria_donation_form_alter(&$form, $form_state, $form_id) {
+  if($form_id == 'webform_submission_donar_add_form') {
+    $form['#attached']['library'][] = 'maria_donation/maria-donation-behaviors-sandbox';
+    $form['paypal_container'] = [
+      '#type' => 'container',
+      '#attributes' => [
+        'id' => 'paypal-button-container'
+      ]
+    ];
+
+    $form['elements']['paypal_error']['#wrapper_attributes']['class'][] = 'hidden';
+    $form['elements']['actions']['#attributes']['class'][] = 'hidden';
+  }
+}

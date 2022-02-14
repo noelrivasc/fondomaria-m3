@@ -1,6 +1,6 @@
-langcode: es
-id: create_contact
-label: 'Crear contacto (suscripción al boletín)'
+langcode: en
+id: crear_contacto_donacion
+label: 'Crear contacto (donación)'
 weight: 0
 type: salesforce_mapping
 key: Email
@@ -23,25 +23,25 @@ sync_triggers:
   pull_delete: false
 salesforce_object_type: Contact
 drupal_entity_type: webform_submission
-drupal_bundle: newsletter_subscription
+drupal_bundle: donar
 field_mappings:
   -
     drupal_field_type: WebformElements
-    drupal_field_value: email
+    drupal_field_value: tu_correo
     direction: drupal_sf
     salesforce_field: Email
     id: 0
     description: ''
   -
     drupal_field_type: WebformElements
-    drupal_field_value: first_name
+    drupal_field_value: tu_nombre
     direction: drupal_sf
     salesforce_field: FirstName
     id: 1
     description: ''
   -
     drupal_field_type: WebformElements
-    drupal_field_value: last_name
+    drupal_field_value: tus_apellidos
     direction: drupal_sf
     salesforce_field: LastName
     id: 2
@@ -49,8 +49,8 @@ field_mappings:
 status: true
 dependencies:
   config:
-    - webform.webform.newsletter_subscription
+    - webform.webform.donar
   module:
     - salesforce_push
     - salesforce_webform
-uuid: 83f7536d-373a-48c3-8528-03f8f1a674bc
+uuid: 35f67740-3a53-4252-a15e-8fb7bfe413ab

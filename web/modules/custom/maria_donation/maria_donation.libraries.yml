@@ -1,0 +1,30 @@
+paypal-sdk-mxn-subscriptions-sandbox:
+  js:
+    https://www.paypal.com/sdk/js?currency=MXN&intent=subscription&vault=true&client-id=ARb48YYFnS3Nnwv0FTABZHiTtBJHeeLOW6BNIEg6GfupPIbNdQIxz6Q8PAmDD4NGZ2lne7bBKRgmzb7h: {attributes: {'data-namespace': 'paypal_subscription'}}
+
+paypal-sdk-mxn-orders-sandbox:
+  js:
+    https://www.paypal.com/sdk/js?currency=MXN&client-id=ARb48YYFnS3Nnwv0FTABZHiTtBJHeeLOW6BNIEg6GfupPIbNdQIxz6Q8PAmDD4NGZ2lne7bBKRgmzb7h: {attributes: {'data-namespace': 'paypal_orders'}}
+
+# paypal-sdk-subscriptions-live:
+#   js:
+#     https://www.paypal.com/sdk/js?client-id=SOME-CLIENT-ID: {}
+
+maria-donation-behaviors-sandbox:
+  js:
+    js/maria-donation-behaviors.js: {}
+  dependencies:
+    - maria_donation/paypal-sdk-mxn-subscriptions-sandbox
+    - maria_donation/paypal-sdk-mxn-orders-sandbox
+    - core/drupal
+    - core/jquery
+    - core/once
+
+# maria-donation-behaviors-live:
+#   js:
+#     js/maria-donation-behaviors.js: {}
+#   dependencies:
+#     - maria_donation/paypal-sdk-live
+#     - core/drupal
+#     - core/jquery
+#     - core/once

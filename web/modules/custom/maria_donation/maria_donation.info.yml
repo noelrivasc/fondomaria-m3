@@ -1,0 +1,6 @@
+name: 'Fondo Maria Donation Form'
+type: module
+description: 'JS behaviors and style improvements for the PayPal and Salesforce-integrated donation webform'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Fondo Maria M3'
