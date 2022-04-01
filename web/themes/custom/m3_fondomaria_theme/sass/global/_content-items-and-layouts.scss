@@ -567,7 +567,7 @@
     }
 }
 
-/* Colorful */
+/* Colorful with white */
 .content-layout--style-maria-9 {
     padding-top: $spacer-xl;
     padding-bottom: $spacer-xl;
@@ -581,12 +581,41 @@
         @extend .m3-rounded;
         padding: $spacer-md;
         margin: 0 (-1 * $spacer-md);
-        background-color: $m3-light;
+        background-color: rgba($m3-light, 0.8);
+        backdrop-filter: blur($spacer-xxs);
     }
 
     &.content-layout--render-wide {
-        // background-size: 10%;
+        .layout__content {
+            @extend .container;
+        }
+    }
 
+    &.content-layout--render-contained {
+        @extend .m3-rounded;
+        margin-top: $spacer-md;
+        margin-bottom: $spacer-md;
+        padding: $spacer-lg;
+        border: 1px solid $ma-purple-200;
+    }
+}
+
+/* Colorful no white */
+.content-layout--style-maria-10 {
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-xl;
+    background-color: $m3-light;
+    background-image: url("#{$m3_assets_dir}/img/colorful.svg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+
+    .content-item--rich-text {
+        padding: $spacer-md;
+        margin: 0 (-1 * $spacer-md);
+    }
+
+    &.content-layout--render-wide {
         .layout__content {
             @extend .container;
         }
