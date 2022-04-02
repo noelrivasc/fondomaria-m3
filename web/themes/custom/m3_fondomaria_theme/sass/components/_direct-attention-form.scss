@@ -33,6 +33,19 @@
         padding-bottom: $spacer-md;
     }
 
+    .form-item-pruebas-embarazo {
+        .webform-multiple-table--name,
+        .form-item-pruebas-embarazo-items-0-name,
+        .form-item-pruebas-embarazo-items-1-name,
+        .form-item-pruebas-embarazo-items-2-name,
+        .form-item-pruebas-embarazo-items-0-semanas {
+            display: block;
+            width: 0;
+            overflow: hidden;
+            text-indent: 10px;
+        }
+    }
+
     .form-actions {
         padding-bottom: $spacer-xl;
     }
