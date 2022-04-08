@@ -1036,7 +1036,7 @@ handlers:
       custom_options: "headers:\r\n  Content-Type: 'application/json'\r\n  Authorization-Id: 2\r\n  Authorization: 200A6sRkOKNVoolIIX3OoT8CEQyvYTM1N0CjsALcue2K311jBUcES4kPxLKxNCLlkfXZbuUEce3B7P53"
       file_data: true
       cast: false
-      debug: true
+      debug: false
       completed_url: 'https://ddev-fondomaria-app-web/api/cases'
       completed_custom_data: 'status_caso: 1'
       updated_url: ''
