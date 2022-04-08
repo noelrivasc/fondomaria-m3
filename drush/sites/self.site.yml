@@ -7,7 +7,7 @@ prod:
     drush-script: /home/master/applications/tndyygbmpw/public_html/vendor/drush/drush/drush
     files: sites/default/files
   root: /home/master/applications/tndyygbmpw/public_html/web
-  uri: 'http://phpstack-614061-2137863.cloudwaysapps.com/'
+  uri: 'https://fondomaria.dev.matrushka.com.mx/'
   user: master_vdxatdyhgq
 
 local:
