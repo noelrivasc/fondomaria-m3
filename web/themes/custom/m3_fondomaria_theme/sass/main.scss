@@ -13,11 +13,11 @@ $m3_assets_dir: "/themes/custom/m3_fondomaria_theme/assets";
 
 // Libraries and third party base template imports
 @import "bootstrap/scss/bootstrap";
-$fa-font-path: "#{$m3_assets_dir}/vendor/fontawesome/webfonts" !default;
-@import "@fortawesome/fontawesome-free/scss/fontawesome";
-@import "@fortawesome/fontawesome-free/scss/brands";
-@import "@fortawesome/fontawesome-free/scss/regular";
-@import "@fortawesome/fontawesome-free/scss/solid";
+$fa-font-path: "#{$m3_assets_dir}/vendor_fixed/fontawesome-subset/webfonts" !default;
+@import "fontawesome-subset/scss/fontawesome";
+@import "fontawesome-subset/scss/brands";
+@import "fontawesome-subset/scss/regular";
+@import "fontawesome-subset/scss/solid";
 
 // Dev defined mixins
 @import "mixins/position";

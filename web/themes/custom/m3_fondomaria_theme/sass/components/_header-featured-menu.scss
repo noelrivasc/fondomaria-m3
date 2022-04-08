@@ -11,7 +11,7 @@
         @extend .nav-item;
 
         a.external {
-            @include preppendIcon("fa-external-link-square-alt", $spacer-sm);
+            @include preppendIcon("fa-external-link-square", $spacer-sm);
             padding-right: $spacer-md + $spacer-xs;
 
             &::before {

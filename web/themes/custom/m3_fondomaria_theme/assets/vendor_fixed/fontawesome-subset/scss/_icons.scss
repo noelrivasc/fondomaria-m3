@@ -1,0 +1,28 @@
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+
+.#{$fa-css-prefix}-angle-left:before { content: fa-content($fa-var-angle-left); }
+.#{$fa-css-prefix}-angle-right:before { content: fa-content($fa-var-angle-right); }
+.#{$fa-css-prefix}-bars:before { content: fa-content($fa-var-bars); }
+.#{$fa-css-prefix}-check:before { content: fa-content($fa-var-check); }
+.#{$fa-css-prefix}-chevron-circle-right:before { content: fa-content($fa-var-chevron-circle-right); }
+.#{$fa-css-prefix}-chevron-down:before { content: fa-content($fa-var-chevron-down); }
+.#{$fa-css-prefix}-chevron-left:before { content: fa-content($fa-var-chevron-left); }
+.#{$fa-css-prefix}-chevron-right:before { content: fa-content($fa-var-chevron-right); }
+.#{$fa-css-prefix}-circle:before { content: fa-content($fa-var-circle); }
+.#{$fa-css-prefix}-dot-circle:before { content: fa-content($fa-var-dot-circle); }
+.#{$fa-css-prefix}-envelope:before { content: fa-content($fa-var-envelope); }
+.#{$fa-css-prefix}-external-link:before { content: fa-content($fa-var-external-link); }
+.#{$fa-css-prefix}-external-link-square:before { content: fa-content($fa-var-external-link-square); }
+.#{$fa-css-prefix}-facebook:before { content: fa-content($fa-var-facebook); }
+.#{$fa-css-prefix}-facebook-square:before { content: fa-content($fa-var-facebook-square); }
+.#{$fa-css-prefix}-file-archive:before { content: fa-content($fa-var-file-archive); }
+.#{$fa-css-prefix}-file-download:before { content: fa-content($fa-var-file-download); }
+.#{$fa-css-prefix}-instagram:before { content: fa-content($fa-var-instagram); }
+.#{$fa-css-prefix}-language:before { content: fa-content($fa-var-language); }
+.#{$fa-css-prefix}-link:before { content: fa-content($fa-var-link); }
+.#{$fa-css-prefix}-search:before { content: fa-content($fa-var-search); }
+.#{$fa-css-prefix}-times:before { content: fa-content($fa-var-times); }
+.#{$fa-css-prefix}-times-circle:before { content: fa-content($fa-var-times-circle); }
+.#{$fa-css-prefix}-twitter:before { content: fa-content($fa-var-twitter); }
+.#{$fa-css-prefix}-youtube:before { content: fa-content($fa-var-youtube); }
