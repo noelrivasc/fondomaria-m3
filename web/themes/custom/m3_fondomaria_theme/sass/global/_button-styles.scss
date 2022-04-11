@@ -2,41 +2,34 @@
 //  Global button styles  //
 ////////////////////////////
 
-// Button effect
-.btn-fx {
+@mixin m3-button($size: $t-01, $padding-vertical: $spacer-xs + $spacer-xxs, $padding-horizontal: $spacer-sm + $spacer-xxs) {
+    display: inline-block;
+    font-size: $size;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: $size * 1.5;
+    padding: $padding-vertical $padding-horizontal;
+    border-radius: 999px;
     transform: scale(1);
     transition: transform 0.2s;
-}
-
-.btn-fx:active:hover {
-    transform: scale(0.95);
-}
-
-
-// Bootstrap overrides
-.btn {
-    @extend .btn-fx;
-    padding: ($spacer-xs + $spacer-xxs) ($spacer-sm + $spacer-xxs);
-    font-size: $t-01;
-    text-transform: uppercase;
-    border-radius: 999px;
 
     &:focus {
         outline: none;
         box-shadow: none;
     }
-}
 
-.btn-lg {
-    font-size: $t-01;
-    padding: $spacer-sm + $spacer-xs;
+    &:active:hover {
+        transform: scale(0.95);
+    }
 }
 
 
 // Button styles
-.m3-cta-button {
-    @extend .btn;
-    background-color: $ma-green-600;
+%m3-cta-button {
+    @include button-variant($ma-green-600, transparent);
+    @include m3-button;
+    border-width: 2px;
+    border-style: solid;
     color: theme-color('light');
 
     &:hover {
@@ -45,11 +38,12 @@
     }
 }
 
-.m3-standard-button {
-    @extend .btn;
-    border: 2px solid $ma-green-600;
+%m3-standard-button {
+    @include button-variant(theme-color('light'), $ma-green-600);
+    @include m3-button;
+    border-width: 2px;
+    border-style: solid;
     color: $ma-green-600;
-    background-color: theme-color('light');
 
     &:hover {
         color: theme-color('light');
@@ -58,8 +52,9 @@
     }
 }
 
-.m3-ghost-button {
-    @extend .btn, .btn-link;
+%m3-ghost-button {
+    @extend .btn-link;
+    @include m3-button;
     color: $ma-green-400;
 
     &:hover {
@@ -67,25 +62,23 @@
     }
 }
 
-.m3-tag-button {
+%m3-tag-button {
     @extend .m3-tag;
-    border-radius: 4px;
+    @include button-variant($ma-yellow-300, transparent);
+    @include border-rounded($spacer-xxs);
     margin-right: 0.5rem;
     padding: 6px 15px;
     border: none;
-    background-color: $ma-yellow-300;
     color: $ma-green-700 !important;
-    
 }
 
-.m3-circle-button {
-    @extend .btn;
-    width: 35px;
-    height: 35px;
+%m3-circle-button {
+    @include m3-button;
+    @include square(35px);
+    @include border-rounded(20px);
     display: inline-block;
     overflow: hidden;
     position: relative;
-    border-radius: 20px;
     border: 2px solid theme-color('primary');
     background-color: theme-color('light');
     color: theme-color('primary');
@@ -97,8 +90,9 @@
     }
 }
 
-.m3-language-button {
-    @extend .btn;
+%m3-language-button {
+    @include m3-button;
+    display: block;
     margin: 0;
     padding-left: 15px;
     padding-right: 15px; 

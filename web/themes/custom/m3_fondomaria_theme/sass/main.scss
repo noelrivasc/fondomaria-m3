@@ -23,6 +23,7 @@ $fa-font-path: "#{$m3_assets_dir}/vendor_fixed/fontawesome-subset/webfonts" !def
 @import "mixins/position";
 @import "mixins/icon";
 @import "mixins/animations";
+@import "mixins/style";
 
 // Global styles
 @import "global/modal-styles";

@@ -101,7 +101,7 @@
 }
 
 .cta-card__footer {
-    @extend .m3-standard-button;
+    @extend %m3-standard-button;
     display: flex;
     align-items: center;
     justify-content: center;

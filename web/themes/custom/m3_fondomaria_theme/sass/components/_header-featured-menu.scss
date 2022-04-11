@@ -26,13 +26,13 @@
 
     li:first-child {
         a {
-            @extend .m3-cta-button;
+            @extend %m3-cta-button;
         }
     }
     
     li:not(:first-child) {
         a {
-            @extend .m3-standard-button;
+            @extend %m3-standard-button;
         }
     }
 }

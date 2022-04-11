@@ -51,15 +51,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   a.cta-button {
-    @extend .m3-cta-button;
+    @extend %m3-cta-button;
   }
 
   a.standard-button {
-    @extend .m3-standard-button;
+    @extend %m3-standard-button;
   }
 
   a.featured-link {
-    @extend .m3-ghost-button;
+    @extend %m3-ghost-button;
   }
 
   a.featured-link-icon {

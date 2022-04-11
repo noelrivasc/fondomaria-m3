@@ -75,7 +75,7 @@
 }
 
 .navigation__search-button {
-    @extend .m3-circle-button;
+    @extend %m3-circle-button;
 
     .icon {
         @include iconize('fa-search', 16px);
