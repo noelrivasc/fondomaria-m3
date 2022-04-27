@@ -68,3 +68,16 @@ icons:
   - chevron-circle-right:
       - solid
       - regular
+  - quote-left:
+      - solid
+      - regular
+  - quote-right:
+      - solid
+      - regular
+  - caret-down:
+      - solid
+  - caret-up:
+      - solid
+  - chevron-up:
+      - solid
+      - regular
