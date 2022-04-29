@@ -1,0 +1,15 @@
+uuid: 96455eb1-09ec-4348-bd2b-bea24ca87ab8
+langcode: en
+status: true
+dependencies: {  }
+name: viewport_lg
+label: 'Large (max 1200px)'
+effects:
+  c3867501-0293-4b2a-a5c0-1164667df6f4:
+    uuid: c3867501-0293-4b2a-a5c0-1164667df6f4
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false

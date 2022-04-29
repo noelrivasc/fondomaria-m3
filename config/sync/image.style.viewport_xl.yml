@@ -1,0 +1,15 @@
+uuid: 51f65f88-67f5-4ca0-bf6d-7324b130fce4
+langcode: en
+status: true
+dependencies: {  }
+name: viewport_xl
+label: 'Extra Large (max 1920)'
+effects:
+  02b73843-a556-490d-a8a8-d134421c2a29:
+    uuid: 02b73843-a556-490d-a8a8-d134421c2a29
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

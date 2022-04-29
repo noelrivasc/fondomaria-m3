@@ -1,0 +1,15 @@
+uuid: b5d32330-6158-4aa2-8acc-418b0cbaae74
+langcode: en
+status: true
+dependencies: {  }
+name: viewport_md
+label: 'Medium (max 992px)'
+effects:
+  f42dfb1d-283e-4ddb-b3d5-ced74258c4ea:
+    uuid: f42dfb1d-283e-4ddb-b3d5-ced74258c4ea
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: false

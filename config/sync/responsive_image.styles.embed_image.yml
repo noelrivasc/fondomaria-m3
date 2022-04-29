@@ -3,11 +3,11 @@ langcode: es
 status: true
 dependencies:
   config:
-    - image.style.max_1300x1300
-    - image.style.max_165x165
-    - image.style.max_2600x2600
-    - image.style.max_325x325
-    - image.style.max_650x650
+    - image.style.viewport_lg
+    - image.style.viewport_md
+    - image.style.viewport_sm
+    - image.style.viewport_xl
+    - image.style.viewport_xs
   theme:
     - m3_base_theme
 _core:
@@ -17,28 +17,28 @@ label: 'Embed Image'
 image_style_mappings:
   -
     image_mapping_type: image_style
-    image_mapping: max_2600x2600
+    image_mapping: viewport_xl
     breakpoint_id: m3_base_theme.xl
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: max_1300x1300
+    image_mapping: viewport_lg
     breakpoint_id: m3_base_theme.lg
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: max_650x650
+    image_mapping: viewport_md
     breakpoint_id: m3_base_theme.md
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: max_325x325
+    image_mapping: viewport_sm
     breakpoint_id: m3_base_theme.sm
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: max_165x165
+    image_mapping: viewport_xs
     breakpoint_id: m3_base_theme.xs
     multiplier: 1x
 breakpoint_group: m3_base_theme
-fallback_image_style: max_1300x1300
+fallback_image_style: viewport_lg

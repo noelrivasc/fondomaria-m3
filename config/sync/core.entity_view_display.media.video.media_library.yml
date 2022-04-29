@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.video.field_media_video_file
-    - image.style.max_650x650
+    - image.style.viewport_md
     - media.type.video
   module:
     - image
@@ -21,7 +21,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: max_650x650
+      image_style: viewport_md
     third_party_settings: {  }
     weight: 0
     region: content
