@@ -1,2 +1,2 @@
 label: 'Heading code'
-description: 'Use middle dash to separate words (-), never use underscore.'
+description: 'Please avoid using special characters. You can use either single space ( ), middle dash (-), or underscore (_) to separate words, but any separator will be translated to middle dash in the result.'
