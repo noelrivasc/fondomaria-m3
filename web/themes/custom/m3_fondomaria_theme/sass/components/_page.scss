@@ -7,11 +7,11 @@
     .content__header {
         @extend .container-fluid;
         background-color: $ma-orange-300;
-        padding-top: $spacer-xl;
-        padding-bottom: $spacer-xl;
+        padding-top: $spacer-md;
+        padding-bottom: $spacer-md;
         background-image: url("#{$m3_assets_dir}/img/flowers_peach.svg");
         background-size: 225px;
-        background-position: 75% $spacer-xl;
+        background-position: 75% $spacer-md;
         background-repeat: no-repeat;
     }
 
@@ -60,7 +60,7 @@
     }
 
     .content__content {
-        margin-top: $spacer-xxl;
+        margin-top: $spacer-lg;
         margin-bottom: $spacer-xxl;
     }
 

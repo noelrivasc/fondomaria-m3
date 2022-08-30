@@ -46,7 +46,7 @@
         "drupal/seckit": "^2.0",
         "drupal/typed_data": "^1.0@beta",
         "drush/drush": "^10.4.0",
-        "matrushka/matrushka-standard-cms": "v4.3.0"
+        "matrushka/matrushka-standard-cms": "^v4.3.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -55,7 +55,13 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
-        "preferred-install": "source"
+        "preferred-install": "source",
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {

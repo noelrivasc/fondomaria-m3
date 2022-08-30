@@ -16,6 +16,9 @@
       padding-bottom: $spacer-sm;
       border-bottom-left-radius: $spacer-xs;
       border-bottom-right-radius: $spacer-xs;
+      margin-bottom: -1 * $spacer-sm;
+      position: relative;
+      z-index: 3;
     }
 
     .blog-story-share__header {

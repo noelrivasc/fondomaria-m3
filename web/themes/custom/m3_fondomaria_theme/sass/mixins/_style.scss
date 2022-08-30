@@ -1,0 +1,12 @@
+/////////////////////////////
+//  Styling useful Mixins  //
+/////////////////////////////
+
+@mixin border-rounded($roundness: $m3-roundness){
+    border-radius: $roundness;
+}
+
+@mixin square($side: $spacer-md) {
+    width: $side;
+    height: $side;
+}

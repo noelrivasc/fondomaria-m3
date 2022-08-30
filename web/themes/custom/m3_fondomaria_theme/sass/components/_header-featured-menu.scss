@@ -11,7 +11,7 @@
         @extend .nav-item;
 
         a.external {
-            @include preppendIcon("fa-external-link-square-alt", $spacer-sm);
+            @include preppendIcon("fa-external-link-square", $spacer-sm);
             padding-right: $spacer-md + $spacer-xs;
 
             &::before {
@@ -26,13 +26,13 @@
 
     li:first-child {
         a {
-            @extend .m3-cta-button;
+            @extend %m3-cta-button;
         }
     }
     
     li:not(:first-child) {
         a {
-            @extend .m3-standard-button;
+            @extend %m3-standard-button;
         }
     }
 }

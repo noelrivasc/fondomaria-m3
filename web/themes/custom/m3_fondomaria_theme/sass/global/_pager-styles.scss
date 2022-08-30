@@ -93,14 +93,14 @@
 
   .pager__item--previous {
     .icon {
-      @include iconize("fa-angle-left", $t-03);
+      @include iconize("fa-angle-left", $t-03, "far");
       display: inline;
     }
   }
   
   .pager__item--next {
     .icon {
-      @include iconize("fa-angle-right", $t-03);
+      @include iconize("fa-angle-right", $t-03, "far");
       display: inline;
     }
   }

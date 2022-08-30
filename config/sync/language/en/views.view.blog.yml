@@ -4,6 +4,21 @@ display:
   default:
     display_title: Master
     display_options:
+      title: Blog
+      fields:
+        changed:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       exposed_form:
         options:
           submit_button: Apply
@@ -11,20 +26,13 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« First'
-            last: 'Last »'
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
-      fields:
-        changed:
-          separator: ', '
+            label: 'Authored on'
+        title:
+          expose:
+            label: Alphabetically
       filters:
         search_api_fulltext:
           expose:
@@ -35,13 +43,5 @@ display:
         field_content_topics:
           expose:
             label: Topics
-      sorts:
-        created:
-          expose:
-            label: 'Authored on'
-        title:
-          expose:
-            label: Alphabetically
-      title: Blog
   page:
     display_title: Page

@@ -5,6 +5,7 @@ SASS_INPUT := sass
 SASS_OUTPUT := assets/css
 YARN := yarn
 VENDOR_DIR := assets/vendor
+VENDOR_FIXED_DIR := assets/vendor_fixed
 NODE_MODULES := node_modules
 
 PROJECT_DEPS := package.json
@@ -24,16 +25,13 @@ include-yarn-deps:
 	mkdir -p $(VENDOR_DIR)/slick
 	cp $(NODE_MODULES)/slick-carousel/slick/slick.min.js $(VENDOR_DIR)/slick/
 	cp $(NODE_MODULES)/slick-carousel/slick/slick.css $(VENDOR_DIR)/slick/
-	mkdir -p $(VENDOR_DIR)/fontawesome
-	cp -r node_modules/@fortawesome/fontawesome-free/webfonts $(VENDOR_DIR)/fontawesome
-	# cp -r node_modules/@fortawesome/fontawesome-pro/webfonts $(VENDOR_DIR)/fontawesome
 
 prepare: install include-yarn-deps
 	rm -rf $(SASS_OUTPUT)
 	mkdir $(SASS_OUTPUT)
 
 dev: prepare
-	$(SASS) -I $(NODE_MODULES) --watch $(SASS_INPUT):$(SASS_OUTPUT)
+	$(SASS) -I $(NODE_MODULES) -I $(VENDOR_FIXED_DIR) --watch $(SASS_INPUT):$(SASS_OUTPUT)
 
 build: prepare
-	$(SASS) -I $(NODE_MODULES) --update $(SASS_INPUT):$(SASS_OUTPUT) --style compressed
+	$(SASS) -I $(NODE_MODULES) -I $(VENDOR_FIXED_DIR) --update $(SASS_INPUT):$(SASS_OUTPUT) --style compressed

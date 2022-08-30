@@ -35,7 +35,7 @@
 .m3-form-control {
     @extend .form-control;
     background: theme-color('light');
-    padding: 0.375rem 1rem;
+    padding: ($spacer-xxs + 2px) $spacer-sm;
     border: 1px solid $ma-green-600;
     border-radius: 4px;
     transition: background-color 0.3s, border-color 0.3s;
@@ -60,7 +60,7 @@ input[type='radio'] {
   
 .select__container {
     height: auto;
-    // padding: 0;
+    padding: ($spacer-xxs + 1px) $spacer-sm;
     position: relative;
     overflow: hidden;
 
@@ -122,7 +122,7 @@ input[type='radio'] {
 }
 
 input[type='submit'] {
-    @extend .m3-cta-button;
+    @extend %m3-cta-button;
     width: 100%;
 }
 

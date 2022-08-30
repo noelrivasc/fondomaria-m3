@@ -15,7 +15,7 @@
 }
 
 .language-switcher__toggle-button {
-    @extend .m3-language-button;
+    @extend %m3-language-button;
     min-width: 90px;
     color: $ma-gray-500;
 }

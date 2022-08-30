@@ -326,9 +326,9 @@
 
 /* Yellow */
 .content-layout--style-maria-1 {
-    background-color: $ma-yellow-400;
     padding-top: $spacer-xl;
     padding-bottom: $spacer-xl;
+    background-color: $ma-yellow-400;
     background-image: url("#{$m3_assets_dir}/img/circles_left.svg"), url("#{$m3_assets_dir}/img/circles_right.svg");
     background-size: 15%;
     background-position: 5% 20%, 95% 80%;
@@ -349,13 +349,19 @@
 
 /* Waves */
 .content-layout--style-maria-2 {
-    background-color: $ma-orange-300;
     padding-top: $spacer-xxl;
     // padding-bottom: $spacer-xxl;
     position: relative;
+    background-color: $ma-orange-300;
     background-image: url("#{$m3_assets_dir}/img/waves.svg");
     background-size: 100%;
     background-position: center;
+
+    .content-item--rich-text {
+        padding: $spacer-lg;
+        margin: 0 (-1 * $spacer-lg);
+        background-color: $m3-light;
+    }
 
     &:before {
         display: block;
@@ -384,11 +390,12 @@
 
 /* Peach */
 .content-layout--style-maria-3 {
-    background-color: $ma-orange-300;
     padding-top: $spacer-xl;
     padding-bottom: $spacer-xl;
+    background-color: $ma-orange-300;
     background-image: url("#{$m3_assets_dir}/img/spots_left.svg"), url("#{$m3_assets_dir}/img/spots_right.svg");
-    background-size: 20%;
+    // background-size: 20%;
+    background-size: contain;
     background-position: 5% 20%, 95% 80%;
     background-repeat: no-repeat;
 
@@ -407,15 +414,47 @@
 
 /* Flower */
 .content-layout--style-maria-4 {
-    background-color: theme-color('light');
+    position: relative;
     padding-top: $spacer-xxl;
     padding-bottom: $spacer-xxl;
-    background-image: url("#{$m3_assets_dir}/img/flowers_purple.svg");
-    background-size: 14%;
-    background-position: 6% 20%;
-    background-repeat: no-repeat;
+    background-color: $m3-light;
+
+    .content-item--rich-text {
+        @extend .m3-rounded;
+        padding: $spacer-md;
+        margin: 0 (-1 * $spacer-md);
+        background-color: $m3-light;
+    }
+
+    .layout__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: $spacer-lg;
+        left: -5%;
+        right: 0;
+        z-index: 0;
+        background-image: url("#{$m3_assets_dir}/img/flowers_purple.svg");
+        background-size: 14%;
+        // background-position: 6% 20%;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+    }
 
     &.content-layout--render-wide {
+        overflow: hidden;
+
+        &:before {
+            left: 3%;
+        }
+
         .layout__content {
             @extend .container;
         }
@@ -425,5 +464,168 @@
         margin-top: $spacer-md;
         margin-bottom: $spacer-md;
         padding: $spacer-xxl $spacer-lg;
+    }
+}
+
+/* Coral */
+.content-layout--style-maria-5 {
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-xl;
+    background-color: $m3-light;
+    background-image: url("#{$m3_assets_dir}/img/coral_left.svg"), url("#{$m3_assets_dir}/img/coral_right.svg");
+    background-size: contain;
+    background-position: 0% 20%, 100% 80%;
+    background-repeat: no-repeat;
+
+    &.content-layout--render-wide {
+        background-size: 10%;
+
+        .layout__content {
+            @extend .container;
+        }
+    }
+
+    &.content-layout--render-contained {
+        margin-top: $spacer-md;
+        margin-bottom: $spacer-md;
+        padding: $spacer-lg;
+    }
+}
+
+/* Purple */
+.content-layout--style-maria-6 {
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-xl;
+    background-color: $m3-light;
+    background-image: url("#{$m3_assets_dir}/img/purple_left.svg"), url("#{$m3_assets_dir}/img/purple_right.svg");
+    background-size: contain;
+    background-position: 0% 20%, 100% 80%;
+    background-repeat: no-repeat;
+
+    &.content-layout--render-wide {
+        background-size: 20%;
+
+        .layout__content {
+            @extend .container;
+        }
+    }
+
+    &.content-layout--render-contained {
+        margin-top: $spacer-md;
+        margin-bottom: $spacer-md;
+        padding: $spacer-lg;
+    }
+}
+
+/* Sun */
+.content-layout--style-maria-7 {
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-xl;
+    background-color: $m3-light;
+    background-image: url("#{$m3_assets_dir}/img/sun_left.svg"), url("#{$m3_assets_dir}/img/sun_right.svg");
+    background-size: contain;
+    background-position: 0% 20%, 100% 80%;
+    background-repeat: no-repeat;
+
+    &.content-layout--render-wide {
+        background-size: 10%;
+
+        .layout__content {
+            @extend .container;
+        }
+    }
+
+    &.content-layout--render-contained {
+        margin-top: $spacer-md;
+        margin-bottom: $spacer-md;
+        padding: $spacer-lg;
+    }
+}
+
+/* Vainilla */
+.content-layout--style-maria-8 {
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-xl;
+    background-color: $m3-light;
+    background-image: url("#{$m3_assets_dir}/img/vaina_left.svg"), url("#{$m3_assets_dir}/img/vaina_right.svg");
+    background-size: contain;
+    background-position: 0% 20%, 100% 80%;
+    background-repeat: no-repeat;
+
+    &.content-layout--render-wide {
+        background-size: 10%;
+
+        .layout__content {
+            @extend .container;
+        }
+    }
+
+    &.content-layout--render-contained {
+        margin-top: $spacer-md;
+        margin-bottom: $spacer-md;
+        padding: $spacer-lg;
+    }
+}
+
+/* Colorful with white */
+.content-layout--style-maria-9 {
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-xl;
+    background-color: $m3-light;
+    background-image: url("#{$m3_assets_dir}/img/colorful.svg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+
+    .content-item--rich-text {
+        @extend .m3-rounded;
+        padding: $spacer-md;
+        margin: 0 (-1 * $spacer-md);
+        background-color: rgba($m3-light, 0.8);
+        backdrop-filter: blur($spacer-xxs);
+    }
+
+    &.content-layout--render-wide {
+        .layout__content {
+            @extend .container;
+        }
+    }
+
+    &.content-layout--render-contained {
+        @extend .m3-rounded;
+        margin-top: $spacer-md;
+        margin-bottom: $spacer-md;
+        padding: $spacer-lg;
+        border: 1px solid $ma-purple-200;
+    }
+}
+
+/* Colorful no white */
+.content-layout--style-maria-10 {
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-xl;
+    background-color: $m3-light;
+    background-image: url("#{$m3_assets_dir}/img/colorful.svg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+
+    .content-item--rich-text {
+        padding: $spacer-md;
+        margin: 0 (-1 * $spacer-md);
+    }
+
+    &.content-layout--render-wide {
+        .layout__content {
+            @extend .container;
+        }
+    }
+
+    &.content-layout--render-contained {
+        @extend .m3-rounded;
+        margin-top: $spacer-md;
+        margin-bottom: $spacer-md;
+        padding: $spacer-lg;
+        border: 1px solid $ma-purple-200;
     }
 }

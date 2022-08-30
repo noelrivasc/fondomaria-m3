@@ -12,7 +12,5 @@
     "popper.js": "^1.16.1",
     "slick-carousel": "^1.8.1"
   },
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2"
-  }
+  "devDependencies": {}
 }

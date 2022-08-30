@@ -1,0 +1,15 @@
+uuid: 11bfd0a5-bfec-43c3-b93b-71dd47c406f4
+langcode: es
+status: true
+dependencies: {  }
+name: viewport_sm
+label: 'Small (max 786px)'
+effects:
+  207f4963-7ac1-4fa2-afea-2ed6b98d0c8d:
+    uuid: 207f4963-7ac1-4fa2-afea-2ed6b98d0c8d
+    id: image_scale
+    weight: 1
+    data:
+      width: 786
+      height: null
+      upscale: false

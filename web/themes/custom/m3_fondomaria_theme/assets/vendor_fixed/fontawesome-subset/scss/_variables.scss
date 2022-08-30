@@ -1,0 +1,50 @@
+// Variables
+// --------------------------
+
+$fa-font-path:         "../webfonts" !default;
+$fa-font-size-base:    16px !default;
+$fa-font-display:      block !default;
+$fa-css-prefix:        fa !default;
+$fa-version:           "5.15.4" !default;
+$fa-border-color:      #eee !default;
+$fa-inverse:           #fff !default;
+$fa-li-width:          2em !default;
+$fa-fw-width:          (20em / 16);
+$fa-primary-opacity:   1 !default;
+$fa-secondary-opacity: .4 !default;
+
+// Convenience function used to set content property
+@function fa-content($fa-var) {
+  @return unquote("\"#{ $fa-var }\"");
+}
+
+$fa-var-angle-left: \f104;
+$fa-var-angle-right: \f105;
+$fa-var-bars: \f0c9;
+$fa-var-caret-down: \f0d7;
+$fa-var-caret-up: \f0d8;
+$fa-var-check: \f00c;
+$fa-var-chevron-circle-right: \f138;
+$fa-var-chevron-down: \f078;
+$fa-var-chevron-left: \f053;
+$fa-var-chevron-right: \f054;
+$fa-var-chevron-up: \f077;
+$fa-var-circle: \f111;
+$fa-var-dot-circle: \f192;
+$fa-var-envelope: \f0e0;
+$fa-var-external-link: \f08e;
+$fa-var-external-link-square: \f14c;
+$fa-var-facebook: \f09a;
+$fa-var-facebook-square: \f082;
+$fa-var-file-archive: \f1c6;
+$fa-var-file-download: \f56d;
+$fa-var-instagram: \f16d;
+$fa-var-language: \f1ab;
+$fa-var-link: \f0c1;
+$fa-var-quote-left: \f10d;
+$fa-var-quote-right: \f10e;
+$fa-var-search: \f002;
+$fa-var-times: \f00d;
+$fa-var-times-circle: \f057;
+$fa-var-twitter: \f099;
+$fa-var-youtube: \f167;

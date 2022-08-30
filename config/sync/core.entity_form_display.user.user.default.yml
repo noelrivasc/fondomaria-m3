@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.user_picture
-    - image.style.max_325x325
+    - image.style.viewport_sm
   module:
     - image
     - path
@@ -40,7 +40,7 @@ content:
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: max_325x325
+      preview_image_style: viewport_sm
     third_party_settings: {  }
 hidden:
   langcode: true

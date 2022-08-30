@@ -36,6 +36,12 @@ function maria_layout_overrides_layout_alter(&$definitions) {
           'content-layout--style-maria-2' => 'Waves',
           'content-layout--style-maria-3' => 'Peach',
           'content-layout--style-maria-4' => 'Flower',
+          'content-layout--style-maria-5' => 'Coral',
+          'content-layout--style-maria-6' => 'Morado',
+          'content-layout--style-maria-7' => 'Sol',
+          'content-layout--style-maria-8' => 'Vainilla',
+          'content-layout--style-maria-9' => 'Colorido',
+          'content-layout--style-maria-10' => 'Colorido (Sin recuadro)'
         );
         $definition->set('additional', $additional);
       }

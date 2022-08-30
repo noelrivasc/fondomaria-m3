@@ -605,20 +605,20 @@ display:
             last: 'Último »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementos por página'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Todo -'
             offset: false
-            offset_label: Offset
+            offset_label: Desplazamiento
           quantity: 9
       exposed_form:
         type: basic
         options:
           submit_button: Buscar
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: 'A - Z'
           sort_desc_label: 'Z - A'
@@ -626,7 +626,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: tag
+        type: none
         options: {  }
       empty:
         entity_node:
@@ -974,7 +974,7 @@ display:
               resource: teaser
               resource_collection: teaser
       query:
-        type: views_query
+        type: search_api_query
         options:
           bypass_access: false
           skip_access: false
@@ -1148,7 +1148,7 @@ display:
         - 'config:search_api.index.general_search'
   page:
     id: page
-    display_title: Page
+    display_title: Página
     display_plugin: page
     position: 1
     display_options:
