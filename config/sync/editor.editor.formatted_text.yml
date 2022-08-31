@@ -52,8 +52,6 @@ settings:
           items:
             - Source
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: "p|Paragraph\r\np.featured|Featured paragraph\r\nh2.heading-1|Heading 2\r\nh3.heading-2|Heading 3\r\nh4.heading-3|Heading 4\r\nh5.heading-4|Heading 5\r\np.quote-attribution-name|Name on quote\r\np.quote-attribution-position|Position on quote\r\na.cta-button|CTA button\r\na.standard-button|Standard button\r\na.featured-link|Featured link\r\nul.featured-list|Featured list"
 image_upload:
